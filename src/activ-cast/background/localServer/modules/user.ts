@@ -1,6 +1,7 @@
 import { ADHOCCAST } from "../../../libex";
 import * as Services from '../services/index'
 import { IPortUsers } from "./users";
+import { EMessageKey } from "../../../locales";
 
 
 
@@ -100,7 +101,7 @@ export class PortUser  extends ADHOCCAST.Cmds.Common.Base implements IPortUser {
                 let data: ADHOCCAST.Cmds.ICommandData<any> = {
                     cmdId: ADHOCCAST.Cmds.ECommandId.network_connecting,
                     respResult: false,
-                    respMsg: "TransportError"
+                    respMsg: chrome.i18n.getMessage(EMessageKey.TransportError)
                 }
                 this.sendCommand(data, true);                
             }

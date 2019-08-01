@@ -2,6 +2,7 @@ import { storage } from './storage';
 import * as LocalServer from './localServer/index'
 import * as RemoteConn from './remote-connection/index'
 import { ADHOCCAST } from '../libex/index'
+import { EMessageKey } from '../locales';
 ADHOCCAST.Modules.Webrtc.Config.platform = ADHOCCAST.Modules.Webrtc.EPlatform.browser;
 ADHOCCAST.Cmds.Common.Helper.Debug.enabled = false;
 
@@ -126,7 +127,7 @@ export class Main extends ADHOCCAST.Cmds.Common.CommandRooter {
             if (e && e.cmdId) {
                 data = e as any;                             
             } else {
-                data.respMsg = "TransportError"        
+                data.respMsg = chrome.i18n.getMessage(EMessageKey.TransportError)
             }
             this.portUsers.sendCommand(data, null, true);
         })
@@ -184,7 +185,7 @@ export class Main extends ADHOCCAST.Cmds.Common.CommandRooter {
             let data: ADHOCCAST.Cmds.ICommandData<any> = {
                 cmdId: ADHOCCAST.Cmds.ECommandId.network_connecting,
                 respResult: false,
-                respMsg: "TransportError"
+                respMsg: chrome.i18n.getMessage(EMessageKey.TransportError)
             }
             LocalServer.Services.Cmds.ServiceCustom.on_custom_update_states(null, null);
             this.portUsers.sendCommand(data, null, true);
