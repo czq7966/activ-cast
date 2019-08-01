@@ -6,8 +6,8 @@
   "scripts": {
     "activcast:clean": "rimraf dist/activ-cast",
     "activcast:watch": "npm run activcast:clean && cross-env NODE_MODULE=activcast webpack --progress --env.umd --watch",
-    "activcast:build": "npm run activcast:clean && cross-env NODE_MODULE=activcast webpack --progress --env.umd --env.production",
-    "activcast:dev": "npm run activcast:clean && cross-env NODE_MODULE=activcast webpack --progress --env.umd --watch --env.nodevtool",
+    "activcast:build": "npm run activcast:clean && cross-env NODE_MODULE=activcast webpack --progress --env.umd --env.production --env.minimize",
+    "activcast:dev": "npm run activcast:clean && cross-env NODE_MODULE=activcast webpack --progress --env.umd --watch --env.production --env.nodevtool",
     "dev": "npm run activcast:dev",
     "watch": "npm run activcast:watch",
     "clean": "npm run activcast:clean",

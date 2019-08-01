@@ -53,7 +53,7 @@ module.exports = env => {
         ])
     )
 
-    if (env.production) { //生产模式
+    if (env.minimize) { //生产模式
         minimizer.push(
             new UglifyJsPlugin()
         )
