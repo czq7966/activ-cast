@@ -43,7 +43,6 @@
     "adhoc-cast-connection": "^2.2.1",
     "di18n-translate": "0.0.9",
     "fast-xml-parser": "^3.12.17",
-    "robotjs": "^0.5.1",
     "url-search-params-polyfill": "^5.0.0",
     "xml2js": "^0.4.19"
   }
