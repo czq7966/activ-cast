@@ -1,0 +1,33 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "outDir": "./dist",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",      
+    "experimentalDecorators": true,
+    "jsx": "react",
+    // "allowJs": true,
+    // "noImplicitThis": true,
+    "target": "es5",
+    "types": [
+      "node",
+      "chrome",
+      "react",
+      "react-dom",
+      "socket.io-client"
+    ],
+    "lib": [
+      "es2017",
+      "dom",
+      "es5"      
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "gulp",
+    "*.js",
+    "dist",
+    "demo"
+  ]
+}
