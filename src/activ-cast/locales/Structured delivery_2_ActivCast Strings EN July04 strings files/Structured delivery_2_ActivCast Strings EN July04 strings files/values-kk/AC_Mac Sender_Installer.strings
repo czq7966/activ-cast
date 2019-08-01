@@ -1,0 +1,81 @@
+// Title
+
+"Install ActiCast" = "ActivCast бағдарламасын орнату";
+
+// Step
+
+"Introduction" = "Кіріспе";
+
+"Read Me" = "Оқуға арналған";
+
+"License" = "Лицензия";
+
+"Destination Select" = "Сақталатын орын таңдау";
+
+"Installation Type" = "Орнату түрі";
+
+"Installation" = "Орнату";
+
+"Installer Plugin" = "Орнату плагині";
+
+"Summary" = "Қорытынды";
+
+// Buttons
+
+"Print..." = "Басып шығару…";
+
+"Save..." = "Сақтау…";
+
+"Go Back" = "Қайту";
+
+"Continue" = "Жалғастыру";
+
+"Close" = "Жабу";
+
+"Log Out" = "Шығу";
+
+"Restart" = "Қайта бастау";
+
+"Shut Down" = "Жабу";
+
+// Introduction
+
+"Welcome to the ActivCast Installer" = "ActivCast орнату құралына қош келдіңіз";
+
+"You will be guided through the steps necessary to install this software." = "Бұл бағдарламалық құралды орнатуға қажетті қадамдар туралы сізге түсіндіріледі.";
+
+// Read Me
+
+"Important Information" = "Маңызды ақпарат";
+
+// License
+
+"Software License Agreement" = "Бағдарламалық құралдың лицензиялық келісімі";
+
+"English" = "Қазақша";
+
+// Installation Type
+
+"Package Name" = "Бума атауы";
+
+"Package Action" = "Әрекет";
+
+"Package Size" = "Көлемі";
+
+"Space Required:" = "Қажетті орын:";
+
+"Remaining:" = "Қалған:";
+
+"Standard Install" = "Стандартты орнату";
+
+"StandardTitle" = "«%@» ішіне стандартты орнату";
+
+"Customize" = "Реттеу";
+
+// Summary
+
+"The installation was completed successfully" = "Орнату сәтті аяқталды";
+
+"Successful installation" = "Сәтті орнатылды";
+
+"ActivCast uses sound driver from “MATT INGALLS”. During installation, your system might block it from loading. To enable it, open Security & Privacy System Preferences and click "Allow" to grant permission." = "ActivCast құралы «MATT INGALLS» дыбыс драйверін пайдаланады. Орнату барысында сіздің жүйеңіз оның жүктелуін бөгеуі мүмкін. Оны қосу үшін «Қауіпсіздік және құпиялық жүйесі параметрлері» тармағын ашып, рұқсат беру үшін «Рұқсат беру» түймесін басыңыз.";

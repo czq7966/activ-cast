@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin version="1.0" load="1" type="string" language="EN">
+  <String>
+    <String id="IDS_APP_NAME">ActivCast 2.0</String>
+    <String id="IDS_PANEL_ID_INVALID_TIPS">Lỗi ID bảng điều khiển. Vui lòng thử lại.</String>
+    <String id="IDS_NAME_EMPTY_TIPS">Vui lòng nhập tên của bạn.</String>
+    <String id="IDS_CAST">TRUYỀN</String>
+	<String id="IDS_ENTER_WAITING_ROOM">VÀO PHÒNG CHỜ</String>
+    <String id="IDS_CANCEL">HỦY</String>
+    <String id="IDS_YES">CÓ</String>
+    <String id="IDS_NO">KHÔNG</String>
+	<String id="IDS_STOP_CASTING">DỪNG TRUYỀN</String>
+	<String id="IDS_CASTING_TITLE_TIPS">Truyền màn hình tới ActivPanel</String>
+	<String id="IDS_CASTING_TO_NAME">Truyền tới </String>	
+	<String id="IDS_TYPE_IN_PANELID_1">Nhập trong</String>
+	<String id="IDS_TYPE_IN_PANELID_2"> ID bảng điều khiển </String>
+	<String id="IDS_TYPE_IN_PANELID_3">như hình minh họa trong ActivCast 2.0 trên ActivPanel.</String>	
+	<String id="IDS_UESRNAME_EMPTY_TIPS">Tên của bạn</String>
+	<String id="IDS_TOUCHBACK_TITLE_TIPS">Kiểm soát từ bảng điều khiển (Touchback)</String>
+	<String id="IDS_TOUCHBACK_ENABLE_TIPS">Bật tính năng touchback để ActivPanel có thể điều hướng màn hình của bạn.</String>	
+	<String id="IDS_IN_WAITING_ROOM">Bạn đang trong phòng chờ</String>
+	<String id="IDS_WAITING_ROOM_TIPS">Vui lòng chờ được cấp phép để truyền màn hình của bạn.</String>
+	<String id="IDS_YOU_ARE_CASTING_TIPS"> giờ đang truyền tới </String>	
+	<String id="IDS_WARNING">CẢNH BÁO</String>
+	<String id="IDS_RESTART_TIPS">Cạc âm thanh mặc định đã bị thay đổi. Để dùng đúng cạc, vui lòng dừng truyền rồi sau đó truyền lại.</String>
+  </String>
+</skin>

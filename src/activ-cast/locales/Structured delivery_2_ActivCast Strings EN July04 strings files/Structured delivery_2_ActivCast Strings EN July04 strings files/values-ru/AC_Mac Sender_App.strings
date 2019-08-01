@@ -1,0 +1,48 @@
+/* 
+  Localizable.strings
+  pmcast
+
+  Created by 海涛 on 2019/6/28.
+  Copyright © 2019 cn.com.nd. All rights reserved.
+*/
+
+"ActivCast" = "ActivCast";
+"About ActivCast" = "О программе";
+"Preferences…" = "Настройки...";
+"Services" = "Сервисы";
+"Hide ActivCast" = "Скрыть ActivCast";
+"Hide Others" = "Скрыть другое";
+"Show All" = "Показать все";
+"Quit ActivCast" = "Выйти из ActivCast";
+"Help" = "Справка";
+"Guide" = "Руководство";
+
+"ActivCast 2.0" = "ActivCast 2.0";
+"ActivPanel" = "ActivPanel";
+"Cast screen to ActivPanel" = "Транслировать экран на ActivPanel";
+"Panel ID" = "Идентификатор панели";
+"Type in the Panel ID as shown in ActivCast 2.0 on the ActivPanel." = "Введите идентификатор панели, как показано в ActivCast 2.0, на ActivPanel.";
+"Panel ID Error. Please try again." = "Ошибка идентификатора панели. Повторите попытку.";
+"Name is too long. Please try again." = "Имя слишком длинное. Повторите попытку.";
+"Please enter your name." = "Введите ваше имя.";
+"Control from panel (Touchback)" = "Управление с панели (обратная связь)";
+"Enable touchback so that ActivPanel can navigate your screen." = "Включите «обратную связь», чтобы ActivPanel могла перемещаться по вашему экрану.";
+"ENTER WAITING ROOM" = "ВОЙДИТЕ В КОМНАТУ ОЖИДАНИЯ";
+
+"Settings" = "Настройки";
+"Picture Quality" = "Качество изображения";
+"Best Quality" = "Отличное качество";
+"Good Quality" = "Хорошее качество";
+"CANCEL" = "ОТМЕНА";
+"DONE" = "ГОТОВО";
+
+"You’re in the waiting room" = "Вы в «комнате ожидания»";
+"Please wait for permission to cast your screen." = "Пожалуйста, дождитесь разрешения для трансляции вашего экрана.";
+"EXIT WAITING ROOM" = "ВЫХОД ИЗ КОМНАТЫ ОЖИДАНИЯ";
+"STOP CASTING" = "ОСТАНОВИТЬ ТРАНСЛЯЦИЮ";
+"A is now casting to B" = "A сейчас транслируется на B";
+
+"A program tried to load a new system extension signed by B. If you want to enable these extensions, open Security & Privacy System Preferences." = "Программа пыталась загрузить новое системное расширение с учетной записью B. Если вы хотите включить эти расширения, откройте «Защита и безопасность» в системных настройках.";
+
+
+

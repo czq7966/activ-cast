@@ -1,0 +1,80 @@
+{
+	"manifest_name": {
+		"message": "ActivCast"
+	},
+	"manifest_description": {
+		"message": "ActivCast"
+	},
+	"manifest_short_name": {
+		"message": "ActivCast"
+	},
+	"manifest_default_title": {
+		"message": "ActivCast"
+	},
+	"Activ_Cast": {
+		"message": "ActivCast"
+	},
+	"ENTER_PANEL_ID": {
+		"message": "ZADEJTE ID PANELU"
+	},
+	"ENTER_YOUR_NAME": {
+		"message": "ZADEJTE SVÉ JMÉNO"
+	},
+	"CANCEL": {
+		"message": "ZRUŠIT"
+	},
+	"CAST": {
+		"message": "VYSÍLAT"
+	},
+	"Untitled": {
+		"message": "Bez názvu"
+	},
+	"Casting": {
+		"message": "Vysílání"
+	},
+	"Waiting_Room": {
+		"message": "Čekárna"
+	},
+	"Please_wait_for_permission": {
+		"message": "Vyčkejte prosím na oprávnění vysílat obrazovku."
+	},
+	"Connecting___": {
+		"message": "Připojování......"
+	},
+	"TransportError": {
+		"message": "Chyba přenosu"
+	},
+	"Network_Disconnected": {
+		"message": "Síť odpojena"
+	},
+	"Sender_Offline": {
+		"message": "Odesílatel offline"
+	},
+	"Connecting": {
+		"message": "Připojování"
+	},
+	"Failed": {
+		"message": "Nezdařilo se"
+	},
+	"Disconnected": {
+		"message": "Odpojeno"
+	},
+	"Closed": {
+		"message": "Ukončeno"
+	},
+	"You_are_casting_to": {
+		"message": "Vysíláte na"
+	},
+	"STOP_CASTING": {
+		"message": "UKONČIT VYSÍLÁNÍ"
+	},
+	"Panel_ID_Error": {
+		"message": "Chyba ID panelu. Zkuste to znovu."
+	},
+	"Name_is_too_long": {
+		"message": "Name is too long. Please try again."
+	},
+	"Please_enter_your_name": {
+		"message": "Zadejte své jméno."
+	}
+}

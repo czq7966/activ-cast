@@ -1,0 +1,80 @@
+{
+	"manifest_name": {
+		"message": "ActivCast"
+	},
+	"manifest_description": {
+		"message": "ActivCast"
+	},
+	"manifest_short_name": {
+		"message": "ActivCast"
+	},
+	"manifest_default_title": {
+		"message": "ActivCast"
+	},
+	"Activ_Cast": {
+		"message": "ActivCast"
+	},
+	"ENTER_PANEL_ID": {
+		"message": "ANGIV SKÆRM-ID"
+	},
+	"ENTER_YOUR_NAME": {
+		"message": "ANGIV DIT NAVN"
+	},
+	"CANCEL": {
+		"message": "ANNULLER"
+	},
+	"CAST": {
+		"message": "UDSEND"
+	},
+	"Untitled": {
+		"message": "Ikke navngivet"
+	},
+	"Casting": {
+		"message": "Udsender"
+	},
+	"Waiting_Room": {
+		"message": "Lobby"
+	},
+	"Please_wait_for_permission": {
+		"message": "Vent på at få tilladelse til at udsende din skærm."
+	},
+	"Connecting___": {
+		"message": "Opretter forbindelse ..."
+	},
+	"TransportError": {
+		"message": "TransportError"
+	},
+	"Network_Disconnected": {
+		"message": "Netværksforbindelsen blev afbrudt"
+	},
+	"Sender_Offline": {
+		"message": "Sender offline"
+	},
+	"Connecting": {
+		"message": "Opretter forbindelse"
+	},
+	"Failed": {
+		"message": "Mislykkedes"
+	},
+	"Disconnected": {
+		"message": "Forbindelsen er afbrudt"
+	},
+	"Closed": {
+		"message": "Lukket"
+	},
+	"You_are_casting_to": {
+		"message": "Du udsender på"
+	},
+	"STOP_CASTING": {
+		"message": "STOP UDSENDELSE"
+	},
+	"Panel_ID_Error": {
+		"message": "Skærm-id-fejl. Prøv igen."
+	},
+	"Name_is_too_long": {
+		"message": "Name is too long. Please try again."
+	},
+	"Please_enter_your_name": {
+		"message": "Angiv dit navn."
+	}
+}

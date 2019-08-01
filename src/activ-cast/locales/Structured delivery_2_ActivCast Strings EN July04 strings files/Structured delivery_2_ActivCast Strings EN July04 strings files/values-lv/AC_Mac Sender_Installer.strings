@@ -1,0 +1,81 @@
+// Title
+
+"Install ActiCast" = "ActivCast instalēšana";
+
+// Step
+
+"Introduction" = "Ievads";
+
+"Read Me" = "Lasi mani fails";
+
+"License" = "Licence";
+
+"Destination Select" = "Galamērķa izvēle";
+
+"Installation Type" = "Uzstādīšanas veids";
+
+"Installation" = "Uzstādīšana";
+
+"Installer Plugin" = "Instalētāja spraudnis";
+
+"Summary" = "Kopsavilkums";
+
+// Buttons
+
+"Print..." = "Drukāt...";
+
+"Save..." = "Saglabāt...";
+
+"Go Back" = "Iet atpakaļ";
+
+"Continue" = "Turpināt";
+
+"Close" = "Aizvērt";
+
+"Log Out" = "Izrakstīties";
+
+"Restart" = "Restartēt";
+
+"Shut Down" = "Izslēgt";
+
+// Introduction
+
+"Welcome to the ActivCast Installer" = "Laipni lūdzam ActivCast instalētājā!";
+
+"You will be guided through the steps necessary to install this software." = "Jums tiks norādītas programmatūras uzstādīšanai nepieciešamās veicamās darbības.";
+
+// Read Me
+
+"Important Information" = "Svarīga informācija";
+
+// License
+
+"Software License Agreement" = "Programmatūras licences līgums";
+
+"English" = "Latviešu valoda";
+
+// Installation Type
+
+"Package Name" = "Pakotnes nosaukums";
+
+"Package Action" = "Darbība";
+
+"Package Size" = "Lielums";
+
+"Space Required:" = "Nepieciešamā vieta:";
+
+"Remaining:" = "Pieejamā:";
+
+"Standard Install" = "Standarta instalācija";
+
+"StandardTitle" = "Standarta instalācija “%@”";
+
+"Customize" = "Pielāgot";
+
+// Summary
+
+"The installation was completed successfully" = "Instalācija tika sekmīgi pabeigta";
+
+"Successful installation" = "Instalācija sekmīga";
+
+"ActivCast uses sound driver from “MATT INGALLS”. During installation, your system might block it from loading. To enable it, open Security & Privacy System Preferences and click "Allow" to grant permission." = "ActivCast izmanto skaņas draiveri no “MATT INGALLS”. Uzstādīšanas laikā jūsu sistēma, iespējams, bloķēs tā ielādi. Lai to iespējotu, atveriet Drošības un konfidencialitātes sistēmas preferences un noklikšķiniet uz “Atļaut”, lai piešķirtu atļauju.";

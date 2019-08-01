@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin version="1.0" load="1" type="string" language="EN">
+  <String>
+    <String id="IDS_APP_NAME">ActivCast 2.0</String>
+    <String id="IDS_PANEL_ID_INVALID_TIPS">面板 ID 错误。请重试。</String>
+    <String id="IDS_NAME_EMPTY_TIPS">请输入您的姓名。</String>
+    <String id="IDS_CAST">投射</String>
+	<String id="IDS_ENTER_WAITING_ROOM">输入等候室</String>
+    <String id="IDS_CANCEL">取消</String>
+    <String id="IDS_YES">是</String>
+    <String id="IDS_NO">否</String>
+	<String id="IDS_STOP_CASTING">停止投射</String>
+	<String id="IDS_CASTING_TITLE_TIPS">将屏幕投射到 ActivPanel</String>
+	<String id="IDS_CASTING_TO_NAME">投射到</String>	
+	<String id="IDS_TYPE_IN_PANELID_1">请在 ActivPanel 上键入</String>
+	<String id="IDS_TYPE_IN_PANELID_2"> 如 ActivCast 2.0 中所示的</String>
+	<String id="IDS_TYPE_IN_PANELID_3">面板 ID。</String>	
+	<String id="IDS_UESRNAME_EMPTY_TIPS">您的姓名</String>
+	<String id="IDS_TOUCHBACK_TITLE_TIPS">从面板进行控制(Touchback)</String>
+	<String id="IDS_TOUCHBACK_ENABLE_TIPS">启用 Touchback，这样 ActivPanel 可以浏览您的屏幕。</String>	
+	<String id="IDS_IN_WAITING_ROOM">您在等候室中</String>
+	<String id="IDS_WAITING_ROOM_TIPS">在投射您的屏幕前，请等待授权。</String>
+	<String id="IDS_YOU_ARE_CASTING_TIPS"> 正在投射到</String>	
+	<String id="IDS_WARNING">警告</String>
+	<String id="IDS_RESTART_TIPS">默认的声卡已更改。为了正确使用它，请停止投射，然后再重新投射。</String>
+  </String>
+</skin>

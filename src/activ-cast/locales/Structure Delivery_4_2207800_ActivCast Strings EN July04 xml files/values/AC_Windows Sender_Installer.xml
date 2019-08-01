@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<skin version="1.0" load="1" type="string">
+  <String>
+	<String id="IDS_INSTALL_APPNAME">Install ActivCast 2.0</String>
+	<String id="IDS_INSTALLING">Installing…</String>
+	<String id="STR_NEEDSPACE">Remaining Space: </String>
+	<String id="STR_FREESPACE">Required Space: </String>
+	<String id="STR_DOYOUWANTTOINSTALL">To install Activcast, you must run Activcast installation. If you cancel installation Activcast will not install.
+	Are you sure you want to cancel Activcast installation?</String>
+	<String id="STR_DITECTAPPRUNNNIG">A related program is running. Please touch 'Yes' to close the program, first.</String>
+	<String id="IDS_LICENSE_TITLE">End-User License Agreement</String>
+    <String id="IDS_CANCEL">CANCEL</String>
+    <String id="IDS_ACCEPT">ACCEPT</String>
+    <String id="IDS_BEGIN_INSTALL">BEGIN INSTALL</String>
+    <String id="IDS_CHOOSE_PATH">Choose a different location</String>
+	<String id="IDS_INSTALL_PATH_TIPS">We’ll install it here…</String>
+    <String id="IDS_COMPLETE">DONE</String>
+	<String id="IDS_INSTALL_TITLE_TIPS">Mirror content, ideas and apps on your device to an ActivPanel. Now with touchback support.</String>
+    <String id="IDS_ADD_DESKTOP_SHORTCUT">Add a desktop shortcut</String>
+	<String id="IDS_QUICK_LAUNCH">Add a quick launch icon in the start menu</String>
+    <String id="IDS_FINISH_TITLE">Installation successfully completed. You’re all set!</String>
+    <String id="IDS_ADD_OPTIONS">Additional options</String>
+	<String id="IDS_ADD_OPTIONS_CONTENT">(You can also change these at anytime under 'Settings’).</String>
+    <String id="IDS_YES">YES</String>
+    <String id="IDS_NO">NO</String>
+	
+	<String id="IDS_UNINSTALL_APPNAME">Uninstall ActivCast 2.0</String>
+	<String id="IDS_UNINSTALLING">Uninstalling…</String>
+    <String id="IDS_CONFIRM_REMOVE_APP">Are you sure you want to remove Activcast 2.0?</String>
+  </String>
+</skin>
+
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin version="1.0" load="1" type="string">
+  <String>
+	<String id="IDS_INSTALL_APPNAME">Instalovat ActivCast 2.0</String>
+	<String id="IDS_INSTALLING">Instalace…</String>
+	<String id="STR_NEEDSPACE">Zbývající místo: </String>
+	<String id="STR_FREESPACE">Požadované místo: </String>
+	<String id="STR_DOYOUWANTTOINSTALL">Chcete-li nainstalovat aplikaci ActivCast, musíte spustit instalační program ActivCast. V případě zrušení instalace se aplikace ActivCast nenainstaluje. Opravdu chcete zrušit instalaci aplikace ActivCast?</String>
+	<String id="STR_DITECTAPPRUNNNIG">Příslušný program je spuštěn. Nejdříve klepněte na tlačítko „Ano“ pro ukončení programu.</String>
+	<String id="IDS_LICENSE_TITLE">Licenční smlouva s koncovým uživatelem</String>
+    <String id="IDS_CANCEL">ZRUŠIT</String>
+    <String id="IDS_ACCEPT">PŘIJMOUT</String>
+    <String id="IDS_BEGIN_INSTALL">SPUSTIT INSTALACI</String>
+    <String id="IDS_CHOOSE_PATH">Vyberte jiné umístění</String>
+	<String id="IDS_INSTALL_PATH_TIPS">Aplikaci nainstalujeme sem…</String>
+    <String id="IDS_COMPLETE">HOTOVO</String>
+	<String id="IDS_INSTALL_TITLE_TIPS">Zrcadlete obsah, nápady a aplikace ze svého zařízení na panelu ActivPanel. Nyní s podporou funkce Touchback.</String>
+    <String id="IDS_ADD_DESKTOP_SHORTCUT">Přidat zástupce na plochu</String>
+	<String id="IDS_QUICK_LAUNCH">Přidat ikonu pro rychlé spuštění do nabídky Start</String>
+    <String id="IDS_FINISH_TITLE">Instalace byla úspěšně dokončena. Můžete začít!</String>
+    <String id="IDS_ADD_OPTIONS">Další možnosti</String>
+	<String id="IDS_ADD_OPTIONS_CONTENT">(Můžete je kdykoli změnit v nabídce „Nastavení“.)</String>
+    <String id="IDS_YES">ANO</String>
+    <String id="IDS_NO">NE</String>
+	
+	<String id="IDS_UNINSTALL_APPNAME">Odinstalovat ActivCast 2.0</String>
+	<String id="IDS_UNINSTALLING">Odinstalace…</String>
+    <String id="IDS_CONFIRM_REMOVE_APP">Opravdu chcete odebrat aplikaci ActivCast 2.0?</String>
+  </String>
+</skin>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin version="1.0" load="1" type="string" language="EN">
+  <String>
+    <String id="IDS_APP_NAME">ActivCast 2.0</String>
+    <String id="IDS_PANEL_ID_INVALID_TIPS">Skærm-id-fejl. Prøv igen.</String>
+    <String id="IDS_NAME_EMPTY_TIPS">Angiv dit navn.</String>
+    <String id="IDS_CAST">UDSEND</String>
+	<String id="IDS_ENTER_WAITING_ROOM">GÅ TIL LOBBY</String>
+    <String id="IDS_CANCEL">ANNULLER</String>
+    <String id="IDS_YES">JA</String>
+    <String id="IDS_NO">NEJ</String>
+	<String id="IDS_STOP_CASTING">STOP UDSENDELSE</String>
+	<String id="IDS_CASTING_TITLE_TIPS">Udsend skærmen på ActivPanel</String>
+	<String id="IDS_CASTING_TO_NAME">Udsend på </String>	
+	<String id="IDS_TYPE_IN_PANELID_1">Skriv</String>
+	<String id="IDS_TYPE_IN_PANELID_2"> skærm-id\'et </String>
+	<String id="IDS_TYPE_IN_PANELID_3">som vist i ActivCast 2.0 på ActivPanel.</String>	
+	<String id="IDS_UESRNAME_EMPTY_TIPS">Dit navn</String>
+	<String id="IDS_TOUCHBACK_TITLE_TIPS">Styr fra skærmen (med berøring)</String>
+	<String id="IDS_TOUCHBACK_ENABLE_TIPS">Aktivér berøring, så ActivPanel kan navigere på din skærm.</String>	
+	<String id="IDS_IN_WAITING_ROOM">Du er i lobbyen</String>
+	<String id="IDS_WAITING_ROOM_TIPS">Vent på at få tilladelse til at udsende din skærm.</String>
+	<String id="IDS_YOU_ARE_CASTING_TIPS"> udsender nu på </String>	
+	<String id="IDS_WARNING">ADVARSEL!</String>
+	<String id="IDS_RESTART_TIPS">Standardlydkortet er blevet ændret. Hvis du vil bruge det korrekt, skal du stoppe udsendelsen og udsende igen.</String>
+  </String>
+</skin>

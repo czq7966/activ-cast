@@ -1,0 +1,80 @@
+{    
+    "manifest_name": {
+        "message":    "Activ Cast"
+    },
+	"manifest_description":  {
+        "message":    "Activ Cast"
+    },
+	"manifest_short_name":  {
+        "message":    "Activ Cast"
+    },    
+	"manifest_default_title":  {
+        "message":    "Activ Cast"
+    },            
+	"Activ_Cast":  {
+        "message":    "Activ Cast"
+    },
+	"ENTER_PANEL_ID":  {
+        "message":    "ENTER PANEL ID"
+    },
+	"ENTER_YOUR_NAME":  {
+        "message":    "ENTER YOUR NAME"
+    },
+	"CANCEL":  {
+        "message":    "CANCEL"
+    },
+	"CAST":  {
+        "message":    "CAST"
+    },
+	"Untitled":  {
+        "message":    "Untitled"
+    },
+	"Casting":  {
+        "message":    "Casting"
+    },
+	"Waiting_Room":  {
+        "message":    "Waiting Room"
+    },
+	"Please_wait_for_permission":  {
+        "message":    "Please wait for permission to cast your screen."
+    },
+	"Connecting___":  {
+        "message":    "Connecting......"
+    },
+	"TransportError":  {
+        "message":    "TransportError"
+    },
+	"Network_Disconnected":  {
+        "message":    "Network Disconnected"
+    },
+	"Sender_Offline":  {
+        "message":    "Sender Offline"
+    },
+	"Connecting":  {
+        "message":    "Connecting"
+    },
+	"Failed":  {
+        "message":    "Failed"
+    },
+	"Disconnected":  {
+        "message":    "Disconnected"
+    },
+	"Closed":  {
+        "message":    "Closed"
+    },
+    "You_are_casting_to":  {
+        "message":    "You are casting to"
+    },
+    "STOP_CASTING":  {
+        "message":    "STOP CASTING"
+    },
+    "Panel_ID_Error":  {
+        "message":    "Panel ID Error. Please try again."
+    },
+    "Name_is_too_long":  {
+        "message":    "Name is too long. Please try again."
+    },
+    "Please_enter_your_name":  {
+        "message":    "Please enter your name."
+    } 
+}

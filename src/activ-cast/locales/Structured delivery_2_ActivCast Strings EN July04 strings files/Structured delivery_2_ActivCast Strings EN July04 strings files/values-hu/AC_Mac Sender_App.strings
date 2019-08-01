@@ -1,0 +1,48 @@
+/* 
+  Localizable.strings
+  pmcast
+
+  Created by 海涛 on 2019/6/28.
+  Copyright © 2019 cn.com.nd. All rights reserved.
+*/
+
+"ActivCast" = "ActivCast";
+"About ActivCast" = "Az ActivCast névjegye";
+"Preferences…" = "Beállítások...";
+"Services" = "Szolgáltatások";
+"Hide ActivCast" = "ActivCast elrejtése";
+"Hide Others" = "Egyebek elrejtése";
+"Show All" = "Összes megjelenítése";
+"Quit ActivCast" = "ActivCast bezárása";
+"Help" = "Súgó";
+"Guide" = "Útmutató";
+
+"ActivCast 2.0" = "ActivCast 2.0";
+"ActivPanel" = "ActivPanel";
+"Cast screen to ActivPanel" = "Képernyő megosztása az ActivPanellel";
+"Panel ID" = "Panelazonosító";
+"Type in the Panel ID as shown in ActivCast 2.0 on the ActivPanel." = "Adja meg az ActivPanel ActivCast 2.0 alkalmazásában látható panelazonosítót.";
+"Panel ID Error. Please try again." = "Hibás panelazonosító. Próbálja meg újra.";
+"Name is too long. Please try again." = "A név túl hosszú. Próbálja meg újra.";
+"Please enter your name." = "Kérjük, adja meg a nevét.";
+"Control from panel (Touchback)" = "Vezérlés a panelről (Touchback)";
+"Enable touchback so that ActivPanel can navigate your screen." = "Annak érdekében, hogy az ActivPanelről navigálhasson a képernyőn, engedélyezze a touchback funkciót.";
+"ENTER WAITING ROOM" = "BELÉPÉS AZ ELŐSZOBÁBA";
+
+"Settings" = "Beállítások";
+"Picture Quality" = "Képminőség";
+"Best Quality" = "Legjobb minőség";
+"Good Quality" = "Jó minőség";
+"CANCEL" = "MÉGSE";
+"DONE" = "KÉSZ";
+
+"You’re in the waiting room" = "Ön jelenleg az előszobában van";
+"Please wait for permission to cast your screen." = "Várja meg a képernyő megosztására vonatkozó engedélyt.";
+"EXIT WAITING ROOM" = "ELŐSZOBA ELHAGYÁSA";
+"STOP CASTING" = "KÉPERNYŐ MEGOSZTÁSÁNAK LEÁLLÍTÁSA";
+"A is now casting to B" = "A jelenleg képernyőt oszt meg a következővel: B";
+
+"A program tried to load a new system extension signed by B. If you want to enable these extensions, open Security & Privacy System Preferences." = "A program megkísérelt betölteni egy B által aláírt új rendszerbővítményt. A bővítmény engedélyezéséhez nyissa meg a Biztonság és adatvédelem rendszerbeállításokat.";
+
+
+

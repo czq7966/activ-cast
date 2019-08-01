@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin version="1.0" load="1" type="string" language="EN">
+  <String>
+    <String id="IDS_APP_NAME">ActivCast 2.0</String>
+    <String id="IDS_PANEL_ID_INVALID_TIPS">Hibás panelazonosító. Próbálja meg újra.</String>
+    <String id="IDS_NAME_EMPTY_TIPS">Kérjük, adja meg nevét.</String>
+    <String id="IDS_CAST">KÉPERNYŐ MEGOSZTÁSA</String>
+	<String id="IDS_ENTER_WAITING_ROOM">BELÉPÉS AZ ELŐSZOBÁBA</String>
+    <String id="IDS_CANCEL">MÉGSE</String>
+    <String id="IDS_YES">IGEN</String>
+    <String id="IDS_NO">NEM</String>
+	<String id="IDS_STOP_CASTING">KÉPERNYŐ MEGOSZTÁSÁNAK LEÁLLÍTÁSA</String>
+	<String id="IDS_CASTING_TITLE_TIPS">Képernyő megosztása az ActivPanellel</String>
+	<String id="IDS_CASTING_TO_NAME">Képernyő megosztása a következővel: </String>	
+	<String id="IDS_TYPE_IN_PANELID_1">Adja meg</String>
+	<String id="IDS_TYPE_IN_PANELID_2"> a panelazonosítót </String>
+	<String id="IDS_TYPE_IN_PANELID_3">az ActivPanel ActivCast 2.0 alkalmazásában látható formátumban.</String>	
+	<String id="IDS_UESRNAME_EMPTY_TIPS">Az Ön neve</String>
+	<String id="IDS_TOUCHBACK_TITLE_TIPS">Vezérlés a panelről (Touchback)</String>
+	<String id="IDS_TOUCHBACK_ENABLE_TIPS">Annak érdekében, hogy az ActivPanelről navigálhasson a képernyőn, engedélyezze a touchback funkciót.</String>	
+	<String id="IDS_IN_WAITING_ROOM">Ön jelenleg az előszobában van</String>
+	<String id="IDS_WAITING_ROOM_TIPS">Várja meg a képernyő megosztására vonatkozó engedélyt.</String>
+	<String id="IDS_YOU_ARE_CASTING_TIPS"> jelenleg képernyőt oszt meg a következővel: </String>	
+	<String id="IDS_WARNING">FIGYELMEZTETÉS</String>
+	<String id="IDS_RESTART_TIPS">Módosult az alapértelmezett hangkártya. A megfelelő használat érdekében állítsa le a képernyő megosztását, majd indítsa újra a munkamenetet.</String>
+  </String>
+</skin>

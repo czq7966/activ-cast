@@ -1,0 +1,80 @@
+{
+	"manifest_name": {
+		"message": "Activ Cast"
+	},
+	"manifest_description": {
+		"message": "Activ Cast"
+	},
+	"manifest_short_name": {
+		"message": "Activ Cast"
+	},
+	"manifest_default_title": {
+		"message": "Activ Cast"
+	},
+	"Activ_Cast": {
+		"message": "Activ Cast"
+	},
+	"ENTER_PANEL_ID": {
+		"message": "إدخال معرف اللوحة"
+	},
+	"ENTER_YOUR_NAME": {
+		"message": "اكتب اسمك"
+	},
+	"CANCEL": {
+		"message": "إلغاء"
+	},
+	"CAST": {
+		"message": "الإرسال"
+	},
+	"Untitled": {
+		"message": "بدون عنوان"
+	},
+	"Casting": {
+		"message": "يتم الإرسال"
+	},
+	"Waiting_Room": {
+		"message": "في انتظار الغرفة"
+	},
+	"Please_wait_for_permission": {
+		"message": "يرجى انتظار الإذن لإرسال شاشتك."
+	},
+	"Connecting___": {
+		"message": "جارٍ الاتصال......"
+	},
+	"TransportError": {
+		"message": "خطأ في النقل"
+	},
+	"Network_Disconnected": {
+		"message": "تم قطع اتصال الشبكة"
+	},
+	"Sender_Offline": {
+		"message": "المرسل غير متصل"
+	},
+	"Connecting": {
+		"message": "جارٍ الاتصال"
+	},
+	"Failed": {
+		"message": "فشل"
+	},
+	"Disconnected": {
+		"message": "تم قطع الاتصال"
+	},
+	"Closed": {
+		"message": "تم الإغلاق"
+	},
+	"You_are_casting_to": {
+		"message": "أنت ترسل إلى"
+	},
+	"STOP_CASTING": {
+		"message": "إيقاف الإرسال"
+	},
+	"Panel_ID_Error": {
+		"message": "خطأ معرف اللوحة. يُرجى إعادة المحاولة."
+	},
+	"Name_is_too_long": {
+		"message": "Name is too long. Please try again."
+	},
+	"Please_enter_your_name": {
+		"message": "يُرجى كتابة اسمك."
+	}
+}

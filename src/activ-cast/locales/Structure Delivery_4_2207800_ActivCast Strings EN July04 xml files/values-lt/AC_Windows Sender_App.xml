@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin version="1.0" load="1" type="string" language="EN">
+  <String>
+    <String id="IDS_APP_NAME">ActivCast 2.0</String>
+    <String id="IDS_PANEL_ID_INVALID_TIPS">Pulto ID klaida. Bandykite dar kartą.</String>
+    <String id="IDS_NAME_EMPTY_TIPS">Įveskite savo vardą.</String>
+    <String id="IDS_CAST">TRANSLIUOTI</String>
+	<String id="IDS_ENTER_WAITING_ROOM">EITI Į LAUKIMO KAMBARĮ</String>
+    <String id="IDS_CANCEL">ATŠAUKTI</String>
+    <String id="IDS_YES">TAIP</String>
+    <String id="IDS_NO">NE</String>
+	<String id="IDS_STOP_CASTING">BAIGTI TRANSLIACIJĄ</String>
+	<String id="IDS_CASTING_TITLE_TIPS">Transliuoti ekrano vaizdą į „ActivPanel“</String>
+	<String id="IDS_CASTING_TO_NAME">Transliuoti į </String>	
+	<String id="IDS_TYPE_IN_PANELID_1">Įveskite</String>
+	<String id="IDS_TYPE_IN_PANELID_2"> pulto ID, </String>
+	<String id="IDS_TYPE_IN_PANELID_3">kaip parodyta „ActivCast 2.0“ ekrane „ActivPanel“.</String>	
+	<String id="IDS_UESRNAME_EMPTY_TIPS">Jūsų vardas</String>
+	<String id="IDS_TOUCHBACK_TITLE_TIPS">Valdymas platformoje (jutiklinis ekranas)</String>
+	<String id="IDS_TOUCHBACK_ENABLE_TIPS">Aktyvinkite jutiklinį ekraną, kad „ActivPanel“ galėtų pereiti į jūsų ekraną.</String>	
+	<String id="IDS_IN_WAITING_ROOM">Esate laukimo kambaryje</String>
+	<String id="IDS_WAITING_ROOM_TIPS">Palaukite, kol gausite leidimą transliuoti savo ekraną.</String>
+	<String id="IDS_YOU_ARE_CASTING_TIPS"> dabar transliuojama į </String>	
+	<String id="IDS_WARNING">ĮSPĖJIMAS</String>
+	<String id="IDS_RESTART_TIPS">Pakeista numatytoji garso plokštė. Norėdami, kad plokštė būtų naudojama tinkamai, sustabdykite transliaciją ir transliuokite iš naujo.</String>
+  </String>
+</skin>

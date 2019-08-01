@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin version="1.0" load="1" type="string">
+  <String>
+	<String id="IDS_INSTALL_APPNAME">Installeer ActivCast 2.0</String>
+	<String id="IDS_INSTALLING">Installeren...</String>
+	<String id="STR_NEEDSPACE">Resterende ruimte: </String>
+	<String id="STR_FREESPACE">Vereiste ruimte: </String>
+	<String id="STR_DOYOUWANTTOINSTALL">Om ActivCast te installeren, moet de ActivCast-installatie draaien. Wanneer u de installatie van ActivCast annuleert, zal deze niet worden geïnstalleerd. Weet u zeker dat u de installatie van ActivCast wilt annuleren?</String>
+	<String id="STR_DITECTAPPRUNNNIG">Een gelijksoortig programma draait. Klik op \'Ja\' om het programma te sluiten.</String>
+	<String id="IDS_LICENSE_TITLE">Gebruikersovereenkomst</String>
+    <String id="IDS_CANCEL">ANNULEREN</String>
+    <String id="IDS_ACCEPT">ACCEPTEER</String>
+    <String id="IDS_BEGIN_INSTALL">BEGIN INSTALLATIE</String>
+    <String id="IDS_CHOOSE_PATH">Kies een andere locatie</String>
+	<String id="IDS_INSTALL_PATH_TIPS">Hier wordt het geïnstalleerd...</String>
+    <String id="IDS_COMPLETE">GEREED</String>
+	<String id="IDS_INSTALL_TITLE_TIPS">Deel inhoud, ideeën en apps op uw device met een ActivPanel. Nu met touchback-ondersteuning.</String>
+    <String id="IDS_ADD_DESKTOP_SHORTCUT">Voeg een snelkoppeling op het bureaublad toe</String>
+	<String id="IDS_QUICK_LAUNCH">Voeg een icoontje toe in het snelstartmenu.</String>
+    <String id="IDS_FINISH_TITLE">Installatie succesvol afgerond. We zijn er klaar voor!</String>
+    <String id="IDS_ADD_OPTIONS">Extra opties</String>
+	<String id="IDS_ADD_OPTIONS_CONTENT">(U kunt ook dit ook te allen tijde instellen via \'Instellingen\').</String>
+    <String id="IDS_YES">JA</String>
+    <String id="IDS_NO">NEE</String>
+	
+	<String id="IDS_UNINSTALL_APPNAME">De-installeer ActivCast 2.0</String>
+	<String id="IDS_UNINSTALLING">De-installeren...</String>
+    <String id="IDS_CONFIRM_REMOVE_APP">Weet u zeker dat u ActivCast 2.0 wilt verwijderen?</String>
+  </String>
+</skin>

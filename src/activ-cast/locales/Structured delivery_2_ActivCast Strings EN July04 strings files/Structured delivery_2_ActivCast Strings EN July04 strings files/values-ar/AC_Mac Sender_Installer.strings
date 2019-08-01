@@ -1,0 +1,81 @@
+// Title
+
+"Install ActiCast" = "تثبيت ActivCast";
+
+// Step
+
+"Introduction" = "مقدمة";
+
+"Read Me" = "الملف التمهيدي";
+
+"License" = "الترخيص";
+
+"Destination Select" = "تحديد الوجهة";
+
+"Installation Type" = "نوع التثبيت";
+
+"Installation" = "التثبيت";
+
+"Installer Plugin" = "المكون الإضافي لبرنامج التثبيت";
+
+"Summary" = "الملخص";
+
+// Buttons
+
+"Print..." = "طباعة...";
+
+"Save..." = "حفظ...";
+
+"Go Back" = "رجوع للخلف";
+
+"Continue" = "متابعة";
+
+"Close" = "غلق";
+
+"Log Out" = "تسجيل الخروج";
+
+"Restart" = "إعادة التشغيل";
+
+"Shut Down" = "إيقاف التشغيل";
+
+// Introduction
+
+"Welcome to the ActivCast Installer" = "مرحبًا في برنامج تثبيت ActivCast";
+
+"You will be guided through the steps necessary to install this software." = "سيتم توجيهك بخصوص الخطوات اللازمة لتثبيت هذا البرنامج.";
+
+// Read Me
+
+"Important Information" = "معلومات هامة";
+
+// License
+
+"Software License Agreement" = "اتفاقية ترخيص البرنامج";
+
+"English" = "العربية";
+
+// Installation Type
+
+"Package Name" = "اسم الحزمة";
+
+"Package Action" = "الإجراء";
+
+"Package Size" = "الحجم";
+
+"Space Required:" = "المساحة المطلوبة:";
+
+"Remaining:" = "المتبقية:";
+
+"Standard Install" = "التثبيت القياسي";
+
+"StandardTitle" = "التثبيت القياسي على "%@"";
+
+"Customize" = "تخصيص";
+
+// Summary
+
+"The installation was completed successfully" = "اكتمل التثبيت بنجاح.";
+
+"Successful installation" = "تم التثبيت بنجاح";
+
+"ActivCast uses sound driver from “MATT INGALLS”. During installation, your system might block it from loading. To enable it, open Security & Privacy System Preferences and click "Allow" to grant permission." = "يستخدم ActivCast برنامج تشغيل الصوت من "MATT INGALLS". وخلال التثبيت، قد يقوم نظامك بحظر تحميله. ولتمكينه، افتح تفضيلات نظام الأمان الخصوصية وانقر فوق "السماح" لمنح الإذن.";

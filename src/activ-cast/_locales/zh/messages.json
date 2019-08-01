@@ -1,0 +1,80 @@
+{
+	"manifest_name": {
+		"message": "Activ Cast"
+	},
+	"manifest_description": {
+		"message": "Activ Cast"
+	},
+	"manifest_short_name": {
+		"message": "Activ Cast"
+	},
+	"manifest_default_title": {
+		"message": "Activ Cast"
+	},
+	"Activ_Cast": {
+		"message": "Activ Cast"
+	},
+	"ENTER_PANEL_ID": {
+		"message": "输入面板 ID"
+	},
+	"ENTER_YOUR_NAME": {
+		"message": "输入您的姓名"
+	},
+	"CANCEL": {
+		"message": "取消"
+	},
+	"CAST": {
+		"message": "投射"
+	},
+	"Untitled": {
+		"message": "无标题"
+	},
+	"Casting": {
+		"message": "投射"
+	},
+	"Waiting_Room": {
+		"message": "等候室"
+	},
+	"Please_wait_for_permission": {
+		"message": "在投射您的屏幕前，请等待授权。"
+	},
+	"Connecting___": {
+		"message": "正在连接..."
+	},
+	"TransportError": {
+		"message": "传输出错"
+	},
+	"Network_Disconnected": {
+		"message": "网络已断开"
+	},
+	"Sender_Offline": {
+		"message": "Sender 离线"
+	},
+	"Connecting": {
+		"message": "正在连接"
+	},
+	"Failed": {
+		"message": "失败"
+	},
+	"Disconnected": {
+		"message": "已断开"
+	},
+	"Closed": {
+		"message": "已关闭"
+	},
+	"You_are_casting_to": {
+		"message": "您正在投射到"
+	},
+	"STOP_CASTING": {
+		"message": "停止投射"
+	},
+	"Panel_ID_Error": {
+		"message": "面板 ID 错误。请重试。"
+	},
+	"Name_is_too_long": {
+		"message": "Name is too long. Please try again."
+	},
+	"Please_enter_your_name": {
+		"message": "请输入您的姓名。"
+	}
+}

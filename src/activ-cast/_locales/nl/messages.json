@@ -1,0 +1,80 @@
+{
+	"manifest_name": {
+		"message": "Activ Cast"
+	},
+	"manifest_description": {
+		"message": "Activ Cast"
+	},
+	"manifest_short_name": {
+		"message": "Activ Cast"
+	},
+	"manifest_default_title": {
+		"message": "Activ Cast"
+	},
+	"Activ_Cast": {
+		"message": "Activ Cast"
+	},
+	"ENTER_PANEL_ID": {
+		"message": "VOER PANEEL-ID IN"
+	},
+	"ENTER_YOUR_NAME": {
+		"message": "VOER UW NAAM IN"
+	},
+	"CANCEL": {
+		"message": "ANNULEREN"
+	},
+	"CAST": {
+		"message": "CAST"
+	},
+	"Untitled": {
+		"message": "Naamloos"
+	},
+	"Casting": {
+		"message": "Casten"
+	},
+	"Waiting_Room": {
+		"message": "Wachtrij"
+	},
+	"Please_wait_for_permission": {
+		"message": "Wacht op goedkeuring om uw scherm te casten."
+	},
+	"Connecting___": {
+		"message": "Verbinden..."
+	},
+	"TransportError": {
+		"message": "TransportError"
+	},
+	"Network_Disconnected": {
+		"message": "Niet verbonden met netwerk"
+	},
+	"Sender_Offline": {
+		"message": "Verzender offline"
+	},
+	"Connecting": {
+		"message": "Verbinden"
+	},
+	"Failed": {
+		"message": "Mislukt"
+	},
+	"Disconnected": {
+		"message": "Verbinding verbroken"
+	},
+	"Closed": {
+		"message": "Sluiten"
+	},
+	"You_are_casting_to": {
+		"message": "U cast naar"
+	},
+	"STOP_CASTING": {
+		"message": "STOP MET CASTEN"
+	},
+	"Panel_ID_Error": {
+		"message": "Paneel ID fout. Probeer het opnieuw."
+	},
+	"Name_is_too_long": {
+		"message": "Name is too long. Please try again."
+	},
+	"Please_enter_your_name": {
+		"message": "Voer uw naam in."
+	}
+}

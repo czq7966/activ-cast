@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ActivCast 2.0</string>
+    <string name="enter_panel_name">Ievadiet paneļa nosaukumu</string>
+    <string name="panel_id_label">Paneļa ID</string>
+    <string name="refresh_panel_id_prompt">Vai tiešām vēlaties atsvaidzināt paneļa ID? Visas pievienotās ierīces tiks atvienotas.</string>
+    <string name="refresh">ATSVAIDZINĀT</string>
+    <string name="cancel">ATCELT</string>
+    <string name="close_cast_prompt_content">Vai tiešām vēlaties aizvērt ActivCast? Tiks beigtas visas pārraides sesijas.</string>
+    <string name="close">AIZVĒRT</string>
+    <string name="waiting_room">Uzgaidāmā telpa:</string>
+    <string name="device_unit">Ierīce(-s)</string>
+    <string name="sort_by">Kārtot pēc:</string>
+    <string name="position">Pozīcija</string>
+    <string name="alphabetical">Alfabētiski</string>
+    <string name="cast">PĀRRAIDĪT</string>
+    <string name="select_client_count_tip">Atlasīti: %d</string>
+    <string name="select_client_count_max_tip">Atlasīti (maks.): %d</string>
+    <string name="stop_connect_prompt">Vai tiešām vēlaties beigt pārraidi lietotājam %1$s?</string>
+    <string name="end_cast">BEIGT PĀRRAIDI</string>
+    <string name="casting_disconnect_prompt">Lietotājs %1$s vairs nepārraida</string>
+    <string name="casting_settings">Pārraides iestatījumi</string>
+    <string name="picture_quality">Attēla kvalitāte</string>
+    <string name="best_quality">Labākā kvalitāte</string>
+    <string name="good_quality">Laba kvalitāte</string>
+    <string name="done">GATAVS</string>
+    <string name="apply_overlay_permission">Lūdzu, atļaujiet OVERLAY_PERMISSION izmantot</string>
+    <string name="allow_permission">piešķiriet atļauju</string>
+    <string name="casting_disconnected">Pārraides savienojums ir pārtraukts!</string>
+    <string name="ok">Labi</string>
+</resources>

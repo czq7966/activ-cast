@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ActivCast 2.0</string>
+    <string name="enter_panel_name">Angiv skærmnavn</string>
+    <string name="panel_id_label">Skærm-id</string>
+    <string name="refresh_panel_id_prompt">Er du sikker på, at du vil opdatere skærm-id\'et? Forbindelsen til alle de forbundne enheder afbrydes.</string>
+    <string name="refresh">OPDATER</string>
+    <string name="cancel">ANNULLER</string>
+    <string name="close_cast_prompt_content">Er du sikker på, at du vil lukke Activcast? Alle udsendelser afsluttes.</string>
+    <string name="close">LUK</string>
+    <string name="waiting_room">Lobby:</string>
+    <string name="device_unit">Enhed(er)</string>
+    <string name="sort_by">Sortér efter:</string>
+    <string name="position">Placering</string>
+    <string name="alphabetical">Alfabetisk</string>
+    <string name="cast">UDSEND</string>
+    <string name="select_client_count_tip">%d valgt</string>
+    <string name="select_client_count_max_tip">%d valgt (maks.)</string>
+    <string name="stop_connect_prompt">Er du sikker på, at du vil afslutte udsendelsen for %1$s?</string>
+    <string name="end_cast">AFSLUT UDSENDELSE</string>
+    <string name="casting_disconnect_prompt">%1$s udsender ikke længere</string>
+    <string name="casting_settings">Indstillinger for udsendelse</string>
+    <string name="picture_quality">Billedkvalitet</string>
+    <string name="best_quality">Bedste kvalitet</string>
+    <string name="good_quality">God kvalitet</string>
+    <string name="done">UDFØRT</string>
+    <string name="apply_overlay_permission">Tillad, at OVERLAY_PERMISSION bruger</string>
+    <string name="allow_permission">tillad tilladelse</string>
+    <string name="casting_disconnected">Forbindelsen til udsendelsen blev afbrudt.</string>
+    <string name="ok">OK</string>
+</resources>

@@ -1,0 +1,48 @@
+/* 
+  Localizable.strings
+  pmcast
+
+  Created by 海涛 on 2019/6/28.
+  Copyright © 2019 cn.com.nd. All rights reserved.
+*/
+
+"ActivCast" = "ActivCast";
+"About ActivCast" = "O aplikaci ActivCast";
+"Preferences…" = "Předvolby…";
+"Services" = "Služby";
+"Hide ActivCast" = "Skrýt ActivCast";
+"Hide Others" = "Skrýt ostatní";
+"Show All" = "Zobrazit vše";
+"Quit ActivCast" = "Ukončit ActivCast";
+"Help" = "Nápověda";
+"Guide" = "Příručka";
+
+"ActivCast 2.0" = "ActivCast 2.0";
+"ActivPanel" = "ActivPanel";
+"Cast screen to ActivPanel" = "Vysílat obrazovku na panel ActivPanel";
+"Panel ID" = "ID panelu";
+"Type in the Panel ID as shown in ActivCast 2.0 on the ActivPanel." = "Zadejte ID panelu zobrazené v aplikaci ActivCast 2.0 na panelu ActivPanel.";
+"Panel ID Error. Please try again." = "Chyba ID panelu. Zkuste to znovu.";
+"Name is too long. Please try again." = "Název je příliš dlouhý. Zkuste to znovu.";
+"Please enter your name." = "Zadejte své jméno.";
+"Control from panel (Touchback)" = "Ovládání z panelu (funkce Touchback)";
+"Enable touchback so that ActivPanel can navigate your screen." = "Chcete-li se na obrazovce pohybovat pomocí panelu ActivPanel, povolte funkci Touchback.";
+"ENTER WAITING ROOM" = "VSTOUPIT DO ČEKÁRNY";
+
+"Settings" = "Nastavení";
+"Picture Quality" = "Kvalita obrazu";
+"Best Quality" = "Nejlepší kvalita";
+"Good Quality" = "Dobrá kvalita";
+"CANCEL" = "ZRUŠIT";
+"DONE" = "HOTOVO";
+
+"You’re in the waiting room" = "Jste v čekárně.";
+"Please wait for permission to cast your screen." = "Vyčkejte prosím na oprávnění vysílat obrazovku.";
+"EXIT WAITING ROOM" = "ODEJÍT Z ČEKÁRNY";
+"STOP CASTING" = "UKONČIT VYSÍLÁNÍ";
+"A is now casting to B" = "A nyní vysílá na B";
+
+"A program tried to load a new system extension signed by B. If you want to enable these extensions, open Security & Privacy System Preferences." = "Program se pokoušel načíst nové rozšíření systému podepsané zařízením B. Pokud chcete tato rozšíření povolit, otevřete nabídku Systémové předvolby zabezpečení a soukromí.";
+
+
+

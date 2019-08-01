@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin version="1.0" load="1" type="string" language="EN">
+  <String>
+    <String id="IDS_APP_NAME">ActivCast 2.0</String>
+    <String id="IDS_PANEL_ID_INVALID_TIPS">Paneļa ID kļūda. Lūdzu, mēģiniet vēlreiz.</String>
+    <String id="IDS_NAME_EMPTY_TIPS">Lūdzu, ievadiet savu vārdu.</String>
+    <String id="IDS_CAST">PĀRRAIDĪT</String>
+	<String id="IDS_ENTER_WAITING_ROOM">IEIET UZGAIDĀMĀ TELPĀ</String>
+    <String id="IDS_CANCEL">ATCELT</String>
+    <String id="IDS_YES">JĀ</String>
+    <String id="IDS_NO">NĒ</String>
+	<String id="IDS_STOP_CASTING">APTURĒT PĀRRAIDI</String>
+	<String id="IDS_CASTING_TITLE_TIPS">Ekrāna pārraide uz ActivPanel</String>
+	<String id="IDS_CASTING_TO_NAME">Pārraidīt uz </String>	
+	<String id="IDS_TYPE_IN_PANELID_1">Ierakstiet</String>
+	<String id="IDS_TYPE_IN_PANELID_2"> paneļa ID, </String>
+	<String id="IDS_TYPE_IN_PANELID_3">kā tas norādīts platformas ActivPanel lietotnē ActivCast.</String>	
+	<String id="IDS_UESRNAME_EMPTY_TIPS">Jūsu lietotājvārds</String>
+	<String id="IDS_TOUCHBACK_TITLE_TIPS">Vadība no paneļa (atgriezeniskā saite)</String>
+	<String id="IDS_TOUCHBACK_ENABLE_TIPS">Iespējojiet atgriezenisko saiti, lai platforma ActivPanel var izmantot jūsu ekrānu.</String>	
+	<String id="IDS_IN_WAITING_ROOM">Jūs esat uzgaidāmajā telpā</String>
+	<String id="IDS_WAITING_ROOM_TIPS">Lūdzu, sagaidiet atļauju pārraidīt jūsu ekrānu.</String>
+	<String id="IDS_YOU_ARE_CASTING_TIPS"> tagad pārraida uz </String>	
+	<String id="IDS_WARNING">BRĪDINĀJUMS!</String>
+	<String id="IDS_RESTART_TIPS">Ir mainīta noklusējuma skaņas karte. Lai to izmantotu pareizi, lūdzu, apturiet pārraidi un sāciet to no jauna.</String>
+  </String>
+</skin>

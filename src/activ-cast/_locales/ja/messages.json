@@ -1,0 +1,80 @@
+{
+	"manifest_name": {
+		"message": "Activ Cast"
+	},
+	"manifest_description": {
+		"message": "Activ Cast"
+	},
+	"manifest_short_name": {
+		"message": "Activ Cast"
+	},
+	"manifest_default_title": {
+		"message": "Activ Cast"
+	},
+	"Activ_Cast": {
+		"message": "Activ Cast"
+	},
+	"ENTER_PANEL_ID": {
+		"message": "パネル ID を入力"
+	},
+	"ENTER_YOUR_NAME": {
+		"message": "名前を入力"
+	},
+	"CANCEL": {
+		"message": "キャンセル"
+	},
+	"CAST": {
+		"message": "キャスト"
+	},
+	"Untitled": {
+		"message": "無題"
+	},
+	"Casting": {
+		"message": "キャスト中"
+	},
+	"Waiting_Room": {
+		"message": "待合室"
+	},
+	"Please_wait_for_permission": {
+		"message": "画像のキャスト許可をお待ちください。"
+	},
+	"Connecting___": {
+		"message": "接続中......"
+	},
+	"TransportError": {
+		"message": "転送エラー"
+	},
+	"Network_Disconnected": {
+		"message": "ネットワークが切断"
+	},
+	"Sender_Offline": {
+		"message": "送信者がオフライン"
+	},
+	"Connecting": {
+		"message": "接続中"
+	},
+	"Failed": {
+		"message": "失敗しました"
+	},
+	"Disconnected": {
+		"message": "切断しました"
+	},
+	"Closed": {
+		"message": "終了しました"
+	},
+	"You_are_casting_to": {
+		"message": "実行中のキャスト先"
+	},
+	"STOP_CASTING": {
+		"message": "キャストを停止"
+	},
+	"Panel_ID_Error": {
+		"message": "パネル ID エラーです。後で再度お試しください。"
+	},
+	"Name_is_too_long": {
+		"message": "Name is too long. Please try again."
+	},
+	"Please_enter_your_name": {
+		"message": "名前をご入力ください。"
+	}
+}

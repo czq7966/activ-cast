@@ -1,0 +1,81 @@
+// Title
+
+"Install ActiCast" = "ActivCast'i Yükle";
+
+// Step
+
+"Introduction" = "Giriş";
+
+"Read Me" = "Beni Oku";
+
+"License" = "Lisans";
+
+"Destination Select" = "Hedef Seç";
+
+"Installation Type" = "Yükleme Türü";
+
+"Installation" = "Yükleme";
+
+"Installer Plugin" = "Yükleyici Eklentisi";
+
+"Summary" = "Özet";
+
+// Buttons
+
+"Print..." = "Yazdır...";
+
+"Save..." = "Kaydet...";
+
+"Go Back" = "Geri Dön";
+
+"Continue" = "Devam Et";
+
+"Close" = "Kapat";
+
+"Log Out" = "Oturumu Kapat";
+
+"Restart" = "Yeniden Başlat";
+
+"Shut Down" = "Kapat";
+
+// Introduction
+
+"Welcome to the ActivCast Installer" = "ActivCast Yükleyici'ye hoş geldiniz";
+
+"You will be guided through the steps necessary to install this software." = "Bu yazılımı yüklemek için gereken adımlar boyunca yönlendirileceksiniz.";
+
+// Read Me
+
+"Important Information" = "Önemli Bilgiler";
+
+// License
+
+"Software License Agreement" = "Yazılım Lisans Sözleşmesi";
+
+"English" = "Türkçe";
+
+// Installation Type
+
+"Package Name" = "Paket Adı";
+
+"Package Action" = "Eylem";
+
+"Package Size" = "Boyut";
+
+"Space Required:" = "Gerekli Alan:";
+
+"Remaining:" = "Kalan:";
+
+"Standard Install" = "Standart Yükleme ";
+
+"StandardTitle" = "Şurada Standart Yükleme: “%@”";
+
+"Customize" = "Özelleştir";
+
+// Summary
+
+"The installation was completed successfully" = "Yükleme başarıyla tamamlandı";
+
+"Successful installation" = "Yükleme başarılı";
+
+"ActivCast uses sound driver from “MATT INGALLS”. During installation, your system might block it from loading. To enable it, open Security & Privacy System Preferences and click "Allow" to grant permission." = "ActivCast'te “MATT INGALLS” ses sürücüsü kullanılır. Yükleme sırasında sisteminiz yüklemeyi engelleyebilir. Etkinleştirmek için Güvenlik ve Gizlilik Sistem Tercihlerini açın ve izin vermek için "İzin Ver"e tıklayın.";

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ActivCast 2.0</string>
+    <string name="enter_panel_name">Anna paneelin nimi</string>
+    <string name="panel_id_label">Paneelin tunnus</string>
+    <string name="refresh_panel_id_prompt">Haluatko varmasti päivittää paneelin tunnuksen? Kaikkien yhdistettyjen laitteiden yhteys katkaistaan.</string>
+    <string name="refresh">PÄIVITÄ</string>
+    <string name="cancel">PERUUTA</string>
+    <string name="close_cast_prompt_content">Haluatko varmasti sulkea ActivCastin? Kaikki lähetykset lopetetaan.</string>
+    <string name="close">SULJE</string>
+    <string name="waiting_room">Odotushuone:</string>
+    <string name="device_unit">Laitteet</string>
+    <string name="sort_by">Lajitteluperuste:</string>
+    <string name="position">Paikka</string>
+    <string name="alphabetical">Aakkosjärjestys</string>
+    <string name="cast">LÄHETÄ</string>
+    <string name="select_client_count_tip">%d valittu</string>
+    <string name="select_client_count_max_tip">%d Selected(Max)</string>
+    <string name="stop_connect_prompt">Haluatko lopettaa lähettämisen: %1$s?</string>
+    <string name="end_cast">LOPETA LÄHETYS</string>
+    <string name="casting_disconnect_prompt">%1$s lopetti lähettämisen</string>
+    <string name="casting_settings">Lähetysasetukset</string>
+    <string name="picture_quality">Kuvan laatu</string>
+    <string name="best_quality">Paras laatu</string>
+    <string name="good_quality">Hyvä laatu</string>
+    <string name="done">VALMIS</string>
+    <string name="apply_overlay_permission">Salli käyttö: OVERLAY_PERMISSION</string>
+    <string name="allow_permission">salli käyttö</string>
+    <string name="casting_disconnected">Lähetys on katkaistu!</string>
+    <string name="ok">OK</string>
+</resources>

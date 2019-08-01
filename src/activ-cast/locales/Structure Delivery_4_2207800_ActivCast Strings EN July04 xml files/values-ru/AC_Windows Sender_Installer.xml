@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin version="1.0" load="1" type="string">
+  <String>
+	<String id="IDS_INSTALL_APPNAME">Установить ActivCast 2.0</String>
+	<String id="IDS_INSTALLING">Установка…</String>
+	<String id="STR_NEEDSPACE">Свободное место: </String>
+	<String id="STR_FREESPACE">Необходимое место: </String>
+	<String id="STR_DOYOUWANTTOINSTALL">Для установки Activcast следует запустить установку Activcast. Если вы отмените установку, Activcast не будет установлено. Вы уверены, что хотите отменить установку Activcast?</String>
+	<String id="STR_DITECTAPPRUNNNIG">Соответствующая программа запущена. Пожалуйста, сначала нажмите «Да», чтобы закрыть программу.</String>
+	<String id="IDS_LICENSE_TITLE">Лицензионное соглашение с конечным пользователем</String>
+    <String id="IDS_CANCEL">ОТМЕНА</String>
+    <String id="IDS_ACCEPT">ПРИНЯТЬ</String>
+    <String id="IDS_BEGIN_INSTALL">НАЧАТЬ УСТАНОВКУ</String>
+    <String id="IDS_CHOOSE_PATH">Выберите другое место</String>
+	<String id="IDS_INSTALL_PATH_TIPS">Мы установим это здесь ...</String>
+    <String id="IDS_COMPLETE">ГОТОВО</String>
+	<String id="IDS_INSTALL_TITLE_TIPS">Зеркальное отображение содержания, идей и приложений с вашего устройства на ActivPanel. Теперь с поддержкой обратной связи.</String>
+    <String id="IDS_ADD_DESKTOP_SHORTCUT">Добавить ярлык на рабочий стол</String>
+	<String id="IDS_QUICK_LAUNCH">Добавить значок быстрого запуска в меню «Пуск»</String>
+    <String id="IDS_FINISH_TITLE">Установка успешно завершена. Установка полностью завершена!</String>
+    <String id="IDS_ADD_OPTIONS">Дополнительные опции</String>
+	<String id="IDS_ADD_OPTIONS_CONTENT">(Вы также можете изменить их в любое время в разделе «Настройки»).</String>
+    <String id="IDS_YES">ДА</String>
+    <String id="IDS_NO">НЕТ</String>
+	
+	<String id="IDS_UNINSTALL_APPNAME">Удалить ActivCast 2.0</String>
+	<String id="IDS_UNINSTALLING">Удаление...</String>
+    <String id="IDS_CONFIRM_REMOVE_APP">Вы уверены, что хотите удалить Activcast 2.0?</String>
+  </String>
+</skin>

@@ -1,0 +1,80 @@
+{
+	"manifest_name": {
+		"message": "ActivCast"
+	},
+	"manifest_description": {
+		"message": "ActivCast"
+	},
+	"manifest_short_name": {
+		"message": "ActivCast"
+	},
+	"manifest_default_title": {
+		"message": "ActivCast"
+	},
+	"Activ_Cast": {
+		"message": "ActivCast"
+	},
+	"ENTER_PANEL_ID": {
+		"message": "WPROWADŹ IDENTYFIKATOR PANELU"
+	},
+	"ENTER_YOUR_NAME": {
+		"message": "WPROWADŹ IMIĘ I NAZWISKO"
+	},
+	"CANCEL": {
+		"message": "ANULUJ"
+	},
+	"CAST": {
+		"message": "PRZESYŁAJ"
+	},
+	"Untitled": {
+		"message": "Bez nazwy"
+	},
+	"Casting": {
+		"message": "Przesyłanie"
+	},
+	"Waiting_Room": {
+		"message": "Poczekalnia"
+	},
+	"Please_wait_for_permission": {
+		"message": "Poczekaj na pozwolenie na przesyłanie swojego ekranu."
+	},
+	"Connecting___": {
+		"message": "Trwa łączenie..."
+	},
+	"TransportError": {
+		"message": "Błąd transportu"
+	},
+	"Network_Disconnected": {
+		"message": "Sieć rozłączona"
+	},
+	"Sender_Offline": {
+		"message": "Nadawca offline"
+	},
+	"Connecting": {
+		"message": "Łączenie"
+	},
+	"Failed": {
+		"message": "Niepowodzenie"
+	},
+	"Disconnected": {
+		"message": "Rozłączono"
+	},
+	"Closed": {
+		"message": "Zamknięto"
+	},
+	"You_are_casting_to": {
+		"message": "Przesyłasz do"
+	},
+	"STOP_CASTING": {
+		"message": "ZATRZYMAJ PRZESYŁANIE"
+	},
+	"Panel_ID_Error": {
+		"message": "Błąd identyfikatora panelu. Spróbuj ponownie."
+	},
+	"Name_is_too_long": {
+		"message": "Name is too long. Please try again."
+	},
+	"Please_enter_your_name": {
+		"message": "Wprowadź imię i nazwisko."
+	}
+}

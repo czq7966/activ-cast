@@ -1,0 +1,80 @@
+{
+	"manifest_name": {
+		"message": "Activ Cast"
+	},
+	"manifest_description": {
+		"message": "Activ Cast"
+	},
+	"manifest_short_name": {
+		"message": "Activ Cast"
+	},
+	"manifest_default_title": {
+		"message": "Activ Cast"
+	},
+	"Activ_Cast": {
+		"message": "Activ Cast"
+	},
+	"ENTER_PANEL_ID": {
+		"message": "NHẬP ID BẢNG ĐIỀU KHIỂN"
+	},
+	"ENTER_YOUR_NAME": {
+		"message": "NHẬP TÊN CỦA BẠN"
+	},
+	"CANCEL": {
+		"message": "HỦY"
+	},
+	"CAST": {
+		"message": "TRUYỀN"
+	},
+	"Untitled": {
+		"message": "Không có tiêu đề"
+	},
+	"Casting": {
+		"message": "Đang truyền"
+	},
+	"Waiting_Room": {
+		"message": "Phòng chờ"
+	},
+	"Please_wait_for_permission": {
+		"message": "Vui lòng chờ được cấp phép để truyền màn hình của bạn."
+	},
+	"Connecting___": {
+		"message": "Đang kết nối......"
+	},
+	"TransportError": {
+		"message": "TransportError"
+	},
+	"Network_Disconnected": {
+		"message": "Mạng đã bị ngắt kết nối"
+	},
+	"Sender_Offline": {
+		"message": "Người gửi ngoại tuyến"
+	},
+	"Connecting": {
+		"message": "Đang kết nối"
+	},
+	"Failed": {
+		"message": "Đã thất bại"
+	},
+	"Disconnected": {
+		"message": "Đã ngắt kết nối"
+	},
+	"Closed": {
+		"message": "Đã đóng"
+	},
+	"You_are_casting_to": {
+		"message": "Bạn đang truyền tới"
+	},
+	"STOP_CASTING": {
+		"message": "DỪNG TRUYỀN"
+	},
+	"Panel_ID_Error": {
+		"message": "Lỗi ID bảng điều khiển. Vui lòng thử lại."
+	},
+	"Name_is_too_long": {
+		"message": "Name is too long. Please try again."
+	},
+	"Please_enter_your_name": {
+		"message": "Vui lòng nhập tên của bạn."
+	}
+}

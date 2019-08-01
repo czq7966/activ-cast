@@ -1,0 +1,23 @@
+{
+	"Activ Cast Sender": "Nadawca ActivCast",
+	"Activ Cast 2.0": "ActivCast 2.0",
+	"Activ Cast": "ActivCast",
+	"ENTER PANEL ID": "WPROWADŹ IDENTYFIKATOR PANELU",
+	"ENTER YOUR NAME": "WPROWADŹ IMIĘ I NAZWISKO",
+	"CANCEL": "ANULUJ",
+	"CAST": "PRZESYŁAJ",
+	"Untitled": "Bez nazwy",
+	"Casting": "Przesyłanie",
+	"Waiting Room": "Poczekalnia",
+	"Please wait for permission to cast your screen.": "Poczekaj na pozwolenie na przesyłanie swojego ekranu.",
+	"Connecting......": "Trwa łączenie...",
+	"TransportError": "Błąd transportu",
+	"Network Disconnected": "Sieć rozłączona",
+	"Sender Offline": "Nadawca offline",
+	"Connecting": "Łączenie",
+	"Failed": "Niepowodzenie",
+	"Disconnected": "Rozłączono",
+	"Closed": "Zamknięto",
+	"You are casting to": "Przesyłasz do",
+	"STOP CASTING": "ZATRZYMAJ PRZESYŁANIE"
+}

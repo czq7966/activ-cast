@@ -1,0 +1,364 @@
+html, body {
+    padding: 0;
+    margin: 0;    
+}
+
+hr {
+  border: 10;
+  border-top: solid lightgray 1px;
+  background-color: aqua;
+  margin: 0;
+  padding: 0;  
+}
+
+/* index's css */
+
+body.index {
+  background: url("../../images/container.svg");
+  background-color: rgba(0, 0, 0, 1) ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:100% 100%  
+}
+
+
+.fontStyle {
+  font-family: 'Avenir Next';
+  color:white;
+  font-size: 14px;  
+}
+
+.container {
+  width: 424px;
+  height: 393px;
+}
+
+.header {
+  position: absolute;
+  top: 20px;
+  left: 52px;
+  font-size: 28px;  
+  font-weight: bold;  
+}
+
+.login_label {  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.msg_label {  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.msg_label span{    
+  text-align: center;
+  font-size: 28px;  
+  font-weight: bold;    
+}
+
+.msg_normal_label {  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 266px;
+  margin: 0 auto;
+}
+
+.msg_normal_label span{    
+  text-align: center;
+  font-size: 20px;  
+  font-weight: normal
+}
+
+.msg_casting_label {  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 266px;
+  margin: 0 auto;
+}
+
+.msg_casting_label span{    
+  text-align: center;
+  font-size: 20px;  
+  font-weight: normal
+}
+
+.msg_casting_name {
+  font-size: 20px;  
+  font-weight: bold;
+  margin: 0 auto
+}
+
+.id_label {
+  position: absolute;
+  top: 101px;
+  left: 61px;
+}
+
+.id_text_field {
+  position: absolute;
+  top: 129px;
+  left: 61px;
+}
+
+.id_label_error {
+  position: absolute;
+  top: 172px;
+  left: 61px;
+  color: red;
+}
+
+.id_text_field input{
+  font-family: 'Avenir Next';
+  color:white;
+  height: 30px;
+  width: 210px;
+  background-color: rgb(60, 60, 60);
+  outline-style: none;
+  border: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 20px;
+}
+
+.name_label {
+  position: absolute;
+  top: 210px;
+  left: 61px;
+}
+
+.name_text_field {
+  position: absolute;
+  top: 237px;
+  left: 61px;
+}
+
+.name_label_error {
+  position: absolute;
+  top: 280px;
+  left: 61px;
+  color: red;
+}
+
+.name_text_field input{
+  font-family: 'Avenir Next';
+  color:white;
+  height: 30px;
+  width: 280px;
+  background-color: rgb(60, 60, 60);
+  outline-style: none;
+  border: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;  
+  font-size: 24px;
+}
+
+.fontStyle_button {
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px -1px 1px gray;
+}
+
+/* Cast Button  */
+.cast_btn {
+  margin-right: 20px;
+}
+.cast_btn button {
+  width: 86px;
+  height: 40px;
+  background: url("../../images/resting_cast_btn.svg");
+  border-style: none;
+  background-repeat: no-repeat;
+}
+.cast_btn button:hover {
+  background: url("../../images/hover_cast_btn.svg");
+}
+.cast_btn button:active {
+  background: url("../../images/down_cast_btn.svg");
+}
+
+/* Cancel Button */
+.cancel_btn {
+  margin-right: 20px;
+}
+.cancel_btn button {
+  width: 106px;
+  height: 40px;
+  background: url("../../images/resting_cancel_btn.svg");
+  border-style: none;
+  background-repeat: no-repeat;
+}
+.cancel_btn button:hover {
+  background: url("../../images/hover_cancel_btn.svg");
+}
+.cancel_btn button:active {
+  background: url("../../images/down_cancel_btn.svg");
+}
+
+/* Stop Button */
+.stop_btn {
+  margin-right: 20px;
+}
+.stop_btn button {
+  width: 149px;
+  height: 40px;
+  background: url("../../images/resting_stop_casting_btn.svg");
+  border-style: none;
+  background-repeat: no-repeat;
+}
+.stop_btn button:hover {
+  background: url("../../images/hover_stop_casting_btn.svg");
+}
+.stop_btn button:active {
+  background: url("../../images/down_stop_casting_btn.svg");
+}
+
+/* Footer Div */
+.footer {
+  position: absolute;
+  top: 328px;
+  width: 100%;
+
+  flex-grow: 1;
+  display: flex;
+  /* align-items: flex-end; */
+  justify-content: flex-end;
+}
+
+#options {
+  text-align: right;
+  font-size: 15px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
+#div-start-sharing {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 7px;
+}
+
+
+#start-sharing {
+  text-align: center;
+  text-decoration: none;
+  outline: none;  
+  /* margin: 0px; */
+  /* padding: 5px; */
+  cursor: pointer;
+  font-size: 20px;
+  
+}
+
+/* #start-sharing:hover {
+  background: rgba(234,234,234,1);
+  text-decoration: none;
+}  */
+
+
+#div-stop-sharing {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 7px;
+}
+#div-stop-sharing button {
+  width: 80px;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#index-div-operation {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 7px;
+  font-size: 15px;
+}
+#index-div-operation div {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+}
+#index-div-operation button {
+  width: 80px;
+  font-size: 15px;
+}
+
+/* options's css */
+
+body.options {
+  width: 360px;  
+}
+
+.item {
+  display: flex;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px;
+}
+.itemLabel {
+  display: flex;
+  align-items: center;
+  /* justify-content: flex-end; */
+  /* background: aqua; */
+  width: 120px;
+}
+.halfInput {
+  width: 79px;
+  text-align: center
+}
+
+#options-div-roomid {
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: space-evenly; */
+
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px;
+}
+#options-div-roomid div {
+  width: 120px;
+}
+#options-div-signaler {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px;
+}
+#option-input-signaler {
+  width: 100%;
+}
+#options-div-codec{
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px;
+  /* background: aqua */
+}
+#options-div-operation {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 7px;
+}
+#options-div-operation button {
+  width: 80px;
+}

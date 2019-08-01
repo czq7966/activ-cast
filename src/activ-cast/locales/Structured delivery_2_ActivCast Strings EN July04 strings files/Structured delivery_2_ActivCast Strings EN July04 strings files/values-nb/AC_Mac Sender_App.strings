@@ -1,0 +1,48 @@
+/* 
+  Localizable.strings
+  pmcast
+
+  Created by 海涛 on 2019/6/28.
+  Copyright © 2019 cn.com.nd. All rights reserved.
+*/
+
+"ActivCast" = "ActivCast";
+"About ActivCast" = "Om ActivCast";
+"Preferences…" = "Innstillinger …";
+"Services" = "Tjenester";
+"Hide ActivCast" = "Skjul ActivCast";
+"Hide Others" = "Skjul andre";
+"Show All" = "Vis alle";
+"Quit ActivCast" = "Avslutt ActivCast";
+"Help" = "Hjelp";
+"Guide" = "Veiledning";
+
+"ActivCast 2.0" = "ActivCast 2.0";
+"ActivPanel" = "ActivPanel";
+"Cast screen to ActivPanel" = "Send skjerm til ActivPanel";
+"Panel ID" = "Skjerm-ID";
+"Type in the Panel ID as shown in ActivCast 2.0 on the ActivPanel." = "Skriv inn skjerm-ID som vist i ActivCast 2.0 på ActivPanel.";
+"Panel ID Error. Please try again." = "Feil med skjerm-ID. Prøv en gang til.";
+"Name is too long. Please try again." = "Navnet er for langt. Prøv en gang til.";
+"Please enter your name." = "Skriv inn navnet ditt.";
+"Control from panel (Touchback)" = "Kontroller fra panel (touchback)";
+"Enable touchback so that ActivPanel can navigate your screen." = "Aktiver touchback slik at ActivPanel kan navigere skjermen din.";
+"ENTER WAITING ROOM" = "ÅPNE VENTEROM";
+
+"Settings" = "Innstillinger";
+"Picture Quality" = "Bildekvalitet";
+"Best Quality" = "Beste kvalitet";
+"Good Quality" = "God kvalitet";
+"CANCEL" = "AVBRYT";
+"DONE" = "FERDIG";
+
+"You’re in the waiting room" = "Du er på venterommet";
+"Please wait for permission to cast your screen." = "Vent på tillatelse til å sende skjermen din.";
+"EXIT WAITING ROOM" = "LUKK VENTEROM";
+"STOP CASTING" = "STOPP SENDING";
+"A is now casting to B" = "A sender nå til B";
+
+"A program tried to load a new system extension signed by B. If you want to enable these extensions, open Security & Privacy System Preferences." = "Et program prøvde å laste inn en ny systemutvidelse signert av B. Hvis du vil aktivere disse utvidelsene, åpner du systeminnstillingene for sikkerhet og personvern.";
+
+
+

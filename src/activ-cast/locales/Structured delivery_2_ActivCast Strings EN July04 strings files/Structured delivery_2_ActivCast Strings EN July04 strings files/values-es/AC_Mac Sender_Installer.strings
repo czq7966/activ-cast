@@ -1,0 +1,81 @@
+// Title
+
+"Install ActiCast" = "Instalación de ActivCast";
+
+// Step
+
+"Introduction" = "Introducción";
+
+"Read Me" = "Léame";
+
+"License" = "Licencia";
+
+"Destination Select" = "Selección del destino";
+
+"Installation Type" = "Tipo de instalación";
+
+"Installation" = "Instalación";
+
+"Installer Plugin" = "Complemento de instalador";
+
+"Summary" = "Resumen";
+
+// Buttons
+
+"Print..." = "Imprimir…";
+
+"Save..." = "Guardar…";
+
+"Go Back" = "Retroceder";
+
+"Continue" = "Continuar";
+
+"Close" = "Cerrar";
+
+"Log Out" = "Cerrar sesión";
+
+"Restart" = "Reiniciar";
+
+"Shut Down" = "Apagar";
+
+// Introduction
+
+"Welcome to the ActivCast Installer" = "Bienvenido al instalador de ActivCast";
+
+"You will be guided through the steps necessary to install this software." = "Se le guiará por los pasos necesarios para instalar este software.";
+
+// Read Me
+
+"Important Information" = "Información importante";
+
+// License
+
+"Software License Agreement" = "Contrato de licencia de software";
+
+"English" = "Español";
+
+// Installation Type
+
+"Package Name" = "Nombre del paquete";
+
+"Package Action" = "Acción";
+
+"Package Size" = "Tamaño";
+
+"Space Required:" = "Espacio necesario:";
+
+"Remaining:" = "Restante:";
+
+"Standard Install" = "Instalación estándar";
+
+"StandardTitle" = "Instalación estándar en “%@”";
+
+"Customize" = "Personalizar";
+
+// Summary
+
+"The installation was completed successfully" = "La instalación se realizó correctamente";
+
+"Successful installation" = "Instalación correcta";
+
+"ActivCast uses sound driver from “MATT INGALLS”. During installation, your system might block it from loading. To enable it, open Security & Privacy System Preferences and click "Allow" to grant permission." = "ActivCast utiliza un controlador de sonido de “MATT INGALLS”. Durante la instalación, el sistema podría impedir su carga. Para habilitarlo, abra Seguridad y privacidad en Preferencias del Sistema y haga clic en "Permitir" para conceder permiso.";

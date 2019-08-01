@@ -1,0 +1,80 @@
+{
+	"manifest_name": {
+		"message": "Activ Cast"
+	},
+	"manifest_description": {
+		"message": "Activ Cast"
+	},
+	"manifest_short_name": {
+		"message": "Activ Cast"
+	},
+	"manifest_default_title": {
+		"message": "Activ Cast"
+	},
+	"Activ_Cast": {
+		"message": "Activ Cast"
+	},
+	"ENTER_PANEL_ID": {
+		"message": "MASUKKAN ID PANEL"
+	},
+	"ENTER_YOUR_NAME": {
+		"message": "MASUKKAN NAMA ANDA"
+	},
+	"CANCEL": {
+		"message": "BATAL"
+	},
+	"CAST": {
+		"message": "TAMPILKAN"
+	},
+	"Untitled": {
+		"message": "Tanpa Judul"
+	},
+	"Casting": {
+		"message": "Menampilkan"
+	},
+	"Waiting_Room": {
+		"message": "Ruang Tunggu"
+	},
+	"Please_wait_for_permission": {
+		"message": "Silakan tunggu izin untuk menampilkan layar Anda."
+	},
+	"Connecting___": {
+		"message": "Menghubungkan......"
+	},
+	"TransportError": {
+		"message": "KesalahanPengiriman"
+	},
+	"Network_Disconnected": {
+		"message": "Jaringan Terputus"
+	},
+	"Sender_Offline": {
+		"message": "Pengirim Offline"
+	},
+	"Connecting": {
+		"message": "Menghubungkan"
+	},
+	"Failed": {
+		"message": "Gagal"
+	},
+	"Disconnected": {
+		"message": "Terputus"
+	},
+	"Closed": {
+		"message": "Tertutup"
+	},
+	"You_are_casting_to": {
+		"message": "Anda menampilkan"
+	},
+	"STOP_CASTING": {
+		"message": "BERHENTI MENAMPILKAN"
+	},
+	"Panel_ID_Error": {
+		"message": "Kesalahan ID Panel. Silakan coba lagi."
+	},
+	"Name_is_too_long": {
+		"message": "Name is too long. Please try again."
+	},
+	"Please_enter_your_name": {
+		"message": "Silakan masukkan nama Anda."
+	}
+}

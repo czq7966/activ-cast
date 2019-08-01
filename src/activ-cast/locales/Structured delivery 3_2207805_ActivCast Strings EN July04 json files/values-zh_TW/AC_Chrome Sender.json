@@ -1,0 +1,23 @@
+{
+	"Activ Cast Sender": "ActivCast 傳送者",
+	"Activ Cast 2.0": "ActivCast 2.0",
+	"Activ Cast": "ActivCast",
+	"ENTER PANEL ID": "輸入面板 ID",
+	"ENTER YOUR NAME": "輸入您的姓名",
+	"CANCEL": "取消",
+	"CAST": "投放",
+	"Untitled": "無標題",
+	"Casting": "正在投放",
+	"Waiting Room": "等候室",
+	"Please wait for permission to cast your screen.": "請等候投放您的螢幕的許可。",
+	"Connecting......": "正在連線……",
+	"TransportError": "傳輸錯誤",
+	"Network Disconnected": "網路已中斷連線",
+	"Sender Offline": "傳送者離線",
+	"Connecting": "正在連線",
+	"Failed": "失敗",
+	"Disconnected": "已中斷連線",
+	"Closed": "已關閉",
+	"You are casting to": "您正投放至",
+	"STOP CASTING": "停止投放"
+}

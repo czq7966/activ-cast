@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin version="1.0" load="1" type="string">
+  <String>
+	<String id="IDS_INSTALL_APPNAME">Asenna ActivCast 2.0</String>
+	<String id="IDS_INSTALLING">Asennetaan...</String>
+	<String id="STR_NEEDSPACE">Jäljellä oleva tila: </String>
+	<String id="STR_FREESPACE">Tarvittava tila: </String>
+	<String id="STR_DOYOUWANTTOINSTALL">ActivCast asennetaan suorittamalla ActivCastin asennusohjelma. Jos peruutat asennuksen, ActivCastia ei asenneta. Haluatko varmasti peruuttaa ActivCastin asennuksen?</String>
+	<String id="STR_DITECTAPPRUNNNIG">Käynnissä on asennukseen liittyvä toinen ohjelma. Sulje se ensin valitsemalla Kyllä.</String>
+	<String id="IDS_LICENSE_TITLE">Käyttöoikeussopimus</String>
+    <String id="IDS_CANCEL">PERUUTA</String>
+    <String id="IDS_ACCEPT">HYVÄKSY</String>
+    <String id="IDS_BEGIN_INSTALL">ALOITA ASENNUS</String>
+    <String id="IDS_CHOOSE_PATH">Valitse toinen sijainti</String>
+	<String id="IDS_INSTALL_PATH_TIPS">Asennussijainti:</String>
+    <String id="IDS_COMPLETE">VALMIS</String>
+	<String id="IDS_INSTALL_TITLE_TIPS">Peilaa sisältö, ideat ja sovellukset laitteestasi ActivPaneliin. Mukana nyt Touchback-tuki.</String>
+    <String id="IDS_ADD_DESKTOP_SHORTCUT">Lisää pikakuvake työpöydälle</String>
+	<String id="IDS_QUICK_LAUNCH">Lisää pikakäynnistyskuvake aloitusvalikkoon</String>
+    <String id="IDS_FINISH_TITLE">Asennus on suoritettu. Olet valmis aloittamaan!</String>
+    <String id="IDS_ADD_OPTIONS">Lisäasetukset</String>
+	<String id="IDS_ADD_OPTIONS_CONTENT">(Voit muuttaa asetuksia milloin tahansa Asetukset-kohdassa).</String>
+    <String id="IDS_YES">KYLLÄ</String>
+    <String id="IDS_NO">EI</String>
+	
+	<String id="IDS_UNINSTALL_APPNAME">Poista ActivCast 2.0:n asennus</String>
+	<String id="IDS_UNINSTALLING">Asennusta poistetaan...</String>
+    <String id="IDS_CONFIRM_REMOVE_APP">Haluatko varmasti poistaa ActivCast 2.0:n?</String>
+  </String>
+</skin>

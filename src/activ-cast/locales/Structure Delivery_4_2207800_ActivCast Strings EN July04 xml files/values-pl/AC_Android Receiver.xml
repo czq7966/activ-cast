@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ActivCast 2.0</string>
+    <string name="enter_panel_name">Wprowadź nazwę panelu</string>
+    <string name="panel_id_label">Identyfikator panelu</string>
+    <string name="refresh_panel_id_prompt">Czy na pewno chcesz odświeżyć identyfikator panelu? Wszystkie połączone urządzenia zostaną rozłączone.</string>
+    <string name="refresh">ODŚWIEŻ</string>
+    <string name="cancel">ANULUJ</string>
+    <string name="close_cast_prompt_content">Czy na pewno chcesz zamknąć aplikację ActivCast? Wszystkie sesje przesyłania zostaną zakończone.</string>
+    <string name="close">ZAMKNIJ</string>
+    <string name="waiting_room">Poczekalnia:</string>
+    <string name="device_unit">Urządzenia</string>
+    <string name="sort_by">Sortuj według:</string>
+    <string name="position">Pozycji</string>
+    <string name="alphabetical">Alfabetycznie</string>
+    <string name="cast">PRZESYŁAJ</string>
+    <string name="select_client_count_tip">Wybrano: %d</string>
+    <string name="select_client_count_max_tip">Wybrano: %d (maks.)</string>
+    <string name="stop_connect_prompt">Czy na pewno chcesz zakończyć przesyłanie dla %1$s?</string>
+    <string name="end_cast">ZAKOŃCZ PRZESYŁANIE</string>
+    <string name="casting_disconnect_prompt">%1$s już nie przesyła</string>
+    <string name="casting_settings">Ustawienia przesyłania</string>
+    <string name="picture_quality">Jakość obrazu</string>
+    <string name="best_quality">Najlepsza jakość</string>
+    <string name="good_quality">Dobra jakość</string>
+    <string name="done">GOTOWE</string>
+    <string name="apply_overlay_permission">Zezwól na użycie nakładania</string>
+    <string name="allow_permission">udziel pozwolenia</string>
+    <string name="casting_disconnected">Przesyłanie rozłączone!</string>
+    <string name="ok">OK</string>
+</resources>

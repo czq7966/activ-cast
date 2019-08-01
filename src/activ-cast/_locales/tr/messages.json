@@ -1,0 +1,80 @@
+{
+	"manifest_name": {
+		"message": "ActivCast"
+	},
+	"manifest_description": {
+		"message": "ActivCast"
+	},
+	"manifest_short_name": {
+		"message": "ActivCast"
+	},
+	"manifest_default_title": {
+		"message": "ActivCast"
+	},
+	"Activ_Cast": {
+		"message": "ActivCast"
+	},
+	"ENTER_PANEL_ID": {
+		"message": "PANEL KİMLİĞİNİ GİRİN"
+	},
+	"ENTER_YOUR_NAME": {
+		"message": "ADINIZI GİRİN"
+	},
+	"CANCEL": {
+		"message": "İPTAL"
+	},
+	"CAST": {
+		"message": "YAYINLA"
+	},
+	"Untitled": {
+		"message": "Başlıksız"
+	},
+	"Casting": {
+		"message": "Yayınlama"
+	},
+	"Waiting_Room": {
+		"message": "Bekleme Odası"
+	},
+	"Please_wait_for_permission": {
+		"message": "Ekranınızı yayınlamak için lütfen izin bekleyin."
+	},
+	"Connecting___": {
+		"message": "Bağlanıyor..."
+	},
+	"TransportError": {
+		"message": "TransportError"
+	},
+	"Network_Disconnected": {
+		"message": "Ağ Bağlantısı Kesildi"
+	},
+	"Sender_Offline": {
+		"message": "Gönderici Çevrimdışı"
+	},
+	"Connecting": {
+		"message": "Bağlanıyor"
+	},
+	"Failed": {
+		"message": "Yapılamadı"
+	},
+	"Disconnected": {
+		"message": "Bağlantı Kesildi"
+	},
+	"Closed": {
+		"message": "Kapalı"
+	},
+	"You_are_casting_to": {
+		"message": "Şuraya yayın yapıyorsunuz:"
+	},
+	"STOP_CASTING": {
+		"message": "YAYINI DURDUR"
+	},
+	"Panel_ID_Error": {
+		"message": "Panel Kimliği Hatası. Lütfen yeniden deneyin."
+	},
+	"Name_is_too_long": {
+		"message": "Name is too long. Please try again."
+	},
+	"Please_enter_your_name": {
+		"message": "Lütfen adınızı girin."
+	}
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin version="1.0" load="1" type="string">
+  <String>
+	<String id="IDS_INSTALL_APPNAME">Instal ActivCast 2.0</String>
+	<String id="IDS_INSTALLING">Menginstal...</String>
+	<String id="STR_NEEDSPACE">Ruang Tersisa: </String>
+	<String id="STR_FREESPACE">Ruang Diperlukan: </String>
+	<String id="STR_DOYOUWANTTOINSTALL">Untuk menginstal Activcast, Anda harus menjalankan instalasi Activcast. Jika Anda membatalkan instalasi, Activcast tidak akan diinstal. Apakah Anda yakin ingin membatalkan instalasi Activcast?</String>
+	<String id="STR_DITECTAPPRUNNNIG">Program terkait sedang berjalan. Silakan sentuh \'Ya\' untuk menutup program terlebih dahulu.</String>
+	<String id="IDS_LICENSE_TITLE">Persetujuan Lisensi Pengguna Akhir</String>
+    <String id="IDS_CANCEL">BATAL</String>
+    <String id="IDS_ACCEPT">TERIMA</String>
+    <String id="IDS_BEGIN_INSTALL">MULAI INSTAL</String>
+    <String id="IDS_CHOOSE_PATH">Pilih lokasi yang berbeda</String>
+	<String id="IDS_INSTALL_PATH_TIPS">Kami akan menginstal di sini...</String>
+    <String id="IDS_COMPLETE">SELESAI</String>
+	<String id="IDS_INSTALL_TITLE_TIPS">Cerminkan konten, ide, dan aplikasi di perangkat Anda ke ActivPanel. Kini dengan dukungan touchback.</String>
+    <String id="IDS_ADD_DESKTOP_SHORTCUT">Tambahkan pintasan desktop</String>
+	<String id="IDS_QUICK_LAUNCH">Tambahkan ikon luncur cepat di menu awal</String>
+    <String id="IDS_FINISH_TITLE">Instalasi berhasil diselesaikan. Semua sudah siap!</String>
+    <String id="IDS_ADD_OPTIONS">Opsi tambahan</String>
+	<String id="IDS_ADD_OPTIONS_CONTENT">(Anda juga dapat mengubahnya kapan saja di \'Pengaturan\').</String>
+    <String id="IDS_YES">YA</String>
+    <String id="IDS_NO">TIDAK</String>
+	
+	<String id="IDS_UNINSTALL_APPNAME">Hapus Instalasi ActivCast 2.0</String>
+	<String id="IDS_UNINSTALLING">Menghapus instalasi...</String>
+    <String id="IDS_CONFIRM_REMOVE_APP">Apakah Anda yakin ingin menghapus instalasi Activcast 2.0?</String>
+  </String>
+</skin>

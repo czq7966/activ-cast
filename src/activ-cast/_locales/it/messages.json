@@ -1,0 +1,80 @@
+{
+	"manifest_name": {
+		"message": "ActivCast"
+	},
+	"manifest_description": {
+		"message": "ActivCast"
+	},
+	"manifest_short_name": {
+		"message": "ActivCast"
+	},
+	"manifest_default_title": {
+		"message": "ActivCast"
+	},
+	"Activ_Cast": {
+		"message": "ActivCast"
+	},
+	"ENTER_PANEL_ID": {
+		"message": "IMMETTERE ID PANNELLO"
+	},
+	"ENTER_YOUR_NAME": {
+		"message": "IMMETTERE IL NOME"
+	},
+	"CANCEL": {
+		"message": "ANNULLA"
+	},
+	"CAST": {
+		"message": "TRASMETTI"
+	},
+	"Untitled": {
+		"message": "Senza titolo"
+	},
+	"Casting": {
+		"message": "Trasmissione in corso"
+	},
+	"Waiting_Room": {
+		"message": "Sala d'attesa"
+	},
+	"Please_wait_for_permission": {
+		"message": "Attendere l'autorizzazione per trasmettere la schermata."
+	},
+	"Connecting___": {
+		"message": "Connessione in corso..."
+	},
+	"TransportError": {
+		"message": "Errore di trasporto"
+	},
+	"Network_Disconnected": {
+		"message": "Rete disconnessa"
+	},
+	"Sender_Offline": {
+		"message": "Mittente offline"
+	},
+	"Connecting": {
+		"message": "Connessione in corso"
+	},
+	"Failed": {
+		"message": "Operazione non riuscita"
+	},
+	"Disconnected": {
+		"message": "Disconnesso"
+	},
+	"Closed": {
+		"message": "Chiuso"
+	},
+	"You_are_casting_to": {
+		"message": "Si sta eseguendo la trasmissione a"
+	},
+	"STOP_CASTING": {
+		"message": "INTERROMPI TRASMISSIONE"
+	},
+	"Panel_ID_Error": {
+		"message": "Errore ID pannello. Riprovare."
+	},
+	"Name_is_too_long": {
+		"message": "Name is too long. Please try again."
+	},
+	"Please_enter_your_name": {
+		"message": "Immettere il nome dell\\'utente."
+	}
+}

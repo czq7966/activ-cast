@@ -1,0 +1,48 @@
+/* 
+  Localizable.strings
+  pmcast
+
+  Created by 海涛 on 2019/6/28.
+  Copyright © 2019 cn.com.nd. All rights reserved.
+*/
+
+"ActivCast" = "ActivCast";
+"About ActivCast" = "About ActivCast";
+"Preferences…" = "Preferences…";
+"Services" = "Services";
+"Hide ActivCast" = "Hide ActivCast";
+"Hide Others" = "Hide Others";
+"Show All" = "Show All";
+"Quit ActivCast" = "Quit ActivCast";
+"Help" = "Help";
+"Guide" = "Guide";
+
+"ActivCast 2.0" = "ActivCast 2.0";
+"ActivPanel" = "ActivPanel";
+"Cast screen to ActivPanel" = "Cast screen to ActivPanel";
+"Panel ID" = "Panel ID";
+"Type in the Panel ID as shown in ActivCast 2.0 on the ActivPanel." = "Type in the Panel ID as shown in ActivCast 2.0 on the ActivPanel.";
+"Panel ID Error. Please try again." = "Panel ID Error. Please try again.";
+"Name is too long. Please try again." = "Name is too long. Please try again.";
+"Please enter your name." = "Please enter your name.";
+"Control from panel (Touchback)" = "Control from panel (Touchback)";
+"Enable touchback so that ActivPanel can navigate your screen." = "Enable touchback so that ActivPanel can navigate your screen.";
+"ENTER WAITING ROOM" = "ENTER WAITING ROOM";
+
+"Settings" = "Settings";
+"Picture Quality" = "Picture Quality";
+"Best Quality" = "Best Quality";
+"Good Quality" = "Good Quality";
+"CANCEL" = "CANCEL";
+"DONE" = "DONE";
+
+"You’re in the waiting room" = "You’re in the waiting room";
+"Please wait for permission to cast your screen." = "Please wait for permission to cast your screen.";
+"EXIT WAITING ROOM" = "EXIT WAITING ROOM";
+"STOP CASTING" = "STOP CASTING";
+"A is now casting to B" = "A is now casting to B";
+
+"A program tried to load a new system extension signed by B. If you want to enable these extensions, open Security & Privacy System Preferences." = "A program tried to load a new system extension signed by B. If you want to enable these extensions, open Security & Privacy System Preferences.";
+
+
+

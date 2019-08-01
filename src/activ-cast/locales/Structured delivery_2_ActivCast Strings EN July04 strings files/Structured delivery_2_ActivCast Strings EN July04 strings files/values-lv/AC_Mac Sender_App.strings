@@ -1,0 +1,48 @@
+/* 
+  Localizable.strings
+  pmcast
+
+  Created by 海涛 on 2019/6/28.
+  Copyright © 2019 cn.com.nd. All rights reserved.
+*/
+
+"ActivCast" = "ActivCast";
+"About ActivCast" = "Par ActivCast";
+"Preferences…" = "Preferences...";
+"Services" = "Pakalpojumi";
+"Hide ActivCast" = "Paslēpt ActivCast";
+"Hide Others" = "Paslēpt citus";
+"Show All" = "Parādīt visu";
+"Quit ActivCast" = "Iziet no ActivCast";
+"Help" = "Palīdzība";
+"Guide" = "Norādījumi";
+
+"ActivCast 2.0" = "ActivCast 2.0";
+"ActivPanel" = "ActivPanel";
+"Cast screen to ActivPanel" = "Ekrāna pārraide uz ActivPanel";
+"Panel ID" = "Paneļa ID";
+"Type in the Panel ID as shown in ActivCast 2.0 on the ActivPanel." = "Ievadiet paneļa ID, kā tas parādīts ActivCast 2.0 platformā ActivPanel.";
+"Panel ID Error. Please try again." = "Paneļa ID kļūda. Lūdzu, mēģiniet vēlreiz.";
+"Name is too long. Please try again." = "Pārāk garš nosaukums. Lūdzu, mēģiniet vēlreiz.";
+"Please enter your name." = "Lūdzu, ievadiet savu vārdu.";
+"Control from panel (Touchback)" = "Vadība no paneļa (atgriezeniskā saite)";
+"Enable touchback so that ActivPanel can navigate your screen." = "Iespējojiet atgriezenisko saiti, lai platforma ActivPanel var izmantot jūsu ekrānu.";
+"ENTER WAITING ROOM" = "IEIET UZGAIDĀMĀ TELPĀ";
+
+"Settings" = "Iestatījumi";
+"Picture Quality" = "Attēla kvalitāte";
+"Best Quality" = "Labākā kvalitāte";
+"Good Quality" = "Laba kvalitāte";
+"CANCEL" = "ATCELT";
+"DONE" = "GATAVS";
+
+"You’re in the waiting room" = "Jūs esat uzgaidāmajā telpā";
+"Please wait for permission to cast your screen." = "Lūdzu, sagaidiet atļauju pārraidīt jūsu ekrānu.";
+"EXIT WAITING ROOM" = "IZIET NO UZGAIDĀMĀS TELPAS";
+"STOP CASTING" = "APTURĒT PĀRRAIDI";
+"A is now casting to B" = "A tagad pārraida uz B";
+
+"A program tried to load a new system extension signed by B. If you want to enable these extensions, open Security & Privacy System Preferences." = "Programma mēģināja ielādēt jaunu, B parakstītu sistēmas paplašinājumu. Ja vēlaties iespējot šos paplašinājumus, atveriet Drošības un konfidencialitātes sistēmas preferences.";
+
+
+

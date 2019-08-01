@@ -1,0 +1,81 @@
+// Title
+
+"Install ActiCast" = "Az ActivCast telepítése";
+
+// Step
+
+"Introduction" = "Bevezetés";
+
+"Read Me" = "Olvass el";
+
+"License" = "Licenc";
+
+"Destination Select" = "Célhely kiválasztása";
+
+"Installation Type" = "Telepítés típusa";
+
+"Installation" = "Telepítés";
+
+"Installer Plugin" = "Telepítő beépülő modul";
+
+"Summary" = "Összegzés";
+
+// Buttons
+
+"Print..." = "Nyomtatás...";
+
+"Save..." = "Mentés...";
+
+"Go Back" = "Vissza";
+
+"Continue" = "Folytatás";
+
+"Close" = "Bezárás";
+
+"Log Out" = "Kijelentkezés";
+
+"Restart" = "Újraindítás";
+
+"Shut Down" = "Leállítás";
+
+// Introduction
+
+"Welcome to the ActivCast Installer" = "Üdvözli az ActivCast telepítője!";
+
+"You will be guided through the steps necessary to install this software." = "A telepítő lépésről lépésre végigvezeti a szoftver telepítéséhez szükséges műveleteken.";
+
+// Read Me
+
+"Important Information" = "Fontos információk";
+
+// License
+
+"Software License Agreement" = "Szoftver licencszerződés";
+
+"English" = "Magyar";
+
+// Installation Type
+
+"Package Name" = "Csomagnév";
+
+"Package Action" = "Művelet";
+
+"Package Size" = "Méret";
+
+"Space Required:" = "Szükséges tárhely:";
+
+"Remaining:" = "Fennmaradó:";
+
+"Standard Install" = "Standard telepítés";
+
+"StandardTitle" = "Standard telepítés a következő helyre: „%@”";
+
+"Customize" = "Testreszabás";
+
+// Summary
+
+"The installation was completed successfully" = "A telepítés sikeresen befejeződött";
+
+"Successful installation" = "Sikeres telepítés";
+
+"ActivCast uses sound driver from “MATT INGALLS”. During installation, your system might block it from loading. To enable it, open Security & Privacy System Preferences and click "Allow" to grant permission." = "Az ActivCast „MATT INGALLS” audio-illesztőprogramot használ. A telepítés során előfordulhat, hogy a rendszer nem tudja azt betölteni. Az engedélyezéshez nyissa meg a Biztonság és adatvédelem rendszerbeállításokat, és kattintson az „Engedélyezés” lehetőségre.";

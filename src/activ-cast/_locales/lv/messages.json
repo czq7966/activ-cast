@@ -1,0 +1,80 @@
+{
+	"manifest_name": {
+		"message": "ActivCast"
+	},
+	"manifest_description": {
+		"message": "ActivCast"
+	},
+	"manifest_short_name": {
+		"message": "ActivCast"
+	},
+	"manifest_default_title": {
+		"message": "ActivCast"
+	},
+	"Activ_Cast": {
+		"message": "ActivCast"
+	},
+	"ENTER_PANEL_ID": {
+		"message": "IEVADIET PANEĻA ID"
+	},
+	"ENTER_YOUR_NAME": {
+		"message": "IEVADIET SAVU VĀRDU"
+	},
+	"CANCEL": {
+		"message": "ATCELT"
+	},
+	"CAST": {
+		"message": "PĀRRAIDĪT"
+	},
+	"Untitled": {
+		"message": "Bez nosaukuma"
+	},
+	"Casting": {
+		"message": "Notiek pārraide"
+	},
+	"Waiting_Room": {
+		"message": "Uzgaidāmā telpa"
+	},
+	"Please_wait_for_permission": {
+		"message": "Lūdzu, sagaidiet atļauju pārraidīt jūsu ekrānu."
+	},
+	"Connecting___": {
+		"message": "Tiek veidots savienojums......"
+	},
+	"TransportError": {
+		"message": "Transporta kļūda"
+	},
+	"Network_Disconnected": {
+		"message": "Tīkla savienojums ir pārtraukts"
+	},
+	"Sender_Offline": {
+		"message": "Sūtītājs ir bezsaistē"
+	},
+	"Connecting": {
+		"message": "Tiek veidots savienojums"
+	},
+	"Failed": {
+		"message": "Neizdevās"
+	},
+	"Disconnected": {
+		"message": "Pārtraukt savienojumu"
+	},
+	"Closed": {
+		"message": "Aizvērts"
+	},
+	"You_are_casting_to": {
+		"message": "Jūs tagad pārraidāt uz"
+	},
+	"STOP_CASTING": {
+		"message": "APTURĒT PĀRRAIDI"
+	},
+	"Panel_ID_Error": {
+		"message": "Paneļa ID kļūda. Lūdzu, mēģiniet vēlreiz."
+	},
+	"Name_is_too_long": {
+		"message": "Name is too long. Please try again."
+	},
+	"Please_enter_your_name": {
+		"message": "Lūdzu, ievadiet savu vārdu."
+	}
+}

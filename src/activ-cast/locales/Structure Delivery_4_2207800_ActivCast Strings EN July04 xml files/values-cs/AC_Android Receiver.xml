@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ActivCast 2.0</string>
+    <string name="enter_panel_name">Zadejte název panelu</string>
+    <string name="panel_id_label">ID panelu</string>
+    <string name="refresh_panel_id_prompt">Opravdu chcete aktualizovat ID panelu? Všechna připojená zařízení budou odpojena.</string>
+    <string name="refresh">AKTUALIZOVAT</string>
+    <string name="cancel">ZRUŠIT</string>
+    <string name="close_cast_prompt_content">Opravdu chcete ukončit aplikaci ActivCast? Všechny relace vysílání budou ukončeny.</string>
+    <string name="close">UKONČIT</string>
+    <string name="waiting_room">Čekárna:</string>
+    <string name="device_unit">Zařízení</string>
+    <string name="sort_by">Seřadit podle:</string>
+    <string name="position">Pozice</string>
+    <string name="alphabetical">Abecedně</string>
+    <string name="cast">VYSÍLAT</string>
+    <string name="select_client_count_tip">%d vybráno</string>
+    <string name="select_client_count_max_tip">%d vybráno (max.)</string>
+    <string name="stop_connect_prompt">Opravdu chcete ukončit vysílání pro %1$s?</string>
+    <string name="end_cast">UKONČIT VYSÍLÁNÍ</string>
+    <string name="casting_disconnect_prompt">%1$s už nevysílá</string>
+    <string name="casting_settings">Nastavení vysílání</string>
+    <string name="picture_quality">Kvalita obrazu</string>
+    <string name="best_quality">Nejlepší kvalita</string>
+    <string name="good_quality">Dobrá kvalita</string>
+    <string name="done">HOTOVO</string>
+    <string name="apply_overlay_permission">Povolte možnost OVERLAY_PERMISSION pro použití</string>
+    <string name="allow_permission">povolit oprávnění</string>
+    <string name="casting_disconnected">Vysílání bylo přerušeno!</string>
+    <string name="ok">OK</string>
+</resources>

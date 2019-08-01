@@ -1,0 +1,81 @@
+// Title
+
+"Install ActiCast" = "Įdiegti „ActiCast“";
+
+// Step
+
+"Introduction" = "Įvadas";
+
+"Read Me" = "Failas „Read Me“";
+
+"License" = "Licencija";
+
+"Destination Select" = "Paskirties vietos pasirinkimas";
+
+"Installation Type" = "Diegimo tipas";
+
+"Installation" = "Diegimas";
+
+"Installer Plugin" = "Diegimo programos papildinys";
+
+"Summary" = "Suvestinė";
+
+// Buttons
+
+"Print..." = "Spausdinti...";
+
+"Save..." = "Išsaugoti...";
+
+"Go Back" = "Grįžti atgal";
+
+"Continue" = "Tęsti";
+
+"Close" = "Užverti";
+
+"Log Out" = "Atsijungti";
+
+"Restart" = "Paleisti iš naujo";
+
+"Shut Down" = "Išjungti";
+
+// Introduction
+
+"Welcome to the ActivCast Installer" = "Sveiki, tai – „ActivCast“ diegimo programa";
+
+"You will be guided through the steps necessary to install this software." = "Bus nurodyti veiksmai, kuriuos reikia atlikti norint įdiegti šią programinę įrangą.";
+
+// Read Me
+
+"Important Information" = "Svarbi informacija";
+
+// License
+
+"Software License Agreement" = "Programinės įrangos licencijos sutartis";
+
+"English" = "Lietuvių k.";
+
+// Installation Type
+
+"Package Name" = "Paketo pavadinimas";
+
+"Package Action" = "Veiksmas";
+
+"Package Size" = "Dydis";
+
+"Space Required:" = "Reikalingas vietos kiekis:";
+
+"Remaining:" = "Liko:";
+
+"Standard Install" = "Standartinis diegimas";
+
+"StandardTitle" = "Standartinis diegimas įrenginyje „%@“";
+
+"Customize" = "Tinkinti";
+
+// Summary
+
+"The installation was completed successfully" = "Diegimas buvo sėkmingai atliktas";
+
+"Successful installation" = "Diegimas atliktas sėkmingai";
+
+"ActivCast uses sound driver from “MATT INGALLS”. During installation, your system might block it from loading. To enable it, open Security & Privacy System Preferences and click "Allow" to grant permission." = "„ActivCast“ naudojama MATT INGALLS teikiama garso plokštė. Diegimo metu sistema gali ją blokuoti ir neleisti įkelti. Norėdami garso plokštę įjungti, apsilankykite parinktyje „Sistemos saugos ir privatumo nuostatos“ ir spustelėkite „Leisti“, kad suteiktumėte leidimą.";

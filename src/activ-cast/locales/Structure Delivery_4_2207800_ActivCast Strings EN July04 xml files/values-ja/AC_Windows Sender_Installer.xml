@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin version="1.0" load="1" type="string">
+  <String>
+	<String id="IDS_INSTALL_APPNAME">ActivCast 2.0 をインストール</String>
+	<String id="IDS_INSTALLING">インストール中…</String>
+	<String id="STR_NEEDSPACE">残り容量:</String>
+	<String id="STR_FREESPACE">必要容量:</String>
+	<String id="STR_DOYOUWANTTOINSTALL">Activcast のインストールには Activcast インストーラーの実行が必要です。インストールをキャンセルすると、Activcast はインストールを行いません。本当にキャンセルしてよろしいですか?</String>
+	<String id="STR_DITECTAPPRUNNNIG">関連プログラムが実行中です。プログラムを終了するには「はい」を指定します。</String>
+	<String id="IDS_LICENSE_TITLE">使用許諾契約書</String>
+    <String id="IDS_CANCEL">キャンセル</String>
+    <String id="IDS_ACCEPT">承認</String>
+    <String id="IDS_BEGIN_INSTALL">インストールを開始</String>
+    <String id="IDS_CHOOSE_PATH">違う場所を選択</String>
+	<String id="IDS_INSTALL_PATH_TIPS">ここにインストールされます…</String>
+    <String id="IDS_COMPLETE">完了</String>
+	<String id="IDS_INSTALL_TITLE_TIPS">デバイス上のコンテンツ、アイデア、アプリを ActivPanel に反映できます。今ならタッチバックサポート付き。</String>
+    <String id="IDS_ADD_DESKTOP_SHORTCUT">デスクトップにショートカットを追加</String>
+	<String id="IDS_QUICK_LAUNCH">スタートメニューにクイック起動アイコンを追加</String>
+    <String id="IDS_FINISH_TITLE">インストールが完了しました。設定完了です。</String>
+    <String id="IDS_ADD_OPTIONS">追加オプション</String>
+	<String id="IDS_ADD_OPTIONS_CONTENT">(変更は [設定] でいつでも行えます)。</String>
+    <String id="IDS_YES">はい</String>
+    <String id="IDS_NO">いいえ</String>
+	
+	<String id="IDS_UNINSTALL_APPNAME">ActivCast 2.0 をアンインストール</String>
+	<String id="IDS_UNINSTALLING">アンインストール中…</String>
+    <String id="IDS_CONFIRM_REMOVE_APP">Activcast 2.0 を本当に削除してよろしいですか?</String>
+  </String>
+</skin>

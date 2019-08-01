@@ -1,0 +1,23 @@
+{
+	"Activ Cast Sender": "ActivCast Sender",
+	"Activ Cast 2.0": "ActivCast 2.0",
+	"Activ Cast": "ActivCast",
+	"ENTER PANEL ID": "PANEL-ID EINGEBEN",
+	"ENTER YOUR NAME": "GEBEN SIE IHREN NAMEN EIN",
+	"CANCEL": "ABBRECHEN",
+	"CAST": "CAST",
+	"Untitled": "Unbenannt",
+	"Casting": "Casting",
+	"Waiting Room": "Warteraum",
+	"Please wait for permission to cast your screen.": "Warten Sie auf die Berechtigung, ein Casting Ihres Bildschirms vorzunehmen.",
+	"Connecting......": "Verbindung wird hergestellt......",
+	"TransportError": "TransportFehler",
+	"Network Disconnected": "Netzwerk getrennt",
+	"Sender Offline": "Sender offline",
+	"Connecting": "Verbindung wird hergestellt",
+	"Failed": "Fehler",
+	"Disconnected": "Getrennt",
+	"Closed": "Geschlossen",
+	"You are casting to": "Sie führen ein Casting aus zu",
+	"STOP CASTING": "CASTING STOPPEN"
+}

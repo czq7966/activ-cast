@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ActivCast 2.0</string>
+    <string name="enter_panel_name">輸入面板名稱</string>
+    <string name="panel_id_label">面板 ID</string>
+    <string name="refresh_panel_id_prompt">確實要重新整理面板 ID 嗎？所有裝置的連線都會中斷。</string>
+    <string name="refresh">重新整理</string>
+    <string name="cancel">取消</string>
+    <string name="close_cast_prompt_content">確定要關閉 ActivCast 嗎？所有投放工作階段都會結束。</string>
+    <string name="close">關閉</string>
+    <string name="waiting_room">等候室：</string>
+    <string name="device_unit">裝置</string>
+    <string name="sort_by">排序方式：</string>
+    <string name="position">位置</string>
+    <string name="alphabetical">字母順序</string>
+    <string name="cast">投放</string>
+    <string name="select_client_count_tip">已選擇 %d</string>
+    <string name="select_client_count_max_tip">已選擇 %d（最多）</string>
+    <string name="stop_connect_prompt">確定要結束 %1$s 的投放嗎？</string>
+    <string name="end_cast">結束投放</string>
+    <string name="casting_disconnect_prompt">已停止投放 %1$s</string>
+    <string name="casting_settings">投放設定</string>
+    <string name="picture_quality">畫面品質</string>
+    <string name="best_quality">最佳品質</string>
+    <string name="good_quality">良好品質</string>
+    <string name="done">完成</string>
+    <string name="apply_overlay_permission">請允許「重疊權限」使用</string>
+    <string name="allow_permission">允許權限</string>
+    <string name="casting_disconnected">已中斷投放！</string>
+    <string name="ok">確定</string>
+</resources>

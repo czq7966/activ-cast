@@ -1,0 +1,23 @@
+{
+	"Activ Cast Sender": "Activ Cast Sender",
+	"Activ Cast 2.0": "Activ Cast 2.0",
+	"Activ Cast": "Activ Cast",
+	"ENTER PANEL ID": "ADJA MEG A PANELAZONOSÍTÓT",
+	"ENTER YOUR NAME": "ADJA MEG A NEVÉT",
+	"CANCEL": "MÉGSE",
+	"CAST": "KÉPERNYŐ MEGOSZTÁSA",
+	"Untitled": "Cím nélkül",
+	"Casting": "Képernyő megosztása",
+	"Waiting Room": "Előszoba",
+	"Please wait for permission to cast your screen.": "Várja meg a képernyő megosztására vonatkozó engedélyt.",
+	"Connecting......": "Csatlakozás......",
+	"TransportError": "Átviteli hiba",
+	"Network Disconnected": "A hálózati kapcsolat megszakítva",
+	"Sender Offline": "A küldő fél nem érhető el",
+	"Connecting": "Csatlakozás",
+	"Failed": "Sikertelen",
+	"Disconnected": "Kapcsolat bontva",
+	"Closed": "Bezárva",
+	"You are casting to": "Képernyő megosztása a következővel:",
+	"STOP CASTING": "KÉPERNYŐ MEGOSZTÁSÁNAK LEÁLLÍTÁSA"
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin version="1.0" load="1" type="string">
+  <String>
+	<String id="IDS_INSTALL_APPNAME">Installer ActivCast 2.0</String>
+	<String id="IDS_INSTALLING">Installation en cours...</String>
+	<String id="STR_NEEDSPACE">Espace restant : </String>
+	<String id="STR_FREESPACE">Espace requis : </String>
+	<String id="STR_DOYOUWANTTOINSTALL">Pour installer Activcast, vous devez exécuter le programme d\'installation d\'Activcast. Si vous annulez l\'installation, Activcast ne sera pas installé. Êtes-vous certain de vouloir annuler l\'installation d\'Activcast ?</String>
+	<String id="STR_DITECTAPPRUNNNIG">Un programme associé est en cours d\'exécution. Appuyez sur « Oui » pour fermer le programme d\'abord.</String>
+	<String id="IDS_LICENSE_TITLE">Contrat de licence de l\'utilisateur final</String>
+    <String id="IDS_CANCEL">ANNULER</String>
+    <String id="IDS_ACCEPT">ACCEPTER</String>
+    <String id="IDS_BEGIN_INSTALL">COMMENCER L\'INSTALLATION</String>
+    <String id="IDS_CHOOSE_PATH">Choisir une autre destination</String>
+	<String id="IDS_INSTALL_PATH_TIPS">L\'installation se fera ici...</String>
+    <String id="IDS_COMPLETE">TERMINÉ</String>
+	<String id="IDS_INSTALL_TITLE_TIPS">Dupliquez du contenu, des idées et des applications de votre périphérique sur un ActivPanel. Retour tactile désormais pris en charge.</String>
+    <String id="IDS_ADD_DESKTOP_SHORTCUT">Ajouter un raccourci clavier</String>
+	<String id="IDS_QUICK_LAUNCH">Ajouter une icône de démarrage rapide dans le menu Démarrer</String>
+    <String id="IDS_FINISH_TITLE">L\'installation a réussi. Tout est prêt !</String>
+    <String id="IDS_ADD_OPTIONS">Options supplémentaires</String>
+	<String id="IDS_ADD_OPTIONS_CONTENT">(Vous pouvez également les modifier à tout moment sous « Paramètres ».)</String>
+    <String id="IDS_YES">OUI</String>
+    <String id="IDS_NO">NON</String>
+	
+	<String id="IDS_UNINSTALL_APPNAME">Désinstaller ActivCast 2.0</String>
+	<String id="IDS_UNINSTALLING">Désinstallation en cours...</String>
+    <String id="IDS_CONFIRM_REMOVE_APP">Êtes-vous certain de vouloir supprimer Activcast 2.0 ?</String>
+  </String>
+</skin>

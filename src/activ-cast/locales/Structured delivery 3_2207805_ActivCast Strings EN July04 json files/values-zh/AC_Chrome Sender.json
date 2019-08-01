@@ -1,0 +1,23 @@
+{
+	"Activ Cast Sender": "Activ Cast Sender",
+	"Activ Cast 2.0": "Activ Cast 2.0",
+	"Activ Cast": "Activ Cast",
+	"ENTER PANEL ID": "输入面板 ID",
+	"ENTER YOUR NAME": "输入您的姓名",
+	"CANCEL": "取消",
+	"CAST": "投射",
+	"Untitled": "无标题",
+	"Casting": "投射",
+	"Waiting Room": "等候室",
+	"Please wait for permission to cast your screen.": "在投射您的屏幕前，请等待授权。",
+	"Connecting......": "正在连接...",
+	"TransportError": "传输出错",
+	"Network Disconnected": "网络已断开",
+	"Sender Offline": "Sender 离线",
+	"Connecting": "正在连接",
+	"Failed": "失败",
+	"Disconnected": "已断开",
+	"Closed": "已关闭",
+	"You are casting to": "您正在投射到",
+	"STOP CASTING": "停止投射"
+}

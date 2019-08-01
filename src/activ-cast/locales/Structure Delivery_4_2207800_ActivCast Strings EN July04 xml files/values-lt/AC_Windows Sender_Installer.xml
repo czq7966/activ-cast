@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin version="1.0" load="1" type="string">
+  <String>
+	<String id="IDS_INSTALL_APPNAME">Įdiegti „ActivCast 2.0“</String>
+	<String id="IDS_INSTALLING">Diegiama...</String>
+	<String id="STR_NEEDSPACE">Liko laisvos vietos: </String>
+	<String id="STR_FREESPACE">Reikalingas vietos kiekis: </String>
+	<String id="STR_DOYOUWANTTOINSTALL">Norėdami įdiegti „Activcast“, turite paleisti „Activcast“ diegimo procedūrą. Atšaukus diegimą „Activcast“ įdiegta nebus. Ar tikrai norite atšaukti „Activcast“ diegimo procedūrą?</String>
+	<String id="STR_DITECTAPPRUNNNIG">Veikia susijusi programa. Palieskite „Taip“, kad pirmiausia uždarytumėte šią programą.</String>
+	<String id="IDS_LICENSE_TITLE">Galutinio vartotojo licencijos sutartis</String>
+    <String id="IDS_CANCEL">ATŠAUKTI</String>
+    <String id="IDS_ACCEPT">SUTIKTI</String>
+    <String id="IDS_BEGIN_INSTALL">PRADĖTI DIEGTI</String>
+    <String id="IDS_CHOOSE_PATH">Pasirinkite kitą vietą</String>
+	<String id="IDS_INSTALL_PATH_TIPS">Programa bus įdiegta čia...</String>
+    <String id="IDS_COMPLETE">ATLIKTA</String>
+	<String id="IDS_INSTALL_TITLE_TIPS">Atvaizduokite savo įrenginyje laikomą turinį, idėjas ir programas „ActivPanel“. Dabar palaikomas ir jutiklinis ekranas.</String>
+    <String id="IDS_ADD_DESKTOP_SHORTCUT">Pridėti darbalaukio nuorodą</String>
+	<String id="IDS_QUICK_LAUNCH">Pridėti sparčiosios paleisties piktogramą pradžios meniu</String>
+    <String id="IDS_FINISH_TITLE">Diegimas atliktas sėkmingai. Viskas parengta!</String>
+    <String id="IDS_ADD_OPTIONS">Papildomos parinktys</String>
+	<String id="IDS_ADD_OPTIONS_CONTENT">(Šias parinktis taip pat galite keisti bet kuriuo metu srityje „Nuostatos“).</String>
+    <String id="IDS_YES">TAIP</String>
+    <String id="IDS_NO">NE</String>
+	
+	<String id="IDS_UNINSTALL_APPNAME">Pašalinti „ActivCast 2.0“</String>
+	<String id="IDS_UNINSTALLING">Pašalinama…</String>
+    <String id="IDS_CONFIRM_REMOVE_APP">Ar tikrai norite pašalinti „Activcast 2.0“?</String>
+  </String>
+</skin>

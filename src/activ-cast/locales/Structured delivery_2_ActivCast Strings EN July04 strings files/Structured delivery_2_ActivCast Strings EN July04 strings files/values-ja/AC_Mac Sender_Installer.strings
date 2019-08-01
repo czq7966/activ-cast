@@ -1,0 +1,81 @@
+// Title
+
+"Install ActiCast" = "ActivCast をインストール";
+
+// Step
+
+"Introduction" = "紹介";
+
+"Read Me" = "リードミー";
+
+"License" = "利用許諾";
+
+"Destination Select" = "地域選択";
+
+"Installation Type" = "インストールタイプ";
+
+"Installation" = "インストール";
+
+"Installer Plugin" = "インストーラープラグイン";
+
+"Summary" = "概要";
+
+// Buttons
+
+"Print..." = "印刷…";
+
+"Save..." = "保存…";
+
+"Go Back" = "戻る";
+
+"Continue" = "続ける";
+
+"Close" = "終了";
+
+"Log Out" = "ログアウト";
+
+"Restart" = "再起動";
+
+"Shut Down" = "シャットダウン";
+
+// Introduction
+
+"Welcome to the ActivCast Installer" = "ActivCast インストーラーにようこそ";
+
+"You will be guided through the steps necessary to install this software." = "本ソフトウェアのインストールに必要な手順をご説明します。";
+
+// Read Me
+
+"Important Information" = "重要情報";
+
+// License
+
+"Software License Agreement" = "ソフトウェア利用許諾契約";
+
+"English" = "日本語";
+
+// Installation Type
+
+"Package Name" = "パッケージ名";
+
+"Package Action" = "アクション";
+
+"Package Size" = "サイズ";
+
+"Space Required:" = "必要容量:";
+
+"Remaining:" = "残り容量:";
+
+"Standard Install" = "標準搭載";
+
+"StandardTitle" = "「%@」に標準搭載";
+
+"Customize" = "カスタマイズ";
+
+// Summary
+
+"The installation was completed successfully" = "インストールが完了しました";
+
+"Successful installation" = "インストールが完了";
+
+"ActivCast uses sound driver from “MATT INGALLS”. During installation, your system might block it from loading. To enable it, open Security & Privacy System Preferences and click "Allow" to grant permission." = "ActivCast は MATT INGALLS のサウンドドライバーを使います。インストール中にシステムがローディングをブロックする場合があります。有効化には [セキュリティとプライバシーの設定] を開いて「許可」をクリックしてください。";

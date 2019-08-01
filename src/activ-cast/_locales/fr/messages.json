@@ -1,0 +1,80 @@
+{
+	"manifest_name": {
+		"message": "Activ Cast"
+	},
+	"manifest_description": {
+		"message": "Activ Cast"
+	},
+	"manifest_short_name": {
+		"message": "Activ Cast"
+	},
+	"manifest_default_title": {
+		"message": "Activ Cast"
+	},
+	"Activ_Cast": {
+		"message": "Activ Cast"
+	},
+	"ENTER_PANEL_ID": {
+		"message": "ENTREZ L'ID DU TABLEAU"
+	},
+	"ENTER_YOUR_NAME": {
+		"message": "ENTREZ VOTRE NOM"
+	},
+	"CANCEL": {
+		"message": "ANNULER"
+	},
+	"CAST": {
+		"message": "DIFFUSER"
+	},
+	"Untitled": {
+		"message": "Sans titre"
+	},
+	"Casting": {
+		"message": "Diffusion"
+	},
+	"Waiting_Room": {
+		"message": "Salle d'attente"
+	},
+	"Please_wait_for_permission": {
+		"message": "Veuillez attendre l'autorisation de diffuser votre écran."
+	},
+	"Connecting___": {
+		"message": "Connexion......"
+	},
+	"TransportError": {
+		"message": "Erreur de transport"
+	},
+	"Network_Disconnected": {
+		"message": "Réseau déconnecté"
+	},
+	"Sender_Offline": {
+		"message": "Émetteur hors ligne"
+	},
+	"Connecting": {
+		"message": "Connexion"
+	},
+	"Failed": {
+		"message": "Échec"
+	},
+	"Disconnected": {
+		"message": "Déconnecté"
+	},
+	"Closed": {
+		"message": "Fermé"
+	},
+	"You_are_casting_to": {
+		"message": "Vous diffusez vers"
+	},
+	"STOP_CASTING": {
+		"message": "ARRÊTER LA DIFFUSION"
+	},
+	"Panel_ID_Error": {
+		"message": "Erreur d\\'ID de tableau. Veuillez réessayer."
+	},
+	"Name_is_too_long": {
+		"message": "Name is too long. Please try again."
+	},
+	"Please_enter_your_name": {
+		"message": "Veuillez entrer votre nom."
+	}
+}

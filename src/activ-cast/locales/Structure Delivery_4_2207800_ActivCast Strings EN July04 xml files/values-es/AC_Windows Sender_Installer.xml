@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin version="1.0" load="1" type="string">
+  <String>
+	<String id="IDS_INSTALL_APPNAME">Instalación de ActivCast 2.0</String>
+	<String id="IDS_INSTALLING">Instalando…</String>
+	<String id="STR_NEEDSPACE">Espacio restante: </String>
+	<String id="STR_FREESPACE">Espacio necesario: </String>
+	<String id="STR_DOYOUWANTTOINSTALL">Para instalar ActivCast, debe ejecutar la instalación de ActivCast. Si cancela la instalación, ActivCast no se instalará. ¿Seguro que desea cancelar la instalación de ActivCast?</String>
+	<String id="STR_DITECTAPPRUNNNIG">Hay un programa relacionado en ejecución. Pulse primero \'Sí\' para cerrar el programa.</String>
+	<String id="IDS_LICENSE_TITLE">Contrato de licencia del usuario final</String>
+    <String id="IDS_CANCEL">CANCELAR</String>
+    <String id="IDS_ACCEPT">ACEPTAR</String>
+    <String id="IDS_BEGIN_INSTALL">COMENZAR LA INSTALACIÓN</String>
+    <String id="IDS_CHOOSE_PATH">Elija otra ubicación</String>
+	<String id="IDS_INSTALL_PATH_TIPS">Lo instalaremos aquí…</String>
+    <String id="IDS_COMPLETE">FINALIZADO</String>
+	<String id="IDS_INSTALL_TITLE_TIPS">Duplique contenido, ideas y aplicaciones de su dispositivo en un ActivPanel. Ahora es compatible con la duplicación bidireccional.</String>
+    <String id="IDS_ADD_DESKTOP_SHORTCUT">Agregar un acceso directo al escritorio</String>
+	<String id="IDS_QUICK_LAUNCH">Agregar un icono de inicio rápido al menú Inicio</String>
+    <String id="IDS_FINISH_TITLE">Instalación realizada correctamente. Ya está todo listo.</String>
+    <String id="IDS_ADD_OPTIONS">Opciones adicionales</String>
+	<String id="IDS_ADD_OPTIONS_CONTENT">(También puede cambiarlas en cualquier momento en \'Ajustes’).</String>
+    <String id="IDS_YES">SÍ</String>
+    <String id="IDS_NO">NO</String>
+	
+	<String id="IDS_UNINSTALL_APPNAME">Desinstalación de ActivCast 2.0</String>
+	<String id="IDS_UNINSTALLING">Desinstalando…</String>
+    <String id="IDS_CONFIRM_REMOVE_APP">¿Seguro que desea quitar ActivCast 2.0?</String>
+  </String>
+</skin>

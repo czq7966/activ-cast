@@ -1,0 +1,81 @@
+// Title
+
+"Install ActiCast" = "Instal ActiCast";
+
+// Step
+
+"Introduction" = "Pengantar";
+
+"Read Me" = "Informasi Umum";
+
+"License" = "Lisensi";
+
+"Destination Select" = "Pilih Tujuan";
+
+"Installation Type" = "Tipe Instalasi";
+
+"Installation" = "Instalasi";
+
+"Installer Plugin" = "Plugin Penginstal";
+
+"Summary" = "Ringkasan";
+
+// Buttons
+
+"Print..." = "Cetak…";
+
+"Save..." = "Simpan...";
+
+"Go Back" = "Kembali";
+
+"Continue" = "Lanjutkan";
+
+"Close" = "Tutup";
+
+"Log Out" = "Keluar";
+
+"Restart" = "Mulai Ulang";
+
+"Shut Down" = "Matikan";
+
+// Introduction
+
+"Welcome to the ActivCast Installer" = "Selamat datang di Penginstal ActivCast";
+
+"You will be guided through the steps necessary to install this software." = "Anda akan dipandu dalam langkah-langkah yang diperlukan untuk menginstal perangkat lunak ini.";
+
+// Read Me
+
+"Important Information" = "Informasi Penting";
+
+// License
+
+"Software License Agreement" = "Perjanjian Lisensi Perangkat Lunak";
+
+"English" = "Bahasa Inggris";
+
+// Installation Type
+
+"Package Name" = "Nama Paket";
+
+"Package Action" = "Tindakan";
+
+"Package Size" = "Ukuran";
+
+"Space Required:" = "Ruang Diperlukan:";
+
+"Remaining:" = "Tersisa:";
+
+"Standard Install" = "Instalasi Standar";
+
+"StandardTitle" = "Instalasi Standar di “%@”";
+
+"Customize" = "Kustomisasi";
+
+// Summary
+
+"The installation was completed successfully" = "Instalasi telah berhasil diselesaikan.";
+
+"Successful installation" = "Instalasi berhasil";
+
+"ActivCast uses sound driver from “MATT INGALLS”. During installation, your system might block it from loading. To enable it, open Security & Privacy System Preferences and click "Allow" to grant permission." = "ActivCast menggunakan driver suara “MATT INGALLS”. Selama instalasi, sistem Anda mungkin akan mencegahnya berfungsi. Untuk mengaktifkannya, buka Preferensi Sistem Keamanan & Privasi dan klik 'Izinkan' untuk memberikan izin.";

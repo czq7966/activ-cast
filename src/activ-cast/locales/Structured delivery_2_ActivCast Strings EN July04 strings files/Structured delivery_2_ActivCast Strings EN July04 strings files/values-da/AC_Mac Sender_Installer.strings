@@ -1,0 +1,81 @@
+// Title
+
+"Install ActiCast" = "Installer ActiCast";
+
+// Step
+
+"Introduction" = "Introduktion";
+
+"Read Me" = "Vigtige oplysninger";
+
+"License" = "Licens";
+
+"Destination Select" = "Valg af destination";
+
+"Installation Type" = "Installationstype";
+
+"Installation" = "Installation";
+
+"Installer Plugin" = "Installationsplugin";
+
+"Summary" = "Oversigt";
+
+// Buttons
+
+"Print..." = "Udskriv...";
+
+"Save..." = "Gem...";
+
+"Go Back" = "Gå tilbage";
+
+"Continue" = "Fortsæt";
+
+"Close" = "Luk";
+
+"Log Out" = "Log ud";
+
+"Restart" = "Genstart";
+
+"Shut Down" = "Luk ned";
+
+// Introduction
+
+"Welcome to the ActivCast Installer" = "Velkommen til installationsprogrammet til ActivCast.";
+
+"You will be guided through the steps necessary to install this software." = "Du bliver ført gennem de trin, der er nødvendige for at installere denne software.";
+
+// Read Me
+
+"Important Information" = "Vigtige oplysninger";
+
+// License
+
+"Software License Agreement" = "Softwarelicensaftale";
+
+"English" = "Dansk";
+
+// Installation Type
+
+"Package Name" = "Pakkenavn";
+
+"Package Action" = "Handling";
+
+"Package Size" = "Størrelse";
+
+"Space Required:" = "Krævet plads:";
+
+"Remaining:" = "Resterende:";
+
+"Standard Install" = "Standardinstallation";
+
+"StandardTitle" = "Gennemfør standardinstallation på "%@"";
+
+"Customize" = "Tilpas";
+
+// Summary
+
+"The installation was completed successfully" = "Installationen er fuldført";
+
+"Successful installation" = "Fuldført installation";
+
+"ActivCast uses sound driver from “MATT INGALLS”. During installation, your system might block it from loading. To enable it, open Security & Privacy System Preferences and click "Allow" to grant permission." = "ActivCast bruger lyddriver fra "MATT INGALLS". Under installationen vil dit system muligvis blokere indlæsningen af den. For at aktivere driveren skal du åbne systemindstillingerne for sikkerhed og anonymitet og klikke på "Tillad" for at give tilladelse.";

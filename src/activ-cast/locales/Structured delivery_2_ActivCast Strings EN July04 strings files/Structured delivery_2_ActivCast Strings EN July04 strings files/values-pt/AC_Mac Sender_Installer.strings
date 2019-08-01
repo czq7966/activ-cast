@@ -1,0 +1,81 @@
+// Title
+
+"Install ActiCast" = "Instalar o ActivCast";
+
+// Step
+
+"Introduction" = "Introdução";
+
+"Read Me" = "Leia-me";
+
+"License" = "Licença";
+
+"Destination Select" = "Seleção do destino";
+
+"Installation Type" = "Tipo de instalação";
+
+"Installation" = "Instalação";
+
+"Installer Plugin" = "Plugin do programa de instalação";
+
+"Summary" = "Resumo";
+
+// Buttons
+
+"Print..." = "Imprimir...";
+
+"Save..." = "Guardar...";
+
+"Go Back" = "Anterior";
+
+"Continue" = "Continuar";
+
+"Close" = "Fechar";
+
+"Log Out" = "Terminar sessão";
+
+"Restart" = "Reiniciar";
+
+"Shut Down" = "Encerrar";
+
+// Introduction
+
+"Welcome to the ActivCast Installer" = "Bem-vindo ao programa de instalação do ActivCast";
+
+"You will be guided through the steps necessary to install this software." = "Receberá orientações para efetuar os passos necessários à instalação deste software.";
+
+// Read Me
+
+"Important Information" = "Informações importantes";
+
+// License
+
+"Software License Agreement" = "Contrato de Licença de Software";
+
+"English" = "Português";
+
+// Installation Type
+
+"Package Name" = "Nome do pacote";
+
+"Package Action" = "Ação";
+
+"Package Size" = "Tamanho";
+
+"Space Required:" = "Espaço necessário:";
+
+"Remaining:" = "Restante:";
+
+"Standard Install" = "Instalação padrão";
+
+"StandardTitle" = "Instalação padrão em “%@”";
+
+"Customize" = "Personalizar";
+
+// Summary
+
+"The installation was completed successfully" = "A instalação foi concluída com êxito";
+
+"Successful installation" = "Instalação bem-sucedida";
+
+"ActivCast uses sound driver from “MATT INGALLS”. During installation, your system might block it from loading. To enable it, open Security & Privacy System Preferences and click "Allow" to grant permission." = "O ActivCast utiliza o controlador de som de "MATT INGALLS". Durante a instalação, o seu sistema poderá bloquear o respetivo carregamento. Para o ativar, abra Segurança e Privacidade, em Preferências do Sistema, e clique em "Permitir" para conceder permissão.";

@@ -1,0 +1,33 @@
+{
+   "default_locale":"en",
+   "name":"__MSG_manifest_name__",
+   "author":"ND CZQ",
+   "version":"1.1.0.0",
+   "manifest_version":2,
+   "minimum_chrome_version":"34",
+   "description":"__MSG_manifest_description__",
+   "short_name":"__MSG_manifest_short_name__",
+   "homepage_url":"http://www.nd.com.cn/",
+   "background":{
+      "scripts":[
+         "background/index.js"
+      ],
+      "persistent": true
+   },
+   "browser_action":{  
+      "default_icon":"images/icon128.png",
+      "default_title":"__MSG_manifest_default_title__",
+      "default_popup": "pages/dropdown/index.html"
+   },
+   "icons":{
+      "16" : "images/icon16.png",
+      "32" : "images/icon32.png",
+      "48" : "images/icon48.png",
+      "64" : "images/icon64.png",
+      "128" : "images/icon128.png"
+   },
+   "permissions":[
+      "desktopCapture"
+      ,"storage"
+   ]
+}

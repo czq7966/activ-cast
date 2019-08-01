@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin version="1.0" load="1" type="string" language="EN">
+  <String>
+    <String id="IDS_APP_NAME">ActivCast 2.0</String>
+    <String id="IDS_PANEL_ID_INVALID_TIPS">Ralat ID Panel. Sila cuba lagi.</String>
+    <String id="IDS_NAME_EMPTY_TIPS">Sila masukkan nama anda.</String>
+    <String id="IDS_CAST">SIAR</String>
+	<String id="IDS_ENTER_WAITING_ROOM">MASUK BILIK MENUNGGU</String>
+    <String id="IDS_CANCEL">BATAL</String>
+    <String id="IDS_YES">YA</String>
+    <String id="IDS_NO">TIDAK</String>
+	<String id="IDS_STOP_CASTING">BERHENTI MENYIAR</String>
+	<String id="IDS_CASTING_TITLE_TIPS">Siarkan skrin ke ActivPanel</String>
+	<String id="IDS_CASTING_TO_NAME">Siar ke </String>	
+	<String id="IDS_TYPE_IN_PANELID_1">Taip dalam</String>
+	<String id="IDS_TYPE_IN_PANELID_2"> ID Panel </String>
+	<String id="IDS_TYPE_IN_PANELID_3">seperti yang ditunjukkan dalam ActivCast 2.0 pada ActivPanel.</String>	
+	<String id="IDS_UESRNAME_EMPTY_TIPS">Nama Anda</String>
+	<String id="IDS_TOUCHBACK_TITLE_TIPS">Kawalan daripada panel (Sentuhan balik)</String>
+	<String id="IDS_TOUCHBACK_ENABLE_TIPS">Dayakan sentuhan balik supaya ActivPanel boleh menavigasi skrin anda.</String>	
+	<String id="IDS_IN_WAITING_ROOM">Anda dalam bilik menunggu</String>
+	<String id="IDS_WAITING_ROOM_TIPS">Sila tunggu keizinan untuk menyiarkan skrin anda.</String>
+	<String id="IDS_YOU_ARE_CASTING_TIPS"> sedang menyiar ke </String>	
+	<String id="IDS_WARNING">AMARAN</String>
+	<String id="IDS_RESTART_TIPS">Kad bunyi lalai telah diubah. Untuk menggunakannya dengan betul, sila berhenti menyiar dan menyiar semula.</String>
+  </String>
+</skin>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin version="1.0" load="1" type="string">
+  <String>
+	<String id="IDS_INSTALL_APPNAME">Installér ActivCast 2.0</String>
+	<String id="IDS_INSTALLING">Installerer ...</String>
+	<String id="STR_NEEDSPACE">Resterende plads: </String>
+	<String id="STR_FREESPACE">Krævet plads: </String>
+	<String id="STR_DOYOUWANTTOINSTALL">Du skal køre Activcast-installationen for at installere Activcast. Hvis du annullerer installationen, bliver Activcast ikke installeret. Er du sikker på, at du vil annullere Activcast-installationen?</String>
+	<String id="STR_DITECTAPPRUNNNIG">Et relateret program kører. Vælg \'Ja\' for først at lukke programmet.</String>
+	<String id="IDS_LICENSE_TITLE">Slutbrugerlicensaftale</String>
+    <String id="IDS_CANCEL">ANNULLER</String>
+    <String id="IDS_ACCEPT">ACCEPTÉR</String>
+    <String id="IDS_BEGIN_INSTALL">START INSTALLATION</String>
+    <String id="IDS_CHOOSE_PATH">Vælg en anden placering</String>
+	<String id="IDS_INSTALL_PATH_TIPS">Vi installerer det her …</String>
+    <String id="IDS_COMPLETE">UDFØRT</String>
+	<String id="IDS_INSTALL_TITLE_TIPS">Spejl indhold, idéer og apps på enheden på ActivPanel-skærmen. Understøtter nu berøring.</String>
+    <String id="IDS_ADD_DESKTOP_SHORTCUT">Tilføj en genvej på skrivebordet</String>
+	<String id="IDS_QUICK_LAUNCH">Tilføj et ikon til hurtig start i menuen Start</String>
+    <String id="IDS_FINISH_TITLE">Installationen er fuldført. Du er klar.</String>
+    <String id="IDS_ADD_OPTIONS">Flere indstillinger</String>
+	<String id="IDS_ADD_OPTIONS_CONTENT">Du kan når som helst ændre dem under \'Indstillinger\'.</String>
+    <String id="IDS_YES">JA</String>
+    <String id="IDS_NO">NEJ</String>
+	
+	<String id="IDS_UNINSTALL_APPNAME">Fjern ActivCast 2.0</String>
+	<String id="IDS_UNINSTALLING">Fjerner ...</String>
+    <String id="IDS_CONFIRM_REMOVE_APP">Er du sikker på, at du vil fjerne Activcast 2.0?</String>
+  </String>
+</skin>

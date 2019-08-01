@@ -1,0 +1,80 @@
+{
+	"manifest_name": {
+		"message": "Activ Cast"
+	},
+	"manifest_description": {
+		"message": "Activ Cast"
+	},
+	"manifest_short_name": {
+		"message": "Activ Cast"
+	},
+	"manifest_default_title": {
+		"message": "Activ Cast"
+	},
+	"Activ_Cast": {
+		"message": "Activ Cast"
+	},
+	"ENTER_PANEL_ID": {
+		"message": "ПАНЕЛЬ ИДЕНТИФИКАТОРЫН ЕНГІЗІҢІЗ"
+	},
+	"ENTER_YOUR_NAME": {
+		"message": "АТЫҢЫЗДЫ ЕНГІЗІҢІЗ"
+	},
+	"CANCEL": {
+		"message": "БАС ТАРТУ"
+	},
+	"CAST": {
+		"message": "ТРАНСЛЯЦИЯ"
+	},
+	"Untitled": {
+		"message": "Атаусыз"
+	},
+	"Casting": {
+		"message": "Трансляциялау"
+	},
+	"Waiting_Room": {
+		"message": "Күту бөлмесі"
+	},
+	"Please_wait_for_permission": {
+		"message": "Экраныңызға трансляциялау үшін рұқсат күтіңіз."
+	},
+	"Connecting___": {
+		"message": "Қосылуда......"
+	},
+	"TransportError": {
+		"message": "Тасымалдау қатесі"
+	},
+	"Network_Disconnected": {
+		"message": "Желі ажыратылды"
+	},
+	"Sender_Offline": {
+		"message": "Жіберуші офлайн"
+	},
+	"Connecting": {
+		"message": "Қосылуда"
+	},
+	"Failed": {
+		"message": "Сәтсіз болды"
+	},
+	"Disconnected": {
+		"message": "Ажыратылған"
+	},
+	"Closed": {
+		"message": "Жабық"
+	},
+	"You_are_casting_to": {
+		"message": "Сіз трансляциялап жатырсыз"
+	},
+	"STOP_CASTING": {
+		"message": "ТРАНСЛЯЦИЯНЫ ТОҚТАТУ"
+	},
+	"Panel_ID_Error": {
+		"message": "Панель идентификаторы қатесі. Қайталап көріңіз."
+	},
+	"Name_is_too_long": {
+		"message": "Name is too long. Please try again."
+	},
+	"Please_enter_your_name": {
+		"message": "Атыңызды енгізіңіз."
+	}
+}

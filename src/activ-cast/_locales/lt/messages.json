@@ -1,0 +1,80 @@
+{
+	"manifest_name": {
+		"message": "Activ Cast"
+	},
+	"manifest_description": {
+		"message": "Activ Cast"
+	},
+	"manifest_short_name": {
+		"message": "Activ Cast"
+	},
+	"manifest_default_title": {
+		"message": "Activ Cast"
+	},
+	"Activ_Cast": {
+		"message": "Activ Cast"
+	},
+	"ENTER_PANEL_ID": {
+		"message": "ĮVESKITE PULTO ID"
+	},
+	"ENTER_YOUR_NAME": {
+		"message": "ĮVESKITE SAVO VARDĄ"
+	},
+	"CANCEL": {
+		"message": "ATŠAUKTI"
+	},
+	"CAST": {
+		"message": "TRANSLIUOTI"
+	},
+	"Untitled": {
+		"message": "Be pavadinimo"
+	},
+	"Casting": {
+		"message": "Transliacija"
+	},
+	"Waiting_Room": {
+		"message": "Laukimo kambarys"
+	},
+	"Please_wait_for_permission": {
+		"message": "Palaukite, kol gausite leidimą transliuoti savo ekraną."
+	},
+	"Connecting___": {
+		"message": "Jungiamasi......"
+	},
+	"TransportError": {
+		"message": "TransportError"
+	},
+	"Network_Disconnected": {
+		"message": "Tinklas atsijungė"
+	},
+	"Sender_Offline": {
+		"message": "Siuntėjas neprisijungęs"
+	},
+	"Connecting": {
+		"message": "Jungiamasi"
+	},
+	"Failed": {
+		"message": "Nepavyko"
+	},
+	"Disconnected": {
+		"message": "Atsijungta"
+	},
+	"Closed": {
+		"message": "Uždaryta"
+	},
+	"You_are_casting_to": {
+		"message": "Transliuojate šiam vartotojui"
+	},
+	"STOP_CASTING": {
+		"message": "BAIGTI TRANSLIACIJĄ"
+	},
+	"Panel_ID_Error": {
+		"message": "Pulto ID klaida. Bandykite dar kartą."
+	},
+	"Name_is_too_long": {
+		"message": "Name is too long. Please try again."
+	},
+	"Please_enter_your_name": {
+		"message": "Įveskite savo vardą."
+	}
+}

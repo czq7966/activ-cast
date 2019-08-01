@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ActivCast 2.0</string>
+    <string name="enter_panel_name">Masukkan Nama Panel</string>
+    <string name="panel_id_label">ID Panel</string>
+    <string name="refresh_panel_id_prompt">Apakah Anda yakin ingin menyegarkan ID Panel? Semua perangkat yang terhubung akan terputus.</string>
+    <string name="refresh">SEGARKAN</string>
+    <string name="cancel">BATAL</string>
+    <string name="close_cast_prompt_content">Apakah Anda yakin ingin menutup Activcast? Semua sesi tampilan akan berakhir.</string>
+    <string name="close">TUTUP</string>
+    <string name="waiting_room">Ruang Tunggu:</string>
+    <string name="device_unit">Perangkat</string>
+    <string name="sort_by">Urut berdasarkan:</string>
+    <string name="position">Posisi</string>
+    <string name="alphabetical">Alfabet</string>
+    <string name="cast">TAMPILKAN</string>
+    <string name="select_client_count_tip">%d Terpilih</string>
+    <string name="select_client_count_max_tip">%d Terpilih(Maks)</string>
+    <string name="stop_connect_prompt">Apakah Anda yakin ingin mengakhiri tampilan untuk %1$s?</string>
+    <string name="end_cast">AKHIRI TAMPILAN</string>
+    <string name="casting_disconnect_prompt">%1$s tidak lagi menampilkan</string>
+    <string name="casting_settings">Pengaturan Tampilan</string>
+    <string name="picture_quality">Kualitas Gambar</string>
+    <string name="best_quality">Kualitas Terbaik</string>
+    <string name="good_quality">Kualitas Baik</string>
+    <string name="done">SELESAI</string>
+    <string name="apply_overlay_permission">Izinkan OVERLAY_PERMISSION untuk digunakan</string>
+    <string name="allow_permission">izinkan</string>
+    <string name="casting_disconnected">Tampilan terputus!</string>
+    <string name="ok">OK</string>
+</resources>

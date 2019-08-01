@@ -1,0 +1,80 @@
+{
+	"manifest_name": {
+		"message": "ActivCast"
+	},
+	"manifest_description": {
+		"message": "ActivCast"
+	},
+	"manifest_short_name": {
+		"message": "ActivCast"
+	},
+	"manifest_default_title": {
+		"message": "ActivCast"
+	},
+	"Activ_Cast": {
+		"message": "ActivCast"
+	},
+	"ENTER_PANEL_ID": {
+		"message": "ป้อนหมายเลข Panel"
+	},
+	"ENTER_YOUR_NAME": {
+		"message": "ป้อนชื่อของคุณ"
+	},
+	"CANCEL": {
+		"message": "ยกเลิก"
+	},
+	"CAST": {
+		"message": "แสดงผล"
+	},
+	"Untitled": {
+		"message": "ไม่มีชื่อ"
+	},
+	"Casting": {
+		"message": "การแสดงผล"
+	},
+	"Waiting_Room": {
+		"message": "ห้องรอ"
+	},
+	"Please_wait_for_permission": {
+		"message": "โปรดรอการอนุญาตเพื่อแสดงผลหน้าจอ"
+	},
+	"Connecting___": {
+		"message": "กำลังเชื่อมต่อ......"
+	},
+	"TransportError": {
+		"message": "การย้ายผิดพลาด"
+	},
+	"Network_Disconnected": {
+		"message": "เครือข่ายตัดการเชื่อมต่อ"
+	},
+	"Sender_Offline": {
+		"message": "ผู้ส่งออฟไลน์"
+	},
+	"Connecting": {
+		"message": "กำลังเชื่อมต่อ"
+	},
+	"Failed": {
+		"message": "ล้มเหลว"
+	},
+	"Disconnected": {
+		"message": "ตัดการเชื่อมต่อ"
+	},
+	"Closed": {
+		"message": "ปิด"
+	},
+	"You_are_casting_to": {
+		"message": "คุณกำลังทำการแสดงผลไปยัง"
+	},
+	"STOP_CASTING": {
+		"message": "หยุดการแสดงผล"
+	},
+	"Panel_ID_Error": {
+		"message": "หมายเลข Panel ผิดพลาด โปรดลองอีกครั้ง"
+	},
+	"Name_is_too_long": {
+		"message": "Name is too long. Please try again."
+	},
+	"Please_enter_your_name": {
+		"message": "โปรดป้อนชื่อของคุณ"
+	}
+}

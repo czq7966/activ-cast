@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ActivCast 2.0</string>
+    <string name="enter_panel_name">ป้อนชื่อ Panel</string>
+    <string name="panel_id_label">หมายเลข Panel</string>
+    <string name="refresh_panel_id_prompt">คุณแน่ใจหรือไม่ว่าต้องการรีเฟรชหมายเลข Panel นี้ อุปกรณ์ทั้งหมดที่เชื่อมต่อจะถูกตัดการเชื่อมต่อ</string>
+    <string name="refresh">รีเฟรช</string>
+    <string name="cancel">ยกเลิก</string>
+    <string name="close_cast_prompt_content">คุณแน่ใจหรือไม่ว่าต้องการปิด ActivCast เซสชันทั้งหมดที่กำลังแสดงผลอยู่จะสิ้นสุดลง</string>
+    <string name="close">ปิด</string>
+    <string name="waiting_room">ห้องรอ:</string>
+    <string name="device_unit">อุปกรณ์</string>
+    <string name="sort_by">จัดประเภทโดย:</string>
+    <string name="position">ตำแหน่ง</string>
+    <string name="alphabetical">ลำดับตัวอักษร</string>
+    <string name="cast">แสดงผล</string>
+    <string name="select_client_count_tip">เลือก %d</string>
+    <string name="select_client_count_max_tip">เลือก %d (สูงสุด)</string>
+    <string name="stop_connect_prompt">คุณแน่ใจหรือไม่ว่าต้องการสิ้นสุดการแสดงผลสำหรับ %1$s</string>
+    <string name="end_cast">สิ้นสุดการแสดงผล</string>
+    <string name="casting_disconnect_prompt">%1$s ไม่ได้ทำการแสดงผล</string>
+    <string name="casting_settings">การตั้งค่าการแสดงผล</string>
+    <string name="picture_quality">คุณภาพของภาพ</string>
+    <string name="best_quality">คุณภาพดีที่สุด</string>
+    <string name="good_quality">คุณภาพดี</string>
+    <string name="done">เสร็จ</string>
+    <string name="apply_overlay_permission">โปรดอนุญาต OVERLAY_PERMISSION เพื่อใช้</string>
+    <string name="allow_permission">อนุญาต</string>
+    <string name="casting_disconnected">การแสดงผลตัดการเชื่อมต่อ</string>
+    <string name="ok">ตกลง</string>
+</resources>

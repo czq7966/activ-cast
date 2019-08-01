@@ -1,0 +1,81 @@
+// Title
+
+"Install ActiCast" = "安裝 ActivCast";
+
+// Step
+
+"Introduction" = "簡介";
+
+"Read Me" = "讀我";
+
+"License" = "授權";
+
+"Destination Select" = "目的地選擇";
+
+"Installation Type" = "安裝類型";
+
+"Installation" = "安裝";
+
+"Installer Plugin" = "安裝外掛程式";
+
+"Summary" = "摘要";
+
+// Buttons
+
+"Print..." = "列印……";
+
+"Save..." = "儲存……";
+
+"Go Back" = "返回";
+
+"Continue" = "繼續";
+
+"Close" = "關閉";
+
+"Log Out" = "登出";
+
+"Restart" = "重新啟動";
+
+"Shut Down" = "關閉";
+
+// Introduction
+
+"Welcome to the ActivCast Installer" = "歡迎使用 ActivCast 安裝程式";
+
+"You will be guided through the steps necessary to install this software." = "我們將引導您完成安裝此軟體所需的步驟。";
+
+// Read Me
+
+"Important Information" = "重要資訊";
+
+// License
+
+"Software License Agreement" = "軟體授權合約";
+
+"English" = "繁體中文";
+
+// Installation Type
+
+"Package Name" = "套件名稱";
+
+"Package Action" = "操作";
+
+"Package Size" = "大小";
+
+"Space Required:" = "所需空間：";
+
+"Remaining:" = "剩餘：";
+
+"Standard Install" = "標準安裝";
+
+"StandardTitle" = "於「%@」進行標準安裝";
+
+"Customize" = "自訂";
+
+// Summary
+
+"The installation was completed successfully" = "安裝已順利完成";
+
+"Successful installation" = "已成功安裝";
+
+"ActivCast uses sound driver from “MATT INGALLS”. During installation, your system might block it from loading. To enable it, open Security & Privacy System Preferences and click "Allow" to grant permission." = "ActivCast 使用來自「MATT INGALLS」的聲效驅動程式。安裝期間，您的系統可能會封鎖它，使其無法載入。若要啟用它，請開啟「安全性與隱私權系統偏好設定」並按一下「允許」以授與權限。";

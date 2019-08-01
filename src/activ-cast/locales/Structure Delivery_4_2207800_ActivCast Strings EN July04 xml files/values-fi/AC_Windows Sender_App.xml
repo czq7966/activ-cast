@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin version="1.0" load="1" type="string" language="EN">
+  <String>
+    <String id="IDS_APP_NAME">ActivCast 2.0</String>
+    <String id="IDS_PANEL_ID_INVALID_TIPS">Virhe paneelin tunnuksessa. Yritä uudelleen.</String>
+    <String id="IDS_NAME_EMPTY_TIPS">Anna nimesi.</String>
+    <String id="IDS_CAST">LÄHETÄ</String>
+	<String id="IDS_ENTER_WAITING_ROOM">SIIRRY ODOTUSHUONEESEEN</String>
+    <String id="IDS_CANCEL">PERUUTA</String>
+    <String id="IDS_YES">KYLLÄ</String>
+    <String id="IDS_NO">EI</String>
+	<String id="IDS_STOP_CASTING">LOPETA LÄHETTÄMINEN</String>
+	<String id="IDS_CASTING_TITLE_TIPS">Lähetä näyttö ActivPaneliin</String>
+	<String id="IDS_CASTING_TO_NAME">Lähetä kohteeseen </String>	
+	<String id="IDS_TYPE_IN_PANELID_1">Kirjoita</String>
+	<String id="IDS_TYPE_IN_PANELID_2"> paneelin tunnus </String>
+	<String id="IDS_TYPE_IN_PANELID_3">ActivPanelin ActivCast 2.0:ssa näkyvässä muodossa.</String>	
+	<String id="IDS_UESRNAME_EMPTY_TIPS">Oma nimesi</String>
+	<String id="IDS_TOUCHBACK_TITLE_TIPS">Hallitse käyttämällä paneelia (Touchback)</String>
+	<String id="IDS_TOUCHBACK_ENABLE_TIPS">Ota Touchback käyttöön, niin ActivPanel voi käyttää näyttöäsi.</String>	
+	<String id="IDS_IN_WAITING_ROOM">Olet odotushuoneessa</String>
+	<String id="IDS_WAITING_ROOM_TIPS">Odota lupaa näytön lähettämiseen.</String>
+	<String id="IDS_YOU_ARE_CASTING_TIPS"> lähettää nyt kohteeseen </String>	
+	<String id="IDS_WARNING">VAROITUS</String>
+	<String id="IDS_RESTART_TIPS">Oletusäänikortti on vaihdettu. Lopeta lähettäminen ja aloita uusi lähetys, jotta se toimii oikein.</String>
+  </String>
+</skin>

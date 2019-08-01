@@ -1,0 +1,81 @@
+// Title
+
+"Install ActiCast" = "Установить ActivCast";
+
+// Step
+
+"Introduction" = "Введение";
+
+"Read Me" = "Прочти меня";
+
+"License" = "Лицензия";
+
+"Destination Select" = "Выбор папки назначения";
+
+"Installation Type" = "Тип установки";
+
+"Installation" = "Установка";
+
+"Installer Plugin" = "Плагин установщика";
+
+"Summary" = "Общие сведения";
+
+// Buttons
+
+"Print..." = "Печать...";
+
+"Save..." = "Сохранить…";
+
+"Go Back" = "Назад";
+
+"Continue" = "Продолжить";
+
+"Close" = "Закрыть";
+
+"Log Out" = "Выход";
+
+"Restart" = "Перезапустить";
+
+"Shut Down" = "Выключение";
+
+// Introduction
+
+"Welcome to the ActivCast Installer" = "Вас приветствует программа установки ActivCast";
+
+"You will be guided through the steps necessary to install this software." = "Вам будут предложены инструкции по установке программы.";
+
+// Read Me
+
+"Important Information" = "Важная информация";
+
+// License
+
+"Software License Agreement" = "Лицензионное соглашение на программное обеспечение";
+
+"English" = "Русский";
+
+// Installation Type
+
+"Package Name" = "Имя пакета";
+
+"Package Action" = "Действие";
+
+"Package Size" = "Размер";
+
+"Space Required:" = "Необходимое место:";
+
+"Remaining:" = "Свободно:";
+
+"Standard Install" = "Стандартная установка";
+
+"StandardTitle" = "Стандартная установка на “%@”";
+
+"Customize" = "Настроить";
+
+// Summary
+
+"The installation was completed successfully" = "Установка была успешно завершена";
+
+"Successful installation" = "Успешная установка";
+
+"ActivCast uses sound driver from “MATT INGALLS”. During installation, your system might block it from loading. To enable it, open Security & Privacy System Preferences and click "Allow" to grant permission." = "ActivCast использует звуковой драйвер MATT INGALLS. Во время установки ваша система может заблокировать загрузку. Чтобы ее разблокировать, откройте «Защита и безопасность» в системных настройках и нажмите «Разрешить».";

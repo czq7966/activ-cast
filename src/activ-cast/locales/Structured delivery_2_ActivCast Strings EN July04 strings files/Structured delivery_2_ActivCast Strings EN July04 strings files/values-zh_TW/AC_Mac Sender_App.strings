@@ -1,0 +1,48 @@
+/* 
+  Localizable.strings
+  pmcast
+
+  Created by 海涛 on 2019/6/28.
+  Copyright © 2019 cn.com.nd. All rights reserved.
+*/
+
+"ActivCast" = "ActivCast";
+"About ActivCast" = "關於 ActivCast";
+"Preferences…" = "偏好設定……";
+"Services" = "服務";
+"Hide ActivCast" = "隱藏 ActivCast";
+"Hide Others" = "隱藏其他項目";
+"Show All" = "顯示全部";
+"Quit ActivCast" = "離開 ActivCast";
+"Help" = "說明";
+"Guide" = "指南";
+
+"ActivCast 2.0" = "ActivCast 2.0";
+"ActivPanel" = "ActivPanel";
+"Cast screen to ActivPanel" = "將畫面投放至 ActivPanel";
+"Panel ID" = "面板 ID";
+"Type in the Panel ID as shown in ActivCast 2.0 on the ActivPanel." = "請輸入 ActivPanel 上的 ActivCast 2.0 中所示的面板 ID。";
+"Panel ID Error. Please try again." = "面板 ID 錯誤。請再試一次。";
+"Name is too long. Please try again." = "名稱過長。請再試一次。";
+"Please enter your name." = "請輸入您的姓名。";
+"Control from panel (Touchback)" = "從面板控制（Touchback）";
+"Enable touchback so that ActivPanel can navigate your screen." = "啟用 touchback 功能，以便 ActivPanel 瀏覽您的畫面。";
+"ENTER WAITING ROOM" = "進入等候室";
+
+"Settings" = "設定";
+"Picture Quality" = "畫面品質";
+"Best Quality" = "最佳品質";
+"Good Quality" = "良好品質";
+"CANCEL" = "取消";
+"DONE" = "已完成";
+
+"You’re in the waiting room" = "您已在等候室內";
+"Please wait for permission to cast your screen." = "請等候投放您的螢幕的許可。";
+"EXIT WAITING ROOM" = "離開等候室";
+"STOP CASTING" = "停止投放";
+"A is now casting to B" = "A 現正投放至 B";
+
+"A program tried to load a new system extension signed by B. If you want to enable these extensions, open Security & Privacy System Preferences." = "一個程式曾試圖載入由 B 簽署的新系統擴充功能。如果要啟用這些擴充功能，請開啟「安全性與隱私權系統偏好設定」。";
+
+
+

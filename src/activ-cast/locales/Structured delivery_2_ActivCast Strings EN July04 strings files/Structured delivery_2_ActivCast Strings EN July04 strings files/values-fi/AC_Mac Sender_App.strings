@@ -1,0 +1,48 @@
+/* 
+  Localizable.strings
+  pmcast
+
+  Created by 海涛 on 2019/6/28.
+  Copyright © 2019 cn.com.nd. All rights reserved.
+*/
+
+"ActivCast" = "ActivCast";
+"About ActivCast" = "Tietoja ActivCastista";
+"Preferences…" = "Määritykset...";
+"Services" = "Palvelut";
+"Hide ActivCast" = "Piilota ActivCast";
+"Hide Others" = "Piilota muut";
+"Show All" = "Näytä kaikki";
+"Quit ActivCast" = "Lopeta ActivCast";
+"Help" = "Ohje";
+"Guide" = "Opas";
+
+"ActivCast 2.0" = "ActivCast 2.0";
+"ActivPanel" = "ActivPanel";
+"Cast screen to ActivPanel" = "Lähetä näyttö ActivPaneliin";
+"Panel ID" = "Paneelin tunnus";
+"Type in the Panel ID as shown in ActivCast 2.0 on the ActivPanel." = "Kirjoita paneelin tunnus ActivPanelin ActivCast 2.0:ssa näkyvässä muodossa.";
+"Panel ID Error. Please try again." = "Virhe paneelin tunnuksessa. Yritä uudelleen.";
+"Name is too long. Please try again." = "Nimi on liian pitkä. Yritä uudelleen.";
+"Please enter your name." = "Anna nimesi.";
+"Control from panel (Touchback)" = "Hallitse käyttämällä paneelia (Touchback)";
+"Enable touchback so that ActivPanel can navigate your screen." = "Ota Touchback käyttöön, niin ActivPanel voi käyttää näyttöäsi.";
+"ENTER WAITING ROOM" = "SIIRRY ODOTUSHUONEESEEN";
+
+"Settings" = "Asetukset";
+"Picture Quality" = "Kuvan laatu";
+"Best Quality" = "Paras laatu";
+"Good Quality" = "Hyvä laatu";
+"CANCEL" = "PERUUTA";
+"DONE" = "VALMIS";
+
+"You’re in the waiting room" = "Olet odotushuoneessa";
+"Please wait for permission to cast your screen." = "Odota lupaa näytön lähettämiseen.";
+"EXIT WAITING ROOM" = "POISTU ODOTUSHUONEESTA";
+"STOP CASTING" = "LOPETA LÄHETTÄMINEN";
+"A is now casting to B" = "A lähettää nyt kohteeseen B";
+
+"A program tried to load a new system extension signed by B. If you want to enable these extensions, open Security & Privacy System Preferences." = "Ohjelma yritti ladata B:n allekirjoittaman uuden järjestelmälaajennuksen. Jos haluat ottaa nämä laajennukset käyttöön, avaa tietoturvan ja yksityisyyden järjestelmäasetukset.";
+
+
+

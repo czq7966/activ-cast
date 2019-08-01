@@ -1,0 +1,23 @@
+{
+	"Activ Cast Sender": "ActivCast Gönderici",
+	"Activ Cast 2.0": "Activ Cast 2.0",
+	"Activ Cast": "ActivCast",
+	"ENTER PANEL ID": "PANEL KİMLİĞİNİ GİRİN",
+	"ENTER YOUR NAME": "ADINIZI GİRİN",
+	"CANCEL": "İPTAL",
+	"CAST": "YAYINLA",
+	"Untitled": "Başlıksız",
+	"Casting": "Yayınlama",
+	"Waiting Room": "Bekleme Odası",
+	"Please wait for permission to cast your screen.": "Ekranınızı yayınlamak için lütfen izin bekleyin.",
+	"Connecting......": "Bağlanıyor...",
+	"TransportError": "TransportError",
+	"Network Disconnected": "Ağ Bağlantısı Kesildi",
+	"Sender Offline": "Gönderici Çevrimdışı",
+	"Connecting": "Bağlanıyor",
+	"Failed": "Yapılamadı",
+	"Disconnected": "Bağlantı Kesildi",
+	"Closed": "Kapalı",
+	"You are casting to": "Şuraya yayın yapıyorsunuz:",
+	"STOP CASTING": "YAYINI DURDUR"
+}

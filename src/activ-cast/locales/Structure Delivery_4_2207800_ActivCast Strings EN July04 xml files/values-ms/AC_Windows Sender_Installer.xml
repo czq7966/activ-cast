@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin version="1.0" load="1" type="string">
+  <String>
+	<String id="IDS_INSTALL_APPNAME">Pasang ActivCast 2.0</String>
+	<String id="IDS_INSTALLING">Memasang...</String>
+	<String id="STR_NEEDSPACE">Ruang Baki: </String>
+	<String id="STR_FREESPACE">Ruang yang Diperlukan: </String>
+	<String id="STR_DOYOUWANTTOINSTALL">Untuk memasang Activcast, anda mesti menjalankan pemasangan Activcast. Jika anda membatalkan pemasangan, Activcast tidak akan dipasang. Adakah anda pasti anda ingin membatalkan pemasangan Activcast?</String>
+	<String id="STR_DITECTAPPRUNNNIG">Program yang berkaitan sedang dijalankan. Sila tekan \'Ya\' untuk menutup program dahulu.</String>
+	<String id="IDS_LICENSE_TITLE">Perjanjian Lesen Pengguna Akhir</String>
+    <String id="IDS_CANCEL">BATAL</String>
+    <String id="IDS_ACCEPT">TERIMA</String>
+    <String id="IDS_BEGIN_INSTALL">MULA PEMASANGAN</String>
+    <String id="IDS_CHOOSE_PATH">Pilih lokasi yang berlainan</String>
+	<String id="IDS_INSTALL_PATH_TIPS">Kami akan memasangnya di sini…</String>
+    <String id="IDS_COMPLETE">SELESAI</String>
+	<String id="IDS_INSTALL_TITLE_TIPS">Cerminkan kandungan, idea dan aplikasi pada peranti anda ke ActivPanel. Kini dengan sokongan sentuhan balik.</String>
+    <String id="IDS_ADD_DESKTOP_SHORTCUT">Tambah pintasan desktop</String>
+	<String id="IDS_QUICK_LAUNCH">Tambah ikon lancar cepat dalam menu mula</String>
+    <String id="IDS_FINISH_TITLE">Pemasangan berjaya dilengkapkan. Anda sudah sedia!</String>
+    <String id="IDS_ADD_OPTIONS">Pilihan tambahan</String>
+	<String id="IDS_ADD_OPTIONS_CONTENT">(Anda juga boleh mengubah ini pada bila-bila masa di bawah \'Tetapan\').</String>
+    <String id="IDS_YES">YA</String>
+    <String id="IDS_NO">TIDAK</String>
+	
+	<String id="IDS_UNINSTALL_APPNAME">Nyahpasang ActivCast 2.0</String>
+	<String id="IDS_UNINSTALLING">Menyahpasang…</String>
+    <String id="IDS_CONFIRM_REMOVE_APP">Adakah anda pasti anda ingin mengeluarkan Activcast 2.0?</String>
+  </String>
+</skin>

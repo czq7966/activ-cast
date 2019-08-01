@@ -1,0 +1,81 @@
+// Title
+
+"Install ActiCast" = "Installer ActiCast";
+
+// Step
+
+"Introduction" = "Introduction";
+
+"Read Me" = "Lisez-moi";
+
+"License" = "Licence";
+
+"Destination Select" = "Sélectionner une destination";
+
+"Installation Type" = "Type d'installation";
+
+"Installation" = "Installation";
+
+"Installer Plugin" = "Plug-in du programme d’installation";
+
+"Summary" = "Résumé";
+
+// Buttons
+
+"Print..." = "Imprimer…";
+
+"Save..." = "Enregistrer…";
+
+"Go Back" = "Revenir en arrière";
+
+"Continue" = "Continuer";
+
+"Close" = "Fermer";
+
+"Log Out" = "Se déconnecter";
+
+"Restart" = "Redémarrer";
+
+"Shut Down" = "Arrêter";
+
+// Introduction
+
+"Welcome to the ActivCast Installer" = "Bienvenue dans le programme d'installation d'ActivCast";
+
+"You will be guided through the steps necessary to install this software." = "Vous allez être guidé pas à pas pour installer ce logiciel.";
+
+// Read Me
+
+"Important Information" = "Importantes informations";
+
+// License
+
+"Software License Agreement" = "Contrat de licence du logiciel";
+
+"English" = "Français";
+
+// Installation Type
+
+"Package Name" = "Nom du paquet";
+
+"Package Action" = "Action";
+
+"Package Size" = "Taille";
+
+"Space Required:" = "Espace requis :";
+
+"Remaining:" = "Espace restant :";
+
+"Standard Install" = "Installation standard";
+
+"StandardTitle" = "Installation standard sur « %@ »";
+
+"Customize" = "Personnaliser";
+
+// Summary
+
+"The installation was completed successfully" = "L'installation a réussi";
+
+"Successful installation" = "Installation réussie";
+
+"ActivCast uses sound driver from “MATT INGALLS”. During installation, your system might block it from loading. To enable it, open Security & Privacy System Preferences and click "Allow" to grant permission." = "ActivCast utilise le pilote son de « MATT INGALLS ». Pendant l'installation, votre système pourrait bloquer son chargement. Pour l'activer, ouvrez les préférences système Sécurité et confidentialité et cliquez sur « Autoriser » pour accorder la permission.";

@@ -1,0 +1,81 @@
+// Title
+
+"Install ActiCast" = "ActivCast installieren";
+
+// Step
+
+"Introduction" = "Einführung";
+
+"Read Me" = "Readme";
+
+"License" = "Lizenz";
+
+"Destination Select" = "Ziel auswählen";
+
+"Installation Type" = "Installationstyp";
+
+"Installation" = "Installation";
+
+"Installer Plugin" = "Installationsprogramm-Plug-In";
+
+"Summary" = "Zusammenfassung";
+
+// Buttons
+
+"Print..." = "Drucken...";
+
+"Save..." = "Sichern...";
+
+"Go Back" = "Zurück";
+
+"Continue" = "Fortfahren";
+
+"Close" = "Schließen";
+
+"Log Out" = "Abmelden";
+
+"Restart" = "Neustart";
+
+"Shut Down" = "Ausschalten";
+
+// Introduction
+
+"Welcome to the ActivCast Installer" = "Willkommen beim Installationsprogramm von ActivCast";
+
+"You will be guided through the steps necessary to install this software." = "Sie werden durch die für die Installation dieser Software erforderlichen Schritte geführt.";
+
+// Read Me
+
+"Important Information" = "Wichtige Informationen";
+
+// License
+
+"Software License Agreement" = "Software-Lizenzvertrag";
+
+"English" = "Deutsch";
+
+// Installation Type
+
+"Package Name" = "Paketname";
+
+"Package Action" = "Aktion";
+
+"Package Size" = "Größe";
+
+"Space Required:" = "Erforderlicher Speicherplatz:";
+
+"Remaining:" = "Verbleibend:";
+
+"Standard Install" = "Standardinstallation";
+
+"StandardTitle" = "Standardinstallation auf „%@“";
+
+"Customize" = "Anpassen";
+
+// Summary
+
+"The installation was completed successfully" = "Die Installation wurde erfolgreich abgeschlossen";
+
+"Successful installation" = "Erfolgreiche Installation";
+
+"ActivCast uses sound driver from “MATT INGALLS”. During installation, your system might block it from loading. To enable it, open Security & Privacy System Preferences and click "Allow" to grant permission." = "ActivCast verwendet Soundtreiber von „MATT INGALLS“. Während der Installation wird das Laden möglicherweise von Ihrem System blockiert. Zum Aktivieren der Treiber öffnen Sie unter „Systemeinstellungen“ die Option „Sicherheit & Datenschutz“ und klicken Sie auf „Zulassen“, um die Berechtigung zu erteilen.";

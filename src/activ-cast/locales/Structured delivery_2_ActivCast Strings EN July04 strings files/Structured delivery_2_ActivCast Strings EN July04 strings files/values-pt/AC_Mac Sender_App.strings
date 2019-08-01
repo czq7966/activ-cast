@@ -1,0 +1,48 @@
+/* 
+  Localizable.strings
+  pmcast
+
+  Created by 海涛 on 2019/6/28.
+  Copyright © 2019 cn.com.nd. All rights reserved.
+*/
+
+"ActivCast" = "ActivCast";
+"About ActivCast" = "Acerca do ActivCast";
+"Preferences…" = "Preferências...";
+"Services" = "Serviços";
+"Hide ActivCast" = "Ocultar o ActivCast";
+"Hide Others" = "Ocultar outros";
+"Show All" = "Mostrar tudo";
+"Quit ActivCast" = "Sair do ActivCast";
+"Help" = "Ajuda";
+"Guide" = "Guia";
+
+"ActivCast 2.0" = "ActivCast 2.0";
+"ActivPanel" = "ActivPanel";
+"Cast screen to ActivPanel" = "Transmitir ecrã para o ActivPanel";
+"Panel ID" = "ID do Painel";
+"Type in the Panel ID as shown in ActivCast 2.0 on the ActivPanel." = "Introduza o ID do Painel conforme apresentado no ActivPanel do ActivCast 2.0.";
+"Panel ID Error. Please try again." = "Erro de ID do Painel. Tente novamente.";
+"Name is too long. Please try again." = "O nome é demasiado longo. Tente novamente.";
+"Please enter your name." = "Introduza o seu nome.";
+"Control from panel (Touchback)" = "Controlar a partir do painel (duplicação bidirecional)";
+"Enable touchback so that ActivPanel can navigate your screen." = "Ative a duplicação bidirecional para que o ActivPanel possa navegar pelo seu ecrã.";
+"ENTER WAITING ROOM" = "ENTRAR NA SALA DE ESPERA";
+
+"Settings" = "Definições";
+"Picture Quality" = "Qualidade de imagem";
+"Best Quality" = "Melhor Qualidade";
+"Good Quality" = "Boa Qualidade";
+"CANCEL" = "CANCELAR";
+"DONE" = "CONCLUÍDO";
+
+"You’re in the waiting room" = "Está na sala de espera";
+"Please wait for permission to cast your screen." = "Aguarde até ter permissão para transmitir o seu ecrã.";
+"EXIT WAITING ROOM" = "SAIR DA SALA DE ESPERA";
+"STOP CASTING" = "PARAR A TRANSMISSÃO";
+"A is now casting to B" = "A está a transmitir para B";
+
+"A program tried to load a new system extension signed by B. If you want to enable these extensions, open Security & Privacy System Preferences." = "Um programa tentou carregar uma nova extensão de sistema assinada por B. Se pretender ativar estas extensões, abra Segurança e Privacidade em Preferências do Sistema.";
+
+
+

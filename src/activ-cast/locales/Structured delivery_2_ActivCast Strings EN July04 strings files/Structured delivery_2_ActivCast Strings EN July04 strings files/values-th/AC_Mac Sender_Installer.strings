@@ -1,0 +1,81 @@
+// Title
+
+"Install ActiCast" = "ติดตั้ง ActiCast";
+
+// Step
+
+"Introduction" = "บทนำ";
+
+"Read Me" = "ไฟล์แสดงรายละเอียดโปรแกรม";
+
+"License" = "การอนุญาตให้ใช้สิทธิ";
+
+"Destination Select" = "เลือกจุดหมายปลายทาง";
+
+"Installation Type" = "ประเภทการติดตั้ง";
+
+"Installation" = "การติดตั้ง";
+
+"Installer Plugin" = "ปลั๊กอินโปรแกรมติดตั้ง";
+
+"Summary" = "สรุป";
+
+// Buttons
+
+"Print..." = "พิมพ์...";
+
+"Save..." = "บันทึก...";
+
+"Go Back" = "ย้อนกลับ";
+
+"Continue" = "ดำเนินการต่อ";
+
+"Close" = "ปิด";
+
+"Log Out" = "ลงชื่อออกจากระบบ";
+
+"Restart" = "รีสตาร์ท";
+
+"Shut Down" = "ปิดเครื่อง";
+
+// Introduction
+
+"Welcome to the ActivCast Installer" = "ยินดีต้อนรับสู่โปรแกรมติดตั้ง ActivCast";
+
+"You will be guided through the steps necessary to install this software." = "เราจะนำคุณไปตามขั้นตอนต่างๆ ที่จำเป็นในการติดตั้งซอฟต์แวร์นี้";
+
+// Read Me
+
+"Important Information" = "ข้อมูลสำคัญ";
+
+// License
+
+"Software License Agreement" = "ข้อตกลงสิทธิ์ใช้งานซอฟต์แวร์";
+
+"English" = "ไทย";
+
+// Installation Type
+
+"Package Name" = "ชื่อแพคเกจ";
+
+"Package Action" = "การดำเนินการ";
+
+"Package Size" = "ขนาด";
+
+"Space Required:" = "พื้นที่ว่างที่ต้องใช้:";
+
+"Remaining:" = "พื้นที่ว่างที่เหลือ:";
+
+"Standard Install" = "การติดตั้งแบบมาตรฐาน";
+
+"StandardTitle" = "การติดตั้งแบบมาตรฐานบน “%@”";
+
+"Customize" = "ปรับแต่ง";
+
+// Summary
+
+"The installation was completed successfully" = "การติดตั้งตั้งเสร็จสมบูรณ์";
+
+"Successful installation" = "การติดตั้งตั้งเสร็จสมบูรณ์";
+
+"ActivCast uses sound driver from “MATT INGALLS”. During installation, your system might block it from loading. To enable it, open Security & Privacy System Preferences and click "Allow" to grant permission." = "ActivCast ใช้ไดรเวอร์เสียงจาก “MATT INGALLS” ในระหว่างการติดตั้ง ระบบของคุณอาจบล็อกไม่ให้โหลด หากต้องการเปิดใช้งาน เปิดไปที่ การตั้งค่าระบบความปลอดภัยและความเป็นส่วนตัว และคลิก "อนุญาต" เพื่อให้อนุญาต";

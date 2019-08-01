@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin version="1.0" load="1" type="string">
+  <String>
+	<String id="IDS_INSTALL_APPNAME">تثبيت ActivCast 2.0</String>
+	<String id="IDS_INSTALLING">يتم التثبيت...</String>
+	<String id="STR_NEEDSPACE">المساحة المتبقية: </String>
+	<String id="STR_FREESPACE">المساحة المطلوبة: </String>
+	<String id="STR_DOYOUWANTTOINSTALL">لتثبيت Activcast، يجب عليك تشغيل تثبيت Activcast. في حالة الغاء التثبيت، لن يتم تثبيت Activcast. هل تريد بالتأكيد إلغاء تثبيت Activcast؟</String>
+	<String id="STR_DITECTAPPRUNNNIG">يوجد برنامج مرتبط قيد التشغيل. يرجى لمس \&quot;نعم\&quot; لغلق البرنامج أولاً.</String>
+	<String id="IDS_LICENSE_TITLE">اتفاقية ترخيص المستخدم النهائي</String>
+    <String id="IDS_CANCEL">إلغاء</String>
+    <String id="IDS_ACCEPT">موافقة</String>
+    <String id="IDS_BEGIN_INSTALL">بدء التثبيت</String>
+    <String id="IDS_CHOOSE_PATH">اختيار موقع مختلف</String>
+	<String id="IDS_INSTALL_PATH_TIPS">سيتم التثبيت هنا...</String>
+    <String id="IDS_COMPLETE">تم</String>
+	<String id="IDS_INSTALL_TITLE_TIPS">قم بعرض المحتوى والأفكار والتطبيقات على جهازك على ActivPanel. الآن من خلال دعم التحكم بالكمبيوتر من اللوحة.</String>
+    <String id="IDS_ADD_DESKTOP_SHORTCUT">إضافة اختصار على سطح المكتب</String>
+	<String id="IDS_QUICK_LAUNCH">إضافة أيقونة تشغيل سريع في قائمة البدء</String>
+    <String id="IDS_FINISH_TITLE">اكتمل التثبيت بنجاح. كل شيء جاهز الآن!</String>
+    <String id="IDS_ADD_OPTIONS">خيارات إضافية</String>
+	<String id="IDS_ADD_OPTIONS_CONTENT">(يمكنك أيضًا تغيير ذلك في أي وقت ضمن \&quot;الإعدادات\&quot;).</String>
+    <String id="IDS_YES">نعم</String>
+    <String id="IDS_NO">لا</String>
+	
+	<String id="IDS_UNINSTALL_APPNAME">إلغاء تثبيت ActivCast 2.0</String>
+	<String id="IDS_UNINSTALLING">يتم إلغاء التثبيت...</String>
+    <String id="IDS_CONFIRM_REMOVE_APP">هل تريد بالتأكيد إزالة Activcast 2.0؟</String>
+  </String>
+</skin>

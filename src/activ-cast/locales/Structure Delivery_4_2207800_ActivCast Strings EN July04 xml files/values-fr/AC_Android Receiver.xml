@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ActivCast 2.0</string>
+    <string name="enter_panel_name">Entrer le nom du tableau</string>
+    <string name="panel_id_label">ID du tableau</string>
+    <string name="refresh_panel_id_prompt">Êtes-vous certain de vouloir actualiser l\'ID du tableau ? Tous les périphériques connectés seront déconnectés.</string>
+    <string name="refresh">ACTUALISER</string>
+    <string name="cancel">ANNULER</string>
+    <string name="close_cast_prompt_content">Êtes-vous certain de vouloir fermer Activcast 2.0 ? Toutes les sessions de diffusion seront arrêtées.</string>
+    <string name="close">FERMER</string>
+    <string name="waiting_room">Salle d\'attente :</string>
+    <string name="device_unit">Périphérique(s)</string>
+    <string name="sort_by">Trier par :</string>
+    <string name="position">Position</string>
+    <string name="alphabetical">Alphabétique</string>
+    <string name="cast">DIFFUSER</string>
+    <string name="select_client_count_tip">%d sélectionné</string>
+    <string name="select_client_count_max_tip">%d sélectionné (max)</string>
+    <string name="stop_connect_prompt">Êtes-vous certain de vouloir arrêter la diffusion pour %1$s ?</string>
+    <string name="end_cast">ARRÊTER LA DIFFUSION</string>
+    <string name="casting_disconnect_prompt">%1$s n\'est plus diffusé</string>
+    <string name="casting_settings">Paramètres de diffusion</string>
+    <string name="picture_quality">Qualité d\'image</string>
+    <string name="best_quality">Meilleure qualité</string>
+    <string name="good_quality">Bonne qualité</string>
+    <string name="done">TERMINÉ</string>
+    <string name="apply_overlay_permission">Veuillez autoriser l\'utilisation de OVERLAY_PERMISSION</string>
+    <string name="allow_permission">donner la permission</string>
+    <string name="casting_disconnected">La diffusion est déconnectée !</string>
+    <string name="ok">OK</string>
+</resources>

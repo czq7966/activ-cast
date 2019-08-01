@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ActivCast 2.0</string>
+    <string name="enter_panel_name">Panel-Namen eingeben</string>
+    <string name="panel_id_label">Panel-ID</string>
+    <string name="refresh_panel_id_prompt">Soll diese Panel-ID wirklich aktualisiert werden? Alle angeschlossenen Geräte werden getrennt.</string>
+    <string name="refresh">AKTUALISIEREN</string>
+    <string name="cancel">ABBRECHEN</string>
+    <string name="close_cast_prompt_content">Möchten Sie ActivCast wirklich schließen? Alle Casting-Sitzungen werden beendet.</string>
+    <string name="close">SCHLIESSEN</string>
+    <string name="waiting_room">Warteraum:</string>
+    <string name="device_unit">Gerät(e)</string>
+    <string name="sort_by">Sortieren nach:</string>
+    <string name="position">Position</string>
+    <string name="alphabetical">Alphabetisch</string>
+    <string name="cast">CAST</string>
+    <string name="select_client_count_tip">%d ausgewählt</string>
+    <string name="select_client_count_max_tip">%d ausgewählt (max.)</string>
+    <string name="stop_connect_prompt">Möchten Sie das Casting für %1$d wirklich beenden?</string>
+    <string name="end_cast">CAST BEENDEN</string>
+    <string name="casting_disconnect_prompt">%1$s führt kein Casting mehr aus</string>
+    <string name="casting_settings">Casting-Einstellungen</string>
+    <string name="picture_quality">Bildqualität</string>
+    <string name="best_quality">Beste Qualität</string>
+    <string name="good_quality">Gute Qualität</string>
+    <string name="done">FERTIG</string>
+    <string name="apply_overlay_permission">Bitte gestatten Sie OVERLAY_PERMISSION die Verwendung</string>
+    <string name="allow_permission">Berechtigung zulassen</string>
+    <string name="casting_disconnected">Casting ist getrennt!</string>
+    <string name="ok">OK</string>
+</resources>

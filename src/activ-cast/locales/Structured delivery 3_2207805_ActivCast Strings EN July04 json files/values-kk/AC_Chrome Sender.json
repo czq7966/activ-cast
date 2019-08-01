@@ -1,0 +1,23 @@
+{
+	"Activ Cast Sender": "Activ Cast жіберушісі",
+	"Activ Cast 2.0": "Activ Cast 2.0",
+	"Activ Cast": "Activ Cast",
+	"ENTER PANEL ID": "ПАНЕЛЬ ИДЕНТИФИКАТОРЫН ЕНГІЗІҢІЗ",
+	"ENTER YOUR NAME": "АТЫҢЫЗДЫ ЕНГІЗІҢІЗ",
+	"CANCEL": "БАС ТАРТУ",
+	"CAST": "ТРАНСЛЯЦИЯ",
+	"Untitled": "Атаусыз",
+	"Casting": "Трансляциялау",
+	"Waiting Room": "Күту бөлмесі",
+	"Please wait for permission to cast your screen.": "Экраныңызға трансляциялау үшін рұқсат күтіңіз.",
+	"Connecting......": "Қосылуда......",
+	"TransportError": "Тасымалдау қатесі",
+	"Network Disconnected": "Желі ажыратылды",
+	"Sender Offline": "Жіберуші офлайн",
+	"Connecting": "Қосылуда",
+	"Failed": "Сәтсіз болды",
+	"Disconnected": "Ажыратылған",
+	"Closed": "Жабық",
+	"You are casting to": "Сіз трансляциялап жатырсыз",
+	"STOP CASTING": "ТРАНСЛЯЦИЯНЫ ТОҚТАТУ"
+}

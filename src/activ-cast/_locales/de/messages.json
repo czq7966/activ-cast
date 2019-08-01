@@ -1,0 +1,80 @@
+{
+	"manifest_name": {
+		"message": "ActivCast"
+	},
+	"manifest_description": {
+		"message": "ActivCast"
+	},
+	"manifest_short_name": {
+		"message": "ActivCast"
+	},
+	"manifest_default_title": {
+		"message": "ActivCast"
+	},
+	"Activ_Cast": {
+		"message": "ActivCast"
+	},
+	"ENTER_PANEL_ID": {
+		"message": "PANEL-ID EINGEBEN"
+	},
+	"ENTER_YOUR_NAME": {
+		"message": "GEBEN SIE IHREN NAMEN EIN"
+	},
+	"CANCEL": {
+		"message": "ABBRECHEN"
+	},
+	"CAST": {
+		"message": "CAST"
+	},
+	"Untitled": {
+		"message": "Unbenannt"
+	},
+	"Casting": {
+		"message": "Casting"
+	},
+	"Waiting_Room": {
+		"message": "Warteraum"
+	},
+	"Please_wait_for_permission": {
+		"message": "Warten Sie auf die Berechtigung, ein Casting Ihres Bildschirms vorzunehmen."
+	},
+	"Connecting___": {
+		"message": "Verbindung wird hergestellt......"
+	},
+	"TransportError": {
+		"message": "TransportFehler"
+	},
+	"Network_Disconnected": {
+		"message": "Netzwerk getrennt"
+	},
+	"Sender_Offline": {
+		"message": "Sender offline"
+	},
+	"Connecting": {
+		"message": "Verbindung wird hergestellt"
+	},
+	"Failed": {
+		"message": "Fehler"
+	},
+	"Disconnected": {
+		"message": "Getrennt"
+	},
+	"Closed": {
+		"message": "Geschlossen"
+	},
+	"You_are_casting_to": {
+		"message": "Sie führen ein Casting aus zu"
+	},
+	"STOP_CASTING": {
+		"message": "CASTING STOPPEN"
+	},
+	"Panel_ID_Error": {
+		"message": "Panel-ID-Fehler. Versuchen Sie es erneut."
+	},
+	"Name_is_too_long": {
+		"message": "Name is too long. Please try again."
+	},
+	"Please_enter_your_name": {
+		"message": "Geben Sie Ihren Namen ein."
+	}
+}

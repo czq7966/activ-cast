@@ -1,0 +1,48 @@
+/* 
+  Localizable.strings
+  pmcast
+
+  Created by 海涛 on 2019/6/28.
+  Copyright © 2019 cn.com.nd. All rights reserved.
+*/
+
+"ActivCast" = "ActivCast";
+"About ActivCast" = "Over ActivCast";
+"Preferences…" = "Voorkeuren...";
+"Services" = "Dienstverlening";
+"Hide ActivCast" = "Verberg ActivCast";
+"Hide Others" = "Verberg overig";
+"Show All" = "Alles tonen";
+"Quit ActivCast" = "Sluit ActivCast";
+"Help" = "Help";
+"Guide" = "Gids";
+
+"ActivCast 2.0" = "ActivCast 2.0";
+"ActivPanel" = "ActivPanel";
+"Cast screen to ActivPanel" = "Cast scherm naar ActivPanel";
+"Panel ID" = "Paneel ID";
+"Type in the Panel ID as shown in ActivCast 2.0 on the ActivPanel." = "Voer het Paneel-ID in zoals getoond in ActivCast 2.0 op het ActivPanel.";
+"Panel ID Error. Please try again." = "Paneel ID fout. Probeer het opnieuw.";
+"Name is too long. Please try again." = "Naam is te lang. Probeer het opnieuw.";
+"Please enter your name." = "Voer uw naam in.";
+"Control from panel (Touchback)" = "Besturing via paneel (Touchback)";
+"Enable touchback so that ActivPanel can navigate your screen." = "Schakel touchback in zodat het ActivPanel uw scherm kan navigeren.";
+"ENTER WAITING ROOM" = "GA NAAR WACHTRIJ";
+
+"Settings" = "Instellingen";
+"Picture Quality" = "Beeldkwaliteit";
+"Best Quality" = "Beste kwaliteit";
+"Good Quality" = "Goede kwaliteit";
+"CANCEL" = "ANNULEREN";
+"DONE" = "GEREED";
+
+"You’re in the waiting room" = "U bent nu in de wachtrij";
+"Please wait for permission to cast your screen." = "Wacht op goedkeuring om uw scherm te casten.";
+"EXIT WAITING ROOM" = "SLUIT WACHTRIJ AF";
+"STOP CASTING" = "STOP MET CASTEN";
+"A is now casting to B" = "A is nu aan het casten naar B";
+
+"A program tried to load a new system extension signed by B. If you want to enable these extensions, open Security & Privacy System Preferences." = "Een programma probeerde een nieuwe systeemextensie te laden die is ondertekend door B. Wanneer u deze extensies wil inschakelen, gaat u naar de Systeemvoorkeuren bij Veiligheid & Privacy.";
+
+
+

@@ -1,0 +1,81 @@
+// Title
+
+"Install ActiCast" = "Cài đặt ActiCast";
+
+// Step
+
+"Introduction" = "Giới thiệu";
+
+"Read Me" = "Read Me";
+
+"License" = "Giấy phép";
+
+"Destination Select" = "Chọn đích";
+
+"Installation Type" = "Kiểu cài đặt";
+
+"Installation" = "Cài đặt";
+
+"Installer Plugin" = "Tính năng bổ sung trình cài đặt";
+
+"Summary" = "Tóm tắt";
+
+// Buttons
+
+"Print..." = "In...";
+
+"Save..." = "Lưu...";
+
+"Go Back" = "Quay lại";
+
+"Continue" = "Tiếp tục";
+
+"Close" = "Đóng";
+
+"Log Out" = "Đăng xuất";
+
+"Restart" = "Khởi động";
+
+"Shut Down" = "Tắt";
+
+// Introduction
+
+"Welcome to the ActivCast Installer" = "Chào mừng đến với trình cài đặt ActivCast";
+
+"You will be guided through the steps necessary to install this software." = "Bạn sẽ được hướng dẫn qua các bước cần thiết để cài đặt phần mềm này.";
+
+// Read Me
+
+"Important Information" = "Thông tin quan trọng";
+
+// License
+
+"Software License Agreement" = "Hợp đồng cấp phép phần mềm";
+
+"English" = "Tiếng Việt";
+
+// Installation Type
+
+"Package Name" = "Tên gói";
+
+"Package Action" = "Hành động";
+
+"Package Size" = "Cỡ";
+
+"Space Required:" = "Không gian lưu trữ bắt buộc:";
+
+"Remaining:" = "Còn lại:";
+
+"Standard Install" = "Cài đặt tiêu chuẩn";
+
+"StandardTitle" = "Cài đặt tiêu chuẩn trên “%@”";
+
+"Customize" = "Tùy chỉnh";
+
+// Summary
+
+"The installation was completed successfully" = "Quá trình cài đặt này đã hoàn thành thành công";
+
+"Successful installation" = "Cài đặt thành công";
+
+"ActivCast uses sound driver from “MATT INGALLS”. During installation, your system might block it from loading. To enable it, open Security & Privacy System Preferences and click "Allow" to grant permission." = "ActivCast dùng trình điều khiển âm thanh từ “MATT INGALLS”. Trong quá trình cài đặt, hệ thống của bạn có thể chặn việc tải trình điều khiển này. Để bật, hãy mở phần Tùy chọn hệ thống Bảo mật & quyền riêng tư, rồi bấm vào "Cho phép" để cấp quyền.";

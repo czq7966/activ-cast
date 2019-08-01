@@ -1,0 +1,80 @@
+{
+	"manifest_name": {
+		"message": "Activ Cast"
+	},
+	"manifest_description": {
+		"message": "Activ Cast"
+	},
+	"manifest_short_name": {
+		"message": "Activ Cast"
+	},
+	"manifest_default_title": {
+		"message": "Activ Cast"
+	},
+	"Activ_Cast": {
+		"message": "Activ Cast"
+	},
+	"ENTER_PANEL_ID": {
+		"message": "ВВЕДИТЕ ИДЕНТИФИКАТОР ПАНЕЛИ"
+	},
+	"ENTER_YOUR_NAME": {
+		"message": "ВВЕДИТЕ ВАШЕ ИМЯ"
+	},
+	"CANCEL": {
+		"message": "ОТМЕНА"
+	},
+	"CAST": {
+		"message": "ТРАНСЛИРОВАТЬ"
+	},
+	"Untitled": {
+		"message": "Безымянный"
+	},
+	"Casting": {
+		"message": "Трансляция"
+	},
+	"Waiting_Room": {
+		"message": "Комната ожидания"
+	},
+	"Please_wait_for_permission": {
+		"message": "Пожалуйста, дождитесь разрешения для трансляции вашего экрана."
+	},
+	"Connecting___": {
+		"message": "Подключение......"
+	},
+	"TransportError": {
+		"message": "ОшибкаПередачи"
+	},
+	"Network_Disconnected": {
+		"message": "Сеть отключена"
+	},
+	"Sender_Offline": {
+		"message": "Передающее устройство оффлайн"
+	},
+	"Connecting": {
+		"message": "Подключение"
+	},
+	"Failed": {
+		"message": "Сбой"
+	},
+	"Disconnected": {
+		"message": "Отключен"
+	},
+	"Closed": {
+		"message": "Закрыто"
+	},
+	"You_are_casting_to": {
+		"message": "Вы транслируете на"
+	},
+	"STOP_CASTING": {
+		"message": "ОСТАНОВИТЬ ТРАНСЛЯЦИЮ"
+	},
+	"Panel_ID_Error": {
+		"message": "Ошибка идентификатора панели. Повторите попытку."
+	},
+	"Name_is_too_long": {
+		"message": "Name is too long. Please try again."
+	},
+	"Please_enter_your_name": {
+		"message": "Введите ваше имя."
+	}
+}

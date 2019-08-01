@@ -1,0 +1,23 @@
+{
+	"Activ Cast Sender": "ActivCast Sender",
+	"Activ Cast 2.0": "ActivCast 2.0",
+	"Activ Cast": "ActivCast",
+	"ENTER PANEL ID": "ANGE PANEL-ID",
+	"ENTER YOUR NAME": "ANGE DITT NAMN",
+	"CANCEL": "AVBRYT",
+	"CAST": "SÄND",
+	"Untitled": "Namnlös",
+	"Casting": "Sänder",
+	"Waiting Room": "Väntrum",
+	"Please wait for permission to cast your screen.": "Vänta på tillstånd att sända din skärm.",
+	"Connecting......": "Ansluter …",
+	"TransportError": "Transportfel",
+	"Network Disconnected": "Nätverket kopplades från",
+	"Sender Offline": "Avsändaren är offline",
+	"Connecting": "Ansluter",
+	"Failed": "Misslyckades",
+	"Disconnected": "Frånkopplad",
+	"Closed": "Stängd",
+	"You are casting to": "Du sänder till",
+	"STOP CASTING": "STOPPA SÄNDNING"
+}

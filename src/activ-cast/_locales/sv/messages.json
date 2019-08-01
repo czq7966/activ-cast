@@ -1,0 +1,80 @@
+{
+	"manifest_name": {
+		"message": "ActivCast"
+	},
+	"manifest_description": {
+		"message": "ActivCast"
+	},
+	"manifest_short_name": {
+		"message": "ActivCast"
+	},
+	"manifest_default_title": {
+		"message": "ActivCast"
+	},
+	"Activ_Cast": {
+		"message": "ActivCast"
+	},
+	"ENTER_PANEL_ID": {
+		"message": "ANGE PANEL-ID"
+	},
+	"ENTER_YOUR_NAME": {
+		"message": "ANGE DITT NAMN"
+	},
+	"CANCEL": {
+		"message": "AVBRYT"
+	},
+	"CAST": {
+		"message": "SÄND"
+	},
+	"Untitled": {
+		"message": "Namnlös"
+	},
+	"Casting": {
+		"message": "Sänder"
+	},
+	"Waiting_Room": {
+		"message": "Väntrum"
+	},
+	"Please_wait_for_permission": {
+		"message": "Vänta på tillstånd att sända din skärm."
+	},
+	"Connecting___": {
+		"message": "Ansluter …"
+	},
+	"TransportError": {
+		"message": "Transportfel"
+	},
+	"Network_Disconnected": {
+		"message": "Nätverket kopplades från"
+	},
+	"Sender_Offline": {
+		"message": "Avsändaren är offline"
+	},
+	"Connecting": {
+		"message": "Ansluter"
+	},
+	"Failed": {
+		"message": "Misslyckades"
+	},
+	"Disconnected": {
+		"message": "Frånkopplad"
+	},
+	"Closed": {
+		"message": "Stängd"
+	},
+	"You_are_casting_to": {
+		"message": "Du sänder till"
+	},
+	"STOP_CASTING": {
+		"message": "STOPPA SÄNDNING"
+	},
+	"Panel_ID_Error": {
+		"message": "Fel panel-ID. Försök igen."
+	},
+	"Name_is_too_long": {
+		"message": "Name is too long. Please try again."
+	},
+	"Please_enter_your_name": {
+		"message": "Ange ditt namn."
+	}
+}

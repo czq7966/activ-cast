@@ -1,0 +1,80 @@
+{
+	"manifest_name": {
+		"message": "ActivCast"
+	},
+	"manifest_description": {
+		"message": "ActivCast"
+	},
+	"manifest_short_name": {
+		"message": "ActivCast"
+	},
+	"manifest_default_title": {
+		"message": "ActivCast"
+	},
+	"Activ_Cast": {
+		"message": "ActivCast"
+	},
+	"ENTER_PANEL_ID": {
+		"message": "輸入面板 ID"
+	},
+	"ENTER_YOUR_NAME": {
+		"message": "輸入您的姓名"
+	},
+	"CANCEL": {
+		"message": "取消"
+	},
+	"CAST": {
+		"message": "投放"
+	},
+	"Untitled": {
+		"message": "無標題"
+	},
+	"Casting": {
+		"message": "正在投放"
+	},
+	"Waiting_Room": {
+		"message": "等候室"
+	},
+	"Please_wait_for_permission": {
+		"message": "請等候投放您的螢幕的許可。"
+	},
+	"Connecting___": {
+		"message": "正在連線……"
+	},
+	"TransportError": {
+		"message": "傳輸錯誤"
+	},
+	"Network_Disconnected": {
+		"message": "網路已中斷連線"
+	},
+	"Sender_Offline": {
+		"message": "傳送者離線"
+	},
+	"Connecting": {
+		"message": "正在連線"
+	},
+	"Failed": {
+		"message": "失敗"
+	},
+	"Disconnected": {
+		"message": "已中斷連線"
+	},
+	"Closed": {
+		"message": "已關閉"
+	},
+	"You_are_casting_to": {
+		"message": "您正投放至"
+	},
+	"STOP_CASTING": {
+		"message": "停止投放"
+	},
+	"Panel_ID_Error": {
+		"message": "面板 ID 錯誤。請再試一次。"
+	},
+	"Name_is_too_long": {
+		"message": "Name is too long. Please try again."
+	},
+	"Please_enter_your_name": {
+		"message": "請輸入您的姓名。"
+	}
+}

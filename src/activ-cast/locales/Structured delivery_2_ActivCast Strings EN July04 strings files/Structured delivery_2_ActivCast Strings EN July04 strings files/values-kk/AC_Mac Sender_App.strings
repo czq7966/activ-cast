@@ -1,0 +1,48 @@
+/* 
+  Localizable.strings
+  pmcast
+
+  Created by 海涛 on 2019/6/28.
+  Copyright © 2019 cn.com.nd. All rights reserved.
+*/
+
+"ActivCast" = "ActivCast";
+"About ActivCast" = "ActivCast туралы";
+"Preferences…" = "Параметрлер…";
+"Services" = "Қызметтер";
+"Hide ActivCast" = "ActivCast жасыру";
+"Hide Others" = "Басқаларын жасыру";
+"Show All" = "Барлығын көрсету";
+"Quit ActivCast" = "ActivCast шығу";
+"Help" = "Анықтама";
+"Guide" = "Нұсқау";
+
+"ActivCast 2.0" = "ActivCast 2.0";
+"ActivPanel" = "ActivPanel";
+"Cast screen to ActivPanel" = "ActivPanel экранына трансляциялау";
+"Panel ID" = "Панель идентификаторы";
+"Type in the Panel ID as shown in ActivCast 2.0 on the ActivPanel." = "ActivPanel құралына ActivCast 2.0 нұсқасында көрсетілгендей панель идентификаторын енгізіңіз.";
+"Panel ID Error. Please try again." = "Панель идентификаторы қатесі. Қайталап көріңіз.";
+"Name is too long. Please try again." = "Атауы тым ұзын. Қайталап көріңіз.";
+"Please enter your name." = "Атыңызды енгізіңіз.";
+"Control from panel (Touchback)" = "Панельден басқару (түрту)";
+"Enable touchback so that ActivPanel can navigate your screen." = "ActivPanel экранда жылжуы үшін, түрту функциясын қосыңыз.";
+"ENTER WAITING ROOM" = "КҮТУ БӨЛМЕСІНЕ КІРУ";
+
+"Settings" = "Параметрлер";
+"Picture Quality" = "Сурет сапасы";
+"Best Quality" = "Өте жақсы сапа";
+"Good Quality" = "Жақсы сапа";
+"CANCEL" = "БАС ТАРТУ";
+"DONE" = "ДАЙЫН";
+
+"You’re in the waiting room" = "Сіз күту бөлмесіндесіз";
+"Please wait for permission to cast your screen." = "Экраныңызға трансляциялау үшін рұқсат күтіңіз.";
+"EXIT WAITING ROOM" = "КҮТУ БӨЛМЕСІНЕН ШЫҒУ";
+"STOP CASTING" = "ТРАНСЛЯЦИЯНЫ ТОҚТАТУ";
+"A is now casting to B" = "А қазір В жағына трансляциялауда";
+
+"A program tried to load a new system extension signed by B. If you want to enable these extensions, open Security & Privacy System Preferences." = "Бағдарлама В қол қойған жаңа жүйе кеңейтімін жүктеп көрді. Егер бұл кеңейтімдерді қосқыңыз келсе, «Қауіпсіздік және құпиялық жүйесі параметрлері» тармағын ашыңыз.";
+
+
+

@@ -1,0 +1,80 @@
+{
+	"manifest_name": {
+		"message": "ActivCast"
+	},
+	"manifest_description": {
+		"message": "ActivCast"
+	},
+	"manifest_short_name": {
+		"message": "ActivCast"
+	},
+	"manifest_default_title": {
+		"message": "ActivCast"
+	},
+	"Activ_Cast": {
+		"message": "ActivCast"
+	},
+	"ENTER_PANEL_ID": {
+		"message": "INTRODUZA O ID DO PAINEL"
+	},
+	"ENTER_YOUR_NAME": {
+		"message": "INTRODUZA O SEU NOME"
+	},
+	"CANCEL": {
+		"message": "CANCELAR"
+	},
+	"CAST": {
+		"message": "TRANSMITIR"
+	},
+	"Untitled": {
+		"message": "Sem Título"
+	},
+	"Casting": {
+		"message": "A transmitir"
+	},
+	"Waiting_Room": {
+		"message": "Sala de Espera"
+	},
+	"Please_wait_for_permission": {
+		"message": "Aguarde até ter permissão para transmitir o seu ecrã."
+	},
+	"Connecting___": {
+		"message": "A ligar......"
+	},
+	"TransportError": {
+		"message": "Erro de Transporte"
+	},
+	"Network_Disconnected": {
+		"message": "Rede Desligada"
+	},
+	"Sender_Offline": {
+		"message": "Emissor Offline"
+	},
+	"Connecting": {
+		"message": "A ligar"
+	},
+	"Failed": {
+		"message": "Falha"
+	},
+	"Disconnected": {
+		"message": "Desligado"
+	},
+	"Closed": {
+		"message": "Fechado"
+	},
+	"You_are_casting_to": {
+		"message": "Está a transmitir para"
+	},
+	"STOP_CASTING": {
+		"message": "PARAR A TRANSMISSÃO"
+	},
+	"Panel_ID_Error": {
+		"message": "Erro de ID do Painel. Tente novamente."
+	},
+	"Name_is_too_long": {
+		"message": "Name is too long. Please try again."
+	},
+	"Please_enter_your_name": {
+		"message": "Introduza o seu nome."
+	}
+}

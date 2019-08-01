@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin version="1.0" load="1" type="string">
+  <String>
+	<String id="IDS_INSTALL_APPNAME">安裝 ActivCast 2.0</String>
+	<String id="IDS_INSTALLING">正在安裝……</String>
+	<String id="STR_NEEDSPACE">剩餘空間：</String>
+	<String id="STR_FREESPACE">所需空間：</String>
+	<String id="STR_DOYOUWANTTOINSTALL">要安裝 Activcast，您必須執行 Activcast 安裝程式。如果取消安裝，便不會安裝 ActivCast。確定要取消安裝 ActivCast 嗎？</String>
+	<String id="STR_DITECTAPPRUNNNIG">已有一個相關程式在執行中。請先點選「是」以關閉該程式。</String>
+	<String id="IDS_LICENSE_TITLE">使用者授權合約</String>
+    <String id="IDS_CANCEL">取消</String>
+    <String id="IDS_ACCEPT">同意</String>
+    <String id="IDS_BEGIN_INSTALL">開始安裝</String>
+    <String id="IDS_CHOOSE_PATH">選擇不同的位置</String>
+	<String id="IDS_INSTALL_PATH_TIPS">我們會安裝在這裡……</String>
+    <String id="IDS_COMPLETE">完成</String>
+	<String id="IDS_INSTALL_TITLE_TIPS">將您裝置上的內容、想法及應用程式鏡像投放至 ActivPanel。現支援 touchback。</String>
+    <String id="IDS_ADD_DESKTOP_SHORTCUT">新增桌面捷徑</String>
+	<String id="IDS_QUICK_LAUNCH">在開始功能表新增快速啟動圖示</String>
+    <String id="IDS_FINISH_TITLE">安裝已成功完成。一切準備就緒！</String>
+    <String id="IDS_ADD_OPTIONS">其他選項</String>
+	<String id="IDS_ADD_OPTIONS_CONTENT">（您也可以隨時在「設定」下變更這些項目。）</String>
+    <String id="IDS_YES">是</String>
+    <String id="IDS_NO">否</String>
+	
+	<String id="IDS_UNINSTALL_APPNAME">解除安裝 ActivCast 2.0</String>
+	<String id="IDS_UNINSTALLING">正在解除安裝……</String>
+    <String id="IDS_CONFIRM_REMOVE_APP">確定要移除 ActivCast 2.0 嗎？</String>
+  </String>
+</skin>

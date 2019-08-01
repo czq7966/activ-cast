@@ -1,0 +1,48 @@
+/* 
+  Localizable.strings
+  pmcast
+
+  Created by 海涛 on 2019/6/28.
+  Copyright © 2019 cn.com.nd. All rights reserved.
+*/
+
+"ActivCast" = "ActivCast";
+"About ActivCast" = "Giới thiệu về ActivCast";
+"Preferences…" = "Tùy chọn...";
+"Services" = "Dịch vụ";
+"Hide ActivCast" = "Ẩn ActivCast";
+"Hide Others" = "Ẩn các mục khác";
+"Show All" = "Hiển thị tất cả";
+"Quit ActivCast" = "Thoát ActivCast";
+"Help" = "Trợ giúp";
+"Guide" = "Hướng dẫn";
+
+"ActivCast 2.0" = "ActivCast 2.0";
+"ActivPanel" = "ActivPanel";
+"Cast screen to ActivPanel" = "Truyền màn hình tới ActivPanel";
+"Panel ID" = "ID bảng điều khiển";
+"Type in the Panel ID as shown in ActivCast 2.0 on the ActivPanel." = "Nhập ID bảng điều khiển như hiển thị trong ActivCast 2.0 trên ActivPanel.";
+"Panel ID Error. Please try again." = "Lỗi ID bảng điều khiển. Vui lòng thử lại.";
+"Name is too long. Please try again." = "Tên quá dài. Vui lòng thử lại.";
+"Please enter your name." = "Vui lòng nhập tên của bạn.";
+"Control from panel (Touchback)" = "Kiểm soát từ bảng điều khiển (Touchback)";
+"Enable touchback so that ActivPanel can navigate your screen." = "Bật tính năng touchback để ActivPanel có thể điều hướng màn hình của bạn.";
+"ENTER WAITING ROOM" = "VÀO PHÒNG CHỜ";
+
+"Settings" = "Thiết lập";
+"Picture Quality" = "Chất lượng hình ảnh";
+"Best Quality" = "Chất lượng tốt nhất";
+"Good Quality" = "Chất lượng tốt";
+"CANCEL" = "HỦY";
+"DONE" = "HOÀN TẤT";
+
+"You’re in the waiting room" = "Bạn đang trong phòng chờ";
+"Please wait for permission to cast your screen." = "Vui lòng chờ được cấp phép để truyền màn hình của bạn.";
+"EXIT WAITING ROOM" = "THOÁT KHỎI PHÒNG CHỜ";
+"STOP CASTING" = "DỪNG TRUYỀN";
+"A is now casting to B" = "A giờ đang truyền tới B";
+
+"A program tried to load a new system extension signed by B. If you want to enable these extensions, open Security & Privacy System Preferences." = "Chương trình đang cố gắng tải một phần mở rộng hệ thống mới do B ký. Nếu bạn muốn bật những phần mở rộng này, hãy mở Tùy chọn hệ thống Bảo mật & quyền riêng tư.";
+
+
+

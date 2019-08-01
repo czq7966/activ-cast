@@ -1,0 +1,80 @@
+{
+	"manifest_name": {
+		"message": "Activ Cast"
+	},
+	"manifest_description": {
+		"message": "Activ Cast"
+	},
+	"manifest_short_name": {
+		"message": "Activ Cast"
+	},
+	"manifest_default_title": {
+		"message": "Activ Cast"
+	},
+	"Activ_Cast": {
+		"message": "Activ Cast"
+	},
+	"ENTER_PANEL_ID": {
+		"message": "ADJA MEG A PANELAZONOSÍTÓT"
+	},
+	"ENTER_YOUR_NAME": {
+		"message": "ADJA MEG A NEVÉT"
+	},
+	"CANCEL": {
+		"message": "MÉGSE"
+	},
+	"CAST": {
+		"message": "KÉPERNYŐ MEGOSZTÁSA"
+	},
+	"Untitled": {
+		"message": "Cím nélkül"
+	},
+	"Casting": {
+		"message": "Képernyő megosztása"
+	},
+	"Waiting_Room": {
+		"message": "Előszoba"
+	},
+	"Please_wait_for_permission": {
+		"message": "Várja meg a képernyő megosztására vonatkozó engedélyt."
+	},
+	"Connecting___": {
+		"message": "Csatlakozás......"
+	},
+	"TransportError": {
+		"message": "Átviteli hiba"
+	},
+	"Network_Disconnected": {
+		"message": "A hálózati kapcsolat megszakítva"
+	},
+	"Sender_Offline": {
+		"message": "A küldő fél nem érhető el"
+	},
+	"Connecting": {
+		"message": "Csatlakozás"
+	},
+	"Failed": {
+		"message": "Sikertelen"
+	},
+	"Disconnected": {
+		"message": "Kapcsolat bontva"
+	},
+	"Closed": {
+		"message": "Bezárva"
+	},
+	"You_are_casting_to": {
+		"message": "Képernyő megosztása a következővel:"
+	},
+	"STOP_CASTING": {
+		"message": "KÉPERNYŐ MEGOSZTÁSÁNAK LEÁLLÍTÁSA"
+	},
+	"Panel_ID_Error": {
+		"message": "Hibás panelazonosító. Próbálja meg újra."
+	},
+	"Name_is_too_long": {
+		"message": "Name is too long. Please try again."
+	},
+	"Please_enter_your_name": {
+		"message": "Kérjük, adja meg nevét."
+	}
+}
