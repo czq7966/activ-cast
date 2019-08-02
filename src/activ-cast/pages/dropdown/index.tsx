@@ -377,9 +377,16 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
     }
     startCast() {
         let nick = this.state.userNick || "";
+        let sid = this.state.targetSid;
+        if (sid.length == 0) {
+            this.setState({
+                panelIdError: sid.length == 0
+            })
+            return;
+        }        
         if (nick.length == 0) {
             this.setState({
-                nameIsEmpty: nick.length == 0 ? true: false
+                nameIsEmpty: nick.length == 0
             })
             return;
         }
@@ -470,10 +477,7 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
     }
         
     onCastBtnClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-        let sid = this.state.targetSid;
-        if (!!sid) {
-            this.startCast();
-        }
+        this.startCast();
     }    
     
     //Commands
