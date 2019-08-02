@@ -2,7 +2,7 @@
    "default_locale":"en",
    "name":"__MSG_manifest_name__",
    "author":"ND CZQ",
-   "version":"1.1.0.1",
+   "version":"1.1.1.0",
    "manifest_version":2,
    "minimum_chrome_version":"34",
    "description":"__MSG_manifest_description__",
@@ -15,16 +15,16 @@
       "persistent": true
    },
    "browser_action":{  
-      "default_icon":"images/icon128.png",
+      "default_icon":"images/icons/128.png",
       "default_title":"__MSG_manifest_default_title__",
       "default_popup": "pages/dropdown/index.html"
    },
    "icons":{
-      "16" : "images/icon16.png",
-      "32" : "images/icon32.png",
-      "48" : "images/icon48.png",
-      "64" : "images/icon64.png",
-      "128" : "images/icon128.png"
+      "16" : "images/icons/16.png",
+      "32" : "images/icons/32.png",
+      "48" : "images/icons/48.png",
+      "64" : "images/icons/64.png",
+      "128" : "images/icons/128.png"
    },
    "permissions":[
       "desktopCapture"

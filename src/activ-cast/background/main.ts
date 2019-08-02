@@ -40,7 +40,7 @@ export class Main extends ADHOCCAST.Cmds.Common.CommandRooter {
         this.initEvents();
         this.connect();
         chrome.browserAction.setIcon({
-            path: 'images/icon128.png'
+            path: 'images/icons/128.png'
         })
     }
     destroy() {
