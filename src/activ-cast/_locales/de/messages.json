@@ -1,18 +1,18 @@
 {
 	"manifest_name": {
-		"message": "ActivCast"
+		"message": "ScreenShare"
 	},
 	"manifest_description": {
-		"message": "ActivCast"
+		"message": "ScreenShare"
 	},
 	"manifest_short_name": {
-		"message": "ActivCast"
+		"message": "ScreenShare"
 	},
 	"manifest_default_title": {
-		"message": "ActivCast"
+		"message": "ScreenShare"
 	},
 	"Activ_Cast": {
-		"message": "ActivCast"
+		"message": "ScreenShare"
 	},
 	"ENTER_PANEL_ID": {
 		"message": "PANEL-ID EINGEBEN"

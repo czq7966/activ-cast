@@ -1,18 +1,18 @@
 {
 	"manifest_name": {
-		"message": "Activ Cast"
+		"message": "ScreenShare"
 	},
 	"manifest_description": {
-		"message": "Activ Cast"
+		"message": "ScreenShare"
 	},
 	"manifest_short_name": {
-		"message": "Activ Cast"
+		"message": "ScreenShare"
 	},
 	"manifest_default_title": {
-		"message": "Activ Cast"
+		"message": "ScreenShare"
 	},
 	"Activ_Cast": {
-		"message": "Activ Cast"
+		"message": "ScreenShare"
 	},
 	"ENTER_PANEL_ID": {
 		"message": "NHẬP ID BẢNG ĐIỀU KHIỂN"
