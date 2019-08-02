@@ -1,19 +1,19 @@
 {    
     "manifest_name": {
-        "message":    "Activ Cast"
+        "message":    "ScreenShare"
     },
 	"manifest_description":  {
-        "message":    "Activ Cast"
+        "message":    "ScreenShare"
     },
 	"manifest_short_name":  {
-        "message":    "Activ Cast"
+        "message":    "ScreenShare"
     },    
 	"manifest_default_title":  {
-        "message":    "Activ Cast"
-    },            
-	"Activ_Cast":  {
-        "message":    "Activ Cast"
+        "message":    "ScreenShare"
     },
+	"Activ_Cast":  {
+        "message":    "ScreenShare"
+    },    
 	"ENTER_PANEL_ID":  {
         "message":    "ENTER PANEL ID"
     },
@@ -24,7 +24,7 @@
         "message":    "CANCEL"
     },
 	"CAST":  {
-        "message":    "CAST"
+        "message":    "SHARE SCREEN"
     },
 	"Untitled":  {
         "message":    "Untitled"
@@ -36,8 +36,8 @@
         "message":    "Waiting Room"
     },
 	"Please_wait_for_permission":  {
-        "message":    "Please wait for permission to cast your screen."
-    },
+        "message":    "Please wait for permission to share screen."
+    },    
 	"Connecting___":  {
         "message":    "Connecting......"
     },
@@ -63,10 +63,10 @@
         "message":    "Closed"
     },
     "You_are_casting_to":  {
-        "message":    "You are casting to"
-    },
+        "message":    "Sharing screen to"
+    },    
     "STOP_CASTING":  {
-        "message":    "STOP CASTING"
+        "message":    "STOP SHARING SCREEN"
     },
     "Panel_ID_Error":  {
         "message":    "Panel ID Error. Please try again."
@@ -76,5 +76,26 @@
     },
     "Please_enter_your_name":  {
         "message":    "Please enter your name."
-    } 
+    },
+    "App_Name":  {
+        "message":    "ScreenShare"
+    },
+    "ScreenShare":  {
+        "message":    "ScreenShare"
+    },        
+    "Screen_Share":  {
+        "message":    "Screen Share"
+    },        
+    "SHARE_SCREEN":  {
+        "message":    "SHARE SCREEN"
+    },        
+    "STOP_SHARING_SCREEN":  {
+        "message":    "STOP SHARING SCREEN"
+    },        
+    "Sharing_screen_to":  {
+        "message":    "Sharing screen to"
+    },        
+    "Please_wait_for_permission_to_share_screen":  {
+        "message":    "Please wait for permission to share screen."
+    }          
 }
