@@ -15,9 +15,12 @@ function getAspectRatio(w, h) {
     return (w / r) / (h / r);
 }
 class CaptureDesktop {
+    chooseDesktopMediaHandle: number;
     getStream(screenOptions: Array<ECaptureScreenOptions>,  callback: (stream: MediaStream, tab?: chrome.tabs.Tab) => void) {
+        this.cancelChooseDesktopMedia();
         let chooseDesktopMedia = chrome.desktopCapture.chooseDesktopMedia as any;
-        chooseDesktopMedia(screenOptions, (streamId: string, opts, ...args) => {
+        this.chooseDesktopMediaHandle = chooseDesktopMedia(screenOptions, (streamId: string, opts, ...args) => {
+            this.chooseDesktopMediaHandle = null;
             if (streamId) {
                 let constraints = {
                     audio: !(opts && opts.canRequestAudioTrack === true) ? false : {
@@ -95,6 +98,13 @@ class CaptureDesktop {
                 })
             })            
         })  
+    }
+
+    cancelChooseDesktopMedia() {
+        if (this.chooseDesktopMediaHandle) {
+            chrome.desktopCapture.cancelChooseDesktopMedia(this.chooseDesktopMediaHandle);
+            this.chooseDesktopMediaHandle = null;
+        }
     }
 }
 var captureDesktop = new CaptureDesktop();
