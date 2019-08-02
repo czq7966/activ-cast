@@ -23,7 +23,7 @@ body.index {
 
 
 .fontStyle {
-  font-family: 'Avenir Next';
+  font-family: 'Noto Sans';
   color:white;
   font-size: 14px;  
 }
@@ -169,7 +169,7 @@ body.index {
 .fontStyle_button {
   font-weight: bold;
   color: white;
-  text-shadow: 1px -1px 1px gray;
+  font-size: 18px;    
 }
 
 /* Cast Button  */
@@ -177,17 +177,18 @@ body.index {
   margin-right: 20px;
 }
 .cast_btn button {
-  width: 86px;
-  height: 40px;
-  background: url("../../images/resting_cast_btn.svg");
+  height: 30px;
+  background-color: rgba(0, 0, 0, 1);
   border-style: none;
   background-repeat: no-repeat;
 }
 .cast_btn button:hover {
-  background: url("../../images/hover_cast_btn.svg");
+  text-shadow: 0px 4px 6px yellow;
+  cursor: pointer;
 }
 .cast_btn button:active {
-  background: url("../../images/down_cast_btn.svg");
+  text-shadow: 0px 0px 1px yellow;
+  color: rgb(200, 200, 200);
 }
 
 /* Cancel Button */
@@ -195,17 +196,18 @@ body.index {
   margin-right: 20px;
 }
 .cancel_btn button {
-  width: 106px;
-  height: 40px;
-  background: url("../../images/resting_cancel_btn.svg");
+  height: 30px;
+  background-color: rgba(0, 0, 0, 1);
   border-style: none;
   background-repeat: no-repeat;
 }
 .cancel_btn button:hover {
-  background: url("../../images/hover_cancel_btn.svg");
+  text-shadow: 0px 4px 6px yellow;
+  cursor: pointer;
 }
 .cancel_btn button:active {
-  background: url("../../images/down_cancel_btn.svg");
+  text-shadow: 0px 0px 1px yellow;
+  color: rgb(200, 200, 200);
 }
 
 /* Stop Button */
@@ -213,23 +215,25 @@ body.index {
   margin-right: 20px;
 }
 .stop_btn button {
-  width: 149px;
-  height: 40px;
-  background: url("../../images/resting_stop_casting_btn.svg");
+  height: 30px;
+  background-color: rgba(0, 0, 0, 1);
   border-style: none;
   background-repeat: no-repeat;
+  color: #F0682E;
 }
 .stop_btn button:hover {
-  background: url("../../images/hover_stop_casting_btn.svg");
+  color: #F0682E;
+  text-shadow: 0px 2px 4px yellow;
+  cursor: pointer;
 }
 .stop_btn button:active {
-  background: url("../../images/down_stop_casting_btn.svg");
+  color: #C94C1B
 }
 
 /* Footer Div */
 .footer {
   position: absolute;
-  top: 328px;
+  top: 338px;
   width: 100%;
 
   flex-grow: 1;

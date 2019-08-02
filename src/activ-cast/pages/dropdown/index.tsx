@@ -224,7 +224,7 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
         let msg_casting_label = () => <div className="msg_casting_label fontStyle"><span>{msg_label_msg}</span><div className="msg_casting_name" >{msg_casting_name}</div></div>
 
         let footer = () =>  <div className="footer">
-                                {cancel_btn()}
+                                {/* {cancel_btn()} */}
                                 {cast_btn()}
                             </div>
         let footer_cancel = () =>   <div className="footer">
