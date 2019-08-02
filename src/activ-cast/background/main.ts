@@ -83,6 +83,9 @@ export class Main extends ADHOCCAST.Cmds.Common.CommandRooter {
             case ADHOCCAST.Cmds.ECommandId.stream_webrtc_ongetconfig:
                 this.onWebrtcGetConfig(cmd)
                 break;
+            case ADHOCCAST.Cmds.ECommandId.adhoc_logout:     
+                this.on_adhoc_logout(cmd);
+                break;                
             default:
                 break;
         } 
@@ -228,5 +231,16 @@ export class Main extends ADHOCCAST.Cmds.Common.CommandRooter {
             }
         })
     }
+
+    on_adhoc_logout = (cmd: ADHOCCAST.Cmds.Common.ICommand) => {
+        let type = cmd.data.type;
+        if (type == ADHOCCAST.Cmds.ECommandType.req) {
+            let props = cmd.data.props as ADHOCCAST.Cmds.ICommandReqDataProps;
+            let user = props.user;
+            if (user.sid = storage.items.target.sid) {
+                chrome.runtime.reload();
+            }
+        }
+    }    
 }
 
