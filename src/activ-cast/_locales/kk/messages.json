@@ -1,18 +1,18 @@
 {
 	"manifest_name": {
-		"message": "ScreenShare"
+		"message": "Screen Share"
 	},
 	"manifest_description": {
-		"message": "ScreenShare"
+		"message": "Screen Share"
 	},
 	"manifest_short_name": {
-		"message": "ScreenShare"
+		"message": "Screen Share"
 	},
 	"manifest_default_title": {
-		"message": "ScreenShare"
+		"message": "Screen Share"
 	},
 	"Activ_Cast": {
-		"message": "ScreenShare"
+		"message": "Screen Share"
 	},
 	"ENTER_PANEL_ID": {
 		"message": "ПАНЕЛЬ ИДЕНТИФИКАТОРЫН ЕНГІЗІҢІЗ"

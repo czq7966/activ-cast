@@ -22,7 +22,7 @@ function translate(local) {
             case "manifest_short_name":
             case "manifest_default_title":
             case "Activ_Cast":
-                value["message"] = "ScreenShare"
+                value["message"] = "Screen Share"
                 break;
         }
     })
