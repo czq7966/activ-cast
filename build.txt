@@ -1,0 +1,7 @@
+1、搭建最新版本的node及npm环境
+2、下载本git源码库
+3、进入源码库根目录
+4、增加manifest.json配置文件里的version字段版本号:x.x.x.x
+5、运行npm run build，将在dist目录下获得名为activ-cast-x.x.x.x.zip的可读性差的可发布zip包
+或
+5、运行npm run dev，将在dist目录下获得名为activ-cast-x.x.x.x.zip的可读性好的可发布zip包
