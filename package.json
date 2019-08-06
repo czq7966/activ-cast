@@ -11,7 +11,10 @@
     "dev": "npm run activcast:dev && node src/activ-cast/locales/archiver.ts",
     "watch": "npm run activcast:watch",
     "clean": "npm run activcast:clean",
-    "build": "npm run activcast:build && node src/activ-cast/locales/archiver.ts"
+    "build": "npm run activcast:build && node src/activ-cast/locales/archiver.ts",
+    "reinstall": "npm install rimraf && rimraf node_modules/* && npm install",
+    "rebuild": "npm run reinstall && npm run build",
+    "rebuild-dev": "npm run reinstall && npm run dev"
   },
   "author": "ND CZQ",
   "license": "MIT",
@@ -27,10 +30,12 @@
     "copy-webpack-plugin": "^4.6.0",
     "cross-env": "^5.2.0",
     "css-loader": "^1.0.1",
+    "di18n-translate": "0.0.9",
+    "fast-xml-parser": "^3.12.17",
     "html-webpack-plugin": "^3.2.0",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
-    "rimraf": "^2.6.2",
+    "rimraf": "^2.6.3",
     "socket.io": "^2.1.1",
     "style-loader": "^0.23.1",
     "ts-loader": "^5.3.0",
@@ -38,13 +43,11 @@
     "uglifyjs-webpack-plugin": "^2.0.1",
     "url-loader": "^1.1.2",
     "webpack": "^4.25.1",
-    "webpack-cli": "^3.1.2"
+    "webpack-cli": "^3.1.2",
+    "xml2js": "^0.4.19"    
   },
   "dependencies": {
     "adhoc-cast-connection": "^2.2.2",
-    "di18n-translate": "0.0.9",
-    "fast-xml-parser": "^3.12.17",
-    "url-search-params-polyfill": "^5.0.0",
-    "xml2js": "^0.4.19"
+    "url-search-params-polyfill": "^5.0.0"
   }
 }
