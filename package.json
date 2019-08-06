@@ -8,7 +8,7 @@
     "activcast:watch": "npm run activcast:clean && cross-env NODE_MODULE=activcast webpack --progress --env.umd --watch",
     "activcast:build": "npm run activcast:clean && cross-env NODE_MODULE=activcast webpack --progress --env.umd --env.production --env.minimize",
     "activcast:dev":   "npm run activcast:clean && cross-env NODE_MODULE=activcast webpack --progress --env.umd --env.production --env.nodevtool",
-    "dev": "npm run activcast:dev && node src/activ-cast/locales/archiver.ts",
+    "dev": "npm run activcast:dev && cross-env NODE_MODE=dev node src/activ-cast/locales/archiver.ts --env.dev",
     "watch": "npm run activcast:watch",
     "clean": "npm run activcast:clean",
     "build": "npm run activcast:build && node src/activ-cast/locales/archiver.ts",
