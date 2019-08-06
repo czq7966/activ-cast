@@ -36,7 +36,8 @@ body.index {
 .header {
   position: absolute;
   top: 20px;
-  left: 52px;
+  margin-left: 52px;
+  margin-right: 52px;
   font-size: 28px;  
   font-weight: bold;  
 }
@@ -100,19 +101,22 @@ body.index {
 .id_label {
   position: absolute;
   top: 101px;
-  left: 61px;
+  margin-left: 61px;
+  margin-right: 61px;  
 }
 
 .id_text_field {
   position: absolute;
   top: 129px;
-  left: 61px;
+  margin-left: 61px;
+  margin-right: 61px;  
 }
 
 .id_label_error {
   position: absolute;
   top: 172px;
-  left: 61px;
+  margin-left: 61px;
+  margin-right: 61px;  
   color: red;
 }
 
@@ -135,19 +139,22 @@ body.index {
 .name_label {
   position: absolute;
   top: 210px;
-  left: 61px;
+  margin-left: 61px;
+  margin-right: 61px;  
 }
 
 .name_text_field {
   position: absolute;
   top: 237px;
-  left: 61px;
+  margin-left: 61px;
+  margin-right: 61px;  
 }
 
 .name_label_error {
   position: absolute;
   top: 280px;
-  left: 61px;
+  margin-left: 61px;
+  margin-right: 61px;  
   color: red;
 }
 
@@ -174,6 +181,7 @@ body.index {
 
 /* Cast Button  */
 .cast_btn {
+  margin-left: 20px;
   margin-right: 20px;
 }
 .cast_btn button {
@@ -193,6 +201,7 @@ body.index {
 
 /* Cancel Button */
 .cancel_btn {
+  margin-left: 20px;
   margin-right: 20px;
 }
 .cancel_btn button {
@@ -212,6 +221,7 @@ body.index {
 
 /* Stop Button */
 .stop_btn {
+  margin-left: 20px;
   margin-right: 20px;
 }
 .stop_btn button {

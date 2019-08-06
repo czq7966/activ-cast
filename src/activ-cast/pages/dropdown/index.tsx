@@ -12,6 +12,11 @@ import { EMessageKey } from "../../locales";
 
 ADHOCCAST.Cmds.Common.Helper.Debug.enabled = false;
 
+switch(chrome.i18n.getUILanguage()) {
+    case "ar":
+        require('./index.rtl.css');
+}
+
 
 
 export enum EStates {
