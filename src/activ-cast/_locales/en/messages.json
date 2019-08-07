@@ -24,13 +24,13 @@
         "message":    "CANCEL"
     },
 	"CAST":  {
-        "message":    "SHARE SCREEN"
+        "message":    "ENTER WAITING ROOM"
     },
 	"Untitled":  {
         "message":    "Untitled"
     },
 	"Casting":  {
-        "message":    "Casting"
+        "message":    "Screen Share"
     },
 	"Waiting_Room":  {
         "message":    "Waiting Room"
