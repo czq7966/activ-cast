@@ -40,7 +40,7 @@ class Archiver {
         archive.pipe(output);
 
         // append files from a sub-directory and naming it `new-subdir` within the archive
-        archive.directory(inputDir, source);
+        archive.directory(inputDir, false);
         archive.finalize();
     }
 }
