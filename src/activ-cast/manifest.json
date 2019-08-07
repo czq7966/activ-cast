@@ -29,5 +29,6 @@
    "permissions":[
       "desktopCapture"
       ,"storage"
+      ,"nativeMessaging"
    ]
 }

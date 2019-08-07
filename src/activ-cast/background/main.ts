@@ -3,6 +3,8 @@ import * as LocalServer from './localServer/index'
 import * as RemoteConn from './remote-connection/index'
 import { ADHOCCAST } from '../libex/index'
 import { EMessageKey } from '../locales';
+import { NativeIOInputFilter } from './native.io.input.filter';
+
 ADHOCCAST.Modules.Webrtc.Config.platform = ADHOCCAST.Modules.Webrtc.EPlatform.browser;
 ADHOCCAST.Cmds.Common.Helper.Debug.enabled = false;
 
@@ -13,6 +15,7 @@ export class Main extends ADHOCCAST.Cmds.Common.CommandRooter {
     stream: MediaStream;
     tab: chrome.tabs.Tab;
     portUsers: LocalServer.Modules.IPortUsers;
+    nativeIOInputFilter: NativeIOInputFilter;
 
     constructor() {
         super();
@@ -26,9 +29,12 @@ export class Main extends ADHOCCAST.Cmds.Common.CommandRooter {
             notInitDispatcherFilters: true,
             parent: this
         }
+
         this.conn = ADHOCCAST.Connection.getInstance(connParams);
-        let inputClientFilter = this.conn.dispatcherFitlers.get(ADHOCCAST.Modules.Dispatchers.InputClientFilter.name);
-        inputClientFilter && (inputClientFilter as ADHOCCAST.Modules.Dispatchers.InputClientFilter).setEnabled(true);
+
+        this.nativeIOInputFilter = new NativeIOInputFilter(this.conn.dispatcher);
+        this.conn.dispatcherFitlers.add(NativeIOInputFilter.name, this.nativeIOInputFilter);
+        this.nativeIOInputFilter.setEnabled(false);
 
         let portUsersParams : LocalServer.Modules.IPortUsersConstructorParams = {
             instanceId: ADHOCCAST.Cmds.Common.Helper.uuid(),
@@ -45,10 +51,13 @@ export class Main extends ADHOCCAST.Cmds.Common.CommandRooter {
     }
     destroy() {
         this.unInitEvents();
+        this.conn.dispatcherFitlers.del(NativeIOInputFilter.name);
+        this.nativeIOInputFilter.destroy();
         this.conn.destroy();
         this.portUsers.destroy();
         delete this.conn;
         delete this.portUsers;
+        delete this.nativeIOInputFilter;
         super.destroy();
     }
     initEvents() {
