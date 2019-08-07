@@ -6,7 +6,7 @@ export interface IClient extends ADHOCCAST.Network.ISignaler {
 
 
 export class Client implements IClient {
-    static TAG = "activ-cast:pages:network:client";
+    static TAG = "screen-share:pages:network:client";
     eventEmitter: EventEmitter;
     port: chrome.runtime.Port;
     _url: string;

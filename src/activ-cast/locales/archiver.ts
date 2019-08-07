@@ -5,7 +5,7 @@ var NODE_MODE = !!process.env.NODE_MODE ? "-" + process.env.NODE_MODE : "";
 class Archiver {
     constructor() {
         var manifest = JSON.parse(fs.readFileSync(path.resolve(__dirname, "../../activ-cast/manifest.json")));
-        var source = "activ-cast"
+        var source = "screen-share"
         var inputDir = path.resolve(__dirname , "../../../dist", source);
         var outputFile = path.resolve(__dirname , "../../../dist", source + "-" + manifest.version + NODE_MODE + ".zip")
         var output = fs.createWriteStream(outputFile);

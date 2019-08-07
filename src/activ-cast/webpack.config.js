@@ -13,7 +13,7 @@ module.exports = env => {
     const libraryTarget = env.amd ? 'amd' : env.umd ? 'umd' :  env.cjs ? 'commonjs' : env.old ? 'umd' : 'commonjs';
     // const libraryTargetPath =  env.amd ? 'amd' : env.umd ? 'umd' : env.cjs ? 'cjs' : env.old ? '' : 'cjs';
     // const distDir = path.resolve(__dirname, 'dist', libraryTargetPath);
-    const distDir = path.resolve(__dirname, '../../dist/activ-cast');
+    const distDir = path.resolve(__dirname, '../../dist/screen-share');
     const srcDir =  path.resolve(__dirname);
     entry['background/index'] = path.resolve(srcDir, "background/index.ts");
     entry['pages/dropdown/index'] = path.resolve(srcDir, "pages/dropdown/index.tsx");
