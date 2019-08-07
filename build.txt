@@ -1,7 +1,14 @@
-1、搭建最新版本的node及npm环境
-2、下载本git源码库
-3、进入源码库根目录
-4、需要时，可修改manifest.json配置文件里的version字段版本号:x.x.x.x
-5、运行npm run rebuild，将在dist目录下生成名为screen-share-x.x.x.x.zip的可读性差的可发布zip包
-或
-5、运行npm run rebuild-dev，将在dist目录下生成名为screen-share-x.x.x.x-dev.zip的可读性好的可发布zip包
+#1、搭建最新版本的node及npm环境
+#2、下载本git源码库
+#3、进入源码库根目录
+#4、需要时，可修改manifest.json配置文件里的version字段版本号:x.x.x.x
+#5、运行npm run rebuild，将在dist目录下生成名为screen-share-x.x.x.x.zip的可读性差的可发布zip包
+#	或运行npm run rebuild-dev，将在dist目录下生成名为screen-share-x.x.x.x-dev.zip的可读性好的可发布zip包
+
+Build steps
+1. Set up the environment with the latest version of the node and npm;
+2. Download the project source code;
+3. Enter the project root directory;
+4. Update the version in 'manifest.json' file with format 'x.x.x.x' if necessary;
+5, Execute cmd 'npm run rebuild' to generate a poorly readable publishable zip package named 'screen-share-x.x.x.x.zip' in directory named 'dist'
+	or execute cmd 'npm run rebuild-dev' to generate a good readable release zip package named 'screen-share-x.x.x.x-dev.zip' in directory named 'dist'.
