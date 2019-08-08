@@ -1,0 +1,24 @@
+.comps_panel_id_div {
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.comps_single_id_div {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.comps_single_id_div input{
+    width: 100%;
+    height: 40px;
+    text-align:center;
+    background-color: #F4F4F4;
+    border: none;
+    border-bottom: 2px;
+
+}

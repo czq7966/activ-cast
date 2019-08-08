@@ -9,6 +9,7 @@ import * as Modules from "../modules/index";
 import { ADHOCCAST } from "../../libex";
 import * as Dts from '../cmds/index'
 import { EMessageKey } from "../../locales";
+import { CompPanleID } from "./comps/panel-id/panel-id";
 
 ADHOCCAST.Cmds.Common.Helper.Debug.enabled = false;
 
@@ -75,6 +76,8 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
     stateCase: StateCase;
     targetSidMaxLength: number = 6;
     nameMaxLenght: number = 40;
+    compPanelID: CompPanleID;
+    inputPanelName: HTMLInputElement;
 
     constructor(props) {
         super(props);  
@@ -210,7 +213,13 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
         let header = () =>  <div className="header fontStyle" >{header_msg}</div>
         let id_label = () => <div className="id_label fontStyle" >{chrome.i18n.getMessage(EMessageKey.ENTER_PANEL_ID)}</div>
         let id_label_error = () => <div className="id_label_error fontStyle" >{this.state.panelIdError ? chrome.i18n.getMessage(EMessageKey.Panel_ID_Error) : ""}</div>
-        let id_text_field = () => <div className="id_text_field fontStyle" ><input value={this.state.targetSid} onChange={this.onIdValueChange} /></div>
+        // let id_text_field = () => <div className="id_text_field fontStyle" ><input value={this.state.targetSid} onChange={this.onIdValueChange} /></div>
+        let id_text_field = () =>   <div className="id_text_field2 fontStyle" >
+                                        <CompPanleID ref={ref => this.onRef_id_text_field(ref)} length={6} 
+                                            value={this.state.targetSid}
+                                            onNext={this.onNext_compPanelID}
+                                            onChange={this.onChange_compPanelID} />
+                                    </div>
         let name_label = () => <div className="name_label fontStyle">{chrome.i18n.getMessage(EMessageKey.ENTER_YOUR_NAME)}</div>
         let name_label_error = () => <div className="name_label_error fontStyle">
                                         {
@@ -218,11 +227,15 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
                                             this.state.nameIsTooLong ? chrome.i18n.getMessage(EMessageKey.Name_is_too_long) : ""
                                         }
                                     </div>
-        let name_text_field = () => <div className="name_text_field fontStyle"><input  value={this.state.userNick} onChange={this.onNameValueChange} /></div>
+        let name_text_field = () => <div className="name_text_field fontStyle">
+                                        <input id="id_input_name_text_field"  value={this.state.userNick} 
+                                            ref = {ref => {ref && this.onRef_name_text_field(ref)}}
+                                            onChange={this.onNameValueChange} />
+                                    </div>
 
         let cast_btn = () => <div className="cast_btn fontStyle"><button className="fontStyle_button"  onClick={this.onCastBtnClick}>{chrome.i18n.getMessage(EMessageKey.CAST)}</button></div>
-        let cancel_btn = () => <div className="cancel_btn fontStyle"><button className="fontStyle_button"  onClick={this.onCancelBtnClick}>{chrome.i18n.getMessage(EMessageKey.CANCEL)}</button></div>
-        let stop_btn = () => <div className="stop_btn fontStyle"><button className="fontStyle_button"  onClick={this.onStopBtnClick}>{chrome.i18n.getMessage(EMessageKey.STOP_CASTING)}</button></div>
+        let cancel_btn = () => <div className="cast_btn fontStyle"><button className="fontStyle_button"  onClick={this.onCancelBtnClick}>{chrome.i18n.getMessage(EMessageKey.CANCEL)}</button></div>
+        let stop_btn = () => <div className="cast_btn fontStyle"><button className="fontStyle_button"  onClick={this.onStopBtnClick}>{chrome.i18n.getMessage(EMessageKey.STOP_CASTING)}</button></div>
 
         let msg_label = () => <div className="msg_label fontStyle"><span>{msg_label_msg}</span></div>
         let msg_normal_label = () => <div className="msg_normal_label fontStyle"><span>{msg_label_msg}</span></div>
@@ -387,15 +400,16 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
             this.setState({
                 panelIdError: sid.length == 0
             })
+            this.compPanelID && this.compPanelID.focus();
             return;
         }        
         if (nick.length == 0) {
             this.setState({
                 nameIsEmpty: nick.length == 0
             })
+            this.inputPanelName && this.inputPanelName.focus();
             return;
         }
-
 
         this.getTargetUser(this.state.targetSid).then(v => {
             let data: ADHOCCAST.Cmds.ICommandData<ADHOCCAST.Dts.ICommandReqDataProps> = {
@@ -417,6 +431,7 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
             this.setState({
                 panelIdError: true
             }) 
+            this.compPanelID && this.compPanelID.focus();
         });
 
     }
@@ -440,8 +455,8 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
 
 
     //UI Events
-    onIdValueChange =  (event: React.ChangeEvent<HTMLInputElement>) => {
-        let sid = event.target.value.trim();
+    _onIdValueChange (id: string) {
+        let sid = id;
         sid = sid.substr(0, this.targetSidMaxLength);
         
         this.setState({
@@ -456,7 +471,14 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
             this.setState({
                 panelIdError: sid.length == this.targetSidMaxLength ? true : false
             }) 
-        });
+        });        
+    }
+    onIdValueChange =  (event: React.ChangeEvent<HTMLInputElement>) => {
+        this._onIdValueChange(event.target.value.trim())
+    }    
+
+    onChange_compPanelID = (compPanleID: CompPanleID, newValue: string, oldValue: string) => {    
+        this._onIdValueChange(newValue.trim());
     }    
 
     onNameValueChange =  (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -575,6 +597,17 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
             this.setState({target: cmd.data.props.user});
         } else 
             this.setState({});
+    }
+
+    onRef_id_text_field = (ref: CompPanleID) => {
+        this.compPanelID = ref;
+    }
+    onRef_name_text_field = (ref: HTMLInputElement) => {
+        this.inputPanelName = ref;
+    }
+    onNext_compPanelID = () => {
+        let elem = document.getElementById("id_input_name_text_field");
+        elem && elem.focus();
     }
 }
 
