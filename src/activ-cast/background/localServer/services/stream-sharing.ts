@@ -27,7 +27,7 @@ export class StreamSharing  {
         let stream = StreamSharing.SharingStream;
         let conn = Main.instance.conn;
         let instanceId = conn.instanceId;
-        stream.removeEventListener('inactive', StreamSharing.onInactive)        
+        stream && stream.removeEventListener('inactive', StreamSharing.onInactive)        
         if (conn.isLogin()) {
             let mCurrUser = ADHOCCAST.Services.Modules.Rooms.getLoginRoom(instanceId).me();
             let mStreamRoom = ADHOCCAST.Services.Modules.User.getStreamRoom(mCurrUser);
