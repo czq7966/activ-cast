@@ -246,7 +246,7 @@ export class Main extends ADHOCCAST.Cmds.Common.CommandRooter {
         if (type == ADHOCCAST.Cmds.ECommandType.req) {
             let props = cmd.data.props as ADHOCCAST.Cmds.ICommandReqDataProps;
             let user = props.user;
-            if (user.sid = storage.items.target.sid) {
+            if (user.sid == storage.items.target.sid) {
                 chrome.runtime.reload();
             }
         }
