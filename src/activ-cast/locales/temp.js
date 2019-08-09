@@ -17,12 +17,12 @@ function translate(local) {
     Object.keys(transMsg).forEach((key) => {
         var value = transMsg[key];
         switch(key) {
-            case "manifest_name":
-            case "manifest_description":
-            case "manifest_short_name":
-            case "manifest_default_title":
+            // case "manifest_name":
+            // case "manifest_description":
+            // case "manifest_short_name":
+            // case "manifest_default_title":
             case "Activ_Cast":
-                value["message"] = "Promethean® Screen Share"
+                value["message"] = "Screen Share"
                 break;
         }
     })
