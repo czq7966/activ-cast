@@ -206,10 +206,20 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
 
     
     render() {
+        let title_msg = chrome.i18n.getMessage(EMessageKey.Activ_Cast);
         let header_msg = this.state.target ? (this.state.target.nick ? this.state.target.nick : chrome.i18n.getMessage(EMessageKey.Untitled)) : chrome.i18n.getMessage(EMessageKey.Activ_Cast);
         let msg_label_msg = this.state.msg;
         let msg_casting_name = this.state.target ? (this.state.target.nick ? this.state.target.nick : chrome.i18n.getMessage(EMessageKey.Untitled)) : "";
 
+        let title = () =>   <div className="title fontStyle" >
+                                <div className="title_name" >
+                                    <img src="../../images/icons/16.png"></img>
+                                    <span>{title_msg}</span>
+                                </div>                                    
+                                <div className="title_mark">
+                                    <img src="../../images/mark.png" ></img>
+                                </div>                                  
+                            </div>
         let header = () =>  <div className="header fontStyle" >{header_msg}</div>
         let id_label = () => <div className="id_label fontStyle" >{chrome.i18n.getMessage(EMessageKey.ENTER_PANEL_ID)}</div>
         let id_label_error = () => <div className="id_label_error fontStyle" >{this.state.panelIdError ? chrome.i18n.getMessage(EMessageKey.Panel_ID_Error) : ""}</div>
@@ -256,6 +266,7 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
             header_msg = chrome.i18n.getMessage(EMessageKey.Casting),
             msg_label_msg = chrome.i18n.getMessage(EMessageKey.You_are_casting_to);
             return  <div className="container" >
+                        {title()}
                         {header()}
                         {msg_casting_label()}
                         {footer_stop()}
@@ -268,6 +279,7 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
             msg_label_msg = chrome.i18n.getMessage(EMessageKey.Please_wait_for_permission);
 
             return  <div className="container" >
+                        {title()}
                         {header()}
                         {msg_normal_label()}
                         {footer_cancel()}
@@ -278,6 +290,7 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
         if (this.states.isset(EStates.connecting)) {
             msg_label_msg = this.state.msg || chrome.i18n.getMessage(EMessageKey.Connecting___);
             return  <div className="container" >
+                        {title()}
                         {header()}
                         {msg_label()}
                         {footer_cancel()}
@@ -287,6 +300,7 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
         if (!this.states.isset(EStates.connected)) {
             msg_label_msg = this.state.msg || chrome.i18n.getMessage(EMessageKey.Connecting___);
             return  <div className="container" >
+                        {title()}
                         {header()}
                         {msg_label()}
                         {footer_cancel()}
@@ -294,6 +308,7 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
         }      
         
         return  <div className="container" >
+                    {title()}
                     {header()}
                     {id_label()}
                     {id_text_field()}
