@@ -206,8 +206,8 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
 
     
     render() {
-        let title_msg = chrome.i18n.getMessage(EMessageKey.Activ_Cast);
-        let header_msg = this.state.target ? (this.state.target.nick ? this.state.target.nick : chrome.i18n.getMessage(EMessageKey.Untitled)) : chrome.i18n.getMessage(EMessageKey.Activ_Cast);
+        let title_msg = chrome.i18n.getMessage(EMessageKey.App_Name);
+        let header_msg = this.state.target ? (this.state.target.nick ? this.state.target.nick : chrome.i18n.getMessage(EMessageKey.Untitled)) : chrome.i18n.getMessage(EMessageKey.App_Name);
         let msg_label_msg = this.state.msg;
         let msg_casting_name = this.state.target ? (this.state.target.nick ? this.state.target.nick : chrome.i18n.getMessage(EMessageKey.Untitled)) : "";
 
@@ -243,9 +243,9 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
                                             onChange={this.onNameValueChange} />
                                     </div>
 
-        let cast_btn = () => <div className="cast_btn fontStyle"><button className="fontStyle_button"  onClick={this.onCastBtnClick}>{chrome.i18n.getMessage(EMessageKey.CAST)}</button></div>
+        let cast_btn = () => <div className="cast_btn fontStyle"><button className="fontStyle_button"  onClick={this.onCastBtnClick}>{chrome.i18n.getMessage(EMessageKey.ENTER_WAITING_ROOM)}</button></div>
         let cancel_btn = () => <div className="cast_btn fontStyle"><button className="fontStyle_button"  onClick={this.onCancelBtnClick}>{chrome.i18n.getMessage(EMessageKey.CANCEL)}</button></div>
-        let stop_btn = () => <div className="cast_btn fontStyle"><button className="fontStyle_button"  onClick={this.onStopBtnClick}>{chrome.i18n.getMessage(EMessageKey.STOP_CASTING)}</button></div>
+        let stop_btn = () => <div className="cast_btn fontStyle"><button className="fontStyle_button"  onClick={this.onStopBtnClick}>{chrome.i18n.getMessage(EMessageKey.STOP_SHARING_SCREEN)}</button></div>
 
         let msg_label = () => <div className="msg_label fontStyle"><span>{msg_label_msg}</span></div>
         let msg_normal_label = () => <div className="msg_normal_label fontStyle"><span>{msg_label_msg}</span></div>
@@ -263,8 +263,8 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
                                     </div>
         // Casting
         if (this.states.isset(EStates.stream_room_sending) && this.states.isset(EStates.stream_room_casting)) {
-            header_msg = chrome.i18n.getMessage(EMessageKey.Casting),
-            msg_label_msg = chrome.i18n.getMessage(EMessageKey.You_are_casting_to);
+            header_msg = chrome.i18n.getMessage(EMessageKey.Screen_Share),
+            msg_label_msg = chrome.i18n.getMessage(EMessageKey.Sharing_screen_to);
             return  <div className="container" >
                         {title()}
                         {header()}
