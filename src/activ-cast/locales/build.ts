@@ -1,43 +1,44 @@
 var fs = require('fs');
 var xmlParser = require('fast-xml-parser');
+var iniParser = require('ini')
 var baseDir = "../_locales";
 var baseFile = baseDir + "/en/messages.json"
-var transDir = "Structured delivery 3_2207805_ActivCast Strings EN July04 json files/values-"
+var transDir = "../../../../temp/[14th AUG delivery]_2224640_Translation x 26 languages. Screen share"
 
-// fs.writeFileSync("test.json", JSON.stringify(msg, undefined, "\t"))
-
-function translate(local) {
-    var msg =  JSON.parse(fs.readFileSync(baseFile));
-    var transFile = transDir + local + "/AC_Chrome Sender.json"
-    if (!fs.existsSync(transFile)) {
-        console.error("***翻译资源不存在：" + transFile);
-        return;
-    }
-    var transMsg = JSON.parse(fs.readFileSync(transFile));
-    console.log("======正在翻译：", local, "======")
-    Object.values(msg).forEach((item) => {
-        var key = item["message"];
-        var value = transMsg[key] || getXmlValueById(local, getXmlId(key));
-        if (!value) {
-            console.error(local + " 没有翻译词条：" + key)
-        }
-        item["message"] = value || key
-    })
-    var toDir = baseDir + "/" + local
-    var toFile = toDir + "/messages.json"
-    if (!fs.existsSync(toDir)) fs.mkdirSync(toDir);
-    fs.writeFileSync(toFile, JSON.stringify(msg, undefined, "\t"));
-
-    console.log("======翻译结束，保存至：", toFile, "======")
-
+var locals = {
+    "ar" : "ar-mx",
+    "cs" : "cs-cz",
+    "da" : "da-dk",
+    "de" : "de-de",
+    "es" : "es-es",
+    "fi" : "fi-fi",
+    "fr" : "fr-fr",
+    "hu" : "hu-hu",
+    "id" : "id-id",
+    "it" : "it-it",
+    "ja" : "ja-jp",
+    "kk" : "kk",
+    "lt" : "lt-lt",
+    "lv" : "lv-lv",
+    "ms" : "ms-my",
+    "nb" : "nb-no",
+    "nl" : "nl-nl",
+    "pl" : "pl-pl",
+    "pt" : "pt-pt",
+    "ru" : "ru-ru",
+    "sv" : "sv-se",
+    "th" : "th-th",
+    "tr" : "tr-tr",
+    "vi" : "vi-vn",
+    "zh" : "zh-cn",
+    "zh_TW" : "zh-tw" 
 }
 
+
 function start() {
-    ["ar", "cs", "da", "de", "es", "fi", "fr", "hu", "id", "it", "ja", "kk", "lt", 
-    "lv", "ms", "nb", "nl", "pl", "pt", "ru", "sv", "th", "tr", "vi", "zh", "zh_TW"]
-    .forEach((key) => {
-        translate(key)
-    }) 
+    Object.keys(locals).forEach(key => {
+        translate(key, false);
+    })
 }
 
 
@@ -103,6 +104,103 @@ function testXml() {
     // var tObj = parser.getTraversalObj(xmlData);
     // var jsonObj = parser.convertToJson(tObj);
     // console.log(tObj, jsonObj)
+}
+
+
+function Uint8ArrayToString(fileData){
+    var dataString = "";
+    for (var i = 0; i < fileData.length; i++) {
+      dataString += String.fromCharCode(fileData[i]);
+    }
+   
+    return dataString
+}  
+
+
+function getTransValue(local, pkey) {
+    var file = transDir + "/" + locals[local] + "/AppStoreScreenShots_Portal_DownloadURL.strings"
+    var value = getTransValueByIniFile(file, pkey, 'UCS-2');
+    if (!value) {
+        file = transDir + "/" + locals[local] + "/Panel_and_Senders_ScreenShare.strings"
+        value = getTransValueByIniFile(file, pkey, 'UCS-2');
+    }
+    if (!value) {
+        file = transDir + "/../Structured delivery_2_ActivCast Strings EN July04 strings files/Structured delivery_2_ActivCast Strings EN July04 strings files/values-" + local + "/AC_Mac Sender_App.strings"
+        value = getTransValueByIniFile(file, pkey, 'utf8');
+    }
+    return value;    
+}
+
+function getTransValueByIniFile(file, pkey, coding) {
+    if (!fs.existsSync(file)) {
+        console.error("***资源文件不存在：" + file);
+        return;
+    }    
+    coding = coding || 'UCS-2';
+    var sm = fs.readFileSync(file, coding);
+    var info = iniParser.parse(sm);
+    var value;
+    Object.keys(info).forEach(key => {
+        if (pkey.toLowerCase() == key.toLowerCase()) {
+            value = info[key];
+            if (value.length > 1 && value[0] == '"' && value[value.length - 1] == '"') {
+                value = value.substr(1, value.length - 2);
+            }
+        }
+    })
+    return value;
+}
+
+function translate(local, onlyCheck) {
+    var localFile = baseDir + "/" + local +"/messages.json";
+    if (!fs.existsSync(baseFile)) {
+        console.error("***基础资源不存在：" + baseFile);
+        return;
+    }
+
+    if (!fs.existsSync(localFile)) {
+        console.error("***本地资源不存在：" + localFile);
+        return;
+    }    
+
+    var baseMsg =  JSON.parse(fs.readFileSync(baseFile));
+    var localMsg = JSON.parse(fs.readFileSync(localFile));
+    var newLocalMsg = {};
+
+    console.log("======正在翻译：", local, "======")
+    Object.keys(baseMsg).forEach((itemKey) => {
+        var messageKey = "message";
+        var itemValue = baseMsg[itemKey];
+        var key = itemValue[messageKey];
+        var value = getTransValue(local, key);
+        if (!value) {
+            var localItemValue = localMsg[itemKey];
+            if (localItemValue) {
+                value = localItemValue[messageKey]                     
+            } else {
+                console.log('*******缺少翻译资源：', itemKey, itemValue[messageKey])                           
+            }
+        }
+
+        if (!value) {
+            value = itemValue[messageKey];
+        }
+
+        var localItemValue;
+        localItemValue = {};
+        localItemValue[messageKey] = value;
+        newLocalMsg[itemKey] = localItemValue;
+    })
+
+    if (!!onlyCheck) {        
+        console.log("======结束翻译：", local, "======", newLocalMsg)
+    } else {
+        fs.writeFileSync(localFile, JSON.stringify(newLocalMsg, undefined, "\t"));
+        console.log("======翻译结束，保存至：", localFile, "======")
+    }
+
+
+
 }
 
 start();

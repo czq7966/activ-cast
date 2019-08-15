@@ -7,7 +7,7 @@
     "activcast:clean": "rimraf dist/screen-share",
     "activcast:watch": "npm run activcast:clean && cross-env NODE_MODULE=activcast webpack --progress --env.umd --watch",
     "activcast:build": "npm run activcast:clean && cross-env NODE_MODULE=activcast webpack --progress --env.umd --env.production --env.minimize",
-    "activcast:dev":   "npm run activcast:clean && cross-env NODE_MODULE=activcast webpack --progress --env.umd --env.production --env.nodevtool",
+    "activcast:dev": "npm run activcast:clean && cross-env NODE_MODULE=activcast webpack --progress --env.umd --env.production --env.nodevtool",
     "dev": "npm run activcast:dev && cross-env NODE_MODE=dev node src/activ-cast/locales/archiver.ts --env.dev",
     "watch": "npm run activcast:watch",
     "clean": "npm run activcast:clean",
@@ -33,6 +33,7 @@
     "di18n-translate": "0.0.9",
     "fast-xml-parser": "^3.12.17",
     "html-webpack-plugin": "^3.2.0",
+    "ini": "^1.3.5",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "rimraf": "^2.6.3",
@@ -44,7 +45,7 @@
     "url-loader": "^1.1.2",
     "webpack": "^4.25.1",
     "webpack-cli": "^3.1.2",
-    "xml2js": "^0.4.19"    
+    "xml2js": "^0.4.19"
   },
   "dependencies": {
     "adhoc-cast-connection": "^2.2.2",
