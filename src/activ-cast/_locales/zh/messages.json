@@ -11,9 +11,6 @@
 	"manifest_default_title": {
 		"message": "Promethean® Screen Share"
 	},
-	"Activ_Cast": {
-		"message": "Screen Share"
-	},
 	"ENTER_PANEL_ID": {
 		"message": "输入面板 ID"
 	},
@@ -23,14 +20,11 @@
 	"CANCEL": {
 		"message": "取消"
 	},
-	"CAST": {
-		"message": "投射"
+	"ENTER_WAITING_ROOM": {
+		"message": "进入等候室"
 	},
 	"Untitled": {
 		"message": "无标题"
-	},
-	"Casting": {
-		"message": "投射"
 	},
 	"Waiting_Room": {
 		"message": "等候室"
@@ -62,19 +56,31 @@
 	"Closed": {
 		"message": "已关闭"
 	},
-	"You_are_casting_to": {
-		"message": "您正在投射到"
-	},
-	"STOP_CASTING": {
-		"message": "停止投射"
-	},
 	"Panel_ID_Error": {
 		"message": "面板 ID 错误。请重试。"
 	},
 	"Name_is_too_long": {
-		"message": "Name is too long. Please try again."
+		"message": "姓名太长。请重试。"
 	},
 	"Please_enter_your_name": {
 		"message": "请输入您的姓名。"
+	},
+	"App_Name": {
+		"message": "无线投屏"
+	},
+	"Screen_Share": {
+		"message": "无线投屏"
+	},
+	"SHARE_SCREEN": {
+		"message": "投屏"
+	},
+	"STOP_SHARING_SCREEN": {
+		"message": "停止无线投屏"
+	},
+	"Sharing_screen_to": {
+		"message": "无线投屏至"
+	},
+	"Please_wait_for_permission_to_share_screen": {
+		"message": "在投射屏幕前，请等待授权。"
 	}
 }

@@ -11,9 +11,6 @@
 	"manifest_default_title": {
 		"message": "Promethean® Screen Share"
 	},
-	"Activ_Cast": {
-		"message": "Screen Share"
-	},
 	"ENTER_PANEL_ID": {
 		"message": "ADJA MEG A PANELAZONOSÍTÓT"
 	},
@@ -23,14 +20,11 @@
 	"CANCEL": {
 		"message": "MÉGSE"
 	},
-	"CAST": {
-		"message": "KÉPERNYŐ MEGOSZTÁSA"
+	"ENTER_WAITING_ROOM": {
+		"message": "BELÉPÉS AZ ELŐSZOBÁBA"
 	},
 	"Untitled": {
 		"message": "Cím nélkül"
-	},
-	"Casting": {
-		"message": "Képernyő megosztása"
 	},
 	"Waiting_Room": {
 		"message": "Előszoba"
@@ -62,19 +56,31 @@
 	"Closed": {
 		"message": "Bezárva"
 	},
-	"You_are_casting_to": {
-		"message": "Képernyő megosztása a következővel:"
-	},
-	"STOP_CASTING": {
-		"message": "KÉPERNYŐ MEGOSZTÁSÁNAK LEÁLLÍTÁSA"
-	},
 	"Panel_ID_Error": {
 		"message": "Hibás panelazonosító. Próbálja meg újra."
 	},
 	"Name_is_too_long": {
-		"message": "Name is too long. Please try again."
+		"message": "A név túl hosszú. Próbálja meg újra."
 	},
 	"Please_enter_your_name": {
-		"message": "Kérjük, adja meg nevét."
+		"message": "Kérjük, adja meg a nevét."
+	},
+	"App_Name": {
+		"message": "Screen Share"
+	},
+	"Screen_Share": {
+		"message": "Screen Share"
+	},
+	"SHARE_SCREEN": {
+		"message": "MEGOSZTÁS"
+	},
+	"STOP_SHARING_SCREEN": {
+		"message": "KÉPERNYŐ MEGOSZTÁSÁNAK BEFEJEZÉSE"
+	},
+	"Sharing_screen_to": {
+		"message": "Képernyő megosztása a következővel: "
+	},
+	"Please_wait_for_permission_to_share_screen": {
+		"message": "Várja meg a képernyő megosztására vonatkozó engedélyt."
 	}
 }

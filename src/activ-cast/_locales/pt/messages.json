@@ -11,9 +11,6 @@
 	"manifest_default_title": {
 		"message": "Promethean® Screen Share"
 	},
-	"Activ_Cast": {
-		"message": "Screen Share"
-	},
 	"ENTER_PANEL_ID": {
 		"message": "INTRODUZA O ID DO PAINEL"
 	},
@@ -23,14 +20,11 @@
 	"CANCEL": {
 		"message": "CANCELAR"
 	},
-	"CAST": {
-		"message": "TRANSMITIR"
+	"ENTER_WAITING_ROOM": {
+		"message": "ENTRAR NA SALA DE ESPERA"
 	},
 	"Untitled": {
 		"message": "Sem Título"
-	},
-	"Casting": {
-		"message": "A transmitir"
 	},
 	"Waiting_Room": {
 		"message": "Sala de Espera"
@@ -62,19 +56,31 @@
 	"Closed": {
 		"message": "Fechado"
 	},
-	"You_are_casting_to": {
-		"message": "Está a transmitir para"
-	},
-	"STOP_CASTING": {
-		"message": "PARAR A TRANSMISSÃO"
-	},
 	"Panel_ID_Error": {
 		"message": "Erro de ID do Painel. Tente novamente."
 	},
 	"Name_is_too_long": {
-		"message": "Name is too long. Please try again."
+		"message": "O nome é demasiado longo. Tente novamente."
 	},
 	"Please_enter_your_name": {
 		"message": "Introduza o seu nome."
+	},
+	"App_Name": {
+		"message": "Screen Share"
+	},
+	"Screen_Share": {
+		"message": "Screen Share"
+	},
+	"SHARE_SCREEN": {
+		"message": "PARTILHAR"
+	},
+	"STOP_SHARING_SCREEN": {
+		"message": "PARAR A PARTILHA DE ECRÃ"
+	},
+	"Sharing_screen_to": {
+		"message": "Partilha de ecrã com "
+	},
+	"Please_wait_for_permission_to_share_screen": {
+		"message": "Aguarde permissão para partilhar o seu ecrã."
 	}
 }

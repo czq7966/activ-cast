@@ -11,9 +11,6 @@
 	"manifest_default_title": {
 		"message": "Promethean® Screen Share"
 	},
-	"Activ_Cast": {
-		"message": "Screen Share"
-	},
 	"ENTER_PANEL_ID": {
 		"message": "MASUKKAN ID PANEL"
 	},
@@ -23,14 +20,11 @@
 	"CANCEL": {
 		"message": "BATAL"
 	},
-	"CAST": {
-		"message": "SIAR"
+	"ENTER_WAITING_ROOM": {
+		"message": "MASUK BILIK MENUNGGU"
 	},
 	"Untitled": {
 		"message": "Tidak Bertajuk"
-	},
-	"Casting": {
-		"message": "Menyiar"
 	},
 	"Waiting_Room": {
 		"message": "Bilik Menunggu"
@@ -62,19 +56,31 @@
 	"Closed": {
 		"message": "Tutup"
 	},
-	"You_are_casting_to": {
-		"message": "Anda sedang menyiar ke"
-	},
-	"STOP_CASTING": {
-		"message": "BERHENTI MENYIAR"
-	},
 	"Panel_ID_Error": {
 		"message": "Ralat ID Panel. Sila cuba lagi."
 	},
 	"Name_is_too_long": {
-		"message": "Name is too long. Please try again."
+		"message": "Nama terlalu panjang. Sila cuba lagi."
 	},
 	"Please_enter_your_name": {
 		"message": "Sila masukkan nama anda."
+	},
+	"App_Name": {
+		"message": "Screen Share"
+	},
+	"Screen_Share": {
+		"message": "Screen Share"
+	},
+	"SHARE_SCREEN": {
+		"message": "KONGSI"
+	},
+	"STOP_SHARING_SCREEN": {
+		"message": "BERHENTI BERKONGSI SKRIN"
+	},
+	"Sharing_screen_to": {
+		"message": "Berkongsi skrin ke "
+	},
+	"Please_wait_for_permission_to_share_screen": {
+		"message": "Sila tunggu keizinan untuk berkongsi skrin anda."
 	}
 }

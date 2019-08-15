@@ -11,26 +11,20 @@
 	"manifest_default_title":  {
         "message":    "Promethean® Screen Share"
     },
-	"Activ_Cast":  {
-        "message":    "Screen Share"
-    },    
 	"ENTER_PANEL_ID":  {
         "message":    "ENTER PANEL ID"
     },
 	"ENTER_YOUR_NAME":  {
         "message":    "ENTER YOUR NAME"
-    },
+    },    
 	"CANCEL":  {
         "message":    "CANCEL"
     },
-	"CAST":  {
+    "ENTER_WAITING_ROOM":  {
         "message":    "ENTER WAITING ROOM"
-    },
+    },    
 	"Untitled":  {
         "message":    "Untitled"
-    },
-	"Casting":  {
-        "message":    "Screen Share"
     },
 	"Waiting_Room":  {
         "message":    "Waiting Room"
@@ -62,12 +56,6 @@
 	"Closed":  {
         "message":    "Closed"
     },
-    "You_are_casting_to":  {
-        "message":    "Sharing screen to"
-    },    
-    "STOP_CASTING":  {
-        "message":    "STOP SHARING SCREEN"
-    },
     "Panel_ID_Error":  {
         "message":    "Panel ID Error. Please try again."
     },
@@ -78,11 +66,8 @@
         "message":    "Please enter your name."
     },
     "App_Name":  {
-        "message":    "ScreenShare"
+        "message":    "Screen Share"
     },
-    "ScreenShare":  {
-        "message":    "ScreenShare"
-    },        
     "Screen_Share":  {
         "message":    "Screen Share"
     },        
@@ -93,9 +78,9 @@
         "message":    "STOP SHARING SCREEN"
     },        
     "Sharing_screen_to":  {
-        "message":    "Sharing screen to"
+        "message":    "Sharing screen to "
     },        
     "Please_wait_for_permission_to_share_screen":  {
-        "message":    "Please wait for permission to share screen."
+        "message":    "Please wait for permission to share your screen."
     }          
 }

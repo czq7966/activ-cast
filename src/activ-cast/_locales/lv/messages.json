@@ -11,9 +11,6 @@
 	"manifest_default_title": {
 		"message": "Promethean® Screen Share"
 	},
-	"Activ_Cast": {
-		"message": "Screen Share"
-	},
 	"ENTER_PANEL_ID": {
 		"message": "IEVADIET PANEĻA ID"
 	},
@@ -23,14 +20,11 @@
 	"CANCEL": {
 		"message": "ATCELT"
 	},
-	"CAST": {
-		"message": "PĀRRAIDĪT"
+	"ENTER_WAITING_ROOM": {
+		"message": "IEIET UZGAIDĀMĀ TELPĀ"
 	},
 	"Untitled": {
 		"message": "Bez nosaukuma"
-	},
-	"Casting": {
-		"message": "Notiek pārraide"
 	},
 	"Waiting_Room": {
 		"message": "Uzgaidāmā telpa"
@@ -62,19 +56,31 @@
 	"Closed": {
 		"message": "Aizvērts"
 	},
-	"You_are_casting_to": {
-		"message": "Jūs tagad pārraidāt uz"
-	},
-	"STOP_CASTING": {
-		"message": "APTURĒT PĀRRAIDI"
-	},
 	"Panel_ID_Error": {
 		"message": "Paneļa ID kļūda. Lūdzu, mēģiniet vēlreiz."
 	},
 	"Name_is_too_long": {
-		"message": "Name is too long. Please try again."
+		"message": "Pārāk garš nosaukums. Lūdzu, mēģiniet vēlreiz."
 	},
 	"Please_enter_your_name": {
 		"message": "Lūdzu, ievadiet savu vārdu."
+	},
+	"App_Name": {
+		"message": "Screen Share"
+	},
+	"Screen_Share": {
+		"message": "Screen Share"
+	},
+	"SHARE_SCREEN": {
+		"message": "KOPĪGOT"
+	},
+	"STOP_SHARING_SCREEN": {
+		"message": "PĀRTRAUKT EKRĀNA KOPĪGOŠANU"
+	},
+	"Sharing_screen_to": {
+		"message": "Notiek ekrāna kopīgošana ar "
+	},
+	"Please_wait_for_permission_to_share_screen": {
+		"message": "Lūdzu, sagaidiet atļauju ekrāna kopīgošanai."
 	}
 }

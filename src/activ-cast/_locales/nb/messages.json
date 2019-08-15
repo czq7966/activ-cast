@@ -11,9 +11,6 @@
 	"manifest_default_title": {
 		"message": "Promethean® Screen Share"
 	},
-	"Activ_Cast": {
-		"message": "Screen Share"
-	},
 	"ENTER_PANEL_ID": {
 		"message": "ANGI SKJERM-ID"
 	},
@@ -23,14 +20,11 @@
 	"CANCEL": {
 		"message": "AVBRYT"
 	},
-	"CAST": {
-		"message": "START SENDING"
+	"ENTER_WAITING_ROOM": {
+		"message": "ÅPNE VENTEROM"
 	},
 	"Untitled": {
 		"message": "Uten navn"
-	},
-	"Casting": {
-		"message": "Sender"
 	},
 	"Waiting_Room": {
 		"message": "Venterom"
@@ -62,19 +56,31 @@
 	"Closed": {
 		"message": "Lukket"
 	},
-	"You_are_casting_to": {
-		"message": "Du sender til"
-	},
-	"STOP_CASTING": {
-		"message": "STOPP SENDING"
-	},
 	"Panel_ID_Error": {
 		"message": "Feil med skjerm-ID. Prøv en gang til."
 	},
 	"Name_is_too_long": {
-		"message": "Name is too long. Please try again."
+		"message": "Navnet er for langt. Prøv en gang til."
 	},
 	"Please_enter_your_name": {
 		"message": "Skriv inn navnet ditt."
+	},
+	"App_Name": {
+		"message": "Screen Share"
+	},
+	"Screen_Share": {
+		"message": "Screen Share"
+	},
+	"SHARE_SCREEN": {
+		"message": "DEL"
+	},
+	"STOP_SHARING_SCREEN": {
+		"message": "STOPP SKJERMDELING"
+	},
+	"Sharing_screen_to": {
+		"message": "Deler skjermen med "
+	},
+	"Please_wait_for_permission_to_share_screen": {
+		"message": "Vent på tillatelse til å dele skjermen."
 	}
 }

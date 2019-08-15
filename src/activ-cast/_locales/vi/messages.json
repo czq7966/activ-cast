@@ -11,9 +11,6 @@
 	"manifest_default_title": {
 		"message": "Promethean® Screen Share"
 	},
-	"Activ_Cast": {
-		"message": "Screen Share"
-	},
 	"ENTER_PANEL_ID": {
 		"message": "NHẬP ID BẢNG ĐIỀU KHIỂN"
 	},
@@ -23,14 +20,11 @@
 	"CANCEL": {
 		"message": "HỦY"
 	},
-	"CAST": {
-		"message": "TRUYỀN"
+	"ENTER_WAITING_ROOM": {
+		"message": "VÀO PHÒNG CHỜ"
 	},
 	"Untitled": {
 		"message": "Không có tiêu đề"
-	},
-	"Casting": {
-		"message": "Đang truyền"
 	},
 	"Waiting_Room": {
 		"message": "Phòng chờ"
@@ -62,19 +56,31 @@
 	"Closed": {
 		"message": "Đã đóng"
 	},
-	"You_are_casting_to": {
-		"message": "Bạn đang truyền tới"
-	},
-	"STOP_CASTING": {
-		"message": "DỪNG TRUYỀN"
-	},
 	"Panel_ID_Error": {
 		"message": "Lỗi ID bảng điều khiển. Vui lòng thử lại."
 	},
 	"Name_is_too_long": {
-		"message": "Name is too long. Please try again."
+		"message": "Tên quá dài. Vui lòng thử lại."
 	},
 	"Please_enter_your_name": {
 		"message": "Vui lòng nhập tên của bạn."
+	},
+	"App_Name": {
+		"message": "Screen Share"
+	},
+	"Screen_Share": {
+		"message": "Screen Share"
+	},
+	"SHARE_SCREEN": {
+		"message": "CHIA SẺ"
+	},
+	"STOP_SHARING_SCREEN": {
+		"message": "DỪNG CHIA SẺ MÀN HÌNH"
+	},
+	"Sharing_screen_to": {
+		"message": "Chia sẻ màn hình với "
+	},
+	"Please_wait_for_permission_to_share_screen": {
+		"message": "Vui lòng chờ được cấp phép để chia sẻ màn hình của bạn."
 	}
 }

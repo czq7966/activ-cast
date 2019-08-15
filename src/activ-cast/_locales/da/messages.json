@@ -11,9 +11,6 @@
 	"manifest_default_title": {
 		"message": "Promethean® Screen Share"
 	},
-	"Activ_Cast": {
-		"message": "Screen Share"
-	},
 	"ENTER_PANEL_ID": {
 		"message": "ANGIV SKÆRM-ID"
 	},
@@ -23,14 +20,11 @@
 	"CANCEL": {
 		"message": "ANNULLER"
 	},
-	"CAST": {
-		"message": "UDSEND"
+	"ENTER_WAITING_ROOM": {
+		"message": "GÅ TIL LOBBY"
 	},
 	"Untitled": {
 		"message": "Ikke navngivet"
-	},
-	"Casting": {
-		"message": "Udsender"
 	},
 	"Waiting_Room": {
 		"message": "Lobby"
@@ -62,19 +56,31 @@
 	"Closed": {
 		"message": "Lukket"
 	},
-	"You_are_casting_to": {
-		"message": "Du udsender på"
-	},
-	"STOP_CASTING": {
-		"message": "STOP UDSENDELSE"
-	},
 	"Panel_ID_Error": {
 		"message": "Skærm-id-fejl. Prøv igen."
 	},
 	"Name_is_too_long": {
-		"message": "Name is too long. Please try again."
+		"message": "Navnet er for langt. Prøv igen."
 	},
 	"Please_enter_your_name": {
 		"message": "Angiv dit navn."
+	},
+	"App_Name": {
+		"message": "Skærmdeling"
+	},
+	"Screen_Share": {
+		"message": "Skærmdeling"
+	},
+	"SHARE_SCREEN": {
+		"message": "DEL"
+	},
+	"STOP_SHARING_SCREEN": {
+		"message": "STOP SKÆRMDELING"
+	},
+	"Sharing_screen_to": {
+		"message": "Del skærmen på "
+	},
+	"Please_wait_for_permission_to_share_screen": {
+		"message": "Vent på tilladelse til at dele din skærm."
 	}
 }

@@ -11,9 +11,6 @@
 	"manifest_default_title": {
 		"message": "Promethean® Screen Share"
 	},
-	"Activ_Cast": {
-		"message": "Screen Share"
-	},
 	"ENTER_PANEL_ID": {
 		"message": "ВВЕДИТЕ ИДЕНТИФИКАТОР ПАНЕЛИ"
 	},
@@ -23,14 +20,11 @@
 	"CANCEL": {
 		"message": "ОТМЕНА"
 	},
-	"CAST": {
-		"message": "ТРАНСЛИРОВАТЬ"
+	"ENTER_WAITING_ROOM": {
+		"message": "ВОЙДИТЕ В КОМНАТУ ОЖИДАНИЯ"
 	},
 	"Untitled": {
 		"message": "Безымянный"
-	},
-	"Casting": {
-		"message": "Трансляция"
 	},
 	"Waiting_Room": {
 		"message": "Комната ожидания"
@@ -62,19 +56,31 @@
 	"Closed": {
 		"message": "Закрыто"
 	},
-	"You_are_casting_to": {
-		"message": "Вы транслируете на"
-	},
-	"STOP_CASTING": {
-		"message": "ОСТАНОВИТЬ ТРАНСЛЯЦИЮ"
-	},
 	"Panel_ID_Error": {
 		"message": "Ошибка идентификатора панели. Повторите попытку."
 	},
 	"Name_is_too_long": {
-		"message": "Name is too long. Please try again."
+		"message": "Имя слишком длинное. Повторите попытку."
 	},
 	"Please_enter_your_name": {
 		"message": "Введите ваше имя."
+	},
+	"App_Name": {
+		"message": "Screen Share"
+	},
+	"Screen_Share": {
+		"message": "Screen Share"
+	},
+	"SHARE_SCREEN": {
+		"message": "ОБЩИЙ ДОСТУП"
+	},
+	"STOP_SHARING_SCREEN": {
+		"message": "ОСТАНОВИТЬ ОБЩИЙ ДОСТУП К ЭКРАНУ"
+	},
+	"Sharing_screen_to": {
+		"message": "ОБЩИЙ ДОСТУП К ЭКРАНУ В "
+	},
+	"Please_wait_for_permission_to_share_screen": {
+		"message": "Дождитесь разрешения на общий доступ к экрану."
 	}
 }

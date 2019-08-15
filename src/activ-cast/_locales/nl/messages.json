@@ -11,9 +11,6 @@
 	"manifest_default_title": {
 		"message": "Promethean® Screen Share"
 	},
-	"Activ_Cast": {
-		"message": "Screen Share"
-	},
 	"ENTER_PANEL_ID": {
 		"message": "VOER PANEEL-ID IN"
 	},
@@ -23,14 +20,11 @@
 	"CANCEL": {
 		"message": "ANNULEREN"
 	},
-	"CAST": {
-		"message": "CAST"
+	"ENTER_WAITING_ROOM": {
+		"message": "GA NAAR WACHTRIJ"
 	},
 	"Untitled": {
 		"message": "Naamloos"
-	},
-	"Casting": {
-		"message": "Casten"
 	},
 	"Waiting_Room": {
 		"message": "Wachtrij"
@@ -62,19 +56,31 @@
 	"Closed": {
 		"message": "Sluiten"
 	},
-	"You_are_casting_to": {
-		"message": "U cast naar"
-	},
-	"STOP_CASTING": {
-		"message": "STOP MET CASTEN"
-	},
 	"Panel_ID_Error": {
 		"message": "Paneel ID fout. Probeer het opnieuw."
 	},
 	"Name_is_too_long": {
-		"message": "Name is too long. Please try again."
+		"message": "Naam is te lang. Probeer het opnieuw."
 	},
 	"Please_enter_your_name": {
 		"message": "Voer uw naam in."
+	},
+	"App_Name": {
+		"message": "Screen Share"
+	},
+	"Screen_Share": {
+		"message": "Screen Share"
+	},
+	"SHARE_SCREEN": {
+		"message": "DELEN"
+	},
+	"STOP_SHARING_SCREEN": {
+		"message": "STOP SCHERM DELEN"
+	},
+	"Sharing_screen_to": {
+		"message": "Deelt scherm met "
+	},
+	"Please_wait_for_permission_to_share_screen": {
+		"message": "Wacht op goedkeuring om uw scherm te delen."
 	}
 }

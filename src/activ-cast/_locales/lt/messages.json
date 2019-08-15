@@ -11,9 +11,6 @@
 	"manifest_default_title": {
 		"message": "Promethean® Screen Share"
 	},
-	"Activ_Cast": {
-		"message": "Screen Share"
-	},
 	"ENTER_PANEL_ID": {
 		"message": "ĮVESKITE PULTO ID"
 	},
@@ -23,14 +20,11 @@
 	"CANCEL": {
 		"message": "ATŠAUKTI"
 	},
-	"CAST": {
-		"message": "TRANSLIUOTI"
+	"ENTER_WAITING_ROOM": {
+		"message": "EITI Į LAUKIMO KAMBARĮ"
 	},
 	"Untitled": {
 		"message": "Be pavadinimo"
-	},
-	"Casting": {
-		"message": "Transliacija"
 	},
 	"Waiting_Room": {
 		"message": "Laukimo kambarys"
@@ -62,19 +56,31 @@
 	"Closed": {
 		"message": "Uždaryta"
 	},
-	"You_are_casting_to": {
-		"message": "Transliuojate šiam vartotojui"
-	},
-	"STOP_CASTING": {
-		"message": "BAIGTI TRANSLIACIJĄ"
-	},
 	"Panel_ID_Error": {
 		"message": "Pulto ID klaida. Bandykite dar kartą."
 	},
 	"Name_is_too_long": {
-		"message": "Name is too long. Please try again."
+		"message": "Pavadinimas per ilgas. Bandykite dar kartą."
 	},
 	"Please_enter_your_name": {
 		"message": "Įveskite savo vardą."
+	},
+	"App_Name": {
+		"message": "Screen Share"
+	},
+	"Screen_Share": {
+		"message": "Screen Share"
+	},
+	"SHARE_SCREEN": {
+		"message": "DALYTIS"
+	},
+	"STOP_SHARING_SCREEN": {
+		"message": "NUSTOTI BENDRINTI EKRANĄ"
+	},
+	"Sharing_screen_to": {
+		"message": "Bendrinti ekraną su "
+	},
+	"Please_wait_for_permission_to_share_screen": {
+		"message": "Palaukite leidimo bendrinti savo ekraną."
 	}
 }

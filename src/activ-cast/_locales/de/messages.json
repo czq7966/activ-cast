@@ -11,9 +11,6 @@
 	"manifest_default_title": {
 		"message": "Promethean® Screen Share"
 	},
-	"Activ_Cast": {
-		"message": "Screen Share"
-	},
 	"ENTER_PANEL_ID": {
 		"message": "PANEL-ID EINGEBEN"
 	},
@@ -23,14 +20,11 @@
 	"CANCEL": {
 		"message": "ABBRECHEN"
 	},
-	"CAST": {
-		"message": "CAST"
+	"ENTER_WAITING_ROOM": {
+		"message": "WARTERAUM BETRETEN"
 	},
 	"Untitled": {
 		"message": "Unbenannt"
-	},
-	"Casting": {
-		"message": "Casting"
 	},
 	"Waiting_Room": {
 		"message": "Warteraum"
@@ -62,19 +56,31 @@
 	"Closed": {
 		"message": "Geschlossen"
 	},
-	"You_are_casting_to": {
-		"message": "Sie führen ein Casting aus zu"
-	},
-	"STOP_CASTING": {
-		"message": "CASTING STOPPEN"
-	},
 	"Panel_ID_Error": {
 		"message": "Panel-ID-Fehler. Versuchen Sie es erneut."
 	},
 	"Name_is_too_long": {
-		"message": "Name is too long. Please try again."
+		"message": "Name ist zu lang. Versuchen Sie es erneut."
 	},
 	"Please_enter_your_name": {
 		"message": "Geben Sie Ihren Namen ein."
+	},
+	"App_Name": {
+		"message": "Screen Share"
+	},
+	"Screen_Share": {
+		"message": "Screen Share"
+	},
+	"SHARE_SCREEN": {
+		"message": "TEILEN"
+	},
+	"STOP_SHARING_SCREEN": {
+		"message": "BILDSCHIRM NICHT MEHR TEILEN"
+	},
+	"Sharing_screen_to": {
+		"message": "Bildschirm freigeben für "
+	},
+	"Please_wait_for_permission_to_share_screen": {
+		"message": "Warten Sie auf die Genehmigung für die Freigabe Ihres Bildschirms."
 	}
 }

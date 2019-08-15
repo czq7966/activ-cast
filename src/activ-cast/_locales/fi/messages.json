@@ -11,9 +11,6 @@
 	"manifest_default_title": {
 		"message": "Promethean® Screen Share"
 	},
-	"Activ_Cast": {
-		"message": "Screen Share"
-	},
 	"ENTER_PANEL_ID": {
 		"message": "ANNA PANEELIN TUNNUS"
 	},
@@ -23,14 +20,11 @@
 	"CANCEL": {
 		"message": "PERUUTA"
 	},
-	"CAST": {
-		"message": "LÄHETÄ"
+	"ENTER_WAITING_ROOM": {
+		"message": "SIIRRY ODOTUSHUONEESEEN"
 	},
 	"Untitled": {
 		"message": "Nimetön"
-	},
-	"Casting": {
-		"message": "Lähettää"
 	},
 	"Waiting_Room": {
 		"message": "Odotushuone"
@@ -62,19 +56,31 @@
 	"Closed": {
 		"message": "Suljettu"
 	},
-	"You_are_casting_to": {
-		"message": "Lähetät kohteeseen"
-	},
-	"STOP_CASTING": {
-		"message": "LOPETA LÄHETTÄMINEN"
-	},
 	"Panel_ID_Error": {
 		"message": "Virhe paneelin tunnuksessa. Yritä uudelleen."
 	},
 	"Name_is_too_long": {
-		"message": "Name is too long. Please try again."
+		"message": "Nimi on liian pitkä. Yritä uudelleen."
 	},
 	"Please_enter_your_name": {
 		"message": "Anna nimesi."
+	},
+	"App_Name": {
+		"message": "Screen Share"
+	},
+	"Screen_Share": {
+		"message": "Screen Share"
+	},
+	"SHARE_SCREEN": {
+		"message": "JAA"
+	},
+	"STOP_SHARING_SCREEN": {
+		"message": "LOPETA NÄYTÖN JAKAMINEN"
+	},
+	"Sharing_screen_to": {
+		"message": "Näyttö jaetaan kohteeseen "
+	},
+	"Please_wait_for_permission_to_share_screen": {
+		"message": "Odota lupaa näytön jakamiseen."
 	}
 }

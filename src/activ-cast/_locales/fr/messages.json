@@ -11,9 +11,6 @@
 	"manifest_default_title": {
 		"message": "Promethean® Screen Share"
 	},
-	"Activ_Cast": {
-		"message": "Screen Share"
-	},
 	"ENTER_PANEL_ID": {
 		"message": "ENTREZ L'ID DU TABLEAU"
 	},
@@ -23,14 +20,11 @@
 	"CANCEL": {
 		"message": "ANNULER"
 	},
-	"CAST": {
-		"message": "DIFFUSER"
+	"ENTER_WAITING_ROOM": {
+		"message": "ENTRER DANS LA SALLE D'ATTENTE"
 	},
 	"Untitled": {
 		"message": "Sans titre"
-	},
-	"Casting": {
-		"message": "Diffusion"
 	},
 	"Waiting_Room": {
 		"message": "Salle d'attente"
@@ -62,19 +56,31 @@
 	"Closed": {
 		"message": "Fermé"
 	},
-	"You_are_casting_to": {
-		"message": "Vous diffusez vers"
-	},
-	"STOP_CASTING": {
-		"message": "ARRÊTER LA DIFFUSION"
-	},
 	"Panel_ID_Error": {
-		"message": "Erreur d\\'ID de tableau. Veuillez réessayer."
+		"message": "Erreur d'ID de tableau. Veuillez réessayer."
 	},
 	"Name_is_too_long": {
-		"message": "Name is too long. Please try again."
+		"message": "Le nom est trop long. Veuillez réessayer."
 	},
 	"Please_enter_your_name": {
 		"message": "Veuillez entrer votre nom."
+	},
+	"App_Name": {
+		"message": "Partage d'écran"
+	},
+	"Screen_Share": {
+		"message": "Partage d'écran"
+	},
+	"SHARE_SCREEN": {
+		"message": "PARTAGER"
+	},
+	"STOP_SHARING_SCREEN": {
+		"message": "ARRÊTER LE PARTAGE D'ÉCRAN"
+	},
+	"Sharing_screen_to": {
+		"message": "Partage de l'écran sur "
+	},
+	"Please_wait_for_permission_to_share_screen": {
+		"message": "Veuillez attendre l'autorisation de partage d'écran."
 	}
 }

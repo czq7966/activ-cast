@@ -11,9 +11,6 @@
 	"manifest_default_title": {
 		"message": "Promethean® Screen Share"
 	},
-	"Activ_Cast": {
-		"message": "Screen Share"
-	},
 	"ENTER_PANEL_ID": {
 		"message": "ZADEJTE ID PANELU"
 	},
@@ -23,14 +20,11 @@
 	"CANCEL": {
 		"message": "ZRUŠIT"
 	},
-	"CAST": {
-		"message": "VYSÍLAT"
+	"ENTER_WAITING_ROOM": {
+		"message": "VSTOUPIT DO ČEKÁRNY"
 	},
 	"Untitled": {
 		"message": "Bez názvu"
-	},
-	"Casting": {
-		"message": "Vysílání"
 	},
 	"Waiting_Room": {
 		"message": "Čekárna"
@@ -62,19 +56,31 @@
 	"Closed": {
 		"message": "Ukončeno"
 	},
-	"You_are_casting_to": {
-		"message": "Vysíláte na"
-	},
-	"STOP_CASTING": {
-		"message": "UKONČIT VYSÍLÁNÍ"
-	},
 	"Panel_ID_Error": {
 		"message": "Chyba ID panelu. Zkuste to znovu."
 	},
 	"Name_is_too_long": {
-		"message": "Name is too long. Please try again."
+		"message": "Název je příliš dlouhý. Zkuste to znovu."
 	},
 	"Please_enter_your_name": {
 		"message": "Zadejte své jméno."
+	},
+	"App_Name": {
+		"message": "Sdílení obrazovky"
+	},
+	"Screen_Share": {
+		"message": "Sdílení obrazovky"
+	},
+	"SHARE_SCREEN": {
+		"message": "SDÍLET"
+	},
+	"STOP_SHARING_SCREEN": {
+		"message": "UKONČIT SDÍLENÍ OBRAZOVKY"
+	},
+	"Sharing_screen_to": {
+		"message": "Sdílení obrazovky na panelu "
+	},
+	"Please_wait_for_permission_to_share_screen": {
+		"message": "Čekejte prosím na oprávnění ke sdílení vaší obrazovky."
 	}
 }

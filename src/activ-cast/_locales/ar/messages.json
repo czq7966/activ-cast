@@ -11,9 +11,6 @@
 	"manifest_default_title": {
 		"message": "Promethean® Screen Share"
 	},
-	"Activ_Cast": {
-		"message": "Screen Share"
-	},
 	"ENTER_PANEL_ID": {
 		"message": "إدخال معرف اللوحة"
 	},
@@ -23,14 +20,11 @@
 	"CANCEL": {
 		"message": "إلغاء"
 	},
-	"CAST": {
-		"message": "الإرسال"
+	"ENTER_WAITING_ROOM": {
+		"message": "إدخال غرفة الانتظار"
 	},
 	"Untitled": {
 		"message": "بدون عنوان"
-	},
-	"Casting": {
-		"message": "يتم الإرسال"
 	},
 	"Waiting_Room": {
 		"message": "في انتظار الغرفة"
@@ -62,19 +56,31 @@
 	"Closed": {
 		"message": "تم الإغلاق"
 	},
-	"You_are_casting_to": {
-		"message": "أنت ترسل إلى"
-	},
-	"STOP_CASTING": {
-		"message": "إيقاف الإرسال"
-	},
 	"Panel_ID_Error": {
 		"message": "خطأ معرف اللوحة. يُرجى إعادة المحاولة."
 	},
 	"Name_is_too_long": {
-		"message": "Name is too long. Please try again."
+		"message": "الاسم طويل للغاية. يُرجى إعادة المحاولة."
 	},
 	"Please_enter_your_name": {
 		"message": "يُرجى كتابة اسمك."
+	},
+	"App_Name": {
+		"message": "مشاركة الشاشة"
+	},
+	"Screen_Share": {
+		"message": "مشاركة الشاشة"
+	},
+	"SHARE_SCREEN": {
+		"message": "مشاركة"
+	},
+	"STOP_SHARING_SCREEN": {
+		"message": "إيقاف مشاركة الشاشة"
+	},
+	"Sharing_screen_to": {
+		"message": "مشاركة الشاشة مع "
+	},
+	"Please_wait_for_permission_to_share_screen": {
+		"message": "يرجى انتظار الإذن لمشاركة شاشتك."
 	}
 }

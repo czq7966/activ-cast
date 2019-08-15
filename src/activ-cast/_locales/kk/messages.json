@@ -11,9 +11,6 @@
 	"manifest_default_title": {
 		"message": "Promethean® Screen Share"
 	},
-	"Activ_Cast": {
-		"message": "Screen Share"
-	},
 	"ENTER_PANEL_ID": {
 		"message": "ПАНЕЛЬ ИДЕНТИФИКАТОРЫН ЕНГІЗІҢІЗ"
 	},
@@ -23,14 +20,11 @@
 	"CANCEL": {
 		"message": "БАС ТАРТУ"
 	},
-	"CAST": {
-		"message": "ТРАНСЛЯЦИЯ"
+	"ENTER_WAITING_ROOM": {
+		"message": "КҮТУ БӨЛМЕСІНЕ КІРУ"
 	},
 	"Untitled": {
 		"message": "Атаусыз"
-	},
-	"Casting": {
-		"message": "Трансляциялау"
 	},
 	"Waiting_Room": {
 		"message": "Күту бөлмесі"
@@ -62,19 +56,31 @@
 	"Closed": {
 		"message": "Жабық"
 	},
-	"You_are_casting_to": {
-		"message": "Сіз трансляциялап жатырсыз"
-	},
-	"STOP_CASTING": {
-		"message": "ТРАНСЛЯЦИЯНЫ ТОҚТАТУ"
-	},
 	"Panel_ID_Error": {
 		"message": "Панель идентификаторы қатесі. Қайталап көріңіз."
 	},
 	"Name_is_too_long": {
-		"message": "Name is too long. Please try again."
+		"message": "Атауы тым ұзын. Қайталап көріңіз."
 	},
 	"Please_enter_your_name": {
 		"message": "Атыңызды енгізіңіз."
+	},
+	"App_Name": {
+		"message": "Экран бөлісу"
+	},
+	"Screen_Share": {
+		"message": "Экран бөлісу"
+	},
+	"SHARE_SCREEN": {
+		"message": "БӨЛІСУ"
+	},
+	"STOP_SHARING_SCREEN": {
+		"message": "ЭКРАН БӨЛІСУДІ ТОҚТАТУ"
+	},
+	"Sharing_screen_to": {
+		"message": "Экран бөлісу "
+	},
+	"Please_wait_for_permission_to_share_screen": {
+		"message": "Экран бөлісу үшін рұқсат күтіңіз."
 	}
 }

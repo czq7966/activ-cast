@@ -11,9 +11,6 @@
 	"manifest_default_title": {
 		"message": "Promethean® Screen Share"
 	},
-	"Activ_Cast": {
-		"message": "Screen Share"
-	},
 	"ENTER_PANEL_ID": {
 		"message": "パネル ID を入力"
 	},
@@ -23,14 +20,11 @@
 	"CANCEL": {
 		"message": "キャンセル"
 	},
-	"CAST": {
-		"message": "キャスト"
+	"ENTER_WAITING_ROOM": {
+		"message": "待合室に入室"
 	},
 	"Untitled": {
 		"message": "無題"
-	},
-	"Casting": {
-		"message": "キャスト中"
 	},
 	"Waiting_Room": {
 		"message": "待合室"
@@ -62,19 +56,31 @@
 	"Closed": {
 		"message": "終了しました"
 	},
-	"You_are_casting_to": {
-		"message": "実行中のキャスト先"
-	},
-	"STOP_CASTING": {
-		"message": "キャストを停止"
-	},
 	"Panel_ID_Error": {
-		"message": "パネル ID エラーです。後で再度お試しください。"
+		"message": "パネル ID エラーです。再度お試しください。"
 	},
 	"Name_is_too_long": {
-		"message": "Name is too long. Please try again."
+		"message": "名前が長すぎます。再度お試しください。"
 	},
 	"Please_enter_your_name": {
 		"message": "名前をご入力ください。"
+	},
+	"App_Name": {
+		"message": "Screen Share"
+	},
+	"Screen_Share": {
+		"message": "Screen Share"
+	},
+	"SHARE_SCREEN": {
+		"message": "共有"
+	},
+	"STOP_SHARING_SCREEN": {
+		"message": "画面共有を停止"
+	},
+	"Sharing_screen_to": {
+		"message": "画面共有先"
+	},
+	"Please_wait_for_permission_to_share_screen": {
+		"message": "画面共有の許可をお待ちください。"
 	}
 }

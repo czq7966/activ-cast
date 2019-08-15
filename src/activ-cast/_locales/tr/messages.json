@@ -11,9 +11,6 @@
 	"manifest_default_title": {
 		"message": "Promethean® Screen Share"
 	},
-	"Activ_Cast": {
-		"message": "Screen Share"
-	},
 	"ENTER_PANEL_ID": {
 		"message": "PANEL KİMLİĞİNİ GİRİN"
 	},
@@ -23,14 +20,11 @@
 	"CANCEL": {
 		"message": "İPTAL"
 	},
-	"CAST": {
-		"message": "YAYINLA"
+	"ENTER_WAITING_ROOM": {
+		"message": "BEKLEME ODASINA GİR"
 	},
 	"Untitled": {
 		"message": "Başlıksız"
-	},
-	"Casting": {
-		"message": "Yayınlama"
 	},
 	"Waiting_Room": {
 		"message": "Bekleme Odası"
@@ -62,19 +56,31 @@
 	"Closed": {
 		"message": "Kapalı"
 	},
-	"You_are_casting_to": {
-		"message": "Şuraya yayın yapıyorsunuz:"
-	},
-	"STOP_CASTING": {
-		"message": "YAYINI DURDUR"
-	},
 	"Panel_ID_Error": {
 		"message": "Panel Kimliği Hatası. Lütfen yeniden deneyin."
 	},
 	"Name_is_too_long": {
-		"message": "Name is too long. Please try again."
+		"message": "Ad çok uzun. Lütfen yeniden deneyin."
 	},
 	"Please_enter_your_name": {
 		"message": "Lütfen adınızı girin."
+	},
+	"App_Name": {
+		"message": "Ekran Paylaşımı"
+	},
+	"Screen_Share": {
+		"message": "Ekran Paylaşımı"
+	},
+	"SHARE_SCREEN": {
+		"message": "PAYLAŞ"
+	},
+	"STOP_SHARING_SCREEN": {
+		"message": "EKRAN PAYLAŞIMINI DURDUR"
+	},
+	"Sharing_screen_to": {
+		"message": "Ekran şurada paylaşılıyor: "
+	},
+	"Please_wait_for_permission_to_share_screen": {
+		"message": "Ekranınızı paylaşmak için lütfen izni bekleyin."
 	}
 }

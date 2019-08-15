@@ -11,9 +11,6 @@
 	"manifest_default_title": {
 		"message": "Promethean® Screen Share"
 	},
-	"Activ_Cast": {
-		"message": "Screen Share"
-	},
 	"ENTER_PANEL_ID": {
 		"message": "ป้อนหมายเลข Panel"
 	},
@@ -23,14 +20,11 @@
 	"CANCEL": {
 		"message": "ยกเลิก"
 	},
-	"CAST": {
-		"message": "แสดงผล"
+	"ENTER_WAITING_ROOM": {
+		"message": "เข้าห้องรอ"
 	},
 	"Untitled": {
 		"message": "ไม่มีชื่อ"
-	},
-	"Casting": {
-		"message": "การแสดงผล"
 	},
 	"Waiting_Room": {
 		"message": "ห้องรอ"
@@ -62,19 +56,31 @@
 	"Closed": {
 		"message": "ปิด"
 	},
-	"You_are_casting_to": {
-		"message": "คุณกำลังทำการแสดงผลไปยัง"
-	},
-	"STOP_CASTING": {
-		"message": "หยุดการแสดงผล"
-	},
 	"Panel_ID_Error": {
 		"message": "หมายเลข Panel ผิดพลาด โปรดลองอีกครั้ง"
 	},
 	"Name_is_too_long": {
-		"message": "Name is too long. Please try again."
+		"message": "ชื่อยาวเกินไป โปรดลองอีกครั้ง"
 	},
 	"Please_enter_your_name": {
 		"message": "โปรดป้อนชื่อของคุณ"
+	},
+	"App_Name": {
+		"message": "Screen Share"
+	},
+	"Screen_Share": {
+		"message": "Screen Share"
+	},
+	"SHARE_SCREEN": {
+		"message": "แชร์"
+	},
+	"STOP_SHARING_SCREEN": {
+		"message": "หยุดการแชร์หน้าจอ"
+	},
+	"Sharing_screen_to": {
+		"message": "กำลังแชร์หน้าจอไปยัง "
+	},
+	"Please_wait_for_permission_to_share_screen": {
+		"message": "โปรดรอการอนุญาตให้แชร์หน้าจอของคุณ"
 	}
 }

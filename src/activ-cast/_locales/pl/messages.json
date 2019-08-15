@@ -11,9 +11,6 @@
 	"manifest_default_title": {
 		"message": "Promethean® Screen Share"
 	},
-	"Activ_Cast": {
-		"message": "Screen Share"
-	},
 	"ENTER_PANEL_ID": {
 		"message": "WPROWADŹ IDENTYFIKATOR PANELU"
 	},
@@ -23,14 +20,11 @@
 	"CANCEL": {
 		"message": "ANULUJ"
 	},
-	"CAST": {
-		"message": "PRZESYŁAJ"
+	"ENTER_WAITING_ROOM": {
+		"message": "PRZEJDŹ DO POCZEKALNI"
 	},
 	"Untitled": {
 		"message": "Bez nazwy"
-	},
-	"Casting": {
-		"message": "Przesyłanie"
 	},
 	"Waiting_Room": {
 		"message": "Poczekalnia"
@@ -62,19 +56,31 @@
 	"Closed": {
 		"message": "Zamknięto"
 	},
-	"You_are_casting_to": {
-		"message": "Przesyłasz do"
-	},
-	"STOP_CASTING": {
-		"message": "ZATRZYMAJ PRZESYŁANIE"
-	},
 	"Panel_ID_Error": {
 		"message": "Błąd identyfikatora panelu. Spróbuj ponownie."
 	},
 	"Name_is_too_long": {
-		"message": "Name is too long. Please try again."
+		"message": "Imię i nazwisko za długie. Spróbuj ponownie."
 	},
 	"Please_enter_your_name": {
 		"message": "Wprowadź imię i nazwisko."
+	},
+	"App_Name": {
+		"message": "Udostępnianie Ekranu"
+	},
+	"Screen_Share": {
+		"message": "Udostępnianie Ekranu"
+	},
+	"SHARE_SCREEN": {
+		"message": "UDOSTĘPNIJ"
+	},
+	"STOP_SHARING_SCREEN": {
+		"message": "ZAKOŃCZ UDOSTĘPNIANIE EKRANU"
+	},
+	"Sharing_screen_to": {
+		"message": "Udostępnianie ekranu użytkownikowi "
+	},
+	"Please_wait_for_permission_to_share_screen": {
+		"message": "Poczekaj na zezwolenie na udostępnienie ekranu."
 	}
 }
