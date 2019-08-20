@@ -62,12 +62,16 @@ export class Main extends ADHOCCAST.Cmds.Common.CommandRooter {
     }
     initEvents() {
         this.eventRooter.setParent(this.conn.dispatcher.eventRooter);
-        this.eventRooter.onBeforeRoot.add(this.onBeforeRoot)
-        this.eventRooter.onAfterRoot.add(this.onAfterRoot)        
+        this.eventRooter.onBeforeRoot.add(this.onBeforeRoot);
+        this.eventRooter.onAfterRoot.add(this.onAfterRoot); 
+        
+        chrome.idle.onStateChanged.addListener(this.onIdleStateChanged);
     }
     unInitEvents() {
-        this.eventRooter.onBeforeRoot.remove(this.onBeforeRoot)
-        this.eventRooter.onAfterRoot.remove(this.onAfterRoot)
+        chrome.idle.onStateChanged.removeListener(this.onIdleStateChanged);
+
+        this.eventRooter.onBeforeRoot.remove(this.onBeforeRoot);
+        this.eventRooter.onAfterRoot.remove(this.onAfterRoot);
         this.eventRooter.setParent(); 
     }
 
@@ -249,6 +253,12 @@ export class Main extends ADHOCCAST.Cmds.Common.CommandRooter {
             if (user.sid == storage.items.target.sid) {
                 chrome.runtime.reload();
             }
+        }
+    }    
+
+    onIdleStateChanged = (newState: string) => {
+        if (newState == "locked") {
+            chrome.runtime.reload();
         }
     }    
 }
