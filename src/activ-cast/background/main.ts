@@ -6,7 +6,7 @@ import { EMessageKey } from '../locales';
 import { NativeIOInputFilter } from './native.io.input.filter';
 
 ADHOCCAST.Modules.Webrtc.Config.platform = ADHOCCAST.Modules.Webrtc.EPlatform.browser;
-ADHOCCAST.Cmds.Common.Helper.Debug.enabled = false;
+ADHOCCAST.Cmds.Common.Helper.Debug.enabled = process.env.NODE_MODE == "development";
 
 export class Main extends ADHOCCAST.Cmds.Common.CommandRooter {
     static instance: Main;

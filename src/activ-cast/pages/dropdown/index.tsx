@@ -11,7 +11,7 @@ import * as Dts from '../cmds/index'
 import { EMessageKey } from "../../locales";
 import { CompPanleID } from "./comps/panel-id/panel-id";
 
-ADHOCCAST.Cmds.Common.Helper.Debug.enabled = false;
+ADHOCCAST.Cmds.Common.Helper.Debug.enabled = process.env.NODE_MODE == "development";
 
 switch(chrome.i18n.getUILanguage()) {
     case "ar":
@@ -206,7 +206,7 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
 
     
     render() {
-        let title_msg = chrome.i18n.getMessage(EMessageKey.App_Name);
+        let title_msg = chrome.i18n.getMessage(EMessageKey.App_Name) + (process.env.NODE_MODE=="development" ? "(DEV)" : "");
         let header_msg = this.state.target ? (this.state.target.nick ? this.state.target.nick : chrome.i18n.getMessage(EMessageKey.Untitled)) : chrome.i18n.getMessage(EMessageKey.App_Name);
         let msg_label_msg = this.state.msg;
         let msg_casting_name = this.state.target ? (this.state.target.nick ? this.state.target.nick : chrome.i18n.getMessage(EMessageKey.Untitled)) : "";

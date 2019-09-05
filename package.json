@@ -1,13 +1,13 @@
 {
   "name": "screen-share",
-  "version": "1.2.2",
+  "version": "1.2.5",
   "description": "Mirror your device to any computer screen any time",
   "main": "index.js",
   "scripts": {
     "activcast:clean": "rimraf dist/screen-share",
     "activcast:watch": "npm run activcast:clean && cross-env NODE_MODULE=activcast webpack --progress --env.umd --watch",
     "activcast:build": "npm run activcast:clean && cross-env NODE_MODULE=activcast webpack --progress --env.umd --env.production --env.minimize",
-    "activcast:dev": "npm run activcast:clean && cross-env NODE_MODULE=activcast webpack --progress --env.umd --env.production --env.nodevtool",
+    "activcast:dev": "npm run activcast:clean && cross-env NODE_MODULE=activcast NODE_MODE=dev webpack --progress --env.umd --env.production --env.nodevtool",
     "dev": "npm run activcast:dev && cross-env NODE_MODE=dev node src/activ-cast/locales/archiver.ts --env.dev",
     "watch": "npm run activcast:watch",
     "clean": "npm run activcast:clean",

@@ -15,8 +15,9 @@ module.exports = env => {
     // const distDir = path.resolve(__dirname, 'dist', libraryTargetPath);
     const distDir = path.resolve(__dirname, '../../dist/screen-share');
     const srcDir =  path.resolve(__dirname);
-    entry['background/index'] = path.resolve(srcDir, "background/index.ts");
-    entry['pages/dropdown/index'] = path.resolve(srcDir, "pages/dropdown/index.tsx");
+
+    entry['background/index'] = path.resolve(srcDir, process.env.NODE_MODE == "dev" ? "background/index-dev.ts" : "background/index.ts");
+    entry['pages/dropdown/index'] = path.resolve(srcDir, process.env.NODE_MODE == "dev" ? "pages/dropdown/index-dev.tsx" : "pages/dropdown/index.tsx");
     // entry['pages/dropdown/options'] = path.resolve(srcDir, "pages/dropdown/options.tsx");
     optimization['minimizer'] = minimizer;  
 
@@ -54,9 +55,10 @@ module.exports = env => {
     )
 
     if (env.minimize) { //生产模式
-        minimizer.push(
-            new UglifyJsPlugin()
-        )
+        optimization['minimizer'] = undefined;
+        // minimizer.push(
+        //     new UglifyJsPlugin()
+        // )
     }
 
 
