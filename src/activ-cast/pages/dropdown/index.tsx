@@ -95,15 +95,7 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
 
         this.initEvents();
         this.loadStorage().then(() => {
-            let adhocConnParams: ADHOCCAST.IConnectionConstructorParams = {
-                instanceId: ADHOCCAST.Cmds.Common.Helper.uuid(),
-                signalerBase: storage.items.signaler,
-                namespace: storage.items.organization,
-                notInitDispatcherFilters: true,
-                parent: this
-            }
-            this.adhocConn = ADHOCCAST.Connection.getInstance(adhocConnParams);
-            this.getTargetUser(this.state.targetSid).catch(e=>{});
+            this.relogin();
         })
         
         this.conn.login();        
@@ -113,7 +105,7 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
         this.states.destroy();
         this.eventRooter.destroy();
         this.conn.destroy();
-        this.adhocConn.destroy();
+        this.adhocConn && this.adhocConn.destroy();
         this.conn = null;
         this.eventRooter = null;
         delete this.states;
@@ -121,6 +113,7 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
         delete this.eventRooter;
     }   
     initEvents() {
+        window.addEventListener('unhandledrejection', this.unhandledRejection);
         this.eventRooter.setParent(this.conn.dispatcher.eventRooter);
         this.eventRooter.onBeforeRoot.add(this.onBeforeRoot)
         this.eventRooter.onAfterRoot.add(this.onAfterRoot)     
@@ -129,6 +122,11 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
         this.eventRooter.onBeforeRoot.remove(this.onBeforeRoot)
         this.eventRooter.onAfterRoot.remove(this.onAfterRoot)
         this.eventRooter.setParent(); 
+        window.removeEventListener('unhandledrejection', this.unhandledRejection);
+    }
+    unhandledRejection = (event) => {
+        console.error("unhandled rejection:", event.reason);
+        this.relogin();
     }
 
     componentDidMount() {
@@ -182,7 +180,18 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
 
     setState(state: DropdownState) {
         this.stateCase = state.case || StateCase.none;
+        this.checkLogin();
         super.setState(state);
+    }
+    checkLogin() {
+        if (this.adhocConn) {
+            if (this.adhocConn.signaler.connected() && this.adhocConn.isLogin()) {
+                this.states.set(EStates.logined);
+            } else {
+                this.states.reset(EStates.logined);
+                this.relogin();
+            }
+        }
     }
 
     calCase() {
@@ -306,6 +315,15 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
                         {footer_cancel()}
                     </div>   
         }      
+        if (!this.states.isset(EStates.logined)) {
+            msg_label_msg = this.state.msg || chrome.i18n.getMessage(EMessageKey.Connecting___) + ".";
+            return  <div className="container" >
+                        {title()}
+                        {header()}
+                        {msg_label()}
+                        {footer_cancel()}
+                    </div>   
+        }         
         
         return  <div className="container" >
                     {title()}
@@ -340,53 +358,76 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
         }  
         cmd.sendCommand();
     }
+
     getTargetUser(sid: string): Promise<any> {
         if (!!sid) {
-            let _login = (): Promise<any> => {
-                if (this.adhocConn.isLogin()) 
-                    return Promise.resolve()
-                else {
-                    let user: ADHOCCAST.Cmds.IUser = {
-                        id: null,
-                        sid: null,
-                        room: {
-                            id: ADHOCCAST.Cmds.Common.Helper.uuid()
-                        }
-                    }
-                    return this.adhocConn.login(user)
-                }
+            let target:  ADHOCCAST.Cmds.IUser = {
+                id: null,
+                sid: sid
             }
+            return ADHOCCAST.Services.Cmds.UserGet.get(this.getAdhocConn().instanceId, target)
+        } else {
+            Promise.reject("invalid sid");
+        }
+    }
 
-            return new Promise((resolve, reject) => {
-                _login()
-                .then(() => {
-                    let target:  ADHOCCAST.Cmds.IUser = {
-                        id: null,
-                        sid: sid
-                    }
-                    ADHOCCAST.Services.Cmds.UserGet.get(this.adhocConn.instanceId, target)
+
+
+    _syncGetTargetUserPromise: Promise<any>;
+    _syncLastTargetUserSid: string;
+    syncGetTargetUser(sid: string): Promise<any> {
+        if (!!sid) {
+            this._syncLastTargetUserSid = sid;
+            if (!!this._syncGetTargetUserPromise)
+                return this._syncGetTargetUserPromise;
+
+            this._syncGetTargetUserPromise = new Promise((resolve, reject) => {
+                let __getUser = (_sid: string) => {
+                    this.getTargetUser(_sid)
                     .then((data: ADHOCCAST.Cmds.ICommandData<ADHOCCAST.Dts.ICommandRespDataProps>) => {
-                        let target = Object.assign({}, data.props.user);
-                        this.setState({
-                            target: target
-                        })
-                        resolve(data);
+                        if (data.props.user.sid == this._syncLastTargetUserSid) {                            
+                            let target = Object.assign({}, data.props.user);
+                            this.setState({
+                                target: target,
+                                panelIdError: false
+                            })
+                            delete this._syncGetTargetUserPromise;   
+                            resolve(data);                                                     
+                        } else {
+                            this.setState({
+                                target: null,
+                                panelIdError: false
+                            })                                
+                            __getUser(this._syncLastTargetUserSid);
+                        }
+                        
                     })
-                    .catch(e => {
-                        this.setState({
-                            target: null
-                        })
-                        reject(e)
-                    })                    
-                })
-                .catch(e => {
-                    this.setState({
-                        target: null
-                    })
-                    reject(e);
-                })
+                    .catch((e: ADHOCCAST.Cmds.ICommandData<ADHOCCAST.Dts.ICommandRespDataProps>) => {                        
+                        if (e == undefined || e && e.respMsg == "time out!") {       
+                            delete this._syncGetTargetUserPromise;
+                            reject(e);
+                            this.relogin();
+                        } else {
+                            if (_sid != this._syncLastTargetUserSid) {
+                                __getUser(this._syncLastTargetUserSid);
+                            } else {
+                                delete this._syncGetTargetUserPromise;
+                                reject(e);
+                                this.setState({
+                                    target: null,
+                                    panelIdError: _sid.length == this.targetSidMaxLength ? true : false
+                                })
+                            }
+                        }
+                        
+                    })  
+                }
+                setTimeout(() => {
+                    __getUser(sid);                        
+                }, 1);                    
             })
 
+            return this._syncGetTargetUserPromise;
         } else {
             return Promise.reject();
         }
@@ -426,7 +467,7 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
             return;
         }
 
-        this.getTargetUser(this.state.targetSid).then(v => {
+        this.syncGetTargetUser(this.state.targetSid).then(v => {
             let data: ADHOCCAST.Cmds.ICommandData<ADHOCCAST.Dts.ICommandReqDataProps> = {
                 cmdId: Dts.ECommandId.custom_start_cast,
                 props: {
@@ -443,9 +484,6 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
             return promise;            
         })
         .catch(e => {
-            this.setState({
-                panelIdError: true
-            }) 
             this.compPanelID && this.compPanelID.focus();
         });
 
@@ -466,6 +504,87 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
         storage.items.target.sid = this.state.targetSid;
         storage.save()
     }
+    getAdhocConn(): ADHOCCAST.Connection {
+        if (!this.adhocConn) {
+            let adhocConnParams: ADHOCCAST.IConnectionConstructorParams = {
+                instanceId: ADHOCCAST.Cmds.Common.Helper.uuid(),
+                signalerBase: storage.items.signaler,
+                namespace: storage.items.organization,
+                notInitDispatcherFilters: true,
+                parent: this
+            }
+
+            this.adhocConn = ADHOCCAST.Connection.getInstance(adhocConnParams);
+        }
+        return this.adhocConn;
+
+    }
+    login(newConn?: boolean): Promise<any> {
+        let _login = () => {
+            if (this.getAdhocConn().isLogin()) 
+                return Promise.resolve()
+            else {
+                let user: ADHOCCAST.Cmds.IUser = {
+                    id: null,
+                    sid: null,
+                    room: {
+                        id: ADHOCCAST.Cmds.Common.Helper.uuid()
+                    }
+                }
+                this.getAdhocConn().disconnect();
+                return this.getAdhocConn().login(user);
+            }   
+        }
+
+        if(!!newConn) this.adhocConn = null;
+
+        let promise = new Promise((resolve, reject) => {
+            let __login = () => {
+                _login()
+                .then(v => {
+                    resolve(v)
+                })
+                .catch(e => {
+                    console.error("login failed, retrying: ", e);
+                    __login();
+                })
+            }
+            __login();
+        } )
+
+        return promise;
+    }
+    _reloginPromise: Promise<any>
+    relogin(): Promise<any> {
+        if (!!this._reloginPromise) {
+            return this._reloginPromise;
+        }
+        
+        this._reloginPromise = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                if (this.getAdhocConn().isLogin()) {
+                    this.getAdhocConn().logout().catch(e=>{});
+                }
+                this.getAdhocConn().disconnect();
+    
+                this.login(true).then(v => {
+                    this.setState({});                
+                    this.syncGetTargetUser(this.state.targetSid).catch(e=>{});  
+                    delete this._reloginPromise;
+                    resolve(v);                
+                })
+                .catch(e => {
+                    delete this._reloginPromise;
+                    reject(e);
+                })
+                this.setState({
+                    target: null,
+                    panelIdError: false
+                });                
+            }, 1);
+        })
+        return this._reloginPromise;
+    }
 
 
 
@@ -478,14 +597,12 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
             targetSid: sid,
             panelIdError: false
         })    
-        this.getTargetUser(sid).then(v => {
+        this.syncGetTargetUser(sid).then(v => {
             storage.items.target.sid = sid;
             storage.save()
         })
         .catch(e => {
-            this.setState({
-                panelIdError: sid.length == this.targetSidMaxLength ? true : false
-            }) 
+
         });        
     }
     onIdValueChange =  (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -595,7 +712,7 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
     onAfterRoot_network_connect(cmd: ADHOCCAST.Cmds.Common.ICommand) {
         this.states.reset(EStates.connecting);
         this.states.set(EStates.connected);
-        this.setState({})     
+        this.relogin();
     }    
     onAfterRoot_network_disconnect(cmd: ADHOCCAST.Cmds.Common.ICommand) {
         this.states.reset(EStates.connecting);
