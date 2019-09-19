@@ -55,7 +55,7 @@ export interface IStorageItems {
 }
 
 var defaultItems: IStorageItems = {
-    signaler: "https://mdm.hk.101.com:13670",
+    signaler: "https://adhoc-turn.ca.101.com",
     organization: 'promethean',
     roomPrefix: "promethean_",
     codec: 'h264',
