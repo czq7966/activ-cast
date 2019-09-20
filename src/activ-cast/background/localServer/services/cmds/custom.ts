@@ -6,6 +6,7 @@ import { EStates } from "../../../../pages/dropdown";
 import { storage } from "../../../storage";
 import { Main } from "../../../main";
 import { StreamSharing } from "../stream-sharing";
+import { ServiceNetwork } from "./network";
 
 
 
@@ -37,7 +38,10 @@ export class ServiceCustom  {
         storage.items.user.nick = cmd.props.extra;
         StreamSharing.start()
         .then(v => portUser.respStates())
-        .catch(e => portUser.respStates())
+        .catch(e => {
+            portUser.respStates();
+            ServiceNetwork.on_network_disconnect(null, portUser);
+        })
     }
     static on_custom_stop_cast(cmd: ADHOCCAST.Cmds.ICommandData<ADHOCCAST.Dts.ICommandDataProps>, portUser: Modules.IPortUser) {
         StreamSharing.stopSharing();
@@ -98,6 +102,6 @@ export class ServiceCustom  {
         respCmd.type = ADHOCCAST.Dts.ECommandType.resp;
         respCmd.props.user = _targetUser;
         respCmd.extra = _states;
-        portUser ? portUser.sendCommand(respCmd) : Main.instance.portUsers.sendCommand(respCmd, null, true);
+        portUser && portUser.notDestroyed ? portUser.sendCommand(respCmd) : Main.instance.portUsers.sendCommand(respCmd, null, true);
     }
 }

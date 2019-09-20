@@ -30,13 +30,15 @@ export class PortUser  extends ADHOCCAST.Cmds.Common.Base implements IPortUser {
         this.port.user = this;  
         this.users = users;
         this.initEvents();         
+        this.onConnect();
     }
 
     destroy() {
         this.unInitEvents();
         delete this.user;
         delete this.port;
-        delete this.users
+        delete this.users;
+        super.destroy();
     }
 
     initEvents() {
@@ -52,8 +54,15 @@ export class PortUser  extends ADHOCCAST.Cmds.Common.Base implements IPortUser {
         console.log('Local ServerEvent', "onMessage", msg);
         this.onCommand(msg);
     }
+
+    onConnect = () => {
+        console.log('Local ServerEvent', "onConnect", this.port.name);
+        this.users.users.add(this.port.name, this);
+        this.onCommand({cmdId: ADHOCCAST.Dts.ECommandId.network_connect});
+    }    
     onDisconnect = (reason) => {
-        console.log('Local ServerEvent', "onDisconnect", reason);
+        console.log('Local ServerEvent', "onDisconnect", this.port.name);
+        this.users.users.del(this.port.name);
         this.onCommand({cmdId: ADHOCCAST.Dts.ECommandId.network_disconnect});
     }
 

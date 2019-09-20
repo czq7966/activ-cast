@@ -87,6 +87,10 @@ export class PortUsers extends ADHOCCAST.Cmds.Common.CommandRooter implements IP
             case Cmds.ECommandId.custom_update_states:
                 Services.Cmds.ServiceCustom.custom(cmd, portUser);            
                 break;
+            case ADHOCCAST.Cmds.ECommandId.network_connect:
+            case ADHOCCAST.Cmds.ECommandId.network_disconnect:
+                Services.Cmds.ServiceNetwork.network(cmd, portUser);            
+                break;                                
             default:
                 break;
         }     
@@ -94,21 +98,13 @@ export class PortUsers extends ADHOCCAST.Cmds.Common.CommandRooter implements IP
 
     onConnect = (port: chrome.runtime.Port) => {
         let name = port.name;
-        console.log('Local ServerEvent', 'connect', name);
-
         let portUser = new PortUser(port, this);
-        this.users.add(name, portUser);
-
         let onDisconnect = () => {
-            console.log('Local ServerEvent', 'disconnect', name);            
             port.onDisconnect.removeListener(onDisconnect);
-            let user = this.users.del(name);
-            user && user.destroy();
+            portUser.destroy();
         }
-
-        port.onDisconnect.addListener(onDisconnect)
+        port.onDisconnect.addListener(onDisconnect);
         portUser.respStates();
-
     }    
     
     sendCommand(cmd: ADHOCCAST.Dts.ICommandData<any>, portUser: IPortUser, isTurn: boolean = true): Promise<any> {
@@ -160,5 +156,5 @@ export class PortUsers extends ADHOCCAST.Cmds.Common.CommandRooter implements IP
 
         console.log("Local", 'SendCommand', cmd)
         return Promise.resolve();        
-    }      
+    }   
 }

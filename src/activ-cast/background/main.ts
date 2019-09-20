@@ -44,7 +44,7 @@ export class Main extends ADHOCCAST.Cmds.Common.CommandRooter {
         this.portUsers = LocalServer.Modules.PortUsers.getInstance(portUsersParams);
 
         this.initEvents();
-        this.connect();
+        // this.connect();
         chrome.browserAction.setIcon({
             path: 'images/icons/128.png'
         })
@@ -64,7 +64,7 @@ export class Main extends ADHOCCAST.Cmds.Common.CommandRooter {
         this.eventRooter.setParent(this.conn.dispatcher.eventRooter);
         this.eventRooter.onBeforeRoot.add(this.onBeforeRoot);
         this.eventRooter.onAfterRoot.add(this.onAfterRoot); 
-        
+
         chrome.idle.onStateChanged.addListener(this.onIdleStateChanged);
     }
     unInitEvents() {
@@ -210,39 +210,57 @@ export class Main extends ADHOCCAST.Cmds.Common.CommandRooter {
 
 
     }
+
+    _connectPromise: Promise<any>;
     connect(): Promise<any> {
+        if (this._connectPromise) {
+            return this._connectPromise;
+        }
+
         let resolve, reject;
-        let promise = new Promise((_resolve, _reject)=>{
+        this._connectPromise = new Promise((_resolve, _reject)=>{
             resolve = _resolve;
             reject = _reject;
         });
 
         let _connect = () => {
-            this.tryConnect()
-            .then(v => {
+            if (this.conn.signaler.connected()) {
+                this._connectPromise = null;
                 resolve();
-            })
-            .catch(e => {
-                console.log("connect failed, retry connect after 5 seconds!", e);
-                setTimeout(() => {
-                    _connect();
-                }, 5 * 1000)    
-            })
+            }
+            else {
+                this.tryConnect()
+                .then(v => {
+                    this._connectPromise = null;
+                    resolve();
+                })
+                .catch(e => {
+                    console.log("connect failed, retry connect after 5 seconds!", e);
+                    setTimeout(() => {
+                        _connect();
+                    }, 5 * 1000)    
+                })
+            }
         }
-        _connect();
-        return promise;
+        setTimeout(() => {
+            _connect();            
+        }, 1);        
+        return this._connectPromise;
     }
 
 
     on_network_disconnect() {
-        this.connect()
-        .then(v => {
-            let stream = LocalServer.Services.StreamSharing.SharingStream;
-            if (stream && stream.active) {
-                LocalServer.Services.StreamSharing.start()
-                .catch(e => {});
-            }
-        })
+        let stream = LocalServer.Services.StreamSharing.SharingStream;
+        if (this.portUsers.users.count() > 0 || stream && stream.active) {
+            this.connect()
+            .then(v => {
+                let stream = LocalServer.Services.StreamSharing.SharingStream;
+                if (stream && stream.active) {
+                    LocalServer.Services.StreamSharing.start()
+                    .catch(e => {});
+                }
+            })
+        }
     }
 
     on_adhoc_logout = (cmd: ADHOCCAST.Cmds.Common.ICommand) => {
