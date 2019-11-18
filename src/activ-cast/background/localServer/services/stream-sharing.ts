@@ -64,6 +64,7 @@ export class StreamSharing  {
                 let screenOptions = [Desktop.ECaptureScreenOptions.screen, Desktop.ECaptureScreenOptions.audio];
                 Desktop.captureDesktop.getStream(screenOptions,(stream, tab) => {                        
                     if (stream) {
+                        this.applyStreamConstraints(stream);
                         resolve(stream);
                     } else {
                         reject()                        
@@ -71,7 +72,39 @@ export class StreamSharing  {
                 })    
             }
         })
-    }    
+    }   
+
+    static applyStreamConstraints(stream: MediaStream) {
+        stream.getVideoTracks().forEach(track => {
+            let capabilities =  track.getCapabilities() as any;
+            let range = ADHOCCAST.Cmds.Common.Helper.calResolutionRange(capabilities.width.max, capabilities.height.max, 
+                                                storage.items.minRatioWidth, storage.items.minRatioHeight,
+                                                storage.items.maxRatioWidth, storage.items.maxRatioHeight);
+            track.applyConstraints({
+                advanced: [{
+                    // aspectRatio?: ConstrainDouble;
+                    // autoGainControl?: ConstrainBoolean;
+                    // channelCount?: ConstrainULong;
+                    // deviceId?: ConstrainDOMString;
+                    // echoCancellation?: ConstrainBoolean;
+                    // facingMode?: ConstrainDOMString;
+                    // frameRate: { exact: storage.items.minFrameRate,  ideal: storage.items.maxFrameRate},
+                    // groupId?: ConstrainDOMString;
+                    // height: {min: storage.items.minRatioHeight, max: storage.items.maxRatioHeight},
+                    // latency?: ConstrainDouble;
+                    // noiseSuppression?: ConstrainBoolean;
+                    // resizeMode?: ConstrainDOMString;
+                    // sampleRate?: ConstrainULong;
+                    // sampleSize?: ConstrainULong;
+                    // volume?: ConstrainDouble;
+                    // width: {min: storage.items.minRatioWidth, max: storage.items.maxRatioWidth}
+                    frameRate: {min: storage.items.minFrameRate,  max: (storage.items.maxFrameRate + storage.items.minFrameRate) / 2},                    
+                    width: {min: range[0], max: range[2]},
+                    height: {min: range[1], max: range[3]}
+                }]
+            })
+        })
+    }
 
     static login(): Promise<any> {
         let conn = Main.instance.conn;

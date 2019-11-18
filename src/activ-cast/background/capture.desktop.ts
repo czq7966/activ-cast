@@ -37,8 +37,8 @@ class CaptureDesktop {
                         mandatory: {
                             chromeMediaSource: 'desktop',
                             chromeMediaSourceId: streamId,
-                            minFrameRate: Math.ceil(storage.items.frameRate / 2),
-                            maxFrameRate: storage.items.frameRate,
+                            // minFrameRate: storage.items.minFrameRate ,
+                            // maxFrameRate: storage.items.maxFrameRate,
                             
                             // maxWidth: resolutions.maxWidth,
                             // maxHeight: resolutions.maxHeight,
