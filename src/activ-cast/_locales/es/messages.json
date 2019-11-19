@@ -82,5 +82,8 @@
 	},
 	"Please_wait_for_permission_to_share_screen": {
 		"message": "Espere hasta tener permiso para compartir su pantalla."
+	},
+	"ActivPanel": {
+		"message": "ActivPanel"
 	}
 }

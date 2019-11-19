@@ -82,5 +82,8 @@
 	},
 	"Please_wait_for_permission_to_share_screen": {
 		"message": "在投射屏幕前，请等待授权。"
+	},
+	"ActivPanel": {
+		"message": "ActivPanel"
 	}
 }

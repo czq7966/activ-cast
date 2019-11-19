@@ -82,5 +82,8 @@
 	},
 	"Please_wait_for_permission_to_share_screen": {
 		"message": "Дождитесь разрешения на общий доступ к экрану."
+	},
+	"ActivPanel": {
+		"message": "ActivPanel"
 	}
 }

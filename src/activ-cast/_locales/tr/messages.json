@@ -82,5 +82,8 @@
 	},
 	"Please_wait_for_permission_to_share_screen": {
 		"message": "Ekranınızı paylaşmak için lütfen izni bekleyin."
+	},
+	"ActivPanel": {
+		"message": "ActivPanel"
 	}
 }

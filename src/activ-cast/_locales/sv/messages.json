@@ -82,5 +82,8 @@
 	},
 	"Please_wait_for_permission_to_share_screen": {
 		"message": "Vänta tills du får tillstånd att dela din skärm."
+	},
+	"ActivPanel": {
+		"message": "ActivPanel"
 	}
 }

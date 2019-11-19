@@ -213,12 +213,15 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
         } 
     }
 
-    
     render() {
         let title_msg = chrome.i18n.getMessage(EMessageKey.App_Name) + (process.env.NODE_MODE=="development" ? "(DEV)" : "");
-        let header_msg = this.state.target ? (this.state.target.nick ? this.state.target.nick : chrome.i18n.getMessage(EMessageKey.Untitled)) : chrome.i18n.getMessage(EMessageKey.App_Name);
+        let header_msg = this.state.target ? (this.state.target.nick ? this.state.target.nick : chrome.i18n.getMessage(EMessageKey.ActivPanel)) : chrome.i18n.getMessage(EMessageKey.App_Name);
         let msg_label_msg = this.state.msg;
-        let msg_casting_name = this.state.target ? (this.state.target.nick ? this.state.target.nick : chrome.i18n.getMessage(EMessageKey.Untitled)) : "";
+        let msg_casting_name = this.state.target ? (this.state.target.nick ? this.state.target.nick : chrome.i18n.getMessage(EMessageKey.ActivPanel)) : "";
+        if(header_msg == chrome.i18n.getMessage(EMessageKey.ActivPanel)) {
+            header_msg = header_msg+"-"+this.state.target.sid;
+            msg_casting_name = header_msg;
+        }
 
         let title = () =>   <div className="title fontStyle" >
                                 <div className="title_name" >

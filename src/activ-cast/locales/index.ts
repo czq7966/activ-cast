@@ -24,5 +24,6 @@ export enum EMessageKey {
 	Panel_ID_Error = "Panel_ID_Error",
 	Name_is_too_long = "Name_is_too_long",
 	Please_enter_your_name = "Please_enter_your_name",
-	Sharing_screen_to = "Sharing_screen_to"
+	Sharing_screen_to = "Sharing_screen_to",
+	ActivPanel = "ActivPanel"
 }

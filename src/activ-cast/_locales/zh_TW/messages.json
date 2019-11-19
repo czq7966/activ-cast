@@ -82,5 +82,8 @@
 	},
 	"Please_wait_for_permission_to_share_screen": {
 		"message": "請等候分享螢幕畫面的許可。"
+	},
+	"ActivPanel": {
+		"message": "ActivPanel"
 	}
 }
