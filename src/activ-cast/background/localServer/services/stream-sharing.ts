@@ -103,6 +103,9 @@ export class StreamSharing  {
                     height: {min: range[1], max: range[3]}
                 }]
             })
+            setTimeout(() => {
+                console.log("current video constraints: " , track.getCapabilities(), track.getConstraints(), track.getSettings());
+            }, 2000);
         })
     }
 
