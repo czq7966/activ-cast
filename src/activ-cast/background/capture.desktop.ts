@@ -37,15 +37,12 @@ class CaptureDesktop {
                         mandatory: {
                             chromeMediaSource: 'desktop',
                             chromeMediaSourceId: streamId,
-                            // minFrameRate: storage.items.minFrameRate ,
-                            // maxFrameRate: storage.items.maxFrameRate,
-                            
-                            // maxWidth: resolutions.maxWidth,
-                            // maxHeight: resolutions.maxHeight,
-                            // minWidth: resolutions.minWidth,
-                            // minHeight: resolutions.minHeight,
-                            // minAspectRatio: getAspectRatio(storage.items.ratioWidth ||  screen.width, storage.items.ratioHeight ||  screen.height),
-                            // maxAspectRatio: getAspectRatio(storage.items.ratioWidth ||  screen.width, storage.items.ratioHeight ||  screen.height),
+                            minFrameRate: storage.items.minFrameRate,
+                            maxFrameRate: storage.items.maxFrameRate,                            
+                            maxWidth: storage.items.maxRatioWidth,
+                            maxHeight: storage.items.maxRatioHeight,
+                            minWidth: storage.items.minRatioWidth,
+                            minHeight: storage.items.minRatioHeight
                         },
                         optional: []
                     }

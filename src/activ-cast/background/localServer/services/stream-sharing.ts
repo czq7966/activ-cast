@@ -64,7 +64,7 @@ export class StreamSharing  {
                 let screenOptions = [Desktop.ECaptureScreenOptions.screen, Desktop.ECaptureScreenOptions.audio];
                 Desktop.captureDesktop.getStream(screenOptions,(stream, tab) => {                        
                     if (stream) {
-                        this.applyStreamConstraints(stream);
+                        // this.applyStreamConstraints(stream);
                         resolve(stream);
                     } else {
                         reject()                        
