@@ -423,3 +423,9 @@ body.options {
 #options-div-operation button {
   width: 80px;
 }
+.cast_version {
+  position: absolute;
+  top: 362px;
+  margin-left: 13px;
+  margin-right: 61px;  
+}

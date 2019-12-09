@@ -273,6 +273,11 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
         let footer_stop = () =>   <div className="footer">
                                         {stop_btn()}
                                     </div>
+        let cast_version = () =>   <div className="cast_version fontStyle">
+                                    {
+                                        'v' + chrome['app'].getDetails().version
+                                    }
+                                    </div>  
         // Casting
         if (this.states.isset(EStates.stream_room_sending) && this.states.isset(EStates.stream_room_casting)) {
             header_msg = chrome.i18n.getMessage(EMessageKey.Screen_Share),
@@ -337,7 +342,8 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
                     {name_label()}
                     {name_text_field()}
                     {name_label_error()}
-                    {footer()}                    
+                    {footer()} 
+                    {cast_version()}                   
                 </div>           
     }
 
