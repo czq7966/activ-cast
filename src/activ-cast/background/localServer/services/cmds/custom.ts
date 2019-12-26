@@ -28,6 +28,8 @@ export class ServiceCustom  {
                 break;     
             case Dts.ECommandId.custom_update_states:
                 this.on_custom_update_states(cmd, portUser);
+            case Dts.ECommandId.custom_get_webrtc_statistics:
+                this.on_custom_get_webrtc_statistics(cmd, portUser);
                 break;                                
             default:
                 break;
@@ -103,5 +105,27 @@ export class ServiceCustom  {
         respCmd.props.user = _targetUser;
         respCmd.extra = _states;
         portUser && portUser.notDestroyed ? portUser.sendCommand(respCmd) : Main.instance.portUsers.sendCommand(respCmd, null, true);
+        this.on_custom_get_webrtc_statistics(cmd, portUser);        
     }
+    static on_custom_get_webrtc_statistics(cmd: ADHOCCAST.Cmds.ICommandData<ADHOCCAST.Dts.ICommandDataProps>, portUser: Modules.IPortUser) {
+        let conn = Main.instance.conn;
+        if (conn.isLogin()) {
+            let mLoginRoom = ADHOCCAST.Services.Modules.Rooms.getLoginRoom(conn.instanceId); 
+            let mCurrUser = mLoginRoom.me();
+            let mStreamRoom = ADHOCCAST.Services.Modules.User.getStreamRoom(mCurrUser);
+            mStreamRoom.users.keys().forEach(key => {
+                if (key != mCurrUser.item.id) {
+                    let mUser = mStreamRoom.getUser(key);
+                    let peer = mUser && mUser.peer;                    
+                    let rtc = peer && peer.rtc;
+                    rtc.getStats().then(v => {
+                        v.forEach((value, key, parent) => {
+                            // console.log("1111111111", key, value, parent);
+                        })
+                    })
+                    rtc.getSenders
+                }
+            })
+        }
+    }       
 }

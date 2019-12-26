@@ -1,26 +1,15 @@
 import React = require("react");
 import ReactDOM = require("react-dom");
-import './index.css'
-import { storage } from "../../background/storage";
+import { storage, IStorageItems } from "../../background/storage";
 import { ADHOCCAST } from '../../libex'
-
+import { EMessageKey } from "../../locales";
+import './options.css'
 export interface OptionsProps {
 
 }
 
-export interface OptionsState {    
-    roomid?:string
-    codec?: string
-    bandwidth?: number
-    frameRate?: number
-    ratioWidth?: number
-    ratioHeight?: number
-    minFrameRate?: number
-    maxFrameRate?: number
-    signaler?: string
-    organization?: string
+export interface OptionsState extends IStorageItems {    
     info?: string
-    
 }
 
 var runtimePort: chrome.runtime.Port;
@@ -35,7 +24,6 @@ export class Options extends React.Component<OptionsProps, OptionsState> {
         this.signaler = ADHOCCAST.Network.SignalerFactory.create(null);
         this.state = {};
         this.initRuntimePort();
-        this.loadStorage();
     }
     destroy() {
         this.signaler.disconnect();
@@ -43,7 +31,8 @@ export class Options extends React.Component<OptionsProps, OptionsState> {
         runtimePort.onMessage.removeListener(this.onMessage);
     }   
 
-    componentDidMount() {
+    async componentDidMount() {
+        await this.loadStorage();
 
     }
     componentWillUnmount() {
@@ -60,59 +49,48 @@ export class Options extends React.Component<OptionsProps, OptionsState> {
 
 
     render() {
-        let header =  <div id="header">Share Your Desktop</div>
+        let header =  <div id="header"><h2>{chrome.i18n.getMessage(EMessageKey.manifest_name)}</h2></div>
 
         if (storage.loaded) {
-            return <div>
+            return <div className="container">
                         {header}
                         <hr></hr>
-                        <div className="item"><div className="itemLabel"><span>Organization: </span></div>
-                            <input value={this.state.organization } onChange={this.onOrganizationValueChange} ></input>
-                        </div>                          
-                        <hr></hr>
-                        <div className="item"><div className="itemLabel"><span>Connection ID: </span></div>
-                            <input value={this.state.roomid } onChange={this.onRoomidValueChange} ></input>
-                        </div>   
-                        <hr></hr>    
                         <div className="item"><div className="itemLabel"><span>Codec: </span></div>
-                            <select id="options-select-codec" defaultValue={this.state.codec || 'default'}  onChange = {this.onCodecValueChange} >
-                                <option value="default">Default</option>
+                            <select id="options-select-codec" defaultValue={this.state.codec || 'vp8'}  onChange = {this.onCodecValueChange} >
                                 <option value="vp8" >VP8</option>
                                 <option value="vp9">VP9</option>
                                 <option value="h264">H264</option>
                             </select>                            
                         </div>   
-                        {/* <hr></hr>    
-                        <div className="item"><div className="itemLabel"><span>Bandwidth: </span></div>
-                            <input value={this.state.bandwidth} onChange={this.onBandwidthValueChange} ></input>
-                            <span>K</span>
-                        </div>      */}
                         <hr></hr>    
-                        <div className="item"><div className="itemLabel"><span>FrameRate: </span></div>
-                            <input value={this.state.frameRate} onChange={this.onFrameRateValueChange} ></input>
-                            <span>&#60;=128</span>
-                        </div>   
-                        <hr></hr>    
-                        <div className="item"><div className="itemLabel"><span>AspectRatio: </span></div>
-                            <input className="halfInput" value={this.state.ratioWidth} onChange={this.onRatioWidthValueChange} ></input>
-                            <span>/</span>
-                            <input  className="halfInput" value={this.state.ratioHeight} onChange={this.onRatioHeightValueChange} ></input>
-                        </div>                                                                            
-                        {/* <hr></hr>    
-                        <div className="item"><div className="itemLabel"><span>minFrameRate: </span></div>
-                            <input value={this.state.minFrameRate} onChange={this.onMinFrameRateValueChange} ></input>
-                            <span></span>
-                        </div>                                 
-                        <hr></hr>    
-                        <div className="item"><div className="itemLabel"><span>maxFrameRate: </span></div>
+                        <div className="item"><div className="itemLabel"><span>MaxFrameRate: </span></div>
                             <input value={this.state.maxFrameRate} onChange={this.onMaxFrameRateValueChange} ></input>
-                            <span></span>
-                        </div>                                  */}
+                            <span>/s</span>
+                        </div>   
                         <hr></hr>
-                        <div id="options-div-signaler"><span>Signaler URL: </span>
-                            <input id="option-input-signaler" value={this.state.signaler} onChange={this.onSignalerValueChange} ></input>
-                        </div>
+                        <div className="item"><div className="itemLabel"><span>MaxBandwidth: </span></div>
+                            <input value={this.state.bandwidth} onChange={this.onBandwidthValueChange} ></input>
+                            <span>Kbps</span>
+                        </div>   
                         <hr></hr>
+                        <div id="bestResolution" className="item resolution"><div className="itemLabel"><span>BestResolution: </span></div>
+                            <input value={this.state.resolutions["best"].width as any} onChange={this.onBestResolutionWidthValueChange} ></input>
+                            <span>x</span>
+                            <input value={this.state.resolutions["best"].height as any} onChange={this.onBestResolutionHeightValueChange} ></input>
+                        </div>                         
+                        <hr></hr>           
+                        <div id="goodResolution" className="item resolution"><div className="itemLabel"><span>GoodResolution: </span></div>
+                            <input value={this.state.resolutions["good"].width as any} onChange={this.onGoodResolutionWidthValueChange} ></input>
+                            <span>x</span>
+                            <input value={this.state.resolutions["good"].height as any} onChange={this.onGoodResolutionHeightValueChange} ></input>
+                        </div>          
+                        <hr></hr>           
+                        <div id="lowResolution" className="item resolution"><div className="itemLabel"><span>LowResolution: </span></div>
+                            <input value={this.state.resolutions["low"].width as any} onChange={this.onLowResolutionWidthValueChange} ></input>
+                            <span>x</span>
+                            <input value={this.state.resolutions["low"].height as any} onChange={this.onLowResolutionHeightValueChange} ></input>
+                        </div>                                                 
+                        <hr></hr>                                         
                         <div id="options-div-operation">
                             <button onClick={this.okSignaler} >OK</button>
                             <button onClick={this.cancelSignaler}>Cancel</button>
@@ -131,21 +109,10 @@ export class Options extends React.Component<OptionsProps, OptionsState> {
 
     }
 
-    loadStorage() {
-        // storage.load().then(items => {
-        //     this.setState({
-        //         roomid: storage.items.room.roomid || '',
-        //         codec: storage.items.codec,
-        //         bandwidth: storage.items.bandwidth,
-        //         frameRate: storage.items.frameRate,
-        //         ratioWidth: storage.items.ratioWidth || 0,
-        //         ratioHeight: storage.items.ratioHeight || 0,
-        //         minFrameRate: storage.items.minFrameRate,
-        //         maxFrameRate: storage.items.maxFrameRate,
-        //         signaler: storage.items.signaler,
-        //         organization: storage.items.organization || ''
-        //     });
-        // })
+    async loadStorage() {
+        await storage.load().then(items => {
+            this.setState(items);
+        })
     }
 
     
@@ -154,11 +121,7 @@ export class Options extends React.Component<OptionsProps, OptionsState> {
             organization: event.target.value.trim()
         })            
     }    
-    onRoomidValueChange =  (event: React.ChangeEvent<HTMLInputElement>) => {
-        this.setState({
-            roomid: event.target.value.trim()
-        })            
-    }
+
     onCodecValueChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
         this.setState({
             codec: event.target.value.trim()
@@ -167,7 +130,7 @@ export class Options extends React.Component<OptionsProps, OptionsState> {
 
     onBandwidthValueChange =  (event: React.ChangeEvent<HTMLInputElement>) => {
         this.setState({
-            bandwidth: parseInt(event.target.value.trim())
+            bandwidth: parseInt(event.target.value.trim() || "0")
         })            
     }
     onFrameRateValueChange =  (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -199,7 +162,7 @@ export class Options extends React.Component<OptionsProps, OptionsState> {
     }
     onMaxFrameRateValueChange =  (event: React.ChangeEvent<HTMLInputElement>) => {
         this.setState({
-            maxFrameRate: parseInt(event.target.value.trim())
+            maxFrameRate: parseInt(event.target.value.trim() || "0")
         })            
     }        
     onSignalerValueChange = (event: React.ChangeEvent<HTMLInputElement>) => {        
@@ -207,41 +170,47 @@ export class Options extends React.Component<OptionsProps, OptionsState> {
             signaler: event.target.value
         })            
     }
+    onBestResolutionWidthValueChange =  (event: React.ChangeEvent<HTMLInputElement>) => {
+        this.state.resolutions["best"].width = parseInt(event.target.value.trim() || "0");
+        this.setState({
+            resolutions: this.state.resolutions
+        })            
+    }   
+    onBestResolutionHeightValueChange =  (event: React.ChangeEvent<HTMLInputElement>) => {
+        this.state.resolutions["best"].height = parseInt(event.target.value.trim() || "0");
+        this.setState({
+            resolutions: this.state.resolutions
+        })            
+    }     
+    onGoodResolutionWidthValueChange =  (event: React.ChangeEvent<HTMLInputElement>) => {
+        this.state.resolutions["good"].width = parseInt(event.target.value.trim() || "0");
+        this.setState({})            
+    }   
+    onGoodResolutionHeightValueChange =  (event: React.ChangeEvent<HTMLInputElement>) => {
+        this.state.resolutions["good"].height = parseInt(event.target.value.trim() || "0");
+        this.setState({})            
+    }     
+    onLowResolutionWidthValueChange =  (event: React.ChangeEvent<HTMLInputElement>) => {
+        this.state.resolutions["low"].width = parseInt(event.target.value.trim() || "0");
+        this.setState({})            
+    }   
+    onLowResolutionHeightValueChange =  (event: React.ChangeEvent<HTMLInputElement>) => {
+        this.state.resolutions["low"].height = parseInt(event.target.value.trim() || "0");
+        this.setState({})            
+    }       
 
     okSignaler = () => {
-        let url = this.state.signaler;
-        url = url[url.length - 1] === '/' ? url.substr(0, url.length - 1) : url;
-        if (url) {
-            this.setState({
-                info: 'connecting...'
-            })
-            this.signaler.connect(url)
-            .then(() => {
-                this.signaler.disconnect();
-                // storage.items.room.roomid = this.state.roomid;
-                storage.items.codec = this.state.codec;
-                storage.items.bandwidth = this.state.bandwidth;
-                storage.items.frameRate = this.state.frameRate;
-                storage.items.ratioWidth = this.state.ratioWidth;
-                storage.items.ratioHeight = this.state.ratioHeight;
-                storage.items.minFrameRate = this.state.minFrameRate;
-                storage.items.maxFrameRate = this.state.maxFrameRate;
-                storage.items.signaler = url;
-                storage.items.organization = this.state.organization;
-                storage.save().then(() => {window.close()})
-            })
-            .catch(err => {
-                console.error(err)
-                this.setState({
-                    info: ' connect signaler failed!'
-                })
-                setTimeout(() => {
-                    this.setState({
-                        info: null
-                    })
-                }, 2000)
-            })
-        }
+        storage.items.codec = this.state.codec;
+        storage.items.bandwidth = this.state.bandwidth;
+        // storage.items.frameRate = this.state.frameRate;
+        // storage.items.ratioWidth = this.state.ratioWidth;
+        // storage.items.ratioHeight = this.state.ratioHeight;
+        // storage.items.minFrameRate = this.state.minFrameRate;
+        storage.items.maxFrameRate = this.state.maxFrameRate;
+        // storage.items.signaler = url;
+        // storage.items.organization = this.state.organization;
+        storage.items.resolutions = this.state.resolutions;
+        storage.save().then(() => {window.close()})
     }
     cancelSignaler = () => {
         window.close();

@@ -18,7 +18,7 @@ module.exports = env => {
 
     entry['background/index'] = path.resolve(srcDir, process.env.NODE_MODE == "dev" ? "background/index-dev.ts" : "background/index.ts");
     entry['pages/dropdown/index'] = path.resolve(srcDir, process.env.NODE_MODE == "dev" ? "pages/dropdown/index-dev.tsx" : "pages/dropdown/index.tsx");
-    // entry['pages/dropdown/options'] = path.resolve(srcDir, "pages/dropdown/options.tsx");
+    entry['pages/dropdown/options'] = path.resolve(srcDir, "pages/dropdown/options.tsx");
     optimization['minimizer'] = minimizer;  
 
     plugins.push(
@@ -35,10 +35,10 @@ module.exports = env => {
                 from: path.resolve(srcDir, 'pages/dropdown/index.html'),
                 to: 'pages/dropdown/index.html',
             },
-            // {
-            //     from: path.resolve(srcDir, 'pages/dropdown/options.html'),
-            //     to: 'pages/dropdown/options.html',
-            // },          
+            {
+                from: path.resolve(srcDir, 'pages/dropdown/options.html'),
+                to: 'pages/dropdown/options.html',
+            },          
             // {
             //     from: path.resolve(srcDir, 'pages/test/test.html'),
             //     to: 'pages/test/test.html',

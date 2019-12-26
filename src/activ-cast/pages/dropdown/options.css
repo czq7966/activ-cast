@@ -1,0 +1,89 @@
+html, body {
+    /* font-family: 'Noto Sans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: 'Noto Sans', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;    
+    background-color: #f5f5f5;
+}
+
+hr {
+  border: 10;
+  border-top: solid lightgray 1px;
+  background-color: aqua;
+  margin: 0;
+  padding: 0;  
+}
+
+#root {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  /* background-color: aqua; */
+  width: 100%;
+  margin-top: 50px;
+  /* height: 500px; */
+}
+
+
+input,select {
+  font-size: 14px;
+  font-weight: bold;
+  /* color: #919191; */
+  width: 150px;
+  text-align: center;  
+  
+}
+
+.fontStyle {
+  color:#747474;
+  font-size: 14px;  
+  font-weight: bold;
+}
+
+.container {
+  /* height: 260px; */
+  /* width: 500px; */
+
+  background-color: white;
+  border-radius: 10%;
+  border-width: 1px;
+  border-style: solid;
+  margin: 20px;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+}
+
+
+.resolution input {
+  width: 68px;
+}
+
+.item {
+  display: flex;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 5px;
+}
+.itemLabel {
+  display: flex;
+  align-items: center;
+  /* justify-content: flex-end; */
+  /* background: aqua; */
+  width: 130px;
+}
+
+
+#options-div-operation {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+#options-div-operation button {
+  width: 80px;
+}

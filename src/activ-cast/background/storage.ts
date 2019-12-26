@@ -51,19 +51,21 @@ export interface IStorageItems {
     screenOptionWindow?: boolean
     screenOptionTab?: boolean
     screenOptionAudio?: boolean
-    additionalGesture?: boolean
+    additionalGesture?: boolean    
+    resolutions?: {[name: string]: MediaTrackConstraintSet}
 }
 
 var defaultItems: IStorageItems = {
     signaler: "https://servicediscovery.mypromethean.com",
+    // signaler: "http://127.0.0.1:2770",
     organization: 'promethean',
     roomPrefix: "promethean_",
-    codec: 'h264',
+    codec: 'vp8',
     frameRate: 0,
-    bandwidth: 0,
+    bandwidth: 100000,
     ratioWidth: 0,
     ratioHeight: 0,
-    minFrameRate: 10,
+    minFrameRate: 1,
     maxFrameRate: 20,
     minRatioWidth: 1920,
     maxRatioWidth: 1920,
@@ -76,8 +78,25 @@ var defaultItems: IStorageItems = {
     additionalGesture: false,
 
     user: { id: null},
-    target: { id: null}
+    target: { id: null},
+    resolutions: {
+        best: {
+            width: 1920,
+            height: 1080  
+        },
+        good: {
+            width: 1280,
+            height: 720
+        },
+        low: {
+            width: 960,
+            height: 540
+        }          
+    }
 }
+
+
+
 
 class Storage extends Base {
     items: IStorageItems
@@ -93,11 +112,16 @@ class Storage extends Base {
     initItems(items: IStorageItems) {
         let sid = items.target && items.target.sid || "";
         let id = items.user && items.user.id || ADHOCCAST.Cmds.Common.Helper.uuid();
+        // let id = ADHOCCAST.Cmds.Common.Helper.uuid();
         let nick = items.user && items.user.nick || "";
         this.items = Object.assign({}, defaultItems);
         this.items.target.sid = sid;
         this.items.user.nick = nick;
         this.items.user.id = id;
+        this.items.codec = items.codec || this.items.codec;
+        this.items.maxFrameRate = items.maxFrameRate || this.items.maxFrameRate || defaultItems.maxFrameRate;
+        this.items.bandwidth = items.bandwidth || this.items.bandwidth;
+        this.items.resolutions = Object.assign(this.items.resolutions, items.resolutions);
 
         // items.signaler = items.signaler || defaultItems.signaler;
         // items.organization = items.organization || defaultItems.organization;

@@ -16,7 +16,10 @@ export class ServiceCustom  {
             case Cmds.ECommandId.custom_get_sender_info:
                 if (data.type = ADHOCCAST.Cmds.ECommandType.req)
                     this.on_custom_get_sender_info_req(cmd);
-                break;                        
+                break;     
+            case Cmds.ECommandId.custom_apply_video_constraints:
+                this.on_custom_apply_video_constraints(cmd);
+                break;                                    
             default:
                 break;    
         }
@@ -72,5 +75,19 @@ export class ServiceCustom  {
         cmd.destroy();
         cmd = null;
         return promise;
-    }    
+    }
+    static on_custom_apply_video_constraints(cmd: ADHOCCAST.Cmds.Common.ICommand) {
+        let data = cmd.data as ADHOCCAST.Cmds.ICommandData<ADHOCCAST.Cmds.ICommandDataProps>;
+        let mLoginRoom = ADHOCCAST.Services.Modules.Rooms.getLoginRoom(cmd.instanceId);
+        let mMe = mLoginRoom && mLoginRoom.me();
+        let mStreamRoom = mMe && mMe.getStreamRoom();
+        let mUser = mStreamRoom.getUser(data.from.id);
+
+        let constraintSet = storage.items.resolutions[data.props.extra];
+        let constraints =  constraintSet ? {advanced: [constraintSet]} : null;
+
+        mUser && mUser.peer && ADHOCCAST.Services.Modules.Webrtc.Streams.applyStreamsVideoConstraints(mUser.peer.streams, constraints);
+        let bandwidth = storage.items.bandwidth;
+        bandwidth && mUser && mUser.peer && ADHOCCAST.Services.Modules.Webrtc.Peer.setSenderMaxBitrate(mUser.peer, bandwidth * 1000);
+    }        
 }
