@@ -52,11 +52,13 @@ export class Options extends React.Component<OptionsProps, OptionsState> {
         let header =  <div id="header"><h2>{chrome.i18n.getMessage(EMessageKey.manifest_name)}</h2></div>
 
         if (storage.loaded) {
-            return <div className="container">
+            return <div className={global.IsDevMode ? "container" : "container container-disabled"}
+                        onKeyPress={global.IsDevMode ? null : e=>e.preventDefault()}
+                     >
                         {header}
                         <hr></hr>
                         <div className="item"><div className="itemLabel"><span>Codec: </span></div>
-                            <select id="options-select-codec" defaultValue={this.state.codec || 'vp8'}  onChange = {this.onCodecValueChange} >
+                            <select id="options-select-codec" value={this.state.codec || 'vp8'} defaultValue={this.state.codec || 'vp8' }  onChange = {this.onCodecValueChange} >
                                 <option value="vp8" >VP8</option>
                                 <option value="vp9">VP9</option>
                                 <option value="h264">H264</option>
@@ -93,6 +95,7 @@ export class Options extends React.Component<OptionsProps, OptionsState> {
                         <hr></hr>                                         
                         <div id="options-div-operation">
                             <button onClick={this.okSignaler} >OK</button>
+                            <button onClick={this.resetSignaler}>Reset</button>
                             <button onClick={this.cancelSignaler}>Cancel</button>
                         </div>
                         {   
@@ -111,6 +114,8 @@ export class Options extends React.Component<OptionsProps, OptionsState> {
 
     async loadStorage() {
         await storage.load().then(items => {
+            console.log('1111111', items);
+            this.state = {};
             this.setState(items);
         })
     }
@@ -202,15 +207,13 @@ export class Options extends React.Component<OptionsProps, OptionsState> {
     okSignaler = () => {
         storage.items.codec = this.state.codec;
         storage.items.bandwidth = this.state.bandwidth;
-        // storage.items.frameRate = this.state.frameRate;
-        // storage.items.ratioWidth = this.state.ratioWidth;
-        // storage.items.ratioHeight = this.state.ratioHeight;
-        // storage.items.minFrameRate = this.state.minFrameRate;
         storage.items.maxFrameRate = this.state.maxFrameRate;
-        // storage.items.signaler = url;
-        // storage.items.organization = this.state.organization;
         storage.items.resolutions = this.state.resolutions;
         storage.save().then(() => {window.close()})
+    }
+    resetSignaler = async() => {
+        await storage.reset();
+        await this.loadStorage();
     }
     cancelSignaler = () => {
         window.close();

@@ -110,45 +110,20 @@ class Storage extends Base {
         super.destroy();
     }
     initItems(items: IStorageItems) {
+        this.items = JSON.parse(JSON.stringify(defaultItems));
         let sid = items.target && items.target.sid || "";
         let id = items.user && items.user.id || ADHOCCAST.Cmds.Common.Helper.uuid();
         // let id = ADHOCCAST.Cmds.Common.Helper.uuid();
         let nick = items.user && items.user.nick || "";
-        this.items = Object.assign({}, defaultItems);
         this.items.target.sid = sid;
         this.items.user.nick = nick;
         this.items.user.id = id;
-        this.items.codec = items.codec || this.items.codec;
-        this.items.maxFrameRate = items.maxFrameRate || this.items.maxFrameRate || defaultItems.maxFrameRate;
-        this.items.bandwidth = items.bandwidth || this.items.bandwidth;
-        this.items.resolutions = Object.assign(this.items.resolutions, items.resolutions);
-
-        // items.signaler = items.signaler || defaultItems.signaler;
-        // items.organization = items.organization || defaultItems.organization;
-        // items.bandwidth = items.bandwidth || defaultItems.bandwidth;
-        // items.frameRate = items.frameRate || defaultItems.frameRate;
-        // items.ratioWidth = items.ratioWidth && items.ratioHeight ? items.ratioWidth : defaultItems.ratioWidth || 0;
-        // items.ratioHeight = items.ratioWidth && items.ratioHeight ? items.ratioHeight : defaultItems.ratioHeight || 0;
-
-        // items.minFrameRate = items.minFrameRate || Math.ceil(defaultItems.frameRate / 2);
-        // items.maxFrameRate = items.maxFrameRate || defaultItems.frameRate;
-        // items.codec = items.codec || defaultItems.codec;
-
-        // items.screenOptionScreen = items.screenOptionScreen;
-        // items.screenOptionWindow = items.screenOptionWindow;
-        // items.screenOptionTab = items.screenOptionTab;
-        // items.screenOptionAudio = items.screenOptionAudio;
-        // if (!(items.screenOptionScreen || items.screenOptionWindow || items.screenOptionTab || items.screenOptionAudio)) {
-        //     items.screenOptionScreen = defaultItems.screenOptionScreen;
-        //     items.screenOptionWindow = defaultItems.screenOptionWindow;
-        //     items.screenOptionTab = defaultItems.screenOptionTab;
-        //     items.screenOptionAudio = defaultItems.screenOptionAudio;
-        // }
-
-        // items.additionalGesture = items.additionalGesture || defaultItems.additionalGesture;
-
-        // items.user = items.user || Object.assign({}, defaultItems.user);
-        // items.target = items.target || Object.assign({}, defaultItems.target);
+        if (global.IsDevMode) {
+            this.items.codec = items.codec || this.items.codec;
+            this.items.maxFrameRate = items.maxFrameRate || this.items.maxFrameRate || defaultItems.maxFrameRate;
+            this.items.bandwidth = items.bandwidth || this.items.bandwidth;
+            this.items.resolutions = Object.assign(this.items.resolutions, items.resolutions);
+        }
     }
 
     load(): Promise<IStorageItems> {
@@ -160,6 +135,10 @@ class Storage extends Base {
                 resolve(this.items);
             })
         })
+    }
+    reset(): Promise<any> {
+        this.initItems({});
+        return this.save();
     }
     save(): Promise<any> {
         return new Promise((resolve, reject) => {

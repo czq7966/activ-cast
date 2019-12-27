@@ -52,6 +52,11 @@ input,select {
   border-style: solid;
   margin: 20px;
 }
+.container-disabled {
+  pointer-events: none;
+  opacity: 0.5;
+  background: #CCC;
+}
 
 #header {
   display: flex;
