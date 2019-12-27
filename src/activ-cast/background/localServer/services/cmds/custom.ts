@@ -2,7 +2,6 @@ import { ADHOCCAST } from "../../../../libex";
 import * as Modules from '../../modules/index'
 import * as Dts from '../../cmds/index'
 import * as Desktop from "../../../capture.desktop";
-import { EStates } from "../../../../pages/dropdown";
 import { storage } from "../../../storage";
 import { Main } from "../../../main";
 import { StreamSharing } from "../stream-sharing";
@@ -74,27 +73,27 @@ export class ServiceCustom  {
         portUser.sendCommand(respCmd);
     }
     static on_custom_update_states(cmd: ADHOCCAST.Cmds.ICommandData<ADHOCCAST.Dts.ICommandDataProps>, portUser: Modules.IPortUser) {
-        let states: ADHOCCAST.Cmds.Common.Helper.StateMachine<EStates>;
+        let states: ADHOCCAST.Cmds.Common.Helper.StateMachine<Dts.EStates>;
         let conn = Main.instance.conn;
         let _states = 0;
         let _targetUser: ADHOCCAST.Cmds.IUser;
 
-        _states = _states + (conn.signaler.connecting() ? EStates.connecting: 0);
-        _states = _states + (conn.signaler.connected() ? EStates.connected: 0);
-        _states = _states + (conn.isLogin() ? EStates.logined: 0);
+        _states = _states + (conn.signaler.connecting() ? Dts.EStates.connecting: 0);
+        _states = _states + (conn.signaler.connected() ? Dts.EStates.connected: 0);
+        _states = _states + (conn.isLogin() ? Dts.EStates.logined: 0);
         if (conn.isLogin()) {
             let mLoginRoom = ADHOCCAST.Services.Modules.Rooms.getLoginRoom(conn.instanceId); 
             let mCurrUser = mLoginRoom.me();
             let sid = mCurrUser.item.room.id.split("_")[1];            
-            _states = _states + (mCurrUser.states.isset(ADHOCCAST.Dts.EUserState.stream_room_opened) ? EStates.stream_room_opened : 0);
-            _states = _states + (mCurrUser.states.isset(ADHOCCAST.Dts.EUserState.stream_room_sending) ? EStates.stream_room_sending : 0);
+            _states = _states + (mCurrUser.states.isset(ADHOCCAST.Dts.EUserState.stream_room_opened) ? Dts.EStates.stream_room_opened : 0);
+            _states = _states + (mCurrUser.states.isset(ADHOCCAST.Dts.EUserState.stream_room_sending) ? Dts.EStates.stream_room_sending : 0);
             let mTargetUser = mLoginRoom.getUserBySid(sid);
             if (!!mTargetUser) _targetUser = mTargetUser.item;
             let mStreamRoom = ADHOCCAST.Services.Modules.User.getStreamRoom(mCurrUser);
             if (mCurrUser.states.isset(ADHOCCAST.Dts.EUserState.stream_room_sending) && mStreamRoom) {                
                 let mStreamUser = mStreamRoom.getUserBySid(sid + "*", true);
                 if (mStreamUser) {
-                    _states = _states + (mStreamUser.states.isset(ADHOCCAST.Dts.EUserState.stream_room_sending) ? EStates.stream_room_casting : 0);                    
+                    _states = _states + (mStreamUser.states.isset(ADHOCCAST.Dts.EUserState.stream_room_sending) ? Dts.EStates.stream_room_casting : 0);                    
                 }
             }   
         }

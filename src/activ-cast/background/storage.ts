@@ -1,13 +1,6 @@
 import { Base } from "./base";
 import { ADHOCCAST } from '../libex/index'
 
-
-export enum EStates {
-    none =                      0b0,
-    logining =                  0b1,    
-    logined =                   0b10,
-}
-
 export enum ERoomState {
     nothing = 'nothing',        //
     loading = 'loading',        //加载配置
@@ -20,14 +13,6 @@ export enum ERoomState {
     sharing = 'sharing'         //投屏中
 }
 
-
-export interface IRoomItem {
-    roomid?: string,
-    password?: string,
-    max?: number 
-    state?: ERoomState
-    states?: EStates
-}
 
 export interface IStorageItems {
     user?: ADHOCCAST.Cmds.IUser;

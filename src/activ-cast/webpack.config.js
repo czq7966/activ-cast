@@ -50,7 +50,11 @@ module.exports = env => {
             {
                 from: path.resolve(srcDir, '_locales'),
                 to: '_locales',
-            }         
+            },                
+            {
+                from: path.resolve(srcDir, 'pages/libs'),
+                to: 'pages/libs',
+            }          
         ])
     )
 
@@ -95,7 +99,14 @@ module.exports = env => {
         },
         plugins: plugins,
         optimization: optimization,
-        plugins: plugins
+        plugins: plugins,
+        externals: [
+            {
+                'react': 'React',
+                'react-dom': 'ReactDOM'
+            }
+
+        ],
     }
 }
 

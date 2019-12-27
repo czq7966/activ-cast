@@ -5,3 +5,15 @@ export enum ECommandId {
     custom_update_states = "custom_update_states",
     custom_get_webrtc_statistics = "custom_get_webrtc_statistics",
 }    
+
+export enum EStates {
+    none =                      0b0,
+    connecting =                0b1,
+    connected =                 0b10,
+    logined =                   0b100,
+    stream_room_opened =        0b1000,
+    stream_room_sending =       0b10000,
+    stream_room_casting =       0b100000,
+    show_message =              0b1000000,
+    show_ui_interactive =       0b10000000,
+}

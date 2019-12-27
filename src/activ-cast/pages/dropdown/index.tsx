@@ -18,20 +18,6 @@ switch(chrome.i18n.getUILanguage()) {
         require('./index.rtl.css');
 }
 
-
-
-export enum EStates {
-    none =                      0b0,
-    connecting =                0b1,
-    connected =                 0b10,
-    logined =                   0b100,
-    stream_room_opened =        0b1000,
-    stream_room_sending =       0b10000,
-    stream_room_casting =       0b100000,
-    show_message =              0b1000000,
-    show_ui_interactive =       0b10000000,
-}
-
 enum StateCase {
     none = 0,
     show_message = 1,
@@ -71,7 +57,7 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
     sourceId: string;
     adhocConn: ADHOCCAST.Connection;
     conn: Modules.Connection;
-    states: ADHOCCAST.Cmds.Common.Helper.StateMachine<EStates>;
+    states: ADHOCCAST.Cmds.Common.Helper.StateMachine<Dts.EStates>;
     eventRooter: ADHOCCAST.Cmds.Common.IEventRooter;
     stateCase: StateCase;
     targetSidMaxLength: number = 6;
@@ -81,7 +67,7 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
 
     constructor(props) {
         super(props);  
-        this.states = new ADHOCCAST.Cmds.Common.Helper.StateMachine<EStates>();
+        this.states = new ADHOCCAST.Cmds.Common.Helper.StateMachine<Dts.EStates>();
         this.stateCase = StateCase.none;
         this.state = {};
         this.eventRooter = new ADHOCCAST.Cmds.Common.EventRooter();
@@ -186,9 +172,9 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
     checkLogin() {
         if (this.adhocConn) {
             if (this.adhocConn.signaler.connected() && this.adhocConn.isLogin()) {
-                this.states.set(EStates.logined);
+                this.states.set(Dts.EStates.logined);
             } else {
-                this.states.reset(EStates.logined);
+                this.states.reset(Dts.EStates.logined);
                 this.relogin();
             }
         }
@@ -279,7 +265,7 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
                                     }
                                     </div>  
         // Casting
-        if (this.states.isset(EStates.stream_room_sending) && this.states.isset(EStates.stream_room_casting)) {
+        if (this.states.isset(Dts.EStates.stream_room_sending) && this.states.isset(Dts.EStates.stream_room_casting)) {
             header_msg = chrome.i18n.getMessage(EMessageKey.Screen_Share),
             msg_label_msg = chrome.i18n.getMessage(EMessageKey.Sharing_screen_to);
             return  <div className="container" >
@@ -291,7 +277,7 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
         }        
 
         // Waiting
-        if (this.states.isset(EStates.stream_room_sending)) {
+        if (this.states.isset(Dts.EStates.stream_room_sending)) {
             header_msg = chrome.i18n.getMessage(EMessageKey.Waiting_Room);
             msg_label_msg = chrome.i18n.getMessage(EMessageKey.Please_wait_for_permission);
 
@@ -304,7 +290,7 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
         }      
 
 
-        if (this.states.isset(EStates.connecting)) {
+        if (this.states.isset(Dts.EStates.connecting)) {
             msg_label_msg = this.state.msg || chrome.i18n.getMessage(EMessageKey.Connecting___);
             return  <div className="container" >
                         {title()}
@@ -314,7 +300,7 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
                     </div>   
         }
 
-        if (!this.states.isset(EStates.connected)) {
+        if (!this.states.isset(Dts.EStates.connected)) {
             msg_label_msg = this.state.msg || chrome.i18n.getMessage(EMessageKey.Connecting___);
             return  <div className="container" >
                         {title()}
@@ -323,7 +309,7 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
                         {footer_cancel()}
                     </div>   
         }      
-        if (!this.states.isset(EStates.logined)) {
+        if (!this.states.isset(Dts.EStates.logined)) {
             msg_label_msg = this.state.msg || chrome.i18n.getMessage(EMessageKey.Connecting___) + ".";
             return  <div className="container" >
                         {title()}
@@ -634,7 +620,7 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
     }    
 
     onCancelBtnClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-        if (this.states.isset(EStates.stream_room_sending))
+        if (this.states.isset(Dts.EStates.stream_room_sending))
             this.onStopBtnClick(event);
         else 
             window.close();
@@ -655,7 +641,7 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
         let type = cmd.data.type;
         if (type == ADHOCCAST.Cmds.ECommandType.resp) {
             if (!data.respResult) {
-                this.states.reset(EStates.logined);
+                this.states.reset(Dts.EStates.logined);
 
                 this.setState({
                     user: null,
@@ -663,7 +649,7 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
                 }) 
             }
             else {
-                this.states.set(EStates.logined);
+                this.states.set(Dts.EStates.logined);
 
                 this.setState({
                     user: Object.assign({}, data.props.user),
@@ -678,7 +664,7 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
         let data = cmd.data;
         let type = cmd.data.type;
         if (type == ADHOCCAST.Cmds.ECommandType.resp) {
-            this.states.reset(EStates.logined);
+            this.states.reset(Dts.EStates.logined);
         }
        
     }    
@@ -704,32 +690,32 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
     onAfterRoot_network_connecting(cmd: ADHOCCAST.Cmds.Common.ICommand) {
         let data = cmd.data;
         if (data.respResult == false) {
-            this.states.reset(EStates.connected);
-            this.states.reset(EStates.connecting);
+            this.states.reset(Dts.EStates.connected);
+            this.states.reset(Dts.EStates.connecting);
 
             this.setState({
                 msg:  data.respMsg || "Connecting Error, Retrying"
             });
 
         } else {
-            this.states.set(EStates.connecting);
+            this.states.set(Dts.EStates.connecting);
             this.setState({
                 msg: chrome.i18n.getMessage(EMessageKey.Connecting___)
             })             
         }
     }    
     onAfterRoot_network_connect(cmd: ADHOCCAST.Cmds.Common.ICommand) {
-        this.states.reset(EStates.connecting);
-        this.states.set(EStates.connected);
+        this.states.reset(Dts.EStates.connecting);
+        this.states.set(Dts.EStates.connected);
         this.relogin();
     }    
     onAfterRoot_network_disconnect(cmd: ADHOCCAST.Cmds.Common.ICommand) {
-        this.states.reset(EStates.connecting);
-        this.states.reset(EStates.connected);
-        this.states.reset(EStates.logined);
-        this.states.reset(EStates.stream_room_opened);
-        this.states.reset(EStates.stream_room_sending);
-        this.states.reset(EStates.stream_room_casting);
+        this.states.reset(Dts.EStates.connecting);
+        this.states.reset(Dts.EStates.connected);
+        this.states.reset(Dts.EStates.logined);
+        this.states.reset(Dts.EStates.stream_room_opened);
+        this.states.reset(Dts.EStates.stream_room_sending);
+        this.states.reset(Dts.EStates.stream_room_casting);
         this.setState({})     
     }     
     onAfterRoot_custom_update_states(cmd: ADHOCCAST.Cmds.Common.ICommand) {                

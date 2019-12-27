@@ -114,7 +114,6 @@ export class Options extends React.Component<OptionsProps, OptionsState> {
 
     async loadStorage() {
         await storage.load().then(items => {
-            console.log('1111111', items);
             this.state = {};
             this.setState(items);
         })

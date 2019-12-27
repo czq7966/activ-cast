@@ -2,7 +2,6 @@ import { ADHOCCAST } from "../../../libex";
 import * as Modules from '../modules/index'
 import * as Dts from '../cmds/index'
 import * as Desktop from "../../capture.desktop";
-import { EStates } from "../../../pages/dropdown";
 import { storage } from "../../storage";
 import { Main } from "../../main";
 
