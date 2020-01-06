@@ -1,6 +1,6 @@
 {
   "name": "screen-share",
-  "version": "1.6.10",
+  "version": "1.7.0",
   "description": "Mirror your device to any computer screen any time",
   "main": "index.js",
   "scripts": {
