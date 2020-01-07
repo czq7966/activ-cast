@@ -67,15 +67,15 @@ var defaultItems: IStorageItems = {
     resolutions: {
         best: {
             width: 1920,
-            height: 1080  
+            height: 0  
         },
         good: {
             width: 1280,
-            height: 720
+            height: 0
         },
         low: {
             width: 960,
-            height: 540
+            height: 0
         }          
     }
 }
