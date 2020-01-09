@@ -66,7 +66,7 @@ var defaultItems: IStorageItems = {
     target: { id: null},
     resolutions: {
         best: {
-            width: 1920,
+            width: 0,
             height: 0  
         },
         good: {

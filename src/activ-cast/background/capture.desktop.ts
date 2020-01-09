@@ -39,11 +39,11 @@ class CaptureDesktop {
                             chromeMediaSourceId: streamId,
                             minFrameRate: storage.items.minFrameRate,
                             maxFrameRate: storage.items.maxFrameRate,                            
-                            // maxWidth: storage.items.maxRatioWidth,
-                            // maxHeight: storage.items.maxRatioHeight,
-                            // minWidth: storage.items.minRatioWidth,
-                            // minHeight: storage.items.minRatioHeight
-                        },
+                            maxWidth: storage.items.maxRatioWidth,
+                            maxHeight: storage.items.maxRatioHeight,
+                            minWidth: storage.items.minRatioWidth,
+                            minHeight: storage.items.minRatioHeight
+                           },
                         optional: []
                     }
                 }
