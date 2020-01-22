@@ -540,8 +540,10 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
                     resolve(v)
                 })
                 .catch(e => {
-                    console.error("login failed, retrying: ", e);
-                    __login();
+                    console.error("login failed, retry after 5 seconds: ", e);
+                    setTimeout(() => {
+                        __login();
+                    }, 5 * 1000);                    
                 })
             }
             __login();
@@ -550,7 +552,8 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
         return promise;
     }
     _reloginPromise: Promise<any>
-    relogin(): Promise<any> {
+    relogin(timeout?: number): Promise<any> {
+        timeout = timeout || 100;
         if (!!this._reloginPromise) {
             return this._reloginPromise;
         }
@@ -576,7 +579,7 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
                     target: null,
                     panelIdError: false
                 });                
-            }, 1);
+            }, timeout);
         })
         return this._reloginPromise;
     }
@@ -707,7 +710,7 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
     onAfterRoot_network_connect(cmd: ADHOCCAST.Cmds.Common.ICommand) {
         this.states.reset(Dts.EStates.connecting);
         this.states.set(Dts.EStates.connected);
-        this.relogin();
+        this.relogin(1000);
     }    
     onAfterRoot_network_disconnect(cmd: ADHOCCAST.Cmds.Common.ICommand) {
         this.states.reset(Dts.EStates.connecting);

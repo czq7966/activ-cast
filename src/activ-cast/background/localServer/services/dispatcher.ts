@@ -7,11 +7,17 @@ export interface IDispatcherConstructorParams extends ADHOCCAST.Cmds.Common.IBas
 }
 
 export class Dispatcher extends ADHOCCAST.Cmds.Common.CommandRooter implements ADHOCCAST.Cmds.Common.IDispatcher {
+    edCoder: ADHOCCAST.Cmds.Common.IEDCoderClass
+    isServer: boolean    
     constructor(params: IDispatcherConstructorParams) {
         super(params);
+        this.isServer = true;
+        this.edCoder = ADHOCCAST.Cmds.Common.EDCoder;
         this.initEvents();
     }
     destroy() {
+        delete this.edCoder;
+        delete this.isServer;
         this.unInitEvents();
         super.destroy();
     }

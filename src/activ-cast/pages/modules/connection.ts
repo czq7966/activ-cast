@@ -23,6 +23,7 @@ export class Connection extends ADHOCCAST.Cmds.Common.Base {
 
         this.signaler = ADHOCCAST.Network.SignalerFactory.create(Client.TAG);
         let pms: ADHOCCAST.Modules.Dispatchers.IDispatcherConstructorParams = {
+            isServer: false,
             instanceId: this.instanceId,
             signaler: this.signaler,
         }
