@@ -34,11 +34,17 @@ export class CompSingleID extends React.Component<ISingleIDProp, ISingleIDState>
     } 
 
     onIdValueChange =  (event: React.ChangeEvent<HTMLInputElement>) => {
+        let oldValue = this.value;
         let newValue = event.target.value.trim();
-        newValue = newValue.substr(0, 1);
+        if (oldValue && newValue) {
+            newValue = newValue.replace(oldValue, '');
+        }
+
+        newValue = newValue.substr(newValue.length - 1, 1);
         this.value = newValue;
         this.setState({});
         this.props.onChange && this.props.onChange(this, this.value, this.oldValue);
+        newValue && this.props.onNext && this.props.onNext(this);
     }
 
     onKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
@@ -72,12 +78,12 @@ export class CompSingleID extends React.Component<ISingleIDProp, ISingleIDState>
 
 
     onKeyPress = (event: React.KeyboardEvent<HTMLInputElement>) => {
-        this.oldValue = this.value;
-        let newValue = event.key;
-        if (newValue.length == 1) {
-            this.value = newValue;
-            this.setState({})   
-            this.props.onNext && this.props.onNext(this);
-        } 
+        // this.oldValue = this.value;
+        // let newValue = event.key;
+        // if (newValue.length == 1) {
+        //     this.value = newValue;
+        //     this.setState({})   
+        //     this.props.onNext && this.props.onNext(this);
+        // } 
     }    
 }
