@@ -2,8 +2,10 @@ import { ADHOCCAST } from "../../../libex";
 import * as Modules from '../modules/index'
 import * as Dts from '../cmds/index'
 import * as Desktop from "../../capture.desktop";
+import * as Capture from "../../capture"
 import { storage } from "../../storage";
 import { Main } from "../../main";
+import { TabIOInputFilter } from "../../input/tab.io.input.filter";
 
 
 
@@ -60,15 +62,30 @@ export class StreamSharing  {
             if (_stream && _stream.active) {
                 resolve(_stream);
             } else {
-                let screenOptions = [Desktop.ECaptureScreenOptions.screen, Desktop.ECaptureScreenOptions.audio];
-                Desktop.captureDesktop.getStream(screenOptions,(stream, tab) => {                        
+                // let screenOptions = [Desktop.ECaptureScreenOptions.screen, Desktop.ECaptureScreenOptions.audio];
+                // Capture.Capture.getDesktopStream(screenOptions,(stream, tab) => {                        
+                //     if (stream) {
+                //         // this.applyStreamConstraints(stream);
+                //         resolve(stream);
+                //     } else {
+                //         reject()                        
+                //     }
+                // })    
+
+                let screenOptions = [Desktop.ECaptureScreenOptions.tab, Desktop.ECaptureScreenOptions.tab, Desktop.ECaptureScreenOptions.audio];
+                Capture.Capture.getTabStream((stream, tab) => {   
+                // Capture.Capture.getDesktopStream(screenOptions,(stream, tab) => {                      
                     if (stream) {
-                        // this.applyStreamConstraints(stream);
+                        if (tab) {
+                            let conn = Main.instance.conn;
+                            let tabIOInputFilter = conn.dispatcherFitlers.get(TabIOInputFilter.name) as TabIOInputFilter;
+                            tabIOInputFilter.setTab(tab);
+                        }
                         resolve(stream);
                     } else {
                         reject()                        
                     }
-                })    
+                })  
             }
         })
     }   

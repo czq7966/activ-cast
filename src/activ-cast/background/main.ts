@@ -4,6 +4,7 @@ import * as RemoteConn from './remote-connection/index'
 import { ADHOCCAST } from '../libex/index'
 import { EMessageKey } from '../locales';
 import { NativeIOInputFilter } from './native.io.input.filter';
+import { TabIOInputFilter } from './input/tab.io.input.filter'
 
 ADHOCCAST.Modules.Webrtc.Config.platform = ADHOCCAST.Modules.Webrtc.EPlatform.browser;
 ADHOCCAST.Cmds.Common.Helper.Debug.enabled = process.env.NODE_MODE == "development";
@@ -16,6 +17,8 @@ export class Main extends ADHOCCAST.Cmds.Common.CommandRooter {
     tab: chrome.tabs.Tab;
     portUsers: LocalServer.Modules.IPortUsers;
     nativeIOInputFilter: NativeIOInputFilter;
+    baseIOInputFilter: ADHOCCAST.Modules.Dispatchers.IBaseInputFilter;
+    tabIOInputFilter: TabIOInputFilter;
 
     constructor() {
         super();
@@ -32,9 +35,7 @@ export class Main extends ADHOCCAST.Cmds.Common.CommandRooter {
 
         this.conn = ADHOCCAST.Connection.getInstance(connParams);
 
-        this.nativeIOInputFilter = new NativeIOInputFilter(this.conn.dispatcher);
-        this.conn.dispatcherFitlers.add(NativeIOInputFilter.name, this.nativeIOInputFilter);
-        this.nativeIOInputFilter.setEnabled(false);
+        this.initDispatcherFilters();
 
         let portUsersParams : LocalServer.Modules.IPortUsersConstructorParams = {
             instanceId: ADHOCCAST.Cmds.Common.Helper.uuid(),
@@ -51,8 +52,7 @@ export class Main extends ADHOCCAST.Cmds.Common.CommandRooter {
     }
     destroy() {
         this.unInitEvents();
-        this.conn.dispatcherFitlers.del(NativeIOInputFilter.name);
-        this.nativeIOInputFilter.destroy();
+        this.unInitDispatcherFilters();
         this.conn.destroy();
         this.portUsers.destroy();
         delete this.conn;
@@ -73,6 +73,33 @@ export class Main extends ADHOCCAST.Cmds.Common.CommandRooter {
         this.eventRooter.onBeforeRoot.remove(this.onBeforeRoot);
         this.eventRooter.onAfterRoot.remove(this.onAfterRoot);
         this.eventRooter.setParent(); 
+    }
+
+    initDispatcherFilters() {
+        this.baseIOInputFilter = new ADHOCCAST.Modules.Dispatchers.BaseInputFilter(this.conn.dispatcher);
+        this.conn.dispatcherFitlers.add(ADHOCCAST.Modules.Dispatchers.BaseInputFilter.name, this.baseIOInputFilter);
+        this.baseIOInputFilter.setEnabled(false);
+
+        this.nativeIOInputFilter = new NativeIOInputFilter(this.conn.dispatcher);
+        this.conn.dispatcherFitlers.add(NativeIOInputFilter.name, this.nativeIOInputFilter);
+        this.nativeIOInputFilter.setEnabled(false);
+
+        this.tabIOInputFilter = new TabIOInputFilter(this.conn.dispatcher);
+        this.conn.dispatcherFitlers.add(TabIOInputFilter.name, this.tabIOInputFilter);
+        this.tabIOInputFilter.setEnabled(true);
+    }
+    unInitDispatcherFilters() {
+        this.baseIOInputFilter.setEnabled(false);
+        this.conn.dispatcherFitlers.del(ADHOCCAST.Modules.Dispatchers.BaseInputFilter.name);
+        this.baseIOInputFilter.destroy();
+
+        this.nativeIOInputFilter.setEnabled(false);
+        this.conn.dispatcherFitlers.del(NativeIOInputFilter.name);
+        this.nativeIOInputFilter.destroy();
+
+        this.tabIOInputFilter.setEnabled(false);
+        this.conn.dispatcherFitlers.del(TabIOInputFilter.name);
+        this.tabIOInputFilter.destroy();
     }
 
     onBeforeRoot = (cmd: ADHOCCAST.Cmds.Common.ICommand): any => {
