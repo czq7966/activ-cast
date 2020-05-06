@@ -98,7 +98,6 @@ export class TabIOInputFilter extends ADHOCCAST.Modules.Dispatchers.BaseInputFil
     }
 
     onDataChannelInputEvent = (input: ADHOCCAST.Modules.Webrtc.IO.IInput, evt: ADHOCCAST.Modules.Webrtc.IO.IInputEvent) => {
-        console.log('111111111111111')
         let tab = this.getTab();
         if (tab) {
             chrome.tabs.get(tab.id, tab => {

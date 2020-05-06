@@ -78,7 +78,7 @@ export class Main extends ADHOCCAST.Cmds.Common.CommandRooter {
     initDispatcherFilters() {
         this.baseIOInputFilter = new ADHOCCAST.Modules.Dispatchers.BaseInputFilter(this.conn.dispatcher);
         this.conn.dispatcherFitlers.add(ADHOCCAST.Modules.Dispatchers.BaseInputFilter.name, this.baseIOInputFilter);
-        this.baseIOInputFilter.setEnabled(false);
+        this.baseIOInputFilter.setEnabled(true);
 
         this.nativeIOInputFilter = new NativeIOInputFilter(this.conn.dispatcher);
         this.conn.dispatcherFitlers.add(NativeIOInputFilter.name, this.nativeIOInputFilter);
@@ -86,7 +86,7 @@ export class Main extends ADHOCCAST.Cmds.Common.CommandRooter {
 
         this.tabIOInputFilter = new TabIOInputFilter(this.conn.dispatcher);
         this.conn.dispatcherFitlers.add(TabIOInputFilter.name, this.tabIOInputFilter);
-        this.tabIOInputFilter.setEnabled(true);
+        this.tabIOInputFilter.setEnabled(false);
     }
     unInitDispatcherFilters() {
         this.baseIOInputFilter.setEnabled(false);

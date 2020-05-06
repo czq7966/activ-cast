@@ -83,6 +83,8 @@ export class PortUsers extends ADHOCCAST.Cmds.Common.CommandRooter implements IP
                 break;
             case Cmds.ECommandId.custom_start_cast:
             case Cmds.ECommandId.custom_stop_cast:
+            case Cmds.ECommandId.custom_pause_cast:
+            case Cmds.ECommandId.custom_resume_cast:
             case Cmds.ECommandId.custom_get_webrtc_state:
             case Cmds.ECommandId.custom_update_states:
                 Services.Cmds.ServiceCustom.custom(cmd, portUser);            

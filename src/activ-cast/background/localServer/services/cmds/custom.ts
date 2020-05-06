@@ -19,14 +19,21 @@ export class ServiceCustom  {
             case Dts.ECommandId.custom_start_cast:
                 this.on_custom_start_cast(cmd, portUser);
                 break;
-                case Dts.ECommandId.custom_stop_cast:
+            case Dts.ECommandId.custom_stop_cast:
                 this.on_custom_stop_cast(cmd, portUser);
-                break;                
+                break;  
+            case Dts.ECommandId.custom_pause_cast:
+                    this.on_custom_pause_cast(cmd, portUser);
+                    break;
+            case Dts.ECommandId.custom_resume_cast:
+                    this.on_custom_resume_cast(cmd, portUser);
+                    break;                
             case Dts.ECommandId.custom_get_webrtc_state:
                 this.on_custom_get_webrtc_state(cmd, portUser);
                 break;     
             case Dts.ECommandId.custom_update_states:
                 this.on_custom_update_states(cmd, portUser);
+                break;
             case Dts.ECommandId.custom_get_webrtc_statistics:
                 this.on_custom_get_webrtc_statistics(cmd, portUser);
                 break;                                
@@ -47,7 +54,14 @@ export class ServiceCustom  {
     static on_custom_stop_cast(cmd: ADHOCCAST.Cmds.ICommandData<ADHOCCAST.Dts.ICommandDataProps>, portUser: Modules.IPortUser) {
         StreamSharing.stopSharing();
     }    
-
+    static on_custom_pause_cast(cmd: ADHOCCAST.Cmds.ICommandData<ADHOCCAST.Dts.ICommandDataProps>, portUser: Modules.IPortUser) {
+        StreamSharing.pauseSharing()
+        .then(v => portUser.respStates());
+    }  
+    static on_custom_resume_cast(cmd: ADHOCCAST.Cmds.ICommandData<ADHOCCAST.Dts.ICommandDataProps>, portUser: Modules.IPortUser) {
+        StreamSharing.resumeSharing()
+        .then(v => portUser.respStates());
+    } 
     static on_custom_get_webrtc_state(cmd: ADHOCCAST.Cmds.ICommandData<ADHOCCAST.Dts.ICommandDataProps>, portUser: Modules.IPortUser) {
         let instanceId = portUser.users.main.conn.instanceId;
         let user = cmd.props.user;
@@ -96,6 +110,8 @@ export class ServiceCustom  {
                     _states = _states + (mStreamUser.states.isset(ADHOCCAST.Dts.EUserState.stream_room_sending) ? Dts.EStates.stream_room_casting : 0);                    
                 }
             }   
+            _states = _states + (StreamSharing.isPausedSharing() ? Dts.EStates.stream_room_paused : 0);
+            _states = _states + (StreamSharing.isMinSharing() ? Dts.EStates.stream_room_casting_min : 0);
         }
 
         cmd = cmd || {cmdId: Dts.ECommandId.custom_update_states, props: {}}

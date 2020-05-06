@@ -23,7 +23,61 @@ export class StreamSharing  {
         conn.signaler.disconnect();           
         chrome.runtime.reload();
     }    
-
+    static pauseSharing(): Promise<any> {
+        let conn = Main.instance.conn;
+        let stream = StreamSharing.SharingStream;
+        if (stream && stream.active) {
+            stream.getTracks().forEach(track => {
+                track.enabled = false;
+            })
+        }   
+        return Promise.resolve();
+    } 
+    static resumeSharing(): Promise<any> {
+        let conn = Main.instance.conn;
+        let stream = StreamSharing.SharingStream;
+        if (stream && stream.active) {
+            stream.getTracks().forEach(track => {
+                track.enabled = true;
+            })
+        }        
+        return Promise.resolve();
+    } 
+    static isPausedSharing(): boolean {
+        let conn = Main.instance.conn;
+        let stream = StreamSharing.SharingStream;
+        let isPaused = null;
+        if (stream && stream.active) {
+            stream.getTracks().forEach(track => {
+                isPaused = !track.enabled;
+            })
+        }    
+        return isPaused;    
+    } 
+    static isMinSharing(): boolean {
+        let conn = Main.instance.conn;
+        let stream = StreamSharing.SharingStream;
+        let isMin = null;
+        if (stream && stream.active) {            
+            let minConstraint = storage.items.resolutions['min'];
+            if (minConstraint) {
+                let maxWidth = 0;
+                let width = minConstraint.width as number;
+                stream.getVideoTracks().forEach(track => {
+                    let advanced = track.getConstraints().advanced;
+                    if (advanced && advanced.length > 0) {
+                        let constraint = advanced[0];
+                               if ( constraint.width && (constraint.width as any).max) {
+                            maxWidth =  (constraint.width as any).max
+                        }
+                        
+                    }
+                    isMin = maxWidth && maxWidth <= width;
+                })
+            }
+        }    
+        return isMin;    
+    } 
     static onInactive() {
         let stream = StreamSharing.SharingStream;
         let conn = Main.instance.conn;
@@ -62,30 +116,30 @@ export class StreamSharing  {
             if (_stream && _stream.active) {
                 resolve(_stream);
             } else {
-                // let screenOptions = [Desktop.ECaptureScreenOptions.screen, Desktop.ECaptureScreenOptions.audio];
-                // Capture.Capture.getDesktopStream(screenOptions,(stream, tab) => {                        
-                //     if (stream) {
-                //         // this.applyStreamConstraints(stream);
-                //         resolve(stream);
-                //     } else {
-                //         reject()                        
-                //     }
-                // })    
-
-                let screenOptions = [Desktop.ECaptureScreenOptions.tab, Desktop.ECaptureScreenOptions.tab, Desktop.ECaptureScreenOptions.audio];
-                Capture.Capture.getTabStream((stream, tab) => {   
-                // Capture.Capture.getDesktopStream(screenOptions,(stream, tab) => {                      
+                let screenOptions = [Desktop.ECaptureScreenOptions.screen, Desktop.ECaptureScreenOptions.audio];
+                Capture.Capture.getDesktopStream(screenOptions,(stream, tab) => {                        
                     if (stream) {
-                        if (tab) {
-                            let conn = Main.instance.conn;
-                            let tabIOInputFilter = conn.dispatcherFitlers.get(TabIOInputFilter.name) as TabIOInputFilter;
-                            tabIOInputFilter.setTab(tab);
-                        }
+                        // this.applyStreamConstraints(stream);
                         resolve(stream);
                     } else {
                         reject()                        
                     }
-                })  
+                })    
+
+                // let screenOptions = [Desktop.ECaptureScreenOptions.tab, Desktop.ECaptureScreenOptions.tab, Desktop.ECaptureScreenOptions.audio];
+                // Capture.Capture.getTabStream((stream, tab) => {   
+                // // Capture.Capture.getDesktopStream(screenOptions,(stream, tab) => {                      
+                //     if (stream) {
+                //         if (tab) {
+                //             let conn = Main.instance.conn;
+                //             let tabIOInputFilter = conn.dispatcherFitlers.get(TabIOInputFilter.name) as TabIOInputFilter;
+                //             tabIOInputFilter.setTab(tab);
+                //         }
+                //         resolve(stream);
+                //     } else {
+                //         reject()                        
+                //     }
+                // })  
             }
         })
     }   
@@ -135,7 +189,17 @@ export class StreamSharing  {
             room: {
                 id: storage.items.roomPrefix + target.sid
             },
-            nick: nick
+            nick: nick,
+            host: {
+                os: {
+                    name: ADHOCCAST.Cmds.Common.Helper.HostInfo.Name as any,
+                    version: ADHOCCAST.Cmds.Common.Helper.HostInfo.FullVersion as any
+                },
+                app: {
+                    name: chrome['app'].getDetails().name,
+                    version: chrome['app'].getDetails().version
+                }
+            }
         }
         return conn.login(user)
     }    

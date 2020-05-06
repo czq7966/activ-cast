@@ -265,7 +265,7 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
                                     }
                                     </div>  
         // Casting
-        if (this.states.isset(Dts.EStates.stream_room_sending) && this.states.isset(Dts.EStates.stream_room_casting)) {
+        if (this.isCasting() && !this.isMinCast()) {
             header_msg = chrome.i18n.getMessage(EMessageKey.Screen_Share),
             msg_label_msg = chrome.i18n.getMessage(EMessageKey.Sharing_screen_to);
             return  <div className="container" >
@@ -493,6 +493,30 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
         let promise =  cmd.sendCommand();
         return promise;        
     }
+    pauseCast() {
+        return ADHOCCAST.Cmds.CommandReq.req(this.conn.instanceId, {
+            cmdId: Dts.ECommandId.custom_pause_cast,
+            props: {}
+        })
+    }
+    resumeCast() {
+        return ADHOCCAST.Cmds.CommandReq.req(this.conn.instanceId, {
+            cmdId: Dts.ECommandId.custom_resume_cast,
+            props: {}
+        })
+    }
+    isCasting() {
+        return  this.states.isset(Dts.EStates.stream_room_sending) && 
+                this.states.isset(Dts.EStates.stream_room_casting)       
+    }
+    isPausedCast() {
+        return  this.isCasting() && 
+                this.states.isset(Dts.EStates.stream_room_paused)
+    }
+    isMinCast() {
+        return  this.isCasting() && 
+                this.states.isset(Dts.EStates.stream_room_casting_min)
+    }
 
     saveStorage() {
         storage.items.user.nick = this.state.userNick;
@@ -719,6 +743,7 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
         this.states.reset(Dts.EStates.stream_room_opened);
         this.states.reset(Dts.EStates.stream_room_sending);
         this.states.reset(Dts.EStates.stream_room_casting);
+        this.states.reset(Dts.EStates.stream_room_paused);        
         this.setState({})     
     }     
     onAfterRoot_custom_update_states(cmd: ADHOCCAST.Cmds.Common.ICommand) {                

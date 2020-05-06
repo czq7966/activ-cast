@@ -43,6 +43,7 @@ export interface IStorageItems {
 var defaultItems: IStorageItems = {
     signaler: "https://servicediscovery.mypromethean.com",
     // signaler: "http://127.0.0.1:2770",
+    // signaler: "https://adhoc-cast-signaler.101.com", 
     organization: 'promethean',
     roomPrefix: "promethean_",
     codec: 'vp8',
@@ -76,7 +77,11 @@ var defaultItems: IStorageItems = {
         low: {
             width: 960,
             height: 0
-        }          
+        },
+        min: {
+            width: 16,
+            height: 0
+        }        
     }
 }
 
