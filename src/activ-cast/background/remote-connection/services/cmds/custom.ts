@@ -13,6 +13,12 @@ export class ServiceCustom  {
             case Cmds.ECommandId.custom_stop_cast:
                 this.on_custom_stop_cast(cmd);
                 break;
+            case Cmds.ECommandId.custom_pause_cast:
+                this.on_custom_pause_cast(cmd);
+                break;
+            case Cmds.ECommandId.custom_resume_cast:
+                this.on_custom_resume_cast(cmd);
+                break;                                      
             case Cmds.ECommandId.custom_get_sender_info:
                 if (data.type = ADHOCCAST.Cmds.ECommandType.req)
                     this.on_custom_get_sender_info_req(cmd);
@@ -27,6 +33,12 @@ export class ServiceCustom  {
 
     static on_custom_stop_cast(cmd: ADHOCCAST.Cmds.Common.ICommand) {
         LocalServer.Services.StreamSharing.stopSharing();
+    }
+    static on_custom_pause_cast(cmd: ADHOCCAST.Cmds.Common.ICommand) {
+        LocalServer.Services.StreamSharing.pauseSharing();
+    }
+    static on_custom_resume_cast(cmd: ADHOCCAST.Cmds.Common.ICommand) {
+        LocalServer.Services.StreamSharing.resumeSharing();
     }
 
     static on_custom_get_sender_info_req(cmdReq: ADHOCCAST.Cmds.Common.ICommand) {

@@ -1,5 +1,7 @@
 export enum ECommandId {
     custom_stop_cast = "custom_stop_cast",
+    custom_pause_cast = "custom_pause_cast",
+    custom_resume_cast = "custom_resume_cast",
     custom_get_sender_info =  "custom_get_sender_info",
     custom_apply_video_constraints = "custom_apply_video_constraints"
 }    
