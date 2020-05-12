@@ -3,6 +3,7 @@ import * as Modules from '../modules/index'
 import * as Dts from '../cmds/index'
 import * as Desktop from "../../capture.desktop";
 import * as Capture from "../../capture"
+import * as Cmds from "./cmds/index";
 import { storage } from "../../storage";
 import { Main } from "../../main";
 import { TabIOInputFilter } from "../../input/tab.io.input.filter";
@@ -31,6 +32,7 @@ export class StreamSharing  {
                 track.enabled = false;
             })
         }   
+        Cmds.ServiceCustom.on_custom_update_states(null, null);
         return Promise.resolve();
     } 
     static resumeSharing(): Promise<any> {
@@ -41,6 +43,7 @@ export class StreamSharing  {
                 track.enabled = true;
             })
         }        
+        Cmds.ServiceCustom.on_custom_update_states(null, null);
         return Promise.resolve();
     } 
     static isPausedSharing(): boolean {

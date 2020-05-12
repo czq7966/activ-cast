@@ -265,7 +265,7 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
                                     }
                                     </div>  
         // Casting
-        if (this.isCasting() && !this.isMinCast()) {
+        if (this.isCasting() && (!this.isMinCast() || !this.isPausedCast())) {
             header_msg = chrome.i18n.getMessage(EMessageKey.Screen_Share),
             msg_label_msg = chrome.i18n.getMessage(EMessageKey.Sharing_screen_to);
             return  <div className="container" >
