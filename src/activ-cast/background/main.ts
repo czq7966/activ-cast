@@ -125,7 +125,7 @@ export class Main extends ADHOCCAST.Cmds.Common.CommandRooter {
                 break;
             case ADHOCCAST.Cmds.ECommandId.adhoc_logout:     
                 this.on_adhoc_logout(cmd);
-                break;                
+                break;   
             default:
                 break;
         } 

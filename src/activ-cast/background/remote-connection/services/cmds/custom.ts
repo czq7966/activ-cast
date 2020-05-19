@@ -88,7 +88,7 @@ export class ServiceCustom  {
         cmd = null;
         return promise;
     }
-    static on_custom_apply_video_constraints(cmd: ADHOCCAST.Cmds.Common.ICommand) {
+    static async on_custom_apply_video_constraints(cmd: ADHOCCAST.Cmds.Common.ICommand) {
         let data = cmd.data as ADHOCCAST.Cmds.ICommandData<ADHOCCAST.Cmds.ICommandDataProps>;
         let mLoginRoom = ADHOCCAST.Services.Modules.Rooms.getLoginRoom(cmd.instanceId);
         let mMe = mLoginRoom && mLoginRoom.me();
@@ -98,8 +98,14 @@ export class ServiceCustom  {
         let constraintSet = storage.items.resolutions[data.props.extra];
         let constraints =  constraintSet ? {advanced: [constraintSet]} : null;
 
-        mUser && mUser.peer && ADHOCCAST.Services.Modules.Webrtc.Streams.applyStreamsVideoConstraints(mUser.peer.streams, constraints);
+        mUser && mUser.peer && await ADHOCCAST.Services.Modules.Webrtc.Streams.applyStreamsVideoConstraints(mUser.peer.streams, constraints);
         let bandwidth = storage.items.bandwidth;
-        bandwidth && mUser && mUser.peer && ADHOCCAST.Services.Modules.Webrtc.Peer.setSenderMaxBitrate(mUser.peer, bandwidth * 1000);
+        bandwidth && mUser && mUser.peer && await ADHOCCAST.Services.Modules.Webrtc.Peer.setSenderMaxBitrate(mUser.peer, bandwidth * 1000);
+        // if (data.props.extra == 'min') {
+        //     LocalServer.Services.StreamSharing.pauseSharing();
+        // } else {
+        //     LocalServer.Services.StreamSharing.resumeSharing();
+        // }
+        LocalServer.Services.Cmds.ServiceCustom.on_custom_update_states(null, null);
     }        
 }
