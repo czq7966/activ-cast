@@ -79,7 +79,7 @@ var defaultItems: IStorageItems = {
             height: 0
         },
         min: {
-            width: 16,
+            width: 1,
             height: 0
         }        
     }

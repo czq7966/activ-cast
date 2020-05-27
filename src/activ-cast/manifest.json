@@ -2,7 +2,7 @@
    "default_locale":"en",
    "name":"__MSG_manifest_name__",
    "author":"ND CZQ",
-   "version":"1.8.0.0",
+   "version":"1.8.1.0",
    "manifest_version":2,
    "minimum_chrome_version":"34",
    "description":"__MSG_manifest_description__",
