@@ -24,6 +24,7 @@ export class Options extends React.Component<OptionsProps, OptionsState> {
         this.signaler = ADHOCCAST.Network.SignalerFactory.create(null);
         this.state = {};
         this.initRuntimePort();
+        this.getMicPermission();
     }
     destroy() {
         this.signaler.disconnect();
@@ -40,6 +41,7 @@ export class Options extends React.Component<OptionsProps, OptionsState> {
     }
     initRuntimePort() {
         runtimePort.onMessage.addListener(this.onMessage)
+        document.title =  chrome.i18n.getMessage(EMessageKey.manifest_name);
     }
 
 
@@ -216,6 +218,21 @@ export class Options extends React.Component<OptionsProps, OptionsState> {
     }
     cancelSignaler = () => {
         window.close();
+    }
+
+    getMicPermission() {
+        navigator.mediaDevices
+        .getUserMedia({
+            audio: true,
+            video: false
+        })
+        .then((stream) => {
+            stream.getTracks().forEach(track => {
+                track.stop()
+            })
+          
+        })
+        .catch(e => {});         
     }
 
 }

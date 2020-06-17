@@ -19,6 +19,7 @@ module.exports = env => {
     entry['background/index'] = path.resolve(srcDir, process.env.NODE_MODE == "dev" ? "background/index-dev.ts" : "background/index.ts");
     entry['pages/dropdown/index'] = path.resolve(srcDir, process.env.NODE_MODE == "dev" ? "pages/dropdown/index-dev.tsx" : "pages/dropdown/index.tsx");
     entry['pages/dropdown/options'] = path.resolve(srcDir, process.env.NODE_MODE == "dev" ?  "pages/dropdown/options-dev.tsx" : "pages/dropdown/options.tsx");
+    entry['pages/dropdown/pollyfills/chromeos-v83'] = path.resolve(srcDir, process.env.NODE_MODE == "dev" ?  "pages/dropdown/pollyfills/chromeos-v83-dev.tsx" : "pages/dropdown/pollyfills/chromeos-v83.tsx");
     optimization['minimizer'] = minimizer;  
 
     plugins.push(
@@ -39,10 +40,10 @@ module.exports = env => {
                 from: path.resolve(srcDir, 'pages/dropdown/options.html'),
                 to: 'pages/dropdown/options.html',
             },          
-            // {
-            //     from: path.resolve(srcDir, 'pages/test/test.html'),
-            //     to: 'pages/test/test.html',
-            // },                
+            {
+                from: path.resolve(srcDir, 'pages/dropdown/pollyfills/chromeos-v83.html'),
+                to: 'pages/dropdown/pollyfills/chromeos-v83.html',
+            },                
             {
                 from: path.resolve(srcDir, 'images'),
                 to: 'images',
